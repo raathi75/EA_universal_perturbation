@@ -222,3 +222,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Large model checkpoints (>100 MB GitHub limit)
+smol_exp/uap_smolvlm/encoder_FT-UAT.pt
+smol_exp/uap_smolvlm/encoder_FT-fixed.pt
