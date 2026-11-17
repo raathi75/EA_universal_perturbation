@@ -1,0 +1,246 @@
+{
+  "results": {
+    "A_prompts": {
+      "describe (week 1)": {
+        "universal v": {
+          "mean_sim": 0.1700318157672882,
+          "changed": 0.9100000262260437
+        },
+        "random \u00b1\u03be": {
+          "mean_sim": 0.8850407600402832,
+          "changed": 0.019999999552965164
+        }
+      },
+      "what is in it": {
+        "universal v": {
+          "mean_sim": 0.11350126564502716,
+          "changed": 0.9599999785423279
+        },
+        "random \u00b1\u03be": {
+          "mean_sim": 0.6982820630073547,
+          "changed": 0.11999999731779099
+        }
+      },
+      "main object": {
+        "universal v": {
+          "mean_sim": 0.15755045413970947,
+          "changed": 0.9399999976158142
+        },
+        "random \u00b1\u03be": {
+          "mean_sim": 0.754035234451294,
+          "changed": 0.2800000011920929
+        }
+      },
+      "animal yes/no": {
+        "universal v": {
+          "answer_flipped": 0.8,
+          "valid_yes_no_after": 0.28
+        },
+        "random \u00b1\u03be": {
+          "answer_flipped": 0.03,
+          "valid_yes_no_after": 1.0
+        }
+      }
+    },
+    "B_pipeline": {
+      "B1 splitting off": {
+        "n_images": 200,
+        "tiles_per_image": 1,
+        "universal v": {
+          "mean_sim": 0.34091702103614807,
+          "changed": 0.7149999737739563,
+          "token_cos": 0.14212781488895415
+        },
+        "random \u00b1\u03be": {
+          "mean_sim": 0.8750002980232239,
+          "changed": 0.03500000014901161,
+          "token_cos": 0.8639340579509736
+        }
+      },
+      "B2 splitting on (default)": {
+        "n_images": 50,
+        "tiles_per_image": 17,
+        "universal v": {
+          "mean_sim": 0.3529313802719116,
+          "changed": 0.699999988079071,
+          "token_cos": 0.6884909546375275
+        },
+        "random \u00b1\u03be": {
+          "mean_sim": 0.8519212603569031,
+          "changed": 0.019999999552965164,
+          "token_cos": 0.775016244649887
+        }
+      }
+    }
+  },
+  "examples": {
+    "A|describe (week 1)|universal v": [
+      [
+        "In this image we can see a bird on the branch of a tree.",
+        "200000000000000000000000000000000000000"
+      ],
+      [
+        "In this image we can see two dogs.",
+        "who said this on their wedding anniversary. who said this on their wedding anniversary. who said this on their wedding anniversary. who said this on their wedding anniversary. who said this on their wedding anniversary."
+      ],
+      [
+        "In this image we can see a machine and a wooden wall.",
+        "100000"
+      ]
+    ],
+    "A|describe (week 1)|random \u00b1\u03be": [
+      [
+        "In this image we can see a bird on the branch of a tree.",
+        "In this image we can see a bird on the branch of a tree."
+      ],
+      [
+        "In this image we can see two dogs.",
+        "In this image we can see two dogs."
+      ],
+      [
+        "In this image we can see a machine and a wooden wall.",
+        "In this image we can see a machine, a wooden wall and a few objects."
+      ]
+    ],
+    "A|what is in it|universal v": [
+      [
+        "A blue bird is perched on a branch of a tree.",
+        "20000 or blood team. -:: 20000000000000000000000000"
+      ],
+      [
+        "Two white dogs are walking on a grassy area.",
+        "who said that? who said that? who said that? 1st mate: who ate this perfect life.  this is the best thing i ever did.  this is the best thing i"
+      ],
+      [
+        "In the foreground of the picture there is a red hand-crank. On the right there is a machine. In the background there is a wooden wall.",
+        "160"
+      ]
+    ],
+    "A|what is in it|random \u00b1\u03be": [
+      [
+        "A blue bird is perched on a branch of a tree.",
+        "A blue jay sits on a branch of a tree."
+      ],
+      [
+        "Two white dogs are walking on a grassy area.",
+        "Two large white dogs are walking across a dirt field."
+      ],
+      [
+        "In the foreground of the picture there is a red hand-crank. On the right there is a machine. In the background there is a wooden wall.",
+        "In this image there is a red colored steam engine on the floor. Behind the steam engine there is a wooden wall."
+      ]
+    ],
+    "A|main object|universal v": [
+      [
+        "Bird.",
+        "who said: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+      ],
+      [
+        "Dog.",
+        "who said that on the beach. who said that on the beach. who said that on the beach. who said that on the beach. who said that on the beach. who said that on the"
+      ],
+      [
+        "A hand-cranked device.",
+        "2003"
+      ]
+    ],
+    "A|main object|random \u00b1\u03be": [
+      [
+        "Bird.",
+        "Bird."
+      ],
+      [
+        "Dog.",
+        "Dog."
+      ],
+      [
+        "A hand-cranked device.",
+        "A red steam-powered cannon."
+      ]
+    ],
+    "A|animal yes/no|universal v": [
+      [
+        "Yes.",
+        "20; her in -10. -25 -11) 19833333. 198336666666"
+      ],
+      [
+        "Yes.",
+        "who said that? who said that? who said that? who said that? who said that? who said that? who said that?  - - - - - - - - - - -"
+      ],
+      [
+        "No.",
+        "100000"
+      ]
+    ],
+    "A|animal yes/no|random \u00b1\u03be": [
+      [
+        "Yes.",
+        "Yes."
+      ],
+      [
+        "Yes.",
+        "Yes."
+      ],
+      [
+        "No.",
+        "No."
+      ]
+    ],
+    "B|B1 splitting off|universal v": [
+      [
+        "In this image we can see a bird on the branch of a tree.",
+        "In this image I can see a person wearing a white shirt and black pant."
+      ],
+      [
+        "In this image we can see two dogs.",
+        "In this image I can see a person wearing a white shirt and black pant."
+      ],
+      [
+        "In this image we can see a machine and some objects.",
+        "In this image, there is a person wearing a white shirt and a black jacket."
+      ]
+    ],
+    "B|B1 splitting off|random \u00b1\u03be": [
+      [
+        "In this image we can see a bird on the branch of a tree.",
+        "In this image we can see a bird on the branch of a tree."
+      ],
+      [
+        "In this image we can see two dogs.",
+        "In this image we can see two dogs."
+      ],
+      [
+        "In this image we can see a machine and some objects.",
+        "In this image we can see a machine, a wooden wall and a wooden cart."
+      ]
+    ],
+    "B|B2 splitting on (default)|universal v": [
+      [
+        "In this image we can see a bird on the branch of a tree.",
+        "In this image we can see a collage of images."
+      ],
+      [
+        "In this image we can see two dogs are standing on the ground.",
+        "In this image we can see a picture of a grass."
+      ],
+      [
+        "In this image we can see a machine on the ground. In the background there is a wooden wall.",
+        "In this image we can see a vehicle on the road."
+      ]
+    ],
+    "B|B2 splitting on (default)|random \u00b1\u03be": [
+      [
+        "In this image we can see a bird on the branch of a tree.",
+        "In this image we can see a bird on the branch of a tree."
+      ],
+      [
+        "In this image we can see two dogs are standing on the ground.",
+        "In this image we can see two dogs."
+      ],
+      [
+        "In this image we can see a machine on the ground. In the background there is a wooden wall.",
+        "In this image we can see a red color machine on the floor. In the background of the image there is a wooden wall."
+      ]
+    ]
+  }
+}
