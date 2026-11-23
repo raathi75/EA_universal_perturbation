@@ -1,0 +1,31 @@
+pair,image_id,threshold,similarity
+nb01/clean -> nb01/random,imagenetv2-matched-frequency-format-val/363/f4b117b26fbb1b931eed74d7951e0c7a0070e686.jpeg,0.7,0.70079
+nb04/clean -> nb04/v10,imagenetv2-matched-frequency-format-val/971/24cfba11ce88b18795c2ec30c71e40ecbb65a5d9.jpeg,0.5,0.499071
+nb04/clean -> nb04/v10,imagenetv2-matched-frequency-format-val/736/0fde1ea322866d916c85dc2155bbb62a55a7998a.jpeg,0.7,0.700516
+nb02/B1 splitting off/clean -> nb02/B1 splitting off/random,imagenetv2-matched-frequency-format-val/363/f4b117b26fbb1b931eed74d7951e0c7a0070e686.jpeg,0.7,0.70079
+"nb06/clean -> nb06/fixed v, no defense",imagenetv2-matched-frequency-format-val/745/c749b2c44de3fc44e10e6d9d8a3a683953f6ee47.jpeg,0.5,0.500165
+"nb06/clean -> nb06/fixed v, no defense",imagenetv2-matched-frequency-format-val/971/24cfba11ce88b18795c2ec30c71e40ecbb65a5d9.jpeg,0.7,0.700453
+"nb06/clean -> nb06/fixed v, no defense",imagenetv2-matched-frequency-format-val/863/e76fc760dbbf3b4ec1838891a5c6d77503ec9f64.jpeg,0.5,0.499043
+nb03F/500M/clean -> nb03F/500M/v,imagenetv2-matched-frequency-format-val/110/3c7687ae17faa2d4ffca9ae17876e4750e719d81.jpeg,0.7,0.69916
+nb03F/500M/clean -> nb03F/500M/random,imagenetv2-matched-frequency-format-val/363/f4b117b26fbb1b931eed74d7951e0c7a0070e686.jpeg,0.7,0.70015
+nb03F/500M/clean -> nb03F/500M/random,imagenetv2-matched-frequency-format-val/534/cb17773f6660b07e7b74559f1709df0b52249d81.jpeg,0.7,0.700395
+nb03F/2.2B/clean -> nb03F/2.2B/v,imagenetv2-matched-frequency-format-val/829/d8642af7deb7bed2a26277138b384c07934d9003.jpeg,0.7,0.699656
+nb03F/2.2B/clean -> nb03F/2.2B/v,imagenetv2-matched-frequency-format-val/939/9e01163be9c314c5b9e08f4f940c5e4dc4ff4516.jpeg,0.7,0.700442
+nb03F/2.2B/clean -> nb03F/2.2B/random,imagenetv2-matched-frequency-format-val/569/23cdf737485e3787fffb2cd9f5b0b648c4803ad4.jpeg,0.7,0.699714
+nb04/clean -> nb04/v4,imagenetv2-matched-frequency-format-val/502/7c9a1acd15edc2f90848ea4695ebbb2dc9d2a325.jpeg,0.5,0.499947
+nb04/clean -> nb04/v8,imagenetv2-matched-frequency-format-val/887/30989773eb900e0c781a1f8c72c3d1a80f857a65.jpeg,0.5,0.500583
+"nb05/blur σ1/clean, defended -> nb05/blur σ1/fixed v, defended",imagenetv2-matched-frequency-format-val/473/ad28b5d06e6f0bb4c0a3f8fd08cf618b19182af0.jpeg,0.7,0.700541
+"nb05/blur σ1/clean, defended -> nb05/blur σ1/weak adaptive v, defended",imagenetv2-matched-frequency-format-val/127/1bf0f96d7db41a40cf33cff00899037d175217a8.jpeg,0.5,0.500206
+"nb05/global tile: blanked/undefended clean -> nb05/global tile: blanked/clean, defended",imagenetv2-matched-frequency-format-val/587/61e424e3e1f1a4d86b0c1e2786d77cdd9bac4374.jpeg,0.5,0.499056
+"nb07/clean, rrp defense -> nb07/weak adaptive v, rrp defense",imagenetv2-matched-frequency-format-val/508/b13a3bdcdbee812a976743c81db8f88e32d7279b.jpeg,0.7,0.699343
+"nb06/clean, defended -> nb06/weak adaptive v, defended",imagenetv2-matched-frequency-format-val/421/984c1feca45139dc03d66f321839c2350b8fa0cd.jpeg,0.7,0.700642
+"nb06/clean, defended -> nb06/weak adaptive v, defended",imagenetv2-matched-frequency-format-val/964/99a6531dfedda4d3b3f074babe8021c483398391.jpeg,0.7,0.700224
+"nb06/clean, defended -> nb06/strong adaptive v, defended",imagenetv2-matched-frequency-format-val/160/4fc157236c5a14dbe4559085ab15c6c7d12914d2.jpeg,0.7,0.699643
+"nb06/clean -> nb06/strong adaptive v, no defense",imagenetv2-matched-frequency-format-val/445/ac710cf637e0e63f82596a457e7dfa1951085824.jpeg,0.5,0.500628
+"nb06/clean -> nb06/strong adaptive v, no defense",imagenetv2-matched-frequency-format-val/334/02ce5f354bfe012099be127e59b72f8f2c15eb1e.jpeg,0.7,0.700957
+"nb06/clean -> nb06/strong adaptive v, no defense",imagenetv2-matched-frequency-format-val/328/154e4f96ef75e6a9890c33c84a2d58cc7a8b413f.jpeg,0.5,0.499134
+"nb07/clean, rrp defense -> nb07/strong adaptive v, rrp defense",imagenetv2-matched-frequency-format-val/862/e8ea1069d22fe44b76c1c6c9fae1a32341b7d4a9.jpeg,0.7,0.700233
+"nb07/clean, rrp defense -> nb07/strong adaptive v, rrp defense",imagenetv2-matched-frequency-format-val/453/7a3df0603aa8a5299b755d7bd3bfb06664f2cfd4.jpeg,0.5,0.499973
+"nb07/clean, FT-fixed -> nb07/fixed v, FT-fixed",imagenetv2-matched-frequency-format-val/928/40af968d6738656dd87e91849eb05bff64b39db9.jpeg,0.5,0.49917
+"nb07/clean, FT-UAT -> nb07/adaptive v, FT-UAT",imagenetv2-matched-frequency-format-val/9/f14b968536582f8ef9b9959c8240e193a2da2501.jpeg,0.5,0.499499
+"nb07/clean, FT-UAT -> nb07/adaptive v, FT-UAT",imagenetv2-matched-frequency-format-val/494/1373ddabb39d3aa19243c554f9579fe4dd3e26d3.jpeg,0.5,0.50002

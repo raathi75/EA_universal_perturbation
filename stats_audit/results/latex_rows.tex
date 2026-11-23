@@ -1,0 +1,38 @@
+% Section 6: settings (dagger = saved aggregate only, interval from k = rate x n)
+After preprocessing & 200 & 1 & 91.0\% \scriptsize[86.2, 94.2] & 5.0\% \scriptsize[2.7, 9.0] \\
+Real pipeline, splitting off & 200 & 1 & 71.5\% \scriptsize[64.9, 77.3] & 3.5\% \scriptsize[1.7, 7.0] \\
+Real pipeline, splitting on & 50 & 17 & 70.0\% \scriptsize[56.2, 80.9] & 2.0\% \scriptsize[0.4, 10.5] \\
+Real pipeline, splitting on & 200 & 17 & 60.5\% \scriptsize[53.6, 67.0] & -- \\
+
+% Section 8: transfer (real pipeline, splitting off)
+256M & 200 & 71.5\% \scriptsize[64.9, 77.3] & 3.5\% \scriptsize[1.7, 7.0] \\
+500M & 200 & 31.0\% \scriptsize[25.0, 37.7] & 10.0\% \scriptsize[6.6, 14.9] \\
+2.2B & 100 & 7.0\% \scriptsize[3.4, 13.7] & 3.0\% \scriptsize[1.0, 8.5] \\
+
+% Section 9: budget sweep (200 images, real pipeline, splitting off)
+4/255 & 21.5\% \scriptsize[16.4, 27.7] & 1.0\% \scriptsize[0.3, 3.6] \\
+8/255 & 62.5\% \scriptsize[55.6, 68.9] & 3.5\% \scriptsize[1.7, 7.0] \\
+10/255 & 71.5\% \scriptsize[64.9, 77.3] & 4.0\% \scriptsize[2.0, 7.7] \\
+16/255 & 91.5\% \scriptsize[86.8, 94.6] & 4.0\% \scriptsize[2.0, 7.7] \\
+
+% Section 11.1: test-time defenses (clean cost / fixed v / weak adaptive v)
+JPEG, quality 75 & 200 & 3.0\% \scriptsize[1.4, 6.4] & 8.5\% \scriptsize[5.4, 13.2] & 23.0\% \scriptsize[17.7, 29.3] \\
+Gaussian blur, $\sigma=1$ & 200 & 6.0\% \scriptsize[3.5, 10.2] & 5.0\% \scriptsize[2.7, 9.0] & 29.5\% \scriptsize[23.6, 36.2] \\
+Random resize-and-pad & 200 & 6.0\% \scriptsize[3.5, 10.2] & 4.0\% \scriptsize[2.0, 7.7] & 21.0\% \scriptsize[15.9, 27.2] \\
+Global tile: resize-and-pad & 100 & 1.0\% \scriptsize[0.2, 5.4] & 2.0\% \scriptsize[0.6, 7.0] & 10.0\% \scriptsize[5.5, 17.4] \\
+Global tile: blanked & 100 & 23.0\% \scriptsize[15.8, 32.2] & 20.0\% \scriptsize[13.3, 28.9] & 80.0\% \scriptsize[71.1, 86.7] \\
+
+% Section 11.2: global-tile defense, splitting on, 200 images
+Clean cost of the defense & 2.5\% \scriptsize[1.1, 5.7] \\
+Fixed $v$, no defense & 60.5\% \scriptsize[53.6, 67.0] \\
+Fixed $v$, defended & 1.5\% \scriptsize[0.5, 4.3] \\
+Weak adaptive $v$, defended & 13.0\% \scriptsize[9.0, 18.4] \\
+Strong adaptive $v$, defended, 6 epochs & 30.5\% \scriptsize[24.5, 37.2]$^\dagger$ \\
+Strong adaptive $v$, defended, 12 epochs & 35.5\% \scriptsize[29.2, 42.3] \\
+Strong adaptive $v$ (12 epochs), no defense & 29.5\% \scriptsize[23.6, 36.2] \\
+
+% Section 11.4: ranking (clean cost at 0.5 / 0.7, strongest adaptive attack)
+Random resize-and-pad & splitting off & 71.5\% & 6.0\% \scriptsize[3.5, 10.2] / 25.0\% \scriptsize[19.5, 31.4] & 29.0\% \scriptsize[23.2, 35.6] \\
+Global tile: resize-and-pad & splitting on & 60.5\% & 2.5\% \scriptsize[1.1, 5.7] / 15.5\% \scriptsize[11.1, 21.2] & 35.5\% \scriptsize[29.2, 42.3] \\
+FT-UAT & splitting off & 71.5\% & 4.5\% \scriptsize[2.4, 8.3] / 13.5\% \scriptsize[9.4, 18.9] & 37.5\% \scriptsize[31.1, 44.4] \\
+FT-fixed & splitting off & 71.5\% & 3.0\% \scriptsize[1.4, 6.4] / 8.0\% \scriptsize[5.0, 12.6] & 41.0\% \scriptsize[34.4, 47.9] \\

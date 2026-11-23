@@ -1,0 +1,39 @@
+{
+ "global_tile_clean_cost_at_0.7": {
+  "value": 15.5,
+  "ci": [
+   11.1,
+   21.2
+  ],
+  "n": 200,
+  "source": "week3_strong_adaptive.json"
+ },
+ "yes_no_breakdown": "NOT TRACEABLE: nb02 saved only aggregates (80% flipped, 28% valid) and 3 example answers",
+ "attractor": {
+  "clean_person_rate_nb03_definition": 13.5,
+  "clean_person_rate_word_person_only": 11.0,
+  "perturbed_white_shirt": 27,
+  "perturbed_white_shirt_without_person": 0,
+  "perturbed_person_rate_among_images_whose_clean_caption_has_no_person": {
+   "n": 173,
+   "rate": 24.3
+  },
+  "definition_note": "nb03 counts 'person' or 'man ' or 'woman'; nb04 (§9) counts 'person' or 'white shirt'"
+ },
+ "token_cos_0.9_check": {
+  "value": 91.6,
+  "setting": "after preprocessing, splitting off, random ±ξ (CUDA draw)",
+  "n_images": 500,
+  "per_image": "not saved",
+  "recomputed_from_reeval": 91.6
+ },
+ "reeval_reproducibility": {
+  "nb02 describe, clean vs nb01 clean": "100/100 identical",
+  "nb02 describe, universal v vs nb01": "100/100 identical",
+  "nb02 describe, random (CUDA) vs nb01": "100/100 identical",
+  "nb02 B1 clean vs nb04 clean": "200/200 identical",
+  "nb02 B2 clean vs nb06 clean": "50/50 identical",
+  "nb05 JPEG undefended clean vs nb04 clean": "200/200 identical",
+  "nb05 blanked undefended clean vs nb06 clean": "100/100 identical"
+ }
+}

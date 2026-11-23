@@ -1,0 +1,1001 @@
+condition,image_id,pos,token_cos
+universal v,imagenetv2-matched-frequency-format-val/17/e98b05972194fa090bc30141d5fb46ad9acb3c85.jpeg,0,-0.14105825126171112
+universal v,imagenetv2-matched-frequency-format-val/194/e46d14702fbe0076ca28a1a9b1ce2c22805fc4b0.jpeg,1,-0.09690435975790024
+universal v,imagenetv2-matched-frequency-format-val/856/1da5864d2dfc6bdf0d47a3e8c664b8bec1adc29f.jpeg,2,-0.0177724901586771
+universal v,imagenetv2-matched-frequency-format-val/948/e86641f5775155194597e6f650f8927ac971b1db.jpeg,3,-0.1703854650259018
+universal v,imagenetv2-matched-frequency-format-val/557/fab2d8b00b58fd2f31d6ce1550e2799b3474d464.jpeg,4,-0.20713883638381958
+universal v,imagenetv2-matched-frequency-format-val/299/b1ee05b455628fc24a210bf5556e366914b0e664.jpeg,5,-0.18361502885818481
+universal v,imagenetv2-matched-frequency-format-val/14/8d77a436c91a15bc51e9346e4490d169bed70f56.jpeg,6,-0.22346988320350647
+universal v,imagenetv2-matched-frequency-format-val/62/22c52853ec0a341e4a911295a5acd0bea2ef08d8.jpeg,7,-0.2632310390472412
+universal v,imagenetv2-matched-frequency-format-val/760/f5295da009c192eeecdd55a993894efc36183e96.jpeg,8,-0.16559864580631256
+universal v,imagenetv2-matched-frequency-format-val/928/40af968d6738656dd87e91849eb05bff64b39db9.jpeg,9,-0.05736545845866203
+universal v,imagenetv2-matched-frequency-format-val/419/f0ccd4b910d6aaf498469f8464a69d5d12c791ff.jpeg,10,-0.19028227031230927
+universal v,imagenetv2-matched-frequency-format-val/506/f8419ef0418701c04770b995586d87b1c9baa3af.jpeg,11,-0.2259722650051117
+universal v,imagenetv2-matched-frequency-format-val/173/e1cd0c51337c9d5fed9ea22eef1ac846e3707459.jpeg,12,-0.1850987672805786
+universal v,imagenetv2-matched-frequency-format-val/87/4cfdeb90259a5ee318aa3e72f8eccaa344a534c9.jpeg,13,-0.227454274892807
+universal v,imagenetv2-matched-frequency-format-val/257/4990207de4b2102bfc8c8f99a0c7a0059b913f87.jpeg,14,0.10270996391773224
+universal v,imagenetv2-matched-frequency-format-val/363/f4b117b26fbb1b931eed74d7951e0c7a0070e686.jpeg,15,0.5471749901771545
+universal v,imagenetv2-matched-frequency-format-val/508/b13a3bdcdbee812a976743c81db8f88e32d7279b.jpeg,16,-0.11929354071617126
+universal v,imagenetv2-matched-frequency-format-val/670/58eaad85575229f172e2d18db03bb3db618d4750.jpeg,17,-0.17798112332820892
+universal v,imagenetv2-matched-frequency-format-val/977/0289529154323779018d397e2fd080360ea5fd99.jpeg,18,-0.17007677257061005
+universal v,imagenetv2-matched-frequency-format-val/951/6d4d48ee11d423068cad3473df961e0c7d1278fb.jpeg,19,-0.2597041726112366
+universal v,imagenetv2-matched-frequency-format-val/534/cb17773f6660b07e7b74559f1709df0b52249d81.jpeg,20,-0.1897636502981186
+universal v,imagenetv2-matched-frequency-format-val/371/13afc77f415715c52cd46ff582af28d10c329bf9.jpeg,21,0.561553955078125
+universal v,imagenetv2-matched-frequency-format-val/9/f14b968536582f8ef9b9959c8240e193a2da2501.jpeg,22,-0.20715180039405823
+universal v,imagenetv2-matched-frequency-format-val/444/23a3e53c957cac126dc896ee3b8681177b91ccb4.jpeg,23,0.45387721061706543
+universal v,imagenetv2-matched-frequency-format-val/409/5d97844c01cc2d5d53280a5857a3ea95fa2afbe5.jpeg,24,-0.1474960744380951
+universal v,imagenetv2-matched-frequency-format-val/263/b42299647e16fd406ca0e43a1901ac60d023c516.jpeg,25,-0.04383515566587448
+universal v,imagenetv2-matched-frequency-format-val/703/270d1c538a4381adcc78d44173ebd7ef09a5c4ff.jpeg,26,-0.20208421349525452
+universal v,imagenetv2-matched-frequency-format-val/887/30989773eb900e0c781a1f8c72c3d1a80f857a65.jpeg,27,-0.1809835135936737
+universal v,imagenetv2-matched-frequency-format-val/877/3bcefa91f02d7fb7b6cfb07d392a786388913e90.jpeg,28,-0.1918947696685791
+universal v,imagenetv2-matched-frequency-format-val/296/634d1d38aaba6533433c16d47a1c87e0ec8ef17c.jpeg,29,-0.2348911017179489
+universal v,imagenetv2-matched-frequency-format-val/916/5504a995d851488e35b355ac57aec207902bc634.jpeg,30,0.05765153467655182
+universal v,imagenetv2-matched-frequency-format-val/335/e01a2f1c7349c147c166112a7a7d19a3099e690b.jpeg,31,-0.22925975918769836
+universal v,imagenetv2-matched-frequency-format-val/281/387f6814c4c8c8c34c53198db3337104acea0bd3.jpeg,32,-0.20285454392433167
+universal v,imagenetv2-matched-frequency-format-val/745/c749b2c44de3fc44e10e6d9d8a3a683953f6ee47.jpeg,33,-0.0872793197631836
+universal v,imagenetv2-matched-frequency-format-val/445/ac710cf637e0e63f82596a457e7dfa1951085824.jpeg,34,-0.09494930505752563
+universal v,imagenetv2-matched-frequency-format-val/108/e9fcf1eeb405c7b7cf1c183480f51c47c11e4a09.jpeg,35,0.7278558015823364
+universal v,imagenetv2-matched-frequency-format-val/334/02ce5f354bfe012099be127e59b72f8f2c15eb1e.jpeg,36,0.6064960956573486
+universal v,imagenetv2-matched-frequency-format-val/535/55aec652cdbb6016458fa000bd80b65310c8cf91.jpeg,37,0.38498666882514954
+universal v,imagenetv2-matched-frequency-format-val/136/6661473d85337216ffa0e918e9fd171893811170.jpeg,38,-0.21974489092826843
+universal v,imagenetv2-matched-frequency-format-val/955/bf8eadf448c2bb40a36de286844ed74d645f5011.jpeg,39,0.13347592949867249
+universal v,imagenetv2-matched-frequency-format-val/463/8bcec3fff2598692f9461d20f9dd9fc6bce55b05.jpeg,40,-0.17128944396972656
+universal v,imagenetv2-matched-frequency-format-val/794/12335bbd1a4c583e0eea7842c5e37e21806cadc4.jpeg,41,-0.27453309297561646
+universal v,imagenetv2-matched-frequency-format-val/458/003cf2421c3a19401607bd90a0a71f44d0cc8a33.jpeg,42,-0.1970117688179016
+universal v,imagenetv2-matched-frequency-format-val/127/1bf0f96d7db41a40cf33cff00899037d175217a8.jpeg,43,-0.23695775866508484
+universal v,imagenetv2-matched-frequency-format-val/884/802feb304d4bd722df7ed02654d0be583a72ee52.jpeg,44,0.37260857224464417
+universal v,imagenetv2-matched-frequency-format-val/927/56c2c77b10b309f86ba90f418eb7afc3d8bddf34.jpeg,45,-0.14385679364204407
+universal v,imagenetv2-matched-frequency-format-val/517/9e888e387f6e29b52aa0be3d6465869384bbdc04.jpeg,46,-0.22008471190929413
+universal v,imagenetv2-matched-frequency-format-val/346/8fa8512896640418b24782948e1fbdbf73c23284.jpeg,47,-0.21106790006160736
+universal v,imagenetv2-matched-frequency-format-val/784/206888c7d0e41d13a459ecc228465287975ded03.jpeg,48,-0.23817145824432373
+universal v,imagenetv2-matched-frequency-format-val/706/7bb94628b8616d778b1bd3f9273767b5949acafe.jpeg,49,-0.020950812846422195
+universal v,imagenetv2-matched-frequency-format-val/366/71c87a4b1ab76b26a195ed411da6c2e2f4545c83.jpeg,50,0.5063890218734741
+universal v,imagenetv2-matched-frequency-format-val/494/1373ddabb39d3aa19243c554f9579fe4dd3e26d3.jpeg,51,0.1910809725522995
+universal v,imagenetv2-matched-frequency-format-val/829/d8642af7deb7bed2a26277138b384c07934d9003.jpeg,52,-0.12304672598838806
+universal v,imagenetv2-matched-frequency-format-val/93/02775cbdd3374d2fb8dfb0626322d2ef47302e9a.jpeg,53,-0.1733725517988205
+universal v,imagenetv2-matched-frequency-format-val/818/4d4bd0e7be635a4ef87396109c726bac0f5b733f.jpeg,54,-0.14695678651332855
+universal v,imagenetv2-matched-frequency-format-val/939/9e01163be9c314c5b9e08f4f940c5e4dc4ff4516.jpeg,55,-0.09035749733448029
+universal v,imagenetv2-matched-frequency-format-val/229/4cb9939e4f18e1429e96e2f8edc2e09aeaa72294.jpeg,56,-0.15265581011772156
+universal v,imagenetv2-matched-frequency-format-val/202/cd75c4dc5c21e4394ee89a7929def193e5dbe680.jpeg,57,-0.1934783160686493
+universal v,imagenetv2-matched-frequency-format-val/6/190eefdc99b7f6e7b4dbdd2f0cd4a606698efed9.jpeg,58,-0.20985257625579834
+universal v,imagenetv2-matched-frequency-format-val/370/4807c145924e97cc30219b3dae087564c7d5b008.jpeg,59,-0.20667117834091187
+universal v,imagenetv2-matched-frequency-format-val/55/008786499c1726d2614f9e3aee20478c5ef48ae2.jpeg,60,-0.24936728179454803
+universal v,imagenetv2-matched-frequency-format-val/421/984c1feca45139dc03d66f321839c2350b8fa0cd.jpeg,61,-0.18381980061531067
+universal v,imagenetv2-matched-frequency-format-val/72/582ac474e689252acde9530890857337b1fb0b74.jpeg,62,0.012783701531589031
+universal v,imagenetv2-matched-frequency-format-val/827/b14678be5fa2db8ab8ec4dc026d94826812fbd3c.jpeg,63,-0.16702696681022644
+universal v,imagenetv2-matched-frequency-format-val/718/712bb329f7af9887d531103afd3286a0a0b96aef.jpeg,64,-0.21467256546020508
+universal v,imagenetv2-matched-frequency-format-val/515/f056fa81b8262906b3fbeb34fce5bd762bb5db6f.jpeg,65,0.18379533290863037
+universal v,imagenetv2-matched-frequency-format-val/100/77e539787d290a038b49d3340a3285dac134b296.jpeg,66,0.5257359743118286
+universal v,imagenetv2-matched-frequency-format-val/971/24cfba11ce88b18795c2ec30c71e40ecbb65a5d9.jpeg,67,-0.14356687664985657
+universal v,imagenetv2-matched-frequency-format-val/998/196b2426253906482260110a4180438726265cdb.jpeg,68,-0.07946613430976868
+universal v,imagenetv2-matched-frequency-format-val/964/99a6531dfedda4d3b3f074babe8021c483398391.jpeg,69,-0.1885966658592224
+universal v,imagenetv2-matched-frequency-format-val/887/038c3c3f1626f28a0aedd58a79417a23a6a6bd10.jpeg,70,-0.08731623739004135
+universal v,imagenetv2-matched-frequency-format-val/181/1ab6ad98173c5f30cb169bb752a861da42ae5224.jpeg,71,0.36815959215164185
+universal v,imagenetv2-matched-frequency-format-val/994/9560e0e5b1093bd34906d0276cf83300a9a7582a.jpeg,72,0.6047815084457397
+universal v,imagenetv2-matched-frequency-format-val/473/ad28b5d06e6f0bb4c0a3f8fd08cf618b19182af0.jpeg,73,-0.11836126446723938
+universal v,imagenetv2-matched-frequency-format-val/109/19c6e5051c2228087fd94ce86c9a491054517812.jpeg,74,-0.20842355489730835
+universal v,imagenetv2-matched-frequency-format-val/976/48f9dd34d96b567a9aad6d8dbaa322d8e80234e9.jpeg,75,-0.2732798755168915
+universal v,imagenetv2-matched-frequency-format-val/862/e8ea1069d22fe44b76c1c6c9fae1a32341b7d4a9.jpeg,76,-0.0673207938671112
+universal v,imagenetv2-matched-frequency-format-val/587/61e424e3e1f1a4d86b0c1e2786d77cdd9bac4374.jpeg,77,-0.1567694991827011
+universal v,imagenetv2-matched-frequency-format-val/589/e322e06357f557b3322a3393fb1fe016b8296aeb.jpeg,78,-0.14584216475486755
+universal v,imagenetv2-matched-frequency-format-val/29/25b60a0644274522f06161e6e09a79c870ca9a6e.jpeg,79,-0.2272949516773224
+universal v,imagenetv2-matched-frequency-format-val/22/4232fbbf951f5d5b7e09b52d5e475fe4b9527a9a.jpeg,80,0.5625802278518677
+universal v,imagenetv2-matched-frequency-format-val/89/03f7afe834d9d24f38bd800c68e33bf3540830fd.jpeg,81,-0.20069189369678497
+universal v,imagenetv2-matched-frequency-format-val/407/234a8fa819e23019af9f5993fc750916bc144a0e.jpeg,82,-0.030711637809872627
+universal v,imagenetv2-matched-frequency-format-val/741/f7dd021ac3422a21eba0dd5ab7271908b6d1be81.jpeg,83,0.0041981106624007225
+universal v,imagenetv2-matched-frequency-format-val/160/4fc157236c5a14dbe4559085ab15c6c7d12914d2.jpeg,84,-0.14686952531337738
+universal v,imagenetv2-matched-frequency-format-val/281/458f2b063c4c3aabec266bb68d4a1ed709e5822f.jpeg,85,-0.10541099309921265
+universal v,imagenetv2-matched-frequency-format-val/317/2418f5a2dccb48d5cf13e286f96a27ece34c1cd2.jpeg,86,-0.2549307942390442
+universal v,imagenetv2-matched-frequency-format-val/214/e2925f469aa6b5b27b08c1b5220daaf4f9f0661d.jpeg,87,0.31112152338027954
+universal v,imagenetv2-matched-frequency-format-val/701/d579509280faf6d808092b557883f2395e3c6796.jpeg,88,-0.268416166305542
+universal v,imagenetv2-matched-frequency-format-val/980/5cd0c236f94df67aeb616ff1f47d5f8f03b3eea5.jpeg,89,-0.16442446410655975
+universal v,imagenetv2-matched-frequency-format-val/329/fdfb9936bc0792bfd95cf23d07b4cf05e10c1481.jpeg,90,-0.16872410476207733
+universal v,imagenetv2-matched-frequency-format-val/326/01de462824e1dad8780d9f38a6caa19414f69d74.jpeg,91,-0.2477397471666336
+universal v,imagenetv2-matched-frequency-format-val/835/deb1d4a09238f61dc45d5b6d3a6ac7d14a0d01e0.jpeg,92,0.03190747648477554
+universal v,imagenetv2-matched-frequency-format-val/247/5b6b568ede850ec70c46b85ef1bfd52d4660a452.jpeg,93,-0.16547740995883942
+universal v,imagenetv2-matched-frequency-format-val/96/fa6d7fa0e8c08fdcc87bdf9b31b8125b42282cd1.jpeg,94,0.07002770900726318
+universal v,imagenetv2-matched-frequency-format-val/502/7c9a1acd15edc2f90848ea4695ebbb2dc9d2a325.jpeg,95,-0.1632823348045349
+universal v,imagenetv2-matched-frequency-format-val/425/7ac702b1bc32385dfb0f26a45b136b87dca6dc19.jpeg,96,0.4457182288169861
+universal v,imagenetv2-matched-frequency-format-val/569/23cdf737485e3787fffb2cd9f5b0b648c4803ad4.jpeg,97,-0.18548278510570526
+universal v,imagenetv2-matched-frequency-format-val/736/0fde1ea322866d916c85dc2155bbb62a55a7998a.jpeg,98,0.5854480266571045
+universal v,imagenetv2-matched-frequency-format-val/234/953e6f628d5691a5cd4619e86874024b5d54d4d4.jpeg,99,0.09684187173843384
+universal v,imagenetv2-matched-frequency-format-val/111/10b3106552ea0f3716c5a4312952e8681f9a2000.jpeg,100,-0.27791252732276917
+universal v,imagenetv2-matched-frequency-format-val/348/999de075741781735f9836f2c7a47d11036d571a.jpeg,101,-0.15527242422103882
+universal v,imagenetv2-matched-frequency-format-val/464/ae1216deb7e1d1d7363aa59f368ca3fc770d05d3.jpeg,102,-0.2024046778678894
+universal v,imagenetv2-matched-frequency-format-val/56/75079b7026b3343085e103c5823619968241c8a3.jpeg,103,-0.16086149215698242
+universal v,imagenetv2-matched-frequency-format-val/817/2cba8bac325c98d1c1a16fc58744638927704f5a.jpeg,104,-0.12420666217803955
+universal v,imagenetv2-matched-frequency-format-val/920/22b52a34b6294a640dd83baa523392ddf5daefcc.jpeg,105,-0.18557018041610718
+universal v,imagenetv2-matched-frequency-format-val/663/6be5bd5f36a89fe9212ae6c3e4df5ca4e837dd7b.jpeg,106,0.19240988790988922
+universal v,imagenetv2-matched-frequency-format-val/178/df1425c33491da509fa7e3179d1e1faae2c66375.jpeg,107,-0.20822764933109283
+universal v,imagenetv2-matched-frequency-format-val/711/231c2345698eb40a40b153600c40eb1f0b549b30.jpeg,108,-0.16306188702583313
+universal v,imagenetv2-matched-frequency-format-val/779/ab86c88baa2233a7cc48b06059fa8f4f9b725ec4.jpeg,109,0.2235845923423767
+universal v,imagenetv2-matched-frequency-format-val/487/19c63cf0d08936ab01350726fefb7d496ca8e81d.jpeg,110,-0.19756248593330383
+universal v,imagenetv2-matched-frequency-format-val/35/d2d6e664b2d19d81efb08461af4b7869e58d0b6f.jpeg,111,-0.201613187789917
+universal v,imagenetv2-matched-frequency-format-val/957/f10d7fdd5bfe0cdc13f41e668370777242aca402.jpeg,112,0.6914907097816467
+universal v,imagenetv2-matched-frequency-format-val/790/c24e72540f6972ef63012393d808b995b15cb053.jpeg,113,-0.056911516934633255
+universal v,imagenetv2-matched-frequency-format-val/357/42f167e3de734a144d4bb8a721f4c7d55bf0eb0f.jpeg,114,-0.22055375576019287
+universal v,imagenetv2-matched-frequency-format-val/515/4a3d5a99b28c26d4255902a229b9b859163c9c83.jpeg,115,0.1586526334285736
+universal v,imagenetv2-matched-frequency-format-val/560/6d3302fcc1caa96931f7290d33e89ba79dfc454e.jpeg,116,-0.17501987516880035
+universal v,imagenetv2-matched-frequency-format-val/328/154e4f96ef75e6a9890c33c84a2d58cc7a8b413f.jpeg,117,0.05351059138774872
+universal v,imagenetv2-matched-frequency-format-val/544/eaab239fe2a61500cd3af268582258b82248274a.jpeg,118,0.2975975275039673
+universal v,imagenetv2-matched-frequency-format-val/856/3aebb43b6af3b8eae401a02048db6e85331bb08c.jpeg,119,-0.08768881112337112
+universal v,imagenetv2-matched-frequency-format-val/617/8b0185a877ba46540ffe1c4b7d10caaf4c2138e4.jpeg,120,-0.1679890900850296
+universal v,imagenetv2-matched-frequency-format-val/257/a0c44412caf06ee816d1807a063cb466aa00e6cd.jpeg,121,-0.22562114894390106
+universal v,imagenetv2-matched-frequency-format-val/755/c58a3e5802a51b02250e651deddce9bca56594e0.jpeg,122,-0.24717110395431519
+universal v,imagenetv2-matched-frequency-format-val/768/6e347d012a56b2d185ee342886bf992d00020b06.jpeg,123,-0.12454213201999664
+universal v,imagenetv2-matched-frequency-format-val/545/762ca2b89e0aa12f9bf703c253f839f8e052510f.jpeg,124,-0.17971888184547424
+universal v,imagenetv2-matched-frequency-format-val/959/b301ae0eadb095044693a7d3a49b7cf78fe0d3dd.jpeg,125,-0.1638568937778473
+universal v,imagenetv2-matched-frequency-format-val/698/63870e4883ff2a40876c11fa5829881f6ad16f38.jpeg,126,-0.12304508686065674
+universal v,imagenetv2-matched-frequency-format-val/101/aa2d6f636aaaa31aa8fe8e8b1bed43db42eae9ea.jpeg,127,-0.24255140125751495
+universal v,imagenetv2-matched-frequency-format-val/453/7a3df0603aa8a5299b755d7bd3bfb06664f2cfd4.jpeg,128,0.06572899967432022
+universal v,imagenetv2-matched-frequency-format-val/114/7a969e41e30e444b70b49f88004be94a9409bdd4.jpeg,129,-0.2862151265144348
+universal v,imagenetv2-matched-frequency-format-val/633/0c4c1a30571c68cd496bb27f1b0dcc455307f134.jpeg,130,-0.09259921312332153
+universal v,imagenetv2-matched-frequency-format-val/773/fef8b7e9776b9f9302707da6dba8e5b9e0a6c062.jpeg,131,-0.1403144896030426
+universal v,imagenetv2-matched-frequency-format-val/805/a324121cdb81851bcd96e82c1b9a8fbeddb69248.jpeg,132,-0.1563243418931961
+universal v,imagenetv2-matched-frequency-format-val/703/ac8a8ca776f47ef2881a3eb650cf25f2943a4a60.jpeg,133,0.5088067650794983
+universal v,imagenetv2-matched-frequency-format-val/734/5f00a9dc7a01ca6fdf200be73ca6ee44d5160606.jpeg,134,0.44984424114227295
+universal v,imagenetv2-matched-frequency-format-val/373/390fe6b14d491bc70d3bcfb818f253c928f00a58.jpeg,135,-0.26220783591270447
+universal v,imagenetv2-matched-frequency-format-val/485/6f61f87d37228c8617fe2045de90cf3761e736e5.jpeg,136,-0.14370062947273254
+universal v,imagenetv2-matched-frequency-format-val/686/0f310d78f923dc7cf566efc5464c8a8d1eec0c06.jpeg,137,-0.2649441957473755
+universal v,imagenetv2-matched-frequency-format-val/732/32e6767280bb9d3030234c73eddda2fd6f791b4b.jpeg,138,-0.24627064168453217
+universal v,imagenetv2-matched-frequency-format-val/221/1b861d1f1baff93b2de744300a3fb0e41e62eaf4.jpeg,139,0.5089498162269592
+universal v,imagenetv2-matched-frequency-format-val/863/e76fc760dbbf3b4ec1838891a5c6d77503ec9f64.jpeg,140,-0.06876517832279205
+universal v,imagenetv2-matched-frequency-format-val/838/57da9ac07e41412ba8bd4e17c947a82d3a9afb99.jpeg,141,-0.1205722913146019
+universal v,imagenetv2-matched-frequency-format-val/925/cff2a8e8bae06bf601b4a124150fbceb48fbb327.jpeg,142,-0.26569753885269165
+universal v,imagenetv2-matched-frequency-format-val/993/ab08840206ccf6d01506cc847862ad25984a0806.jpeg,143,0.28361260890960693
+universal v,imagenetv2-matched-frequency-format-val/138/b21729866343e1cd3a71b96b8d6ff5e8ff5e897f.jpeg,144,-0.2409539669752121
+universal v,imagenetv2-matched-frequency-format-val/201/8215388b5ea603e499e613df3031c991be8d1d7c.jpeg,145,-0.2610001564025879
+universal v,imagenetv2-matched-frequency-format-val/290/f0c9b66647a043c626a325be4f5c8f301b0e854d.jpeg,146,-0.08996038138866425
+universal v,imagenetv2-matched-frequency-format-val/699/a5f07434319bf94739747e7cfd9464ad2b605c27.jpeg,147,0.2036406397819519
+universal v,imagenetv2-matched-frequency-format-val/8/318b12f6012a01974a4d0b951254411ad02a3536.jpeg,148,0.7418765425682068
+universal v,imagenetv2-matched-frequency-format-val/734/33d2d50510aaae27b320ea30447eb462d11546fa.jpeg,149,0.07445260882377625
+universal v,imagenetv2-matched-frequency-format-val/110/3c7687ae17faa2d4ffca9ae17876e4750e719d81.jpeg,150,-0.18446718156337738
+universal v,imagenetv2-matched-frequency-format-val/318/dbc8ef39350f698bb3ecfaa7e31ca45596afcfbe.jpeg,151,-0.26577189564704895
+universal v,imagenetv2-matched-frequency-format-val/841/052e94f7373454a567f00b349fecdd14b40ee034.jpeg,152,0.3325881361961365
+universal v,imagenetv2-matched-frequency-format-val/545/22f2dff631e24dbe3717e8b6ad5211dff235b860.jpeg,153,-0.1332993507385254
+universal v,imagenetv2-matched-frequency-format-val/95/ff223e6a72a1763e02bdf50bf4402e5edc46c11a.jpeg,154,-0.23264175653457642
+universal v,imagenetv2-matched-frequency-format-val/846/354f17700e75d46e56a4f1250ee4771bd618fdf9.jpeg,155,-0.19834771752357483
+universal v,imagenetv2-matched-frequency-format-val/640/0fc4dc9344c30490ecf01c73a5b0b46f2bfc4994.jpeg,156,0.6597679257392883
+universal v,imagenetv2-matched-frequency-format-val/61/027095f2411ffe4e2d56abf2e3198f3e7efdd4b9.jpeg,157,0.29641467332839966
+universal v,imagenetv2-matched-frequency-format-val/714/c0a8db8d15a655ed5a945c9a75debc16048b29f5.jpeg,158,0.37929779291152954
+universal v,imagenetv2-matched-frequency-format-val/208/07e3d6ea0c896344eafe3551946a66be4c199cdb.jpeg,159,-0.18237483501434326
+universal v,imagenetv2-matched-frequency-format-val/158/78803b5af12b7105515caebab8fb6be5d9107f1b.jpeg,160,-0.14372709393501282
+universal v,imagenetv2-matched-frequency-format-val/391/5cf4434076d638d75eb6d09314d5e83e037253e1.jpeg,161,0.021108457818627357
+universal v,imagenetv2-matched-frequency-format-val/604/579ecfaee42ccc800ae35a542a7fee9eb1853d1f.jpeg,162,-0.08427374064922333
+universal v,imagenetv2-matched-frequency-format-val/600/bf2a7caad98e1ce74f5f6593dd5cd197ba1386dc.jpeg,163,-0.1884716898202896
+universal v,imagenetv2-matched-frequency-format-val/663/215b83c8a8b35981e8f4ba0ace3980b3deeb84ea.jpeg,164,-0.017610540613532066
+universal v,imagenetv2-matched-frequency-format-val/804/14829da22f5b225cbf510b11114fe70423636429.jpeg,165,-0.23690587282180786
+universal v,imagenetv2-matched-frequency-format-val/7/4932deb3131bfe50c97452a11b7f7254d67df5f4.jpeg,166,-0.20695140957832336
+universal v,imagenetv2-matched-frequency-format-val/65/aec66cc934c5489101aebf2a13dea7c2d4a2ee37.jpeg,167,-0.01952948421239853
+universal v,imagenetv2-matched-frequency-format-val/43/fc707aebef3ee7675c3003444fa54e42f55d7cbc.jpeg,168,0.44628283381462097
+universal v,imagenetv2-matched-frequency-format-val/924/6092db7acbf5e8c080c6fdff433ac9ab7e840f43.jpeg,169,-0.14286863803863525
+universal v,imagenetv2-matched-frequency-format-val/510/1c567144305de1501a71198c7946e10297ef38d3.jpeg,170,-0.2577362358570099
+universal v,imagenetv2-matched-frequency-format-val/83/5ac8e9dbf43744dd0c81fbd6bda5e80486af96e5.jpeg,171,-0.22158002853393555
+universal v,imagenetv2-matched-frequency-format-val/180/24c9c7d0428a79b4cabf4a9dc810bc91358c06e4.jpeg,172,0.4086529016494751
+universal v,imagenetv2-matched-frequency-format-val/771/ef56f55748aec9a39b3c171cb2679d9c65ebaf5b.jpeg,173,-0.10073903203010559
+universal v,imagenetv2-matched-frequency-format-val/677/8da869bb4d31dd36637cabe691346d9914af9b7b.jpeg,174,-0.18759293854236603
+universal v,imagenetv2-matched-frequency-format-val/264/57d9e3cf40112ece0979b3fa9647fa2a9c313e04.jpeg,175,-0.2163299024105072
+universal v,imagenetv2-matched-frequency-format-val/37/ef47db68c039dc862e5ef7c28e65d2c39169bcdb.jpeg,176,-0.10686460882425308
+universal v,imagenetv2-matched-frequency-format-val/873/b3e89729fb4bde110c9ca32acb1501f16efa96fa.jpeg,177,-0.18342576920986176
+universal v,imagenetv2-matched-frequency-format-val/495/b58bd68c3f812b8029c0628ff8e21d754b92bb16.jpeg,178,-0.1387241929769516
+universal v,imagenetv2-matched-frequency-format-val/71/7e30cc0c72ede4bc8c9d8d9ca4de643eadd68c48.jpeg,179,-0.287148118019104
+universal v,imagenetv2-matched-frequency-format-val/909/81fd0ad39fe5678bb74cc0f8d6ac3d9f4afb0cd2.jpeg,180,0.10610145330429077
+universal v,imagenetv2-matched-frequency-format-val/217/c494c557cf84561f7d9f376ee1238d4e6c0cf508.jpeg,181,-0.22804756462574005
+universal v,imagenetv2-matched-frequency-format-val/484/561167ef97f8fd3102ab7e3e641322dfc4141d98.jpeg,182,-0.22756192088127136
+universal v,imagenetv2-matched-frequency-format-val/148/314f84580739b9c5fcdb25196e4c33a99df077e2.jpeg,183,-0.20351432263851166
+universal v,imagenetv2-matched-frequency-format-val/840/b051870f4d8520704286a50da63ef6fa9d4cecba.jpeg,184,-0.09600993990898132
+universal v,imagenetv2-matched-frequency-format-val/771/1caa3f6e147216addf1238261fc11b5f19b78e45.jpeg,185,0.34176692366600037
+universal v,imagenetv2-matched-frequency-format-val/777/077b4f3e52fbfd4da939ca95e07ace094e0d178a.jpeg,186,0.7153614163398743
+universal v,imagenetv2-matched-frequency-format-val/31/ff4faea4d650d435959c502d9df92e3785cb42a7.jpeg,187,0.32570773363113403
+universal v,imagenetv2-matched-frequency-format-val/729/15c3f4f70b1c79cc5d56c5c89d58d3605195bcae.jpeg,188,0.40799129009246826
+universal v,imagenetv2-matched-frequency-format-val/804/cfbab41f53b5c613e07382d107cee5a8231ef834.jpeg,189,-0.24462497234344482
+universal v,imagenetv2-matched-frequency-format-val/282/f368614af9ea8e47e0cf0e7a40ef2d4ddfac58c5.jpeg,190,-0.2004406452178955
+universal v,imagenetv2-matched-frequency-format-val/23/b5fecb0fc3e45f4ebaeb3a3c6d0569eeb0935248.jpeg,191,0.1151844710111618
+universal v,imagenetv2-matched-frequency-format-val/892/aaf9285234c55edf67ab6ee6cd20d63806ef47ad.jpeg,192,-0.09507371485233307
+universal v,imagenetv2-matched-frequency-format-val/678/3347eff05e13dc818281dab36df94b7476d1880c.jpeg,193,-0.18379291892051697
+universal v,imagenetv2-matched-frequency-format-val/574/ba7ea4191837366f4fb5a1a1ba60ec3341e67871.jpeg,194,-0.21306337416172028
+universal v,imagenetv2-matched-frequency-format-val/362/522bc7236542ae329f4df5fdc114593eb20e40ea.jpeg,195,-0.13689634203910828
+universal v,imagenetv2-matched-frequency-format-val/78/554e61d6050bc10048116534bbe73017e88b3b6f.jpeg,196,-0.26501893997192383
+universal v,imagenetv2-matched-frequency-format-val/630/a08c24be86ea70235eabc6552b8cd6d4bbfd999e.jpeg,197,-0.21705102920532227
+universal v,imagenetv2-matched-frequency-format-val/255/981cd6d0d3d28289788821f4b57982b2ff446ca7.jpeg,198,-0.15473173558712006
+universal v,imagenetv2-matched-frequency-format-val/448/7e4175d621c2cfb96c88b106def452b1054f5946.jpeg,199,0.5410628914833069
+universal v,imagenetv2-matched-frequency-format-val/234/ff93bbcc3ae2e9acb24e212c779768c3ea7853cd.jpeg,200,-0.1849263310432434
+universal v,imagenetv2-matched-frequency-format-val/632/e86592501c25dd05b20103c1491561ffd71c9a47.jpeg,201,-0.2548557221889496
+universal v,imagenetv2-matched-frequency-format-val/494/b588024ed4bb8b4d995db031e8f91086cff5f4c1.jpeg,202,-0.03429751098155975
+universal v,imagenetv2-matched-frequency-format-val/591/588977b7a0776942f5b6738ab99577edcf0f7690.jpeg,203,0.13981296122074127
+universal v,imagenetv2-matched-frequency-format-val/323/511d361cf2219a6a9a79c39128f475a3f0342496.jpeg,204,-0.15933293104171753
+universal v,imagenetv2-matched-frequency-format-val/628/d1e55549c03b6fee3fa34fffa57527e543328756.jpeg,205,-0.22808630764484406
+universal v,imagenetv2-matched-frequency-format-val/608/76b72d8bc48808a97c11dff8f79054406411b6b1.jpeg,206,-0.20497830212116241
+universal v,imagenetv2-matched-frequency-format-val/454/6441754285d9e615e150a0fe8acea410551f0182.jpeg,207,0.05088818818330765
+universal v,imagenetv2-matched-frequency-format-val/563/d3324576c262f17adfb9f1291ea5efbf9de7e48d.jpeg,208,-0.2095198929309845
+universal v,imagenetv2-matched-frequency-format-val/795/883cf6a8445f4baa1a4b89a32eedaeba60f91edd.jpeg,209,-0.17552316188812256
+universal v,imagenetv2-matched-frequency-format-val/147/19c6b51e0571cb9ffcfcdb4f5804dd5d4da4ae1f.jpeg,210,-0.22957341372966766
+universal v,imagenetv2-matched-frequency-format-val/22/eaf469cffd4376ea15c9e7f1b7ea4d7935aaacbf.jpeg,211,-0.23366397619247437
+universal v,imagenetv2-matched-frequency-format-val/277/40575a3dc629f8ea2b244025dbaf9379a27d5859.jpeg,212,0.6614459753036499
+universal v,imagenetv2-matched-frequency-format-val/838/43c170828bb16394a90362e8bb6947bd9d2c3a28.jpeg,213,0.6040719747543335
+universal v,imagenetv2-matched-frequency-format-val/953/4812253f84d7cc6f2a51fdd5ac323578c1585e0d.jpeg,214,0.010678645223379135
+universal v,imagenetv2-matched-frequency-format-val/911/7ab7f7c0327c38b07780b005c5946a149a62d007.jpeg,215,-0.20194612443447113
+universal v,imagenetv2-matched-frequency-format-val/718/2af46f35fda7823a49b0f0330e07a71e99efc877.jpeg,216,-0.24115248024463654
+universal v,imagenetv2-matched-frequency-format-val/967/1046fdff99b3ec8137a17eff62dc2faea6ce74f6.jpeg,217,-0.17064693570137024
+universal v,imagenetv2-matched-frequency-format-val/615/c42552b545cff6f04f18290150db4ceafdef8041.jpeg,218,-0.16817936301231384
+universal v,imagenetv2-matched-frequency-format-val/120/5bfcf5a23172de7bde957c0b5eef65069b8092db.jpeg,219,-0.220637708902359
+universal v,imagenetv2-matched-frequency-format-val/158/0d91ee11f7e2240ee6094aa302f79b63a9c67b03.jpeg,220,-0.10944528877735138
+universal v,imagenetv2-matched-frequency-format-val/712/8d141e1ae435dac8d241279218852c77d6ad8830.jpeg,221,-0.2010016292333603
+universal v,imagenetv2-matched-frequency-format-val/30/16e52b85d47f64fdc65aa0a44ca5f9ae814bab8c.jpeg,222,-0.1863785684108734
+universal v,imagenetv2-matched-frequency-format-val/881/05672ec220b5c95d4a14b9730fe05e22a36ff5d1.jpeg,223,-0.15060390532016754
+universal v,imagenetv2-matched-frequency-format-val/747/415b569f24f6049a8d74a27f46e77af8faaa8e1f.jpeg,224,0.6333277821540833
+universal v,imagenetv2-matched-frequency-format-val/816/875cc301d70b23e48fe8b51e5b151b2d2325df81.jpeg,225,-0.21775221824645996
+universal v,imagenetv2-matched-frequency-format-val/872/56c527d7829d10d81c5a95ea8f2065b63130c2eb.jpeg,226,-0.17922596633434296
+universal v,imagenetv2-matched-frequency-format-val/186/a7fc333c8757a61d5b9d6200d0ca5420489b41ac.jpeg,227,0.00148748978972435
+universal v,imagenetv2-matched-frequency-format-val/903/4716c222910aac432f55014ffcd83a60bb4ee91b.jpeg,228,-0.21163800358772278
+universal v,imagenetv2-matched-frequency-format-val/725/4fb1d5b96167eb761b1ff4f0d7ec37c4d541f15b.jpeg,229,-0.18280495703220367
+universal v,imagenetv2-matched-frequency-format-val/486/bcaf19cb3876c2b4b2680c437c17a636f1de81fd.jpeg,230,-0.2365141212940216
+universal v,imagenetv2-matched-frequency-format-val/837/847cd9047224db906bd13d55e7b606e8a03f5c40.jpeg,231,-0.12904506921768188
+universal v,imagenetv2-matched-frequency-format-val/915/330f5542266799bba04250cebbb0003d53495db2.jpeg,232,-0.17860016226768494
+universal v,imagenetv2-matched-frequency-format-val/631/0e7469d502084629eae23207b552672f4a03244a.jpeg,233,-0.1188586875796318
+universal v,imagenetv2-matched-frequency-format-val/766/0e0c60313d0a4b1734721b2c288a1d5366878f7b.jpeg,234,-0.11079451441764832
+universal v,imagenetv2-matched-frequency-format-val/932/dcb872827647a504d6c2282961aa0677b6cfa7ae.jpeg,235,0.07683610916137695
+universal v,imagenetv2-matched-frequency-format-val/55/c9ff6ad71456f2b97ebea9cc4ca85cb72f47c6b8.jpeg,236,-0.062099870294332504
+universal v,imagenetv2-matched-frequency-format-val/618/3b31a5319a9c4e4e664d2db7b43c4c068bc79c82.jpeg,237,-0.1713259518146515
+universal v,imagenetv2-matched-frequency-format-val/902/d051b49c3107353d385a825856e04b4bfc07a7ec.jpeg,238,-0.21580569446086884
+universal v,imagenetv2-matched-frequency-format-val/721/703ecb2153e19fe2b52e055378aa645d3b3f8969.jpeg,239,-0.14650751650333405
+universal v,imagenetv2-matched-frequency-format-val/584/d31b9fd95b73f976955cf72953f71319e62e0632.jpeg,240,0.7318836450576782
+universal v,imagenetv2-matched-frequency-format-val/47/7ccdbe4bd2f3ecc04d099be0c9a9b63e1e0ff798.jpeg,241,-0.13322047889232635
+universal v,imagenetv2-matched-frequency-format-val/395/cbf2f3989706bebfb043a7c904ef71beea906926.jpeg,242,-0.14949378371238708
+universal v,imagenetv2-matched-frequency-format-val/234/c9de837694fcb5cbf9dc30be9033a05c139e0358.jpeg,243,-0.14455878734588623
+universal v,imagenetv2-matched-frequency-format-val/648/406a029827c18079e24a3e3063d667150e6adfcd.jpeg,244,-0.14049634337425232
+universal v,imagenetv2-matched-frequency-format-val/191/94001f0ea0e83aabc665506a7252655804f6df16.jpeg,245,-0.09088145941495895
+universal v,imagenetv2-matched-frequency-format-val/97/d71729f6711ee7025013ef7ec391ec48c6d2501b.jpeg,246,-0.20270663499832153
+universal v,imagenetv2-matched-frequency-format-val/100/6012078dc1f6302fbc92c63627f81bc2dc636453.jpeg,247,-0.18457594513893127
+universal v,imagenetv2-matched-frequency-format-val/662/d3fdb883b8a6982feec8c8d1c19d6d20695e7873.jpeg,248,-0.16926118731498718
+universal v,imagenetv2-matched-frequency-format-val/362/43bfee97d98868fd02a5de684bb4194a07b0a6ed.jpeg,249,-0.229539155960083
+universal v,imagenetv2-matched-frequency-format-val/870/2480e8593fb82a09947e00beaa1f740143e871a7.jpeg,250,0.014317253604531288
+universal v,imagenetv2-matched-frequency-format-val/16/af18094f61fb38008c0e923309fec53eb365668d.jpeg,251,-0.23876675963401794
+universal v,imagenetv2-matched-frequency-format-val/748/4bc9c758b5c910d98131cc70893593b55e0fe826.jpeg,252,-0.1580861657857895
+universal v,imagenetv2-matched-frequency-format-val/431/61e43653abcac933706f284976d14177b98a284f.jpeg,253,-0.19568142294883728
+universal v,imagenetv2-matched-frequency-format-val/12/49056be9a12806595c1b8c6a0d6a0589653ff937.jpeg,254,-0.25877174735069275
+universal v,imagenetv2-matched-frequency-format-val/944/362a80eba98697102e666bc9b6635dc5c78c1e6b.jpeg,255,-0.08301058411598206
+universal v,imagenetv2-matched-frequency-format-val/733/7c375ec4271d68004a142cb63f56d15bf666c71a.jpeg,256,0.03950752690434456
+universal v,imagenetv2-matched-frequency-format-val/506/368819408736f09849a925b877e72ec94f71a18f.jpeg,257,-0.24218717217445374
+universal v,imagenetv2-matched-frequency-format-val/51/bef81b60e9ded41878616bfe5c4b2a4c1dcadc20.jpeg,258,-0.20121577382087708
+universal v,imagenetv2-matched-frequency-format-val/209/89629551d2cf87cda3675864095e5e539373b8fa.jpeg,259,-0.24331696331501007
+universal v,imagenetv2-matched-frequency-format-val/445/d7000f4a6f77a7ab8bf7d00f2356e99ea7819688.jpeg,260,-0.08467092365026474
+universal v,imagenetv2-matched-frequency-format-val/209/f04f225e907310cd8d99a1bc00577484f14415a9.jpeg,261,-0.22721697390079498
+universal v,imagenetv2-matched-frequency-format-val/650/de1007823daad4f73ea0d48847ae35588eb53966.jpeg,262,-0.16790957748889923
+universal v,imagenetv2-matched-frequency-format-val/858/8677176901e8486ea5af96edd85b7e72c5896598.jpeg,263,-0.12882456183433533
+universal v,imagenetv2-matched-frequency-format-val/225/ae903749315ee91482c0111db9508fd6c746e748.jpeg,264,0.5274164080619812
+universal v,imagenetv2-matched-frequency-format-val/726/0c5195dab4841e8b7df8839c8ed0d3c03ec85af7.jpeg,265,-0.10988077521324158
+universal v,imagenetv2-matched-frequency-format-val/161/74fd71d9ba0f798634477fc88b5d0ccf8e326fbf.jpeg,266,-0.18796144425868988
+universal v,imagenetv2-matched-frequency-format-val/408/81ad38b7c77dcc52e75b284f8849aedeaab5fe8a.jpeg,267,-0.2258089780807495
+universal v,imagenetv2-matched-frequency-format-val/470/ee2d84525a33306afce8a1a393bd1b03bedbae9b.jpeg,268,-0.2377004623413086
+universal v,imagenetv2-matched-frequency-format-val/65/df6875e0a6464e810b7a5a10b764f29ef71aa1d2.jpeg,269,-0.05032734200358391
+universal v,imagenetv2-matched-frequency-format-val/15/50c9fbd306bf245e0525bb4b630ad41b1d367bdd.jpeg,270,0.40793275833129883
+universal v,imagenetv2-matched-frequency-format-val/830/147e40da69d1e8238f8f27004e7e7abd41c66577.jpeg,271,0.4437122941017151
+universal v,imagenetv2-matched-frequency-format-val/927/551804450f7c550cb0774071034744edc1101b5d.jpeg,272,-0.16261231899261475
+universal v,imagenetv2-matched-frequency-format-val/517/f92cedd767df84f3807499cf7c728e06b1f022f9.jpeg,273,-0.04348263517022133
+universal v,imagenetv2-matched-frequency-format-val/718/ea53ca6622b9bba1369b837a91756df654185ab9.jpeg,274,-0.2284185141324997
+universal v,imagenetv2-matched-frequency-format-val/464/8e3f7b6a28b9c74c86c8040b75587dad059607e9.jpeg,275,-0.242230623960495
+universal v,imagenetv2-matched-frequency-format-val/961/8f44ca27274ceab7df7ab24959f6672f9b17b7c8.jpeg,276,-0.16002094745635986
+universal v,imagenetv2-matched-frequency-format-val/954/c56152b8baca2b9c10dfedf808288a1541b1c72c.jpeg,277,-0.1322605013847351
+universal v,imagenetv2-matched-frequency-format-val/119/9feb690701cb7b11ccc7861dcd8711be4e4918e2.jpeg,278,0.7304632067680359
+universal v,imagenetv2-matched-frequency-format-val/727/86d8eabcf4b1dd41efea7c583038e3c824417281.jpeg,279,-0.2598366439342499
+universal v,imagenetv2-matched-frequency-format-val/23/c3188738a7bf0df4d2a693719681fabba4feb28d.jpeg,280,-0.14221903681755066
+universal v,imagenetv2-matched-frequency-format-val/580/320aa75fae5ffb852230b30a905f28c63c4c23c3.jpeg,281,-0.07895051687955856
+universal v,imagenetv2-matched-frequency-format-val/293/3c2621490744111b4b0e4c61a91b1ea4cb6be172.jpeg,282,-0.18002665042877197
+universal v,imagenetv2-matched-frequency-format-val/582/23bd101ffbec5498a0ff534ce0587ff788839724.jpeg,283,-0.14366023242473602
+universal v,imagenetv2-matched-frequency-format-val/512/2f6cf64e8ea259c047a7f011b6ed43075777b9b7.jpeg,284,-0.20833870768547058
+universal v,imagenetv2-matched-frequency-format-val/142/7174bd4c29fe81c987cc137d887c85e08d5d3d1a.jpeg,285,-0.1890796720981598
+universal v,imagenetv2-matched-frequency-format-val/15/4d6c67ae23afeb41af423c3578f738b0f34762a3.jpeg,286,-0.14768089354038239
+universal v,imagenetv2-matched-frequency-format-val/703/a493a76211b379fd2c646d872e3127ea5846fafc.jpeg,287,0.7488785982131958
+universal v,imagenetv2-matched-frequency-format-val/621/9081cf82a1ace879efa07920792c896e47c3019c.jpeg,288,0.3987194895744324
+universal v,imagenetv2-matched-frequency-format-val/68/939bd971f59f4f512eb30a3510e5164449b2c164.jpeg,289,-0.13653263449668884
+universal v,imagenetv2-matched-frequency-format-val/198/3641dd0c9397008b8f885e781ed4d01b006bc6ee.jpeg,290,-0.18829551339149475
+universal v,imagenetv2-matched-frequency-format-val/200/b14078b315ee3f7f596bd9f5e72364acd1842ca5.jpeg,291,-0.12888780236244202
+universal v,imagenetv2-matched-frequency-format-val/639/eb4822a8ea9eb439bed663481a84a64f791eb62c.jpeg,292,-0.11267120391130447
+universal v,imagenetv2-matched-frequency-format-val/472/b1513e7887d67503a5bfaf0e6e1fedc73f89745c.jpeg,293,-0.2514362335205078
+universal v,imagenetv2-matched-frequency-format-val/595/08daeae184b3a00c2efc03ccbf43b56653244f9f.jpeg,294,-0.1727803647518158
+universal v,imagenetv2-matched-frequency-format-val/49/55fb96aafccaf4beabb1df739d9de0724bccc03c.jpeg,295,-0.09772142767906189
+universal v,imagenetv2-matched-frequency-format-val/620/655d4a84821d8f316e73d17279c27d5e8dc7bb48.jpeg,296,-0.17630165815353394
+universal v,imagenetv2-matched-frequency-format-val/496/50ef3334880ad101bc8a1c9b3d4f292d13d03535.jpeg,297,0.14334924519062042
+universal v,imagenetv2-matched-frequency-format-val/460/fe1950e37ffc6629876923760525ac52996559f4.jpeg,298,-0.20659750699996948
+universal v,imagenetv2-matched-frequency-format-val/197/6829238ab005beafe278604aee7f108846248ec9.jpeg,299,-0.1326361447572708
+universal v,imagenetv2-matched-frequency-format-val/451/515460d2c92d7bd8828afa83b2022e0bfedfd16b.jpeg,300,-0.16401128470897675
+universal v,imagenetv2-matched-frequency-format-val/415/5af896fbf04910339595f5b651220d1845250f3f.jpeg,301,0.49462074041366577
+universal v,imagenetv2-matched-frequency-format-val/966/1482c68e36a0f221cf68f2553dabb9bb09143b1e.jpeg,302,-0.1915285289287567
+universal v,imagenetv2-matched-frequency-format-val/445/b17dd3c8c072af7d691c8d5a7bd600e38444ea76.jpeg,303,0.4963221549987793
+universal v,imagenetv2-matched-frequency-format-val/322/f71db3eb35db457bf35502a9a879c621873084f3.jpeg,304,-0.2558562457561493
+universal v,imagenetv2-matched-frequency-format-val/300/276e05fd89eb6f94ab3fc2806486971d65d2aa62.jpeg,305,0.37211132049560547
+universal v,imagenetv2-matched-frequency-format-val/290/bb849390b5a56506f790ed3fc91b472d8fcea7c4.jpeg,306,0.7386804223060608
+universal v,imagenetv2-matched-frequency-format-val/60/f8f39902de482f07470c7ec5f239a9d708562469.jpeg,307,-0.17029346525669098
+universal v,imagenetv2-matched-frequency-format-val/460/b560fe7fe8861bd9cc08752b6ffc9676e795f7d2.jpeg,308,-0.1557275503873825
+universal v,imagenetv2-matched-frequency-format-val/627/7198723dc939be0bab3c4a68fc293d0f5900c55a.jpeg,309,-0.22981619834899902
+universal v,imagenetv2-matched-frequency-format-val/481/3fa84acd75df145f39e6ec2c4dc861893706e1e6.jpeg,310,-0.1018209308385849
+universal v,imagenetv2-matched-frequency-format-val/886/bcdd06aeebeb5b2e2c56dfacaa68356465cae229.jpeg,311,0.5649209022521973
+universal v,imagenetv2-matched-frequency-format-val/939/fc92bad8846f37328ed4e3d855f7bffa0a7298b9.jpeg,312,0.5200026035308838
+universal v,imagenetv2-matched-frequency-format-val/68/73f02965baf35f6977e3126a3076104be4c983f3.jpeg,313,-0.20813626050949097
+universal v,imagenetv2-matched-frequency-format-val/197/e253b62de4ffaebd1e6ccc73d07a6f79e1c9b502.jpeg,314,-0.19760200381278992
+universal v,imagenetv2-matched-frequency-format-val/77/a7e0183a84752f92ca102c59932af259dd9e7017.jpeg,315,-0.2500542402267456
+universal v,imagenetv2-matched-frequency-format-val/534/65f5e1d4d76fe0a382e1b309b6e8958ab5180969.jpeg,316,-0.19531352818012238
+universal v,imagenetv2-matched-frequency-format-val/133/06e3e8e39f69d4117bb1bf4c848043156709978b.jpeg,317,-0.055035918951034546
+universal v,imagenetv2-matched-frequency-format-val/731/3150ea704ce893b1861f17d9bd65682b69b5b0f2.jpeg,318,-0.11584839224815369
+universal v,imagenetv2-matched-frequency-format-val/825/cbad7a98bcedb72d8ff9dd694f7222fa5b289aed.jpeg,319,0.5360745191574097
+universal v,imagenetv2-matched-frequency-format-val/436/1d226f08a071c85dab68e451c0a2334c74bfdb6f.jpeg,320,-0.09347811341285706
+universal v,imagenetv2-matched-frequency-format-val/279/fe84486c29261ce318da4a8a2b2f78858a226ffd.jpeg,321,-0.21883812546730042
+universal v,imagenetv2-matched-frequency-format-val/347/1dc11c28a8fdffc58a7bfcf9ded4da49b08cdf29.jpeg,322,-0.08248259127140045
+universal v,imagenetv2-matched-frequency-format-val/248/06f195165c726dae43a8820662832d524a63ba62.jpeg,323,-0.23220734298229218
+universal v,imagenetv2-matched-frequency-format-val/864/75ed907c83b36dc24af9560e7713858cf5e459bb.jpeg,324,0.27331894636154175
+universal v,imagenetv2-matched-frequency-format-val/494/a495097f8d6af5eaacfbfbe0d82e05b7d01b88f8.jpeg,325,-0.14169266819953918
+universal v,imagenetv2-matched-frequency-format-val/767/3b92d15fc34c83f7b2ba671b07a9a831b0826148.jpeg,326,-0.26929524540901184
+universal v,imagenetv2-matched-frequency-format-val/581/ef78f32a316959957691994be25794d9952cee95.jpeg,327,-0.21741679310798645
+universal v,imagenetv2-matched-frequency-format-val/738/bd46b3a44155d68af77b35f1caf656ca7b428cb8.jpeg,328,0.3981596827507019
+universal v,imagenetv2-matched-frequency-format-val/526/20b61b20b63c228f76f7f1cdea99aaa2c95647d0.jpeg,329,-0.21339412033557892
+universal v,imagenetv2-matched-frequency-format-val/113/047596b1dd219f72e86ce981521b1fea79155fbb.jpeg,330,-0.22305703163146973
+universal v,imagenetv2-matched-frequency-format-val/568/fc8ab6a79730ced0613e61c5837bdccb95cb42bd.jpeg,331,-0.17080920934677124
+universal v,imagenetv2-matched-frequency-format-val/943/6643e1bcb0e39d05abbcb7eefb3c2c80c55f63ff.jpeg,332,-0.03922653570771217
+universal v,imagenetv2-matched-frequency-format-val/418/39f771a935e917bc0a6df8dd9ef744c18dcd38a3.jpeg,333,-0.055637575685977936
+universal v,imagenetv2-matched-frequency-format-val/352/73bf6d3b4fb4985765fa507cf8a5de932455cfac.jpeg,334,-0.14531460404396057
+universal v,imagenetv2-matched-frequency-format-val/293/af21f8fb7a3e1ba53b6dc88903491775b3f20865.jpeg,335,-0.08704902231693268
+universal v,imagenetv2-matched-frequency-format-val/360/fe4ff2d87b77947c82223a02e47049ac0666f77a.jpeg,336,-0.18907639384269714
+universal v,imagenetv2-matched-frequency-format-val/510/038adf2d8d7622ccec5c36ffe64a947e74ebc44a.jpeg,337,-0.25840258598327637
+universal v,imagenetv2-matched-frequency-format-val/21/2f0ccc10047074763522cffe21f0ae30596ac6a4.jpeg,338,-0.21400734782218933
+universal v,imagenetv2-matched-frequency-format-val/411/87acc976d60b22eecf6903e993496523685976ac.jpeg,339,0.7128283381462097
+universal v,imagenetv2-matched-frequency-format-val/466/b20136a5d13935e0a3680b4648ad5f142f2506fe.jpeg,340,-0.1391250640153885
+universal v,imagenetv2-matched-frequency-format-val/794/0f4400f1adc25902e7f04925eb0d0a78806da07b.jpeg,341,0.23421542346477509
+universal v,imagenetv2-matched-frequency-format-val/921/a7d962cf59f04fbcd041aadc686d290b00263fcb.jpeg,342,0.09852690994739532
+universal v,imagenetv2-matched-frequency-format-val/209/da0a7aa212ed485f222592d8e35ed72b97e766ab.jpeg,343,-0.13678129017353058
+universal v,imagenetv2-matched-frequency-format-val/811/5c5a4a75d13471c40a4302bd3824fa7a5d4febaa.jpeg,344,-0.21650230884552002
+universal v,imagenetv2-matched-frequency-format-val/397/87c4176a28b9045eba8164d5adbfa44955bd25dc.jpeg,345,-0.1312401294708252
+universal v,imagenetv2-matched-frequency-format-val/458/1e8b719ced0834ac73e90196aaa3c91c83eaba63.jpeg,346,-0.05199900269508362
+universal v,imagenetv2-matched-frequency-format-val/823/4408af98852ee41ec711796dc45d1abfa2d0cd4c.jpeg,347,-0.190760999917984
+universal v,imagenetv2-matched-frequency-format-val/38/9bb11a11a863d54eb5aeee99d00b7df82ac342ba.jpeg,348,-0.22994333505630493
+universal v,imagenetv2-matched-frequency-format-val/118/4d5c77a81ab70dcf094a564f1c87f165d0aabfa2.jpeg,349,-0.12044988572597504
+universal v,imagenetv2-matched-frequency-format-val/164/5bad06b53a9a9295e6601984fe8fce33a3b05c34.jpeg,350,-0.08750493079423904
+universal v,imagenetv2-matched-frequency-format-val/906/36d345f973b252737c8b74d3f952f0fd2a90b1c5.jpeg,351,-0.16258472204208374
+universal v,imagenetv2-matched-frequency-format-val/24/daf351ed1f822e7a2a6526b3eae58f2c0a1e86a3.jpeg,352,-0.14066055417060852
+universal v,imagenetv2-matched-frequency-format-val/980/dc49e741fc72fa51ffa2ffb85456b0437a580b39.jpeg,353,-0.2629040479660034
+universal v,imagenetv2-matched-frequency-format-val/159/21b3eecf37ca06f4475e7d068619ceb0b3c5e868.jpeg,354,-0.2484499216079712
+universal v,imagenetv2-matched-frequency-format-val/220/3af10849e18049ca6c11909532d6e97fbc640781.jpeg,355,-0.2341512143611908
+universal v,imagenetv2-matched-frequency-format-val/671/e4f2e032577572580b391e9cbc918c9b118e52c3.jpeg,356,-0.0792614296078682
+universal v,imagenetv2-matched-frequency-format-val/658/b46d27e5df5f0c140ee4e73a3e875a71d4bff6d9.jpeg,357,-0.08216755092144012
+universal v,imagenetv2-matched-frequency-format-val/479/bc72317576bdae4bf092fc3eb5ad92e3211bcfd9.jpeg,358,-0.23684261739253998
+universal v,imagenetv2-matched-frequency-format-val/99/6cb9b2689926ae5fea5f2f9441756869a740d05d.jpeg,359,-0.22843894362449646
+universal v,imagenetv2-matched-frequency-format-val/323/dbb31f04a254bb366082f3dab9a943314bce2e4f.jpeg,360,-0.18833178281784058
+universal v,imagenetv2-matched-frequency-format-val/910/bca3388345571b3ddc62907ad7c7a08d0f0b3f44.jpeg,361,-0.2422337681055069
+universal v,imagenetv2-matched-frequency-format-val/813/bc56429ac60fe2eb841def7fdc23835a03774b8d.jpeg,362,-0.08006037771701813
+universal v,imagenetv2-matched-frequency-format-val/834/c9ad23254500e7534860b22ae06ec78ffa4af08f.jpeg,363,-0.15686169266700745
+universal v,imagenetv2-matched-frequency-format-val/943/0decee0b808b64bf00ae98a446c00a70662870d7.jpeg,364,0.04894276708364487
+universal v,imagenetv2-matched-frequency-format-val/100/d549f1bf6bc1e6544cd09943045157add97f1cd5.jpeg,365,-0.19985704123973846
+universal v,imagenetv2-matched-frequency-format-val/805/c07998605b52ead65bf857ca71376f8e0935305f.jpeg,366,-0.1210872232913971
+universal v,imagenetv2-matched-frequency-format-val/476/66a896f6e676796918e2f0a671e9d8c1993a75df.jpeg,367,-0.06809346377849579
+universal v,imagenetv2-matched-frequency-format-val/664/9cc48c3f2fd4559ec9d530c60bbd77442602c11e.jpeg,368,-0.11607164144515991
+universal v,imagenetv2-matched-frequency-format-val/936/7522db7236d8c4ec70a515375ce324caa08cc4bd.jpeg,369,-0.10642486810684204
+universal v,imagenetv2-matched-frequency-format-val/100/5523ed69c2e759e49baf87f991660d8d51d001c7.jpeg,370,-0.031249701976776123
+universal v,imagenetv2-matched-frequency-format-val/163/58ac4c67b8d82cbfa0892588f468c310e6d4eb15.jpeg,371,-0.2134617120027542
+universal v,imagenetv2-matched-frequency-format-val/529/2775366928580e23d73938af8c789de0bee83294.jpeg,372,-0.13273395597934723
+universal v,imagenetv2-matched-frequency-format-val/814/81a4045da2c0e61aefe18e796d94290e59b41791.jpeg,373,0.3188716471195221
+universal v,imagenetv2-matched-frequency-format-val/460/77ccbca3a04627365b35e9ef66bcfb80d2cbf2af.jpeg,374,-0.23924145102500916
+universal v,imagenetv2-matched-frequency-format-val/592/a7f36e450126024907883509d648f4ae6a42c896.jpeg,375,-0.10893502831459045
+universal v,imagenetv2-matched-frequency-format-val/862/2b2967ea0817ec7e71c334e8e1b98feed11eb8be.jpeg,376,-0.1953158676624298
+universal v,imagenetv2-matched-frequency-format-val/891/9718d9cdb6c5e0bb825ce7116318a604d29a2cdc.jpeg,377,-0.11490752547979355
+universal v,imagenetv2-matched-frequency-format-val/135/87167f54b932815d5140a4671b3c38c818da7ad0.jpeg,378,-0.2039431482553482
+universal v,imagenetv2-matched-frequency-format-val/109/cb2e51a4767cc034034d3254b0018e9e57437d6e.jpeg,379,-0.24394473433494568
+universal v,imagenetv2-matched-frequency-format-val/439/fe2841b941474a932baf1aa8f07598a9206e5ed5.jpeg,380,-0.10269396752119064
+universal v,imagenetv2-matched-frequency-format-val/746/9e6ff7750bf9989f22623e2baeadfd0d6b45a67a.jpeg,381,-0.18664896488189697
+universal v,imagenetv2-matched-frequency-format-val/364/81faa5f9468b496c8f052ee287945d2186e69f21.jpeg,382,-0.13228216767311096
+universal v,imagenetv2-matched-frequency-format-val/23/2603c360b85b2d107c730efa9fec182611984c88.jpeg,383,-0.28505173325538635
+universal v,imagenetv2-matched-frequency-format-val/539/92e9e462b057a569d87c736783c58aa9de999b3a.jpeg,384,-0.05450515076518059
+universal v,imagenetv2-matched-frequency-format-val/565/e5108d7d636864fa7dc6c9d80daabaabd242f104.jpeg,385,-0.24229159951210022
+universal v,imagenetv2-matched-frequency-format-val/843/faa073aa30171d0540a902d6ca4171ec2c182a97.jpeg,386,-0.05611392855644226
+universal v,imagenetv2-matched-frequency-format-val/214/9b11c2f910392ac07b8d725cf2b2925b6ee5759b.jpeg,387,-0.2524867355823517
+universal v,imagenetv2-matched-frequency-format-val/758/dcb2d56cb49f4220ae91a471b12f0dd20a2c6ac5.jpeg,388,0.3581429719924927
+universal v,imagenetv2-matched-frequency-format-val/876/38322700c729e740549652051b764bef8ee5e316.jpeg,389,-0.22313016653060913
+universal v,imagenetv2-matched-frequency-format-val/557/553c4cfb554394f4d9be81fe42b58b32039b5895.jpeg,390,-0.1806061714887619
+universal v,imagenetv2-matched-frequency-format-val/904/4400656817ab9aa81923059c9b3f950f705854b2.jpeg,391,-0.005007923115044832
+universal v,imagenetv2-matched-frequency-format-val/750/3b95fe49b444fa72c0b52ea55aa82b5ec1639c60.jpeg,392,0.5569149255752563
+universal v,imagenetv2-matched-frequency-format-val/615/6bed85af5edc62312f2986a6d2729f8bdc47ef99.jpeg,393,-0.17900213599205017
+universal v,imagenetv2-matched-frequency-format-val/539/3c01c8f51c11ece68deb2ca94ff33d3a3d56390c.jpeg,394,-0.010278604924678802
+universal v,imagenetv2-matched-frequency-format-val/679/71073f04b1ab8df371e6d087b57eb55e5145c0a6.jpeg,395,-0.14419624209403992
+universal v,imagenetv2-matched-frequency-format-val/879/cb7296884454858eeafa129e97f1d2336552e750.jpeg,396,-0.009805579669773579
+universal v,imagenetv2-matched-frequency-format-val/842/b59e5470c30f6e6a94db8a71496312f5bc55421f.jpeg,397,-0.14169715344905853
+universal v,imagenetv2-matched-frequency-format-val/248/f6c3ce7efaed454d32e4d67b4716463dfc9e0f90.jpeg,398,-0.2199263870716095
+universal v,imagenetv2-matched-frequency-format-val/721/06ad3bd66fa7aec2d8b79ae2349a864861260e37.jpeg,399,0.6317906975746155
+universal v,imagenetv2-matched-frequency-format-val/382/37b0ee2747a4d407e78e5d1091141ac5d4328caf.jpeg,400,-0.13968127965927124
+universal v,imagenetv2-matched-frequency-format-val/934/870dd1d7e0850c1fbeee1b44a840a3d95ebc1dcb.jpeg,401,0.09482856839895248
+universal v,imagenetv2-matched-frequency-format-val/359/a428444f8dbd4db138829fa8c4455fe7c7aa3c6f.jpeg,402,-0.25197333097457886
+universal v,imagenetv2-matched-frequency-format-val/631/56ba5f131b0ca820c96345484b6d433cb771c967.jpeg,403,-0.16121162474155426
+universal v,imagenetv2-matched-frequency-format-val/773/cff71e43c210fdd711cc0f1210e483aa50585ac7.jpeg,404,-0.1868101805448532
+universal v,imagenetv2-matched-frequency-format-val/7/a968f01df8a044434de30f0d601bd29e685403bf.jpeg,405,-0.22304858267307281
+universal v,imagenetv2-matched-frequency-format-val/881/022d3ab950525f18d30f5b6fd0ed36eef58c1ebb.jpeg,406,-0.14156830310821533
+universal v,imagenetv2-matched-frequency-format-val/697/bdcab46d3dcf3a16e5c62a89164d424c494f4604.jpeg,407,-0.10996466875076294
+universal v,imagenetv2-matched-frequency-format-val/997/3756b3872b8d0dbb9acdcab7b1d7795a8c89a552.jpeg,408,-0.12010353803634644
+universal v,imagenetv2-matched-frequency-format-val/696/4d3bfc25f869ba10c2f30d9ff49869a323d81517.jpeg,409,-0.1592509150505066
+universal v,imagenetv2-matched-frequency-format-val/737/2d796d02f8faa4252ede6acaf2d92c6b968a6694.jpeg,410,-0.12305780500173569
+universal v,imagenetv2-matched-frequency-format-val/756/ecef86e7b3cb294661d8b1c41db0529acfa9ad8d.jpeg,411,0.11944855749607086
+universal v,imagenetv2-matched-frequency-format-val/518/7becb5cafbc89a526c49de9fd8fe55b984afa5e3.jpeg,412,0.1803835928440094
+universal v,imagenetv2-matched-frequency-format-val/631/83a80e46277ed89ce6ec4793d532664dd8f828a8.jpeg,413,-0.18365561962127686
+universal v,imagenetv2-matched-frequency-format-val/263/59f5516a39c8fe817f387bafda918bcfddcb12db.jpeg,414,-0.14302895963191986
+universal v,imagenetv2-matched-frequency-format-val/135/1f8bc151fc7d975ac8ac1e9d39b2e3737f8eba41.jpeg,415,0.7637335062026978
+universal v,imagenetv2-matched-frequency-format-val/988/263f9c3942dc5a70fad548ed624a945049dff765.jpeg,416,-0.23292070627212524
+universal v,imagenetv2-matched-frequency-format-val/996/7bb7fb42e12e5bffc80452ccb77916612c9d4c8c.jpeg,417,-0.10568849742412567
+universal v,imagenetv2-matched-frequency-format-val/282/f616c12e77e8fd87bbf2e29f6a5c1e17d8b53ba5.jpeg,418,-0.22025854885578156
+universal v,imagenetv2-matched-frequency-format-val/751/72d31d70d4b4c3c33995cf67261e10f21bbce7ba.jpeg,419,-0.07580463588237762
+universal v,imagenetv2-matched-frequency-format-val/345/d3fdd32bfbf4eddabab623a35e8203667d7915d4.jpeg,420,-0.20067834854125977
+universal v,imagenetv2-matched-frequency-format-val/393/65f915eb6223c559b59545063576e0bb75f1050b.jpeg,421,0.05622357875108719
+universal v,imagenetv2-matched-frequency-format-val/880/4eaac6b20b3731831a51232415023bab35243123.jpeg,422,-0.21046152710914612
+universal v,imagenetv2-matched-frequency-format-val/444/225c492900706fdaee7cc48b39ee5cc3ebab7e7f.jpeg,423,0.7152223587036133
+universal v,imagenetv2-matched-frequency-format-val/676/3e7bc1424f075dae13fcb0ba4d14437e567c129d.jpeg,424,-0.22623193264007568
+universal v,imagenetv2-matched-frequency-format-val/140/98c7f174cddea3e4a6f12fb11a5360f382a9982f.jpeg,425,-0.25779443979263306
+universal v,imagenetv2-matched-frequency-format-val/267/88e5673b376c58c59a8a4871ed3f6f2fb7c36acc.jpeg,426,-0.13021737337112427
+universal v,imagenetv2-matched-frequency-format-val/195/0dcaed7acbe0e3878b7b312dd945d98bba60a132.jpeg,427,-0.2163974642753601
+universal v,imagenetv2-matched-frequency-format-val/626/78eddcf60375a4f98e6879f001da872bc578299c.jpeg,428,-0.08391855657100677
+universal v,imagenetv2-matched-frequency-format-val/212/317abc817fc27c12ea93265ffa42159ac905bcb6.jpeg,429,0.5109031200408936
+universal v,imagenetv2-matched-frequency-format-val/625/966dd3b015f45bafcbaf828a5674cffbca6054f9.jpeg,430,-0.0008937504608184099
+universal v,imagenetv2-matched-frequency-format-val/485/1fb532ba37a5515cf229cb6960bd795306644e77.jpeg,431,-0.19860674440860748
+universal v,imagenetv2-matched-frequency-format-val/314/a724adac54d06fb1f6066ad99093f8dda0000c81.jpeg,432,-0.13717395067214966
+universal v,imagenetv2-matched-frequency-format-val/598/102a98ccee0a500df36c0f5983073527af5c8904.jpeg,433,0.4087326228618622
+universal v,imagenetv2-matched-frequency-format-val/445/89532bf632a0c46cebc8a9504c932189f0c8f51e.jpeg,434,-0.0678877979516983
+universal v,imagenetv2-matched-frequency-format-val/854/97054c191a70c44e2450595c9ab444c08780a773.jpeg,435,-0.12490809708833694
+universal v,imagenetv2-matched-frequency-format-val/961/5b6981ebafd9b125752d7b66a468b83b49876f7d.jpeg,436,-0.1496945321559906
+universal v,imagenetv2-matched-frequency-format-val/173/f37b65f8d960999eca8f2e7770e242629f46531e.jpeg,437,0.7516383528709412
+universal v,imagenetv2-matched-frequency-format-val/10/3b12f8a9e0fca07246affdd805e7a8c13ef22136.jpeg,438,-0.21152690052986145
+universal v,imagenetv2-matched-frequency-format-val/873/73fcb7816db4b5de82762a523129fd01f79118d8.jpeg,439,0.3946402072906494
+universal v,imagenetv2-matched-frequency-format-val/782/306aec9a908332fbb042bca774cd006e31e94f23.jpeg,440,-0.15404076874256134
+universal v,imagenetv2-matched-frequency-format-val/957/938aba47dfb5876f6006d5a29f1c0df4d7bb6f8c.jpeg,441,0.6908940076828003
+universal v,imagenetv2-matched-frequency-format-val/894/c818c2f297bfc32a1ed75148a68c77beec251132.jpeg,442,-0.1305132806301117
+universal v,imagenetv2-matched-frequency-format-val/645/c6f0b876f51610f2883dfbec8f6efedd2393fc64.jpeg,443,0.5905672907829285
+universal v,imagenetv2-matched-frequency-format-val/721/effb3f2bfaee15801c568bb0bf50691c6e883c67.jpeg,444,-0.1462394893169403
+universal v,imagenetv2-matched-frequency-format-val/241/84ff215186a9cbdc3db262a3e3614133dacefcc3.jpeg,445,-0.1820523887872696
+universal v,imagenetv2-matched-frequency-format-val/819/a1f32a713635af4a134aaee215b7845c02a43e67.jpeg,446,-0.22613340616226196
+universal v,imagenetv2-matched-frequency-format-val/417/9821589d881de0fbd4388d184e22a7193c1bd91e.jpeg,447,-0.2754712700843811
+universal v,imagenetv2-matched-frequency-format-val/320/0d18ad57a6384fd15bd0e06b455faf256d00dc58.jpeg,448,-0.2532958686351776
+universal v,imagenetv2-matched-frequency-format-val/789/2e62b291a1de3e5c3aa698707f5659d31c7850d4.jpeg,449,-0.21779537200927734
+universal v,imagenetv2-matched-frequency-format-val/58/21bd65367ed98d081960d4ac777cccf2ea8afc7b.jpeg,450,0.46986910700798035
+universal v,imagenetv2-matched-frequency-format-val/718/63dc90a57582ca0d4c15574b57aea35870d202ea.jpeg,451,-0.18267303705215454
+universal v,imagenetv2-matched-frequency-format-val/465/b3c179a2bcd6abcde9b129f95d75fc7fb93ba707.jpeg,452,-0.015287557616829872
+universal v,imagenetv2-matched-frequency-format-val/906/2f92dd2a9f2f806ad405bd8c8c50b16306481de3.jpeg,453,-0.19134746491909027
+universal v,imagenetv2-matched-frequency-format-val/654/f3ac4118b4f00f94f0991cc0b05e948352cb84ad.jpeg,454,-0.12439924478530884
+universal v,imagenetv2-matched-frequency-format-val/805/c697dd83f72ca970befe1c7cfec79d550f46ae3d.jpeg,455,0.2658027112483978
+universal v,imagenetv2-matched-frequency-format-val/578/662069a20ce0706dc2ec9956d1856ff52d6f6cdb.jpeg,456,-0.16188138723373413
+universal v,imagenetv2-matched-frequency-format-val/623/e196c9069d3af72551a0c4417aacd436e43a0692.jpeg,457,-0.23932607471942902
+universal v,imagenetv2-matched-frequency-format-val/970/639d7c665581d5a3d54e69597b2e0e4b83c53b42.jpeg,458,-0.19763608276844025
+universal v,imagenetv2-matched-frequency-format-val/97/814c0625efee38e50105aefa4a856fe090bb6621.jpeg,459,-0.19569815695285797
+universal v,imagenetv2-matched-frequency-format-val/647/2a1d21c8af092e75e3b124b1d1e653bc9aff0a51.jpeg,460,0.4816935062408447
+universal v,imagenetv2-matched-frequency-format-val/626/1b0e2afafe9e7c446de57343e4ce6751a056ceea.jpeg,461,0.3495100140571594
+universal v,imagenetv2-matched-frequency-format-val/51/7c38db856b1bb3965ac6615bd74008a44ce456d7.jpeg,462,-0.18341971933841705
+universal v,imagenetv2-matched-frequency-format-val/130/ee3d9dfb7476c55277fb5dc59d55ea0f37803ec6.jpeg,463,-0.21442587673664093
+universal v,imagenetv2-matched-frequency-format-val/781/4dd8a4423bfb4eda5be11f11f4d631201bf60041.jpeg,464,0.658494234085083
+universal v,imagenetv2-matched-frequency-format-val/266/1a918c4b95c0f5e89f725b793640380f78f0a2a6.jpeg,465,-0.23883597552776337
+universal v,imagenetv2-matched-frequency-format-val/427/a3f7e3f1e682f1af32cee09ceba7233d2e7518e7.jpeg,466,-0.12932923436164856
+universal v,imagenetv2-matched-frequency-format-val/213/97ad643c56cdbc8d5f215e504a3a9d9143e59a06.jpeg,467,-0.2078937590122223
+universal v,imagenetv2-matched-frequency-format-val/52/a5fa3b5f94be1aa34b8c0d8959781b55c512495b.jpeg,468,0.568585991859436
+universal v,imagenetv2-matched-frequency-format-val/599/f84b279af5329526282f97012ee59ece28b70f00.jpeg,469,-0.2031792849302292
+universal v,imagenetv2-matched-frequency-format-val/644/c44863d154db67294671bc71a0526d70c72f968d.jpeg,470,-0.16483554244041443
+universal v,imagenetv2-matched-frequency-format-val/295/fec77eb00dc1c283ff99979202d0401d8a6f2079.jpeg,471,-0.24329091608524323
+universal v,imagenetv2-matched-frequency-format-val/607/993ccd58c817a215fceb9d41b665ea1e9d9e9e6f.jpeg,472,-0.16684305667877197
+universal v,imagenetv2-matched-frequency-format-val/977/fe3f757082d0576e693cdb3a6dcb13f8e2b25b8f.jpeg,473,-0.20640210807323456
+universal v,imagenetv2-matched-frequency-format-val/236/8a1024c167e6694379ebb903545ca33106c6e1bc.jpeg,474,-0.15647576749324799
+universal v,imagenetv2-matched-frequency-format-val/816/15564d0229cec55c2a7aec5c7ff3a973ae07e3b2.jpeg,475,-0.2787012457847595
+universal v,imagenetv2-matched-frequency-format-val/648/d724276fa25e5a998d615a71be777adff7eee8f3.jpeg,476,-0.19756726920604706
+universal v,imagenetv2-matched-frequency-format-val/659/59758f82876af635d44a0900466eb40a994a8694.jpeg,477,-0.1640320122241974
+universal v,imagenetv2-matched-frequency-format-val/178/8119f170f3a69f388fb7bbebdf61c2fd5dc507c3.jpeg,478,-0.1814364790916443
+universal v,imagenetv2-matched-frequency-format-val/819/209e4cdda3986ffe45ce161573027fb342b1ad0c.jpeg,479,-0.18187327682971954
+universal v,imagenetv2-matched-frequency-format-val/418/d6194bd98374a355f213bec79d3a516536c25fa7.jpeg,480,-0.1966116577386856
+universal v,imagenetv2-matched-frequency-format-val/284/2895291027a7b3a8ccbd533ac748940cac882619.jpeg,481,-0.1188565343618393
+universal v,imagenetv2-matched-frequency-format-val/786/2362cd1ef3421bd5fea7f33f066591b09fe1c989.jpeg,482,-0.21586477756500244
+universal v,imagenetv2-matched-frequency-format-val/454/64f574269d32ad7bdc56babc32d7a4a0a10e9c89.jpeg,483,0.5384899973869324
+universal v,imagenetv2-matched-frequency-format-val/975/08e99df9049b652a1c9273ee8deceea235ec8961.jpeg,484,-0.023208050057291985
+universal v,imagenetv2-matched-frequency-format-val/229/2b0bef89e2af2690953708c913cb359e5e088d77.jpeg,485,-0.046266064047813416
+universal v,imagenetv2-matched-frequency-format-val/384/12c95b933a3817b145207a312fdaec3731e4dc28.jpeg,486,-0.05549965053796768
+universal v,imagenetv2-matched-frequency-format-val/878/e631e6bc46da6b118ca83efcf22dd48fa447225d.jpeg,487,0.5550355315208435
+universal v,imagenetv2-matched-frequency-format-val/750/28231327582da4b6dbca651468311f8bc58db6ab.jpeg,488,-0.15894782543182373
+universal v,imagenetv2-matched-frequency-format-val/897/677b659490d91c1f55e97dc5c4bc738d926d919f.jpeg,489,-0.13955217599868774
+universal v,imagenetv2-matched-frequency-format-val/554/f3d0f73b10a8115cbb71855753936f9f6344b925.jpeg,490,-0.1652241051197052
+universal v,imagenetv2-matched-frequency-format-val/907/b3bc9cb20c0f72f711ae51e29baab0c69a18e049.jpeg,491,-0.2285231202840805
+universal v,imagenetv2-matched-frequency-format-val/901/072556832e03ed62a40eb9dcb69d00ed7b578e2d.jpeg,492,-0.12424558401107788
+universal v,imagenetv2-matched-frequency-format-val/122/c8fe6b99a2fd3bac1fe71ae5ffa59cc00db4e8e3.jpeg,493,-0.24503980576992035
+universal v,imagenetv2-matched-frequency-format-val/246/0a58dce9de998c92699dc5151ed332544564e1f9.jpeg,494,-0.10085062682628632
+universal v,imagenetv2-matched-frequency-format-val/937/f30af19612629faf4a3f31bb8fd2a33de80bb1ad.jpeg,495,-0.1717064082622528
+universal v,imagenetv2-matched-frequency-format-val/338/04c4e65d359b180253714a16b27ab7bf587c3005.jpeg,496,-0.23017828166484833
+universal v,imagenetv2-matched-frequency-format-val/721/a5673902ac621b10d7ee33fb0df9a039bd8be7ac.jpeg,497,0.018857961520552635
+universal v,imagenetv2-matched-frequency-format-val/825/03c7b8aaee1d891f7818e4299b6974e0af5d6d5d.jpeg,498,0.041658464819192886
+universal v,imagenetv2-matched-frequency-format-val/427/591426164c8450582e0c9e4ade61d5177655baac.jpeg,499,-0.10419699549674988
+random (CUDA draw),imagenetv2-matched-frequency-format-val/17/e98b05972194fa090bc30141d5fb46ad9acb3c85.jpeg,0,0.8695024251937866
+random (CUDA draw),imagenetv2-matched-frequency-format-val/194/e46d14702fbe0076ca28a1a9b1ce2c22805fc4b0.jpeg,1,0.8382171392440796
+random (CUDA draw),imagenetv2-matched-frequency-format-val/856/1da5864d2dfc6bdf0d47a3e8c664b8bec1adc29f.jpeg,2,0.8705452680587769
+random (CUDA draw),imagenetv2-matched-frequency-format-val/948/e86641f5775155194597e6f650f8927ac971b1db.jpeg,3,0.8483470678329468
+random (CUDA draw),imagenetv2-matched-frequency-format-val/557/fab2d8b00b58fd2f31d6ce1550e2799b3474d464.jpeg,4,0.8508886098861694
+random (CUDA draw),imagenetv2-matched-frequency-format-val/299/b1ee05b455628fc24a210bf5556e366914b0e664.jpeg,5,0.8340185880661011
+random (CUDA draw),imagenetv2-matched-frequency-format-val/14/8d77a436c91a15bc51e9346e4490d169bed70f56.jpeg,6,0.825641393661499
+random (CUDA draw),imagenetv2-matched-frequency-format-val/62/22c52853ec0a341e4a911295a5acd0bea2ef08d8.jpeg,7,0.8079570531845093
+random (CUDA draw),imagenetv2-matched-frequency-format-val/760/f5295da009c192eeecdd55a993894efc36183e96.jpeg,8,0.7825318574905396
+random (CUDA draw),imagenetv2-matched-frequency-format-val/928/40af968d6738656dd87e91849eb05bff64b39db9.jpeg,9,0.8623803853988647
+random (CUDA draw),imagenetv2-matched-frequency-format-val/419/f0ccd4b910d6aaf498469f8464a69d5d12c791ff.jpeg,10,0.8337363004684448
+random (CUDA draw),imagenetv2-matched-frequency-format-val/506/f8419ef0418701c04770b995586d87b1c9baa3af.jpeg,11,0.7754523158073425
+random (CUDA draw),imagenetv2-matched-frequency-format-val/173/e1cd0c51337c9d5fed9ea22eef1ac846e3707459.jpeg,12,0.8841685056686401
+random (CUDA draw),imagenetv2-matched-frequency-format-val/87/4cfdeb90259a5ee318aa3e72f8eccaa344a534c9.jpeg,13,0.8245548009872437
+random (CUDA draw),imagenetv2-matched-frequency-format-val/257/4990207de4b2102bfc8c8f99a0c7a0059b913f87.jpeg,14,0.8546540141105652
+random (CUDA draw),imagenetv2-matched-frequency-format-val/363/f4b117b26fbb1b931eed74d7951e0c7a0070e686.jpeg,15,0.8844529986381531
+random (CUDA draw),imagenetv2-matched-frequency-format-val/508/b13a3bdcdbee812a976743c81db8f88e32d7279b.jpeg,16,0.8365523219108582
+random (CUDA draw),imagenetv2-matched-frequency-format-val/670/58eaad85575229f172e2d18db03bb3db618d4750.jpeg,17,0.8541004657745361
+random (CUDA draw),imagenetv2-matched-frequency-format-val/977/0289529154323779018d397e2fd080360ea5fd99.jpeg,18,0.8269684910774231
+random (CUDA draw),imagenetv2-matched-frequency-format-val/951/6d4d48ee11d423068cad3473df961e0c7d1278fb.jpeg,19,0.8172557353973389
+random (CUDA draw),imagenetv2-matched-frequency-format-val/534/cb17773f6660b07e7b74559f1709df0b52249d81.jpeg,20,0.8169741630554199
+random (CUDA draw),imagenetv2-matched-frequency-format-val/371/13afc77f415715c52cd46ff582af28d10c329bf9.jpeg,21,0.9140361547470093
+random (CUDA draw),imagenetv2-matched-frequency-format-val/9/f14b968536582f8ef9b9959c8240e193a2da2501.jpeg,22,0.8830391764640808
+random (CUDA draw),imagenetv2-matched-frequency-format-val/444/23a3e53c957cac126dc896ee3b8681177b91ccb4.jpeg,23,0.8557249307632446
+random (CUDA draw),imagenetv2-matched-frequency-format-val/409/5d97844c01cc2d5d53280a5857a3ea95fa2afbe5.jpeg,24,0.8667904734611511
+random (CUDA draw),imagenetv2-matched-frequency-format-val/263/b42299647e16fd406ca0e43a1901ac60d023c516.jpeg,25,0.8945130109786987
+random (CUDA draw),imagenetv2-matched-frequency-format-val/703/270d1c538a4381adcc78d44173ebd7ef09a5c4ff.jpeg,26,0.8146555423736572
+random (CUDA draw),imagenetv2-matched-frequency-format-val/887/30989773eb900e0c781a1f8c72c3d1a80f857a65.jpeg,27,0.8199025392532349
+random (CUDA draw),imagenetv2-matched-frequency-format-val/877/3bcefa91f02d7fb7b6cfb07d392a786388913e90.jpeg,28,0.8051589727401733
+random (CUDA draw),imagenetv2-matched-frequency-format-val/296/634d1d38aaba6533433c16d47a1c87e0ec8ef17c.jpeg,29,0.8265093564987183
+random (CUDA draw),imagenetv2-matched-frequency-format-val/916/5504a995d851488e35b355ac57aec207902bc634.jpeg,30,0.8011512160301208
+random (CUDA draw),imagenetv2-matched-frequency-format-val/335/e01a2f1c7349c147c166112a7a7d19a3099e690b.jpeg,31,0.8729617595672607
+random (CUDA draw),imagenetv2-matched-frequency-format-val/281/387f6814c4c8c8c34c53198db3337104acea0bd3.jpeg,32,0.8084622621536255
+random (CUDA draw),imagenetv2-matched-frequency-format-val/745/c749b2c44de3fc44e10e6d9d8a3a683953f6ee47.jpeg,33,0.8364704847335815
+random (CUDA draw),imagenetv2-matched-frequency-format-val/445/ac710cf637e0e63f82596a457e7dfa1951085824.jpeg,34,0.862526535987854
+random (CUDA draw),imagenetv2-matched-frequency-format-val/108/e9fcf1eeb405c7b7cf1c183480f51c47c11e4a09.jpeg,35,0.924281120300293
+random (CUDA draw),imagenetv2-matched-frequency-format-val/334/02ce5f354bfe012099be127e59b72f8f2c15eb1e.jpeg,36,0.9098820686340332
+random (CUDA draw),imagenetv2-matched-frequency-format-val/535/55aec652cdbb6016458fa000bd80b65310c8cf91.jpeg,37,0.8828862905502319
+random (CUDA draw),imagenetv2-matched-frequency-format-val/136/6661473d85337216ffa0e918e9fd171893811170.jpeg,38,0.8670123815536499
+random (CUDA draw),imagenetv2-matched-frequency-format-val/955/bf8eadf448c2bb40a36de286844ed74d645f5011.jpeg,39,0.8910244703292847
+random (CUDA draw),imagenetv2-matched-frequency-format-val/463/8bcec3fff2598692f9461d20f9dd9fc6bce55b05.jpeg,40,0.8199843764305115
+random (CUDA draw),imagenetv2-matched-frequency-format-val/794/12335bbd1a4c583e0eea7842c5e37e21806cadc4.jpeg,41,0.7881367206573486
+random (CUDA draw),imagenetv2-matched-frequency-format-val/458/003cf2421c3a19401607bd90a0a71f44d0cc8a33.jpeg,42,0.7365928888320923
+random (CUDA draw),imagenetv2-matched-frequency-format-val/127/1bf0f96d7db41a40cf33cff00899037d175217a8.jpeg,43,0.8564299941062927
+random (CUDA draw),imagenetv2-matched-frequency-format-val/884/802feb304d4bd722df7ed02654d0be583a72ee52.jpeg,44,0.9047890901565552
+random (CUDA draw),imagenetv2-matched-frequency-format-val/927/56c2c77b10b309f86ba90f418eb7afc3d8bddf34.jpeg,45,0.8926645517349243
+random (CUDA draw),imagenetv2-matched-frequency-format-val/517/9e888e387f6e29b52aa0be3d6465869384bbdc04.jpeg,46,0.8271682262420654
+random (CUDA draw),imagenetv2-matched-frequency-format-val/346/8fa8512896640418b24782948e1fbdbf73c23284.jpeg,47,0.819211483001709
+random (CUDA draw),imagenetv2-matched-frequency-format-val/784/206888c7d0e41d13a459ecc228465287975ded03.jpeg,48,0.7465074062347412
+random (CUDA draw),imagenetv2-matched-frequency-format-val/706/7bb94628b8616d778b1bd3f9273767b5949acafe.jpeg,49,0.8823627233505249
+random (CUDA draw),imagenetv2-matched-frequency-format-val/366/71c87a4b1ab76b26a195ed411da6c2e2f4545c83.jpeg,50,0.900511622428894
+random (CUDA draw),imagenetv2-matched-frequency-format-val/494/1373ddabb39d3aa19243c554f9579fe4dd3e26d3.jpeg,51,0.8240283727645874
+random (CUDA draw),imagenetv2-matched-frequency-format-val/829/d8642af7deb7bed2a26277138b384c07934d9003.jpeg,52,0.819206953048706
+random (CUDA draw),imagenetv2-matched-frequency-format-val/93/02775cbdd3374d2fb8dfb0626322d2ef47302e9a.jpeg,53,0.8380239605903625
+random (CUDA draw),imagenetv2-matched-frequency-format-val/818/4d4bd0e7be635a4ef87396109c726bac0f5b733f.jpeg,54,0.8712877035140991
+random (CUDA draw),imagenetv2-matched-frequency-format-val/939/9e01163be9c314c5b9e08f4f940c5e4dc4ff4516.jpeg,55,0.8249266743659973
+random (CUDA draw),imagenetv2-matched-frequency-format-val/229/4cb9939e4f18e1429e96e2f8edc2e09aeaa72294.jpeg,56,0.8010371327400208
+random (CUDA draw),imagenetv2-matched-frequency-format-val/202/cd75c4dc5c21e4394ee89a7929def193e5dbe680.jpeg,57,0.830378532409668
+random (CUDA draw),imagenetv2-matched-frequency-format-val/6/190eefdc99b7f6e7b4dbdd2f0cd4a606698efed9.jpeg,58,0.8317188620567322
+random (CUDA draw),imagenetv2-matched-frequency-format-val/370/4807c145924e97cc30219b3dae087564c7d5b008.jpeg,59,0.8285641670227051
+random (CUDA draw),imagenetv2-matched-frequency-format-val/55/008786499c1726d2614f9e3aee20478c5ef48ae2.jpeg,60,0.7943469882011414
+random (CUDA draw),imagenetv2-matched-frequency-format-val/421/984c1feca45139dc03d66f321839c2350b8fa0cd.jpeg,61,0.7684683799743652
+random (CUDA draw),imagenetv2-matched-frequency-format-val/72/582ac474e689252acde9530890857337b1fb0b74.jpeg,62,0.8736679553985596
+random (CUDA draw),imagenetv2-matched-frequency-format-val/827/b14678be5fa2db8ab8ec4dc026d94826812fbd3c.jpeg,63,0.7652905583381653
+random (CUDA draw),imagenetv2-matched-frequency-format-val/718/712bb329f7af9887d531103afd3286a0a0b96aef.jpeg,64,0.872183620929718
+random (CUDA draw),imagenetv2-matched-frequency-format-val/515/f056fa81b8262906b3fbeb34fce5bd762bb5db6f.jpeg,65,0.8894190788269043
+random (CUDA draw),imagenetv2-matched-frequency-format-val/100/77e539787d290a038b49d3340a3285dac134b296.jpeg,66,0.9056889414787292
+random (CUDA draw),imagenetv2-matched-frequency-format-val/971/24cfba11ce88b18795c2ec30c71e40ecbb65a5d9.jpeg,67,0.8895284533500671
+random (CUDA draw),imagenetv2-matched-frequency-format-val/998/196b2426253906482260110a4180438726265cdb.jpeg,68,0.875453531742096
+random (CUDA draw),imagenetv2-matched-frequency-format-val/964/99a6531dfedda4d3b3f074babe8021c483398391.jpeg,69,0.8238101005554199
+random (CUDA draw),imagenetv2-matched-frequency-format-val/887/038c3c3f1626f28a0aedd58a79417a23a6a6bd10.jpeg,70,0.864595890045166
+random (CUDA draw),imagenetv2-matched-frequency-format-val/181/1ab6ad98173c5f30cb169bb752a861da42ae5224.jpeg,71,0.8848788738250732
+random (CUDA draw),imagenetv2-matched-frequency-format-val/994/9560e0e5b1093bd34906d0276cf83300a9a7582a.jpeg,72,0.8786284923553467
+random (CUDA draw),imagenetv2-matched-frequency-format-val/473/ad28b5d06e6f0bb4c0a3f8fd08cf618b19182af0.jpeg,73,0.8515446782112122
+random (CUDA draw),imagenetv2-matched-frequency-format-val/109/19c6e5051c2228087fd94ce86c9a491054517812.jpeg,74,0.8700879216194153
+random (CUDA draw),imagenetv2-matched-frequency-format-val/976/48f9dd34d96b567a9aad6d8dbaa322d8e80234e9.jpeg,75,0.8495781421661377
+random (CUDA draw),imagenetv2-matched-frequency-format-val/862/e8ea1069d22fe44b76c1c6c9fae1a32341b7d4a9.jpeg,76,0.8501704931259155
+random (CUDA draw),imagenetv2-matched-frequency-format-val/587/61e424e3e1f1a4d86b0c1e2786d77cdd9bac4374.jpeg,77,0.7882946729660034
+random (CUDA draw),imagenetv2-matched-frequency-format-val/589/e322e06357f557b3322a3393fb1fe016b8296aeb.jpeg,78,0.8113256096839905
+random (CUDA draw),imagenetv2-matched-frequency-format-val/29/25b60a0644274522f06161e6e09a79c870ca9a6e.jpeg,79,0.7618562579154968
+random (CUDA draw),imagenetv2-matched-frequency-format-val/22/4232fbbf951f5d5b7e09b52d5e475fe4b9527a9a.jpeg,80,0.8995356559753418
+random (CUDA draw),imagenetv2-matched-frequency-format-val/89/03f7afe834d9d24f38bd800c68e33bf3540830fd.jpeg,81,0.8021736145019531
+random (CUDA draw),imagenetv2-matched-frequency-format-val/407/234a8fa819e23019af9f5993fc750916bc144a0e.jpeg,82,0.8464711308479309
+random (CUDA draw),imagenetv2-matched-frequency-format-val/741/f7dd021ac3422a21eba0dd5ab7271908b6d1be81.jpeg,83,0.8936737775802612
+random (CUDA draw),imagenetv2-matched-frequency-format-val/160/4fc157236c5a14dbe4559085ab15c6c7d12914d2.jpeg,84,0.9188399314880371
+random (CUDA draw),imagenetv2-matched-frequency-format-val/281/458f2b063c4c3aabec266bb68d4a1ed709e5822f.jpeg,85,0.8693671226501465
+random (CUDA draw),imagenetv2-matched-frequency-format-val/317/2418f5a2dccb48d5cf13e286f96a27ece34c1cd2.jpeg,86,0.7992038726806641
+random (CUDA draw),imagenetv2-matched-frequency-format-val/214/e2925f469aa6b5b27b08c1b5220daaf4f9f0661d.jpeg,87,0.8391366004943848
+random (CUDA draw),imagenetv2-matched-frequency-format-val/701/d579509280faf6d808092b557883f2395e3c6796.jpeg,88,0.8253681063652039
+random (CUDA draw),imagenetv2-matched-frequency-format-val/980/5cd0c236f94df67aeb616ff1f47d5f8f03b3eea5.jpeg,89,0.8243388533592224
+random (CUDA draw),imagenetv2-matched-frequency-format-val/329/fdfb9936bc0792bfd95cf23d07b4cf05e10c1481.jpeg,90,0.7898267507553101
+random (CUDA draw),imagenetv2-matched-frequency-format-val/326/01de462824e1dad8780d9f38a6caa19414f69d74.jpeg,91,0.8455691337585449
+random (CUDA draw),imagenetv2-matched-frequency-format-val/835/deb1d4a09238f61dc45d5b6d3a6ac7d14a0d01e0.jpeg,92,0.9047157764434814
+random (CUDA draw),imagenetv2-matched-frequency-format-val/247/5b6b568ede850ec70c46b85ef1bfd52d4660a452.jpeg,93,0.8722631931304932
+random (CUDA draw),imagenetv2-matched-frequency-format-val/96/fa6d7fa0e8c08fdcc87bdf9b31b8125b42282cd1.jpeg,94,0.9266045093536377
+random (CUDA draw),imagenetv2-matched-frequency-format-val/502/7c9a1acd15edc2f90848ea4695ebbb2dc9d2a325.jpeg,95,0.8382308483123779
+random (CUDA draw),imagenetv2-matched-frequency-format-val/425/7ac702b1bc32385dfb0f26a45b136b87dca6dc19.jpeg,96,0.9043973684310913
+random (CUDA draw),imagenetv2-matched-frequency-format-val/569/23cdf737485e3787fffb2cd9f5b0b648c4803ad4.jpeg,97,0.8080800771713257
+random (CUDA draw),imagenetv2-matched-frequency-format-val/736/0fde1ea322866d916c85dc2155bbb62a55a7998a.jpeg,98,0.9115861654281616
+random (CUDA draw),imagenetv2-matched-frequency-format-val/234/953e6f628d5691a5cd4619e86874024b5d54d4d4.jpeg,99,0.9072422981262207
+random (CUDA draw),imagenetv2-matched-frequency-format-val/111/10b3106552ea0f3716c5a4312952e8681f9a2000.jpeg,100,0.742249608039856
+random (CUDA draw),imagenetv2-matched-frequency-format-val/348/999de075741781735f9836f2c7a47d11036d571a.jpeg,101,0.8161595463752747
+random (CUDA draw),imagenetv2-matched-frequency-format-val/464/ae1216deb7e1d1d7363aa59f368ca3fc770d05d3.jpeg,102,0.7900883555412292
+random (CUDA draw),imagenetv2-matched-frequency-format-val/56/75079b7026b3343085e103c5823619968241c8a3.jpeg,103,0.8094887733459473
+random (CUDA draw),imagenetv2-matched-frequency-format-val/817/2cba8bac325c98d1c1a16fc58744638927704f5a.jpeg,104,0.8485288619995117
+random (CUDA draw),imagenetv2-matched-frequency-format-val/920/22b52a34b6294a640dd83baa523392ddf5daefcc.jpeg,105,0.7990138530731201
+random (CUDA draw),imagenetv2-matched-frequency-format-val/663/6be5bd5f36a89fe9212ae6c3e4df5ca4e837dd7b.jpeg,106,0.8904000520706177
+random (CUDA draw),imagenetv2-matched-frequency-format-val/178/df1425c33491da509fa7e3179d1e1faae2c66375.jpeg,107,0.8658245801925659
+random (CUDA draw),imagenetv2-matched-frequency-format-val/711/231c2345698eb40a40b153600c40eb1f0b549b30.jpeg,108,0.8767207264900208
+random (CUDA draw),imagenetv2-matched-frequency-format-val/779/ab86c88baa2233a7cc48b06059fa8f4f9b725ec4.jpeg,109,0.845461905002594
+random (CUDA draw),imagenetv2-matched-frequency-format-val/487/19c63cf0d08936ab01350726fefb7d496ca8e81d.jpeg,110,0.814937949180603
+random (CUDA draw),imagenetv2-matched-frequency-format-val/35/d2d6e664b2d19d81efb08461af4b7869e58d0b6f.jpeg,111,0.8182373046875
+random (CUDA draw),imagenetv2-matched-frequency-format-val/957/f10d7fdd5bfe0cdc13f41e668370777242aca402.jpeg,112,0.9343072175979614
+random (CUDA draw),imagenetv2-matched-frequency-format-val/790/c24e72540f6972ef63012393d808b995b15cb053.jpeg,113,0.8322281241416931
+random (CUDA draw),imagenetv2-matched-frequency-format-val/357/42f167e3de734a144d4bb8a721f4c7d55bf0eb0f.jpeg,114,0.8325750231742859
+random (CUDA draw),imagenetv2-matched-frequency-format-val/515/4a3d5a99b28c26d4255902a229b9b859163c9c83.jpeg,115,0.8817402124404907
+random (CUDA draw),imagenetv2-matched-frequency-format-val/560/6d3302fcc1caa96931f7290d33e89ba79dfc454e.jpeg,116,0.8421652317047119
+random (CUDA draw),imagenetv2-matched-frequency-format-val/328/154e4f96ef75e6a9890c33c84a2d58cc7a8b413f.jpeg,117,0.8538089394569397
+random (CUDA draw),imagenetv2-matched-frequency-format-val/544/eaab239fe2a61500cd3af268582258b82248274a.jpeg,118,0.877793550491333
+random (CUDA draw),imagenetv2-matched-frequency-format-val/856/3aebb43b6af3b8eae401a02048db6e85331bb08c.jpeg,119,0.8450490236282349
+random (CUDA draw),imagenetv2-matched-frequency-format-val/617/8b0185a877ba46540ffe1c4b7d10caaf4c2138e4.jpeg,120,0.8875564336776733
+random (CUDA draw),imagenetv2-matched-frequency-format-val/257/a0c44412caf06ee816d1807a063cb466aa00e6cd.jpeg,121,0.8137510418891907
+random (CUDA draw),imagenetv2-matched-frequency-format-val/755/c58a3e5802a51b02250e651deddce9bca56594e0.jpeg,122,0.8420749306678772
+random (CUDA draw),imagenetv2-matched-frequency-format-val/768/6e347d012a56b2d185ee342886bf992d00020b06.jpeg,123,0.8846129179000854
+random (CUDA draw),imagenetv2-matched-frequency-format-val/545/762ca2b89e0aa12f9bf703c253f839f8e052510f.jpeg,124,0.8464348912239075
+random (CUDA draw),imagenetv2-matched-frequency-format-val/959/b301ae0eadb095044693a7d3a49b7cf78fe0d3dd.jpeg,125,0.9010307192802429
+random (CUDA draw),imagenetv2-matched-frequency-format-val/698/63870e4883ff2a40876c11fa5829881f6ad16f38.jpeg,126,0.8985891342163086
+random (CUDA draw),imagenetv2-matched-frequency-format-val/101/aa2d6f636aaaa31aa8fe8e8b1bed43db42eae9ea.jpeg,127,0.8342335224151611
+random (CUDA draw),imagenetv2-matched-frequency-format-val/453/7a3df0603aa8a5299b755d7bd3bfb06664f2cfd4.jpeg,128,0.8618640899658203
+random (CUDA draw),imagenetv2-matched-frequency-format-val/114/7a969e41e30e444b70b49f88004be94a9409bdd4.jpeg,129,0.796941876411438
+random (CUDA draw),imagenetv2-matched-frequency-format-val/633/0c4c1a30571c68cd496bb27f1b0dcc455307f134.jpeg,130,0.7932237386703491
+random (CUDA draw),imagenetv2-matched-frequency-format-val/773/fef8b7e9776b9f9302707da6dba8e5b9e0a6c062.jpeg,131,0.789679765701294
+random (CUDA draw),imagenetv2-matched-frequency-format-val/805/a324121cdb81851bcd96e82c1b9a8fbeddb69248.jpeg,132,0.856456995010376
+random (CUDA draw),imagenetv2-matched-frequency-format-val/703/ac8a8ca776f47ef2881a3eb650cf25f2943a4a60.jpeg,133,0.8538997173309326
+random (CUDA draw),imagenetv2-matched-frequency-format-val/734/5f00a9dc7a01ca6fdf200be73ca6ee44d5160606.jpeg,134,0.8985422253608704
+random (CUDA draw),imagenetv2-matched-frequency-format-val/373/390fe6b14d491bc70d3bcfb818f253c928f00a58.jpeg,135,0.8168796300888062
+random (CUDA draw),imagenetv2-matched-frequency-format-val/485/6f61f87d37228c8617fe2045de90cf3761e736e5.jpeg,136,0.7863757610321045
+random (CUDA draw),imagenetv2-matched-frequency-format-val/686/0f310d78f923dc7cf566efc5464c8a8d1eec0c06.jpeg,137,0.785568118095398
+random (CUDA draw),imagenetv2-matched-frequency-format-val/732/32e6767280bb9d3030234c73eddda2fd6f791b4b.jpeg,138,0.8264497518539429
+random (CUDA draw),imagenetv2-matched-frequency-format-val/221/1b861d1f1baff93b2de744300a3fb0e41e62eaf4.jpeg,139,0.8904113173484802
+random (CUDA draw),imagenetv2-matched-frequency-format-val/863/e76fc760dbbf3b4ec1838891a5c6d77503ec9f64.jpeg,140,0.8347669839859009
+random (CUDA draw),imagenetv2-matched-frequency-format-val/838/57da9ac07e41412ba8bd4e17c947a82d3a9afb99.jpeg,141,0.8263747096061707
+random (CUDA draw),imagenetv2-matched-frequency-format-val/925/cff2a8e8bae06bf601b4a124150fbceb48fbb327.jpeg,142,0.8616654872894287
+random (CUDA draw),imagenetv2-matched-frequency-format-val/993/ab08840206ccf6d01506cc847862ad25984a0806.jpeg,143,0.8463942408561707
+random (CUDA draw),imagenetv2-matched-frequency-format-val/138/b21729866343e1cd3a71b96b8d6ff5e8ff5e897f.jpeg,144,0.8795300722122192
+random (CUDA draw),imagenetv2-matched-frequency-format-val/201/8215388b5ea603e499e613df3031c991be8d1d7c.jpeg,145,0.8141301274299622
+random (CUDA draw),imagenetv2-matched-frequency-format-val/290/f0c9b66647a043c626a325be4f5c8f301b0e854d.jpeg,146,0.8886182904243469
+random (CUDA draw),imagenetv2-matched-frequency-format-val/699/a5f07434319bf94739747e7cfd9464ad2b605c27.jpeg,147,0.8975452184677124
+random (CUDA draw),imagenetv2-matched-frequency-format-val/8/318b12f6012a01974a4d0b951254411ad02a3536.jpeg,148,0.9190412759780884
+random (CUDA draw),imagenetv2-matched-frequency-format-val/734/33d2d50510aaae27b320ea30447eb462d11546fa.jpeg,149,0.8632113337516785
+random (CUDA draw),imagenetv2-matched-frequency-format-val/110/3c7687ae17faa2d4ffca9ae17876e4750e719d81.jpeg,150,0.8448227047920227
+random (CUDA draw),imagenetv2-matched-frequency-format-val/318/dbc8ef39350f698bb3ecfaa7e31ca45596afcfbe.jpeg,151,0.7861003875732422
+random (CUDA draw),imagenetv2-matched-frequency-format-val/841/052e94f7373454a567f00b349fecdd14b40ee034.jpeg,152,0.8726547956466675
+random (CUDA draw),imagenetv2-matched-frequency-format-val/545/22f2dff631e24dbe3717e8b6ad5211dff235b860.jpeg,153,0.7765488624572754
+random (CUDA draw),imagenetv2-matched-frequency-format-val/95/ff223e6a72a1763e02bdf50bf4402e5edc46c11a.jpeg,154,0.8654317855834961
+random (CUDA draw),imagenetv2-matched-frequency-format-val/846/354f17700e75d46e56a4f1250ee4771bd618fdf9.jpeg,155,0.8178224563598633
+random (CUDA draw),imagenetv2-matched-frequency-format-val/640/0fc4dc9344c30490ecf01c73a5b0b46f2bfc4994.jpeg,156,0.8889113664627075
+random (CUDA draw),imagenetv2-matched-frequency-format-val/61/027095f2411ffe4e2d56abf2e3198f3e7efdd4b9.jpeg,157,0.7793140411376953
+random (CUDA draw),imagenetv2-matched-frequency-format-val/714/c0a8db8d15a655ed5a945c9a75debc16048b29f5.jpeg,158,0.8734650611877441
+random (CUDA draw),imagenetv2-matched-frequency-format-val/208/07e3d6ea0c896344eafe3551946a66be4c199cdb.jpeg,159,0.7998250722885132
+random (CUDA draw),imagenetv2-matched-frequency-format-val/158/78803b5af12b7105515caebab8fb6be5d9107f1b.jpeg,160,0.8306318521499634
+random (CUDA draw),imagenetv2-matched-frequency-format-val/391/5cf4434076d638d75eb6d09314d5e83e037253e1.jpeg,161,0.8483378887176514
+random (CUDA draw),imagenetv2-matched-frequency-format-val/604/579ecfaee42ccc800ae35a542a7fee9eb1853d1f.jpeg,162,0.8483499884605408
+random (CUDA draw),imagenetv2-matched-frequency-format-val/600/bf2a7caad98e1ce74f5f6593dd5cd197ba1386dc.jpeg,163,0.8016104698181152
+random (CUDA draw),imagenetv2-matched-frequency-format-val/663/215b83c8a8b35981e8f4ba0ace3980b3deeb84ea.jpeg,164,0.8532419800758362
+random (CUDA draw),imagenetv2-matched-frequency-format-val/804/14829da22f5b225cbf510b11114fe70423636429.jpeg,165,0.7707697153091431
+random (CUDA draw),imagenetv2-matched-frequency-format-val/7/4932deb3131bfe50c97452a11b7f7254d67df5f4.jpeg,166,0.8447384238243103
+random (CUDA draw),imagenetv2-matched-frequency-format-val/65/aec66cc934c5489101aebf2a13dea7c2d4a2ee37.jpeg,167,0.8464940786361694
+random (CUDA draw),imagenetv2-matched-frequency-format-val/43/fc707aebef3ee7675c3003444fa54e42f55d7cbc.jpeg,168,0.8841540217399597
+random (CUDA draw),imagenetv2-matched-frequency-format-val/924/6092db7acbf5e8c080c6fdff433ac9ab7e840f43.jpeg,169,0.8124307990074158
+random (CUDA draw),imagenetv2-matched-frequency-format-val/510/1c567144305de1501a71198c7946e10297ef38d3.jpeg,170,0.8296204805374146
+random (CUDA draw),imagenetv2-matched-frequency-format-val/83/5ac8e9dbf43744dd0c81fbd6bda5e80486af96e5.jpeg,171,0.8749358654022217
+random (CUDA draw),imagenetv2-matched-frequency-format-val/180/24c9c7d0428a79b4cabf4a9dc810bc91358c06e4.jpeg,172,0.8850678205490112
+random (CUDA draw),imagenetv2-matched-frequency-format-val/771/ef56f55748aec9a39b3c171cb2679d9c65ebaf5b.jpeg,173,0.807906985282898
+random (CUDA draw),imagenetv2-matched-frequency-format-val/677/8da869bb4d31dd36637cabe691346d9914af9b7b.jpeg,174,0.7693519592285156
+random (CUDA draw),imagenetv2-matched-frequency-format-val/264/57d9e3cf40112ece0979b3fa9647fa2a9c313e04.jpeg,175,0.8249672651290894
+random (CUDA draw),imagenetv2-matched-frequency-format-val/37/ef47db68c039dc862e5ef7c28e65d2c39169bcdb.jpeg,176,0.8418686389923096
+random (CUDA draw),imagenetv2-matched-frequency-format-val/873/b3e89729fb4bde110c9ca32acb1501f16efa96fa.jpeg,177,0.8584896326065063
+random (CUDA draw),imagenetv2-matched-frequency-format-val/495/b58bd68c3f812b8029c0628ff8e21d754b92bb16.jpeg,178,0.8435862064361572
+random (CUDA draw),imagenetv2-matched-frequency-format-val/71/7e30cc0c72ede4bc8c9d8d9ca4de643eadd68c48.jpeg,179,0.8080404996871948
+random (CUDA draw),imagenetv2-matched-frequency-format-val/909/81fd0ad39fe5678bb74cc0f8d6ac3d9f4afb0cd2.jpeg,180,0.8528779149055481
+random (CUDA draw),imagenetv2-matched-frequency-format-val/217/c494c557cf84561f7d9f376ee1238d4e6c0cf508.jpeg,181,0.8542285561561584
+random (CUDA draw),imagenetv2-matched-frequency-format-val/484/561167ef97f8fd3102ab7e3e641322dfc4141d98.jpeg,182,0.7807376980781555
+random (CUDA draw),imagenetv2-matched-frequency-format-val/148/314f84580739b9c5fcdb25196e4c33a99df077e2.jpeg,183,0.8392765522003174
+random (CUDA draw),imagenetv2-matched-frequency-format-val/840/b051870f4d8520704286a50da63ef6fa9d4cecba.jpeg,184,0.8631376028060913
+random (CUDA draw),imagenetv2-matched-frequency-format-val/771/1caa3f6e147216addf1238261fc11b5f19b78e45.jpeg,185,0.7971066236495972
+random (CUDA draw),imagenetv2-matched-frequency-format-val/777/077b4f3e52fbfd4da939ca95e07ace094e0d178a.jpeg,186,0.8764231204986572
+random (CUDA draw),imagenetv2-matched-frequency-format-val/31/ff4faea4d650d435959c502d9df92e3785cb42a7.jpeg,187,0.9178867340087891
+random (CUDA draw),imagenetv2-matched-frequency-format-val/729/15c3f4f70b1c79cc5d56c5c89d58d3605195bcae.jpeg,188,0.8778654932975769
+random (CUDA draw),imagenetv2-matched-frequency-format-val/804/cfbab41f53b5c613e07382d107cee5a8231ef834.jpeg,189,0.706739604473114
+random (CUDA draw),imagenetv2-matched-frequency-format-val/282/f368614af9ea8e47e0cf0e7a40ef2d4ddfac58c5.jpeg,190,0.86155766248703
+random (CUDA draw),imagenetv2-matched-frequency-format-val/23/b5fecb0fc3e45f4ebaeb3a3c6d0569eeb0935248.jpeg,191,0.8248143196105957
+random (CUDA draw),imagenetv2-matched-frequency-format-val/892/aaf9285234c55edf67ab6ee6cd20d63806ef47ad.jpeg,192,0.8601882457733154
+random (CUDA draw),imagenetv2-matched-frequency-format-val/678/3347eff05e13dc818281dab36df94b7476d1880c.jpeg,193,0.8335273265838623
+random (CUDA draw),imagenetv2-matched-frequency-format-val/574/ba7ea4191837366f4fb5a1a1ba60ec3341e67871.jpeg,194,0.8453800678253174
+random (CUDA draw),imagenetv2-matched-frequency-format-val/362/522bc7236542ae329f4df5fdc114593eb20e40ea.jpeg,195,0.8711530566215515
+random (CUDA draw),imagenetv2-matched-frequency-format-val/78/554e61d6050bc10048116534bbe73017e88b3b6f.jpeg,196,0.8346989154815674
+random (CUDA draw),imagenetv2-matched-frequency-format-val/630/a08c24be86ea70235eabc6552b8cd6d4bbfd999e.jpeg,197,0.8519390821456909
+random (CUDA draw),imagenetv2-matched-frequency-format-val/255/981cd6d0d3d28289788821f4b57982b2ff446ca7.jpeg,198,0.7718840837478638
+random (CUDA draw),imagenetv2-matched-frequency-format-val/448/7e4175d621c2cfb96c88b106def452b1054f5946.jpeg,199,0.8789064884185791
+random (CUDA draw),imagenetv2-matched-frequency-format-val/234/ff93bbcc3ae2e9acb24e212c779768c3ea7853cd.jpeg,200,0.8509474992752075
+random (CUDA draw),imagenetv2-matched-frequency-format-val/632/e86592501c25dd05b20103c1491561ffd71c9a47.jpeg,201,0.7997776865959167
+random (CUDA draw),imagenetv2-matched-frequency-format-val/494/b588024ed4bb8b4d995db031e8f91086cff5f4c1.jpeg,202,0.8635812997817993
+random (CUDA draw),imagenetv2-matched-frequency-format-val/591/588977b7a0776942f5b6738ab99577edcf0f7690.jpeg,203,0.8869714140892029
+random (CUDA draw),imagenetv2-matched-frequency-format-val/323/511d361cf2219a6a9a79c39128f475a3f0342496.jpeg,204,0.8996078968048096
+random (CUDA draw),imagenetv2-matched-frequency-format-val/628/d1e55549c03b6fee3fa34fffa57527e543328756.jpeg,205,0.8357362747192383
+random (CUDA draw),imagenetv2-matched-frequency-format-val/608/76b72d8bc48808a97c11dff8f79054406411b6b1.jpeg,206,0.78892982006073
+random (CUDA draw),imagenetv2-matched-frequency-format-val/454/6441754285d9e615e150a0fe8acea410551f0182.jpeg,207,0.8464878797531128
+random (CUDA draw),imagenetv2-matched-frequency-format-val/563/d3324576c262f17adfb9f1291ea5efbf9de7e48d.jpeg,208,0.8498489856719971
+random (CUDA draw),imagenetv2-matched-frequency-format-val/795/883cf6a8445f4baa1a4b89a32eedaeba60f91edd.jpeg,209,0.8277900815010071
+random (CUDA draw),imagenetv2-matched-frequency-format-val/147/19c6b51e0571cb9ffcfcdb4f5804dd5d4da4ae1f.jpeg,210,0.821560263633728
+random (CUDA draw),imagenetv2-matched-frequency-format-val/22/eaf469cffd4376ea15c9e7f1b7ea4d7935aaacbf.jpeg,211,0.8739937543869019
+random (CUDA draw),imagenetv2-matched-frequency-format-val/277/40575a3dc629f8ea2b244025dbaf9379a27d5859.jpeg,212,0.9352296590805054
+random (CUDA draw),imagenetv2-matched-frequency-format-val/838/43c170828bb16394a90362e8bb6947bd9d2c3a28.jpeg,213,0.8783987760543823
+random (CUDA draw),imagenetv2-matched-frequency-format-val/953/4812253f84d7cc6f2a51fdd5ac323578c1585e0d.jpeg,214,0.8990006446838379
+random (CUDA draw),imagenetv2-matched-frequency-format-val/911/7ab7f7c0327c38b07780b005c5946a149a62d007.jpeg,215,0.7557281851768494
+random (CUDA draw),imagenetv2-matched-frequency-format-val/718/2af46f35fda7823a49b0f0330e07a71e99efc877.jpeg,216,0.8083642721176147
+random (CUDA draw),imagenetv2-matched-frequency-format-val/967/1046fdff99b3ec8137a17eff62dc2faea6ce74f6.jpeg,217,0.7618148326873779
+random (CUDA draw),imagenetv2-matched-frequency-format-val/615/c42552b545cff6f04f18290150db4ceafdef8041.jpeg,218,0.7490220069885254
+random (CUDA draw),imagenetv2-matched-frequency-format-val/120/5bfcf5a23172de7bde957c0b5eef65069b8092db.jpeg,219,0.7872040271759033
+random (CUDA draw),imagenetv2-matched-frequency-format-val/158/0d91ee11f7e2240ee6094aa302f79b63a9c67b03.jpeg,220,0.8386623859405518
+random (CUDA draw),imagenetv2-matched-frequency-format-val/712/8d141e1ae435dac8d241279218852c77d6ad8830.jpeg,221,0.7841417789459229
+random (CUDA draw),imagenetv2-matched-frequency-format-val/30/16e52b85d47f64fdc65aa0a44ca5f9ae814bab8c.jpeg,222,0.8623465299606323
+random (CUDA draw),imagenetv2-matched-frequency-format-val/881/05672ec220b5c95d4a14b9730fe05e22a36ff5d1.jpeg,223,0.8072640299797058
+random (CUDA draw),imagenetv2-matched-frequency-format-val/747/415b569f24f6049a8d74a27f46e77af8faaa8e1f.jpeg,224,0.9076658487319946
+random (CUDA draw),imagenetv2-matched-frequency-format-val/816/875cc301d70b23e48fe8b51e5b151b2d2325df81.jpeg,225,0.7627115249633789
+random (CUDA draw),imagenetv2-matched-frequency-format-val/872/56c527d7829d10d81c5a95ea8f2065b63130c2eb.jpeg,226,0.8367629647254944
+random (CUDA draw),imagenetv2-matched-frequency-format-val/186/a7fc333c8757a61d5b9d6200d0ca5420489b41ac.jpeg,227,0.8838697671890259
+random (CUDA draw),imagenetv2-matched-frequency-format-val/903/4716c222910aac432f55014ffcd83a60bb4ee91b.jpeg,228,0.7953836917877197
+random (CUDA draw),imagenetv2-matched-frequency-format-val/725/4fb1d5b96167eb761b1ff4f0d7ec37c4d541f15b.jpeg,229,0.801272988319397
+random (CUDA draw),imagenetv2-matched-frequency-format-val/486/bcaf19cb3876c2b4b2680c437c17a636f1de81fd.jpeg,230,0.8333069682121277
+random (CUDA draw),imagenetv2-matched-frequency-format-val/837/847cd9047224db906bd13d55e7b606e8a03f5c40.jpeg,231,0.8001459240913391
+random (CUDA draw),imagenetv2-matched-frequency-format-val/915/330f5542266799bba04250cebbb0003d53495db2.jpeg,232,0.8513294458389282
+random (CUDA draw),imagenetv2-matched-frequency-format-val/631/0e7469d502084629eae23207b552672f4a03244a.jpeg,233,0.823013186454773
+random (CUDA draw),imagenetv2-matched-frequency-format-val/766/0e0c60313d0a4b1734721b2c288a1d5366878f7b.jpeg,234,0.8619728684425354
+random (CUDA draw),imagenetv2-matched-frequency-format-val/932/dcb872827647a504d6c2282961aa0677b6cfa7ae.jpeg,235,0.8844184279441833
+random (CUDA draw),imagenetv2-matched-frequency-format-val/55/c9ff6ad71456f2b97ebea9cc4ca85cb72f47c6b8.jpeg,236,0.7985548377037048
+random (CUDA draw),imagenetv2-matched-frequency-format-val/618/3b31a5319a9c4e4e664d2db7b43c4c068bc79c82.jpeg,237,0.7927073240280151
+random (CUDA draw),imagenetv2-matched-frequency-format-val/902/d051b49c3107353d385a825856e04b4bfc07a7ec.jpeg,238,0.8235740661621094
+random (CUDA draw),imagenetv2-matched-frequency-format-val/721/703ecb2153e19fe2b52e055378aa645d3b3f8969.jpeg,239,0.8363951444625854
+random (CUDA draw),imagenetv2-matched-frequency-format-val/584/d31b9fd95b73f976955cf72953f71319e62e0632.jpeg,240,0.9068988561630249
+random (CUDA draw),imagenetv2-matched-frequency-format-val/47/7ccdbe4bd2f3ecc04d099be0c9a9b63e1e0ff798.jpeg,241,0.8065437078475952
+random (CUDA draw),imagenetv2-matched-frequency-format-val/395/cbf2f3989706bebfb043a7c904ef71beea906926.jpeg,242,0.8477605581283569
+random (CUDA draw),imagenetv2-matched-frequency-format-val/234/c9de837694fcb5cbf9dc30be9033a05c139e0358.jpeg,243,0.8320348262786865
+random (CUDA draw),imagenetv2-matched-frequency-format-val/648/406a029827c18079e24a3e3063d667150e6adfcd.jpeg,244,0.851942777633667
+random (CUDA draw),imagenetv2-matched-frequency-format-val/191/94001f0ea0e83aabc665506a7252655804f6df16.jpeg,245,0.8798134326934814
+random (CUDA draw),imagenetv2-matched-frequency-format-val/97/d71729f6711ee7025013ef7ec391ec48c6d2501b.jpeg,246,0.8534466624259949
+random (CUDA draw),imagenetv2-matched-frequency-format-val/100/6012078dc1f6302fbc92c63627f81bc2dc636453.jpeg,247,0.8495208621025085
+random (CUDA draw),imagenetv2-matched-frequency-format-val/662/d3fdb883b8a6982feec8c8d1c19d6d20695e7873.jpeg,248,0.8050432205200195
+random (CUDA draw),imagenetv2-matched-frequency-format-val/362/43bfee97d98868fd02a5de684bb4194a07b0a6ed.jpeg,249,0.8810054063796997
+random (CUDA draw),imagenetv2-matched-frequency-format-val/870/2480e8593fb82a09947e00beaa1f740143e871a7.jpeg,250,0.8858458995819092
+random (CUDA draw),imagenetv2-matched-frequency-format-val/16/af18094f61fb38008c0e923309fec53eb365668d.jpeg,251,0.854987382888794
+random (CUDA draw),imagenetv2-matched-frequency-format-val/748/4bc9c758b5c910d98131cc70893593b55e0fe826.jpeg,252,0.8040746450424194
+random (CUDA draw),imagenetv2-matched-frequency-format-val/431/61e43653abcac933706f284976d14177b98a284f.jpeg,253,0.8212137222290039
+random (CUDA draw),imagenetv2-matched-frequency-format-val/12/49056be9a12806595c1b8c6a0d6a0589653ff937.jpeg,254,0.8883466720581055
+random (CUDA draw),imagenetv2-matched-frequency-format-val/944/362a80eba98697102e666bc9b6635dc5c78c1e6b.jpeg,255,0.9039531946182251
+random (CUDA draw),imagenetv2-matched-frequency-format-val/733/7c375ec4271d68004a142cb63f56d15bf666c71a.jpeg,256,0.7932498455047607
+random (CUDA draw),imagenetv2-matched-frequency-format-val/506/368819408736f09849a925b877e72ec94f71a18f.jpeg,257,0.856359601020813
+random (CUDA draw),imagenetv2-matched-frequency-format-val/51/bef81b60e9ded41878616bfe5c4b2a4c1dcadc20.jpeg,258,0.7841085195541382
+random (CUDA draw),imagenetv2-matched-frequency-format-val/209/89629551d2cf87cda3675864095e5e539373b8fa.jpeg,259,0.8172383904457092
+random (CUDA draw),imagenetv2-matched-frequency-format-val/445/d7000f4a6f77a7ab8bf7d00f2356e99ea7819688.jpeg,260,0.8998489379882812
+random (CUDA draw),imagenetv2-matched-frequency-format-val/209/f04f225e907310cd8d99a1bc00577484f14415a9.jpeg,261,0.7675108909606934
+random (CUDA draw),imagenetv2-matched-frequency-format-val/650/de1007823daad4f73ea0d48847ae35588eb53966.jpeg,262,0.8895587921142578
+random (CUDA draw),imagenetv2-matched-frequency-format-val/858/8677176901e8486ea5af96edd85b7e72c5896598.jpeg,263,0.9090206623077393
+random (CUDA draw),imagenetv2-matched-frequency-format-val/225/ae903749315ee91482c0111db9508fd6c746e748.jpeg,264,0.8898797035217285
+random (CUDA draw),imagenetv2-matched-frequency-format-val/726/0c5195dab4841e8b7df8839c8ed0d3c03ec85af7.jpeg,265,0.8438735604286194
+random (CUDA draw),imagenetv2-matched-frequency-format-val/161/74fd71d9ba0f798634477fc88b5d0ccf8e326fbf.jpeg,266,0.8809133172035217
+random (CUDA draw),imagenetv2-matched-frequency-format-val/408/81ad38b7c77dcc52e75b284f8849aedeaab5fe8a.jpeg,267,0.7507049441337585
+random (CUDA draw),imagenetv2-matched-frequency-format-val/470/ee2d84525a33306afce8a1a393bd1b03bedbae9b.jpeg,268,0.8189027309417725
+random (CUDA draw),imagenetv2-matched-frequency-format-val/65/df6875e0a6464e810b7a5a10b764f29ef71aa1d2.jpeg,269,0.7916088104248047
+random (CUDA draw),imagenetv2-matched-frequency-format-val/15/50c9fbd306bf245e0525bb4b630ad41b1d367bdd.jpeg,270,0.9210982322692871
+random (CUDA draw),imagenetv2-matched-frequency-format-val/830/147e40da69d1e8238f8f27004e7e7abd41c66577.jpeg,271,0.8876197338104248
+random (CUDA draw),imagenetv2-matched-frequency-format-val/927/551804450f7c550cb0774071034744edc1101b5d.jpeg,272,0.84842848777771
+random (CUDA draw),imagenetv2-matched-frequency-format-val/517/f92cedd767df84f3807499cf7c728e06b1f022f9.jpeg,273,0.8427532911300659
+random (CUDA draw),imagenetv2-matched-frequency-format-val/718/ea53ca6622b9bba1369b837a91756df654185ab9.jpeg,274,0.8384956121444702
+random (CUDA draw),imagenetv2-matched-frequency-format-val/464/8e3f7b6a28b9c74c86c8040b75587dad059607e9.jpeg,275,0.7639391422271729
+random (CUDA draw),imagenetv2-matched-frequency-format-val/961/8f44ca27274ceab7df7ab24959f6672f9b17b7c8.jpeg,276,0.8666304349899292
+random (CUDA draw),imagenetv2-matched-frequency-format-val/954/c56152b8baca2b9c10dfedf808288a1541b1c72c.jpeg,277,0.8643546104431152
+random (CUDA draw),imagenetv2-matched-frequency-format-val/119/9feb690701cb7b11ccc7861dcd8711be4e4918e2.jpeg,278,0.9323610067367554
+random (CUDA draw),imagenetv2-matched-frequency-format-val/727/86d8eabcf4b1dd41efea7c583038e3c824417281.jpeg,279,0.8388091921806335
+random (CUDA draw),imagenetv2-matched-frequency-format-val/23/c3188738a7bf0df4d2a693719681fabba4feb28d.jpeg,280,0.8787850141525269
+random (CUDA draw),imagenetv2-matched-frequency-format-val/580/320aa75fae5ffb852230b30a905f28c63c4c23c3.jpeg,281,0.886508584022522
+random (CUDA draw),imagenetv2-matched-frequency-format-val/293/3c2621490744111b4b0e4c61a91b1ea4cb6be172.jpeg,282,0.8344452977180481
+random (CUDA draw),imagenetv2-matched-frequency-format-val/582/23bd101ffbec5498a0ff534ce0587ff788839724.jpeg,283,0.8829565644264221
+random (CUDA draw),imagenetv2-matched-frequency-format-val/512/2f6cf64e8ea259c047a7f011b6ed43075777b9b7.jpeg,284,0.8665640354156494
+random (CUDA draw),imagenetv2-matched-frequency-format-val/142/7174bd4c29fe81c987cc137d887c85e08d5d3d1a.jpeg,285,0.867448091506958
+random (CUDA draw),imagenetv2-matched-frequency-format-val/15/4d6c67ae23afeb41af423c3578f738b0f34762a3.jpeg,286,0.8733910322189331
+random (CUDA draw),imagenetv2-matched-frequency-format-val/703/a493a76211b379fd2c646d872e3127ea5846fafc.jpeg,287,0.927870512008667
+random (CUDA draw),imagenetv2-matched-frequency-format-val/621/9081cf82a1ace879efa07920792c896e47c3019c.jpeg,288,0.8921185731887817
+random (CUDA draw),imagenetv2-matched-frequency-format-val/68/939bd971f59f4f512eb30a3510e5164449b2c164.jpeg,289,0.779170572757721
+random (CUDA draw),imagenetv2-matched-frequency-format-val/198/3641dd0c9397008b8f885e781ed4d01b006bc6ee.jpeg,290,0.8342337012290955
+random (CUDA draw),imagenetv2-matched-frequency-format-val/200/b14078b315ee3f7f596bd9f5e72364acd1842ca5.jpeg,291,0.8667739033699036
+random (CUDA draw),imagenetv2-matched-frequency-format-val/639/eb4822a8ea9eb439bed663481a84a64f791eb62c.jpeg,292,0.8925197720527649
+random (CUDA draw),imagenetv2-matched-frequency-format-val/472/b1513e7887d67503a5bfaf0e6e1fedc73f89745c.jpeg,293,0.85521399974823
+random (CUDA draw),imagenetv2-matched-frequency-format-val/595/08daeae184b3a00c2efc03ccbf43b56653244f9f.jpeg,294,0.8201608657836914
+random (CUDA draw),imagenetv2-matched-frequency-format-val/49/55fb96aafccaf4beabb1df739d9de0724bccc03c.jpeg,295,0.8755563497543335
+random (CUDA draw),imagenetv2-matched-frequency-format-val/620/655d4a84821d8f316e73d17279c27d5e8dc7bb48.jpeg,296,0.8337202668190002
+random (CUDA draw),imagenetv2-matched-frequency-format-val/496/50ef3334880ad101bc8a1c9b3d4f292d13d03535.jpeg,297,0.8558857440948486
+random (CUDA draw),imagenetv2-matched-frequency-format-val/460/fe1950e37ffc6629876923760525ac52996559f4.jpeg,298,0.7897126078605652
+random (CUDA draw),imagenetv2-matched-frequency-format-val/197/6829238ab005beafe278604aee7f108846248ec9.jpeg,299,0.8700852394104004
+random (CUDA draw),imagenetv2-matched-frequency-format-val/451/515460d2c92d7bd8828afa83b2022e0bfedfd16b.jpeg,300,0.833156943321228
+random (CUDA draw),imagenetv2-matched-frequency-format-val/415/5af896fbf04910339595f5b651220d1845250f3f.jpeg,301,0.832109272480011
+random (CUDA draw),imagenetv2-matched-frequency-format-val/966/1482c68e36a0f221cf68f2553dabb9bb09143b1e.jpeg,302,0.7488192915916443
+random (CUDA draw),imagenetv2-matched-frequency-format-val/445/b17dd3c8c072af7d691c8d5a7bd600e38444ea76.jpeg,303,0.9077427387237549
+random (CUDA draw),imagenetv2-matched-frequency-format-val/322/f71db3eb35db457bf35502a9a879c621873084f3.jpeg,304,0.885209321975708
+random (CUDA draw),imagenetv2-matched-frequency-format-val/300/276e05fd89eb6f94ab3fc2806486971d65d2aa62.jpeg,305,0.9095001220703125
+random (CUDA draw),imagenetv2-matched-frequency-format-val/290/bb849390b5a56506f790ed3fc91b472d8fcea7c4.jpeg,306,0.9423233270645142
+random (CUDA draw),imagenetv2-matched-frequency-format-val/60/f8f39902de482f07470c7ec5f239a9d708562469.jpeg,307,0.7684650421142578
+random (CUDA draw),imagenetv2-matched-frequency-format-val/460/b560fe7fe8861bd9cc08752b6ffc9676e795f7d2.jpeg,308,0.8577589392662048
+random (CUDA draw),imagenetv2-matched-frequency-format-val/627/7198723dc939be0bab3c4a68fc293d0f5900c55a.jpeg,309,0.8407681584358215
+random (CUDA draw),imagenetv2-matched-frequency-format-val/481/3fa84acd75df145f39e6ec2c4dc861893706e1e6.jpeg,310,0.7960851192474365
+random (CUDA draw),imagenetv2-matched-frequency-format-val/886/bcdd06aeebeb5b2e2c56dfacaa68356465cae229.jpeg,311,0.8452620506286621
+random (CUDA draw),imagenetv2-matched-frequency-format-val/939/fc92bad8846f37328ed4e3d855f7bffa0a7298b9.jpeg,312,0.8962324857711792
+random (CUDA draw),imagenetv2-matched-frequency-format-val/68/73f02965baf35f6977e3126a3076104be4c983f3.jpeg,313,0.8116586804389954
+random (CUDA draw),imagenetv2-matched-frequency-format-val/197/e253b62de4ffaebd1e6ccc73d07a6f79e1c9b502.jpeg,314,0.8683921694755554
+random (CUDA draw),imagenetv2-matched-frequency-format-val/77/a7e0183a84752f92ca102c59932af259dd9e7017.jpeg,315,0.8381972908973694
+random (CUDA draw),imagenetv2-matched-frequency-format-val/534/65f5e1d4d76fe0a382e1b309b6e8958ab5180969.jpeg,316,0.8329630494117737
+random (CUDA draw),imagenetv2-matched-frequency-format-val/133/06e3e8e39f69d4117bb1bf4c848043156709978b.jpeg,317,0.8631988763809204
+random (CUDA draw),imagenetv2-matched-frequency-format-val/731/3150ea704ce893b1861f17d9bd65682b69b5b0f2.jpeg,318,0.8258422017097473
+random (CUDA draw),imagenetv2-matched-frequency-format-val/825/cbad7a98bcedb72d8ff9dd694f7222fa5b289aed.jpeg,319,0.8714702129364014
+random (CUDA draw),imagenetv2-matched-frequency-format-val/436/1d226f08a071c85dab68e451c0a2334c74bfdb6f.jpeg,320,0.8619965314865112
+random (CUDA draw),imagenetv2-matched-frequency-format-val/279/fe84486c29261ce318da4a8a2b2f78858a226ffd.jpeg,321,0.8621670007705688
+random (CUDA draw),imagenetv2-matched-frequency-format-val/347/1dc11c28a8fdffc58a7bfcf9ded4da49b08cdf29.jpeg,322,0.8696155548095703
+random (CUDA draw),imagenetv2-matched-frequency-format-val/248/06f195165c726dae43a8820662832d524a63ba62.jpeg,323,0.8485618829727173
+random (CUDA draw),imagenetv2-matched-frequency-format-val/864/75ed907c83b36dc24af9560e7713858cf5e459bb.jpeg,324,0.8850533366203308
+random (CUDA draw),imagenetv2-matched-frequency-format-val/494/a495097f8d6af5eaacfbfbe0d82e05b7d01b88f8.jpeg,325,0.8272722363471985
+random (CUDA draw),imagenetv2-matched-frequency-format-val/767/3b92d15fc34c83f7b2ba671b07a9a831b0826148.jpeg,326,0.8267719745635986
+random (CUDA draw),imagenetv2-matched-frequency-format-val/581/ef78f32a316959957691994be25794d9952cee95.jpeg,327,0.8482974171638489
+random (CUDA draw),imagenetv2-matched-frequency-format-val/738/bd46b3a44155d68af77b35f1caf656ca7b428cb8.jpeg,328,0.9050923585891724
+random (CUDA draw),imagenetv2-matched-frequency-format-val/526/20b61b20b63c228f76f7f1cdea99aaa2c95647d0.jpeg,329,0.8296734690666199
+random (CUDA draw),imagenetv2-matched-frequency-format-val/113/047596b1dd219f72e86ce981521b1fea79155fbb.jpeg,330,0.8557195663452148
+random (CUDA draw),imagenetv2-matched-frequency-format-val/568/fc8ab6a79730ced0613e61c5837bdccb95cb42bd.jpeg,331,0.855210542678833
+random (CUDA draw),imagenetv2-matched-frequency-format-val/943/6643e1bcb0e39d05abbcb7eefb3c2c80c55f63ff.jpeg,332,0.899418830871582
+random (CUDA draw),imagenetv2-matched-frequency-format-val/418/39f771a935e917bc0a6df8dd9ef744c18dcd38a3.jpeg,333,0.9058005809783936
+random (CUDA draw),imagenetv2-matched-frequency-format-val/352/73bf6d3b4fb4985765fa507cf8a5de932455cfac.jpeg,334,0.8276253342628479
+random (CUDA draw),imagenetv2-matched-frequency-format-val/293/af21f8fb7a3e1ba53b6dc88903491775b3f20865.jpeg,335,0.8807207345962524
+random (CUDA draw),imagenetv2-matched-frequency-format-val/360/fe4ff2d87b77947c82223a02e47049ac0666f77a.jpeg,336,0.8228466510772705
+random (CUDA draw),imagenetv2-matched-frequency-format-val/510/038adf2d8d7622ccec5c36ffe64a947e74ebc44a.jpeg,337,0.7253944277763367
+random (CUDA draw),imagenetv2-matched-frequency-format-val/21/2f0ccc10047074763522cffe21f0ae30596ac6a4.jpeg,338,0.8725956678390503
+random (CUDA draw),imagenetv2-matched-frequency-format-val/411/87acc976d60b22eecf6903e993496523685976ac.jpeg,339,0.9185771942138672
+random (CUDA draw),imagenetv2-matched-frequency-format-val/466/b20136a5d13935e0a3680b4648ad5f142f2506fe.jpeg,340,0.8496643900871277
+random (CUDA draw),imagenetv2-matched-frequency-format-val/794/0f4400f1adc25902e7f04925eb0d0a78806da07b.jpeg,341,0.8700065612792969
+random (CUDA draw),imagenetv2-matched-frequency-format-val/921/a7d962cf59f04fbcd041aadc686d290b00263fcb.jpeg,342,0.9024233818054199
+random (CUDA draw),imagenetv2-matched-frequency-format-val/209/da0a7aa212ed485f222592d8e35ed72b97e766ab.jpeg,343,0.8075662851333618
+random (CUDA draw),imagenetv2-matched-frequency-format-val/811/5c5a4a75d13471c40a4302bd3824fa7a5d4febaa.jpeg,344,0.7599149346351624
+random (CUDA draw),imagenetv2-matched-frequency-format-val/397/87c4176a28b9045eba8164d5adbfa44955bd25dc.jpeg,345,0.8781059384346008
+random (CUDA draw),imagenetv2-matched-frequency-format-val/458/1e8b719ced0834ac73e90196aaa3c91c83eaba63.jpeg,346,0.8699268698692322
+random (CUDA draw),imagenetv2-matched-frequency-format-val/823/4408af98852ee41ec711796dc45d1abfa2d0cd4c.jpeg,347,0.7860112190246582
+random (CUDA draw),imagenetv2-matched-frequency-format-val/38/9bb11a11a863d54eb5aeee99d00b7df82ac342ba.jpeg,348,0.8640745282173157
+random (CUDA draw),imagenetv2-matched-frequency-format-val/118/4d5c77a81ab70dcf094a564f1c87f165d0aabfa2.jpeg,349,0.8195303678512573
+random (CUDA draw),imagenetv2-matched-frequency-format-val/164/5bad06b53a9a9295e6601984fe8fce33a3b05c34.jpeg,350,0.8878531455993652
+random (CUDA draw),imagenetv2-matched-frequency-format-val/906/36d345f973b252737c8b74d3f952f0fd2a90b1c5.jpeg,351,0.8318930864334106
+random (CUDA draw),imagenetv2-matched-frequency-format-val/24/daf351ed1f822e7a2a6526b3eae58f2c0a1e86a3.jpeg,352,0.8591048121452332
+random (CUDA draw),imagenetv2-matched-frequency-format-val/980/dc49e741fc72fa51ffa2ffb85456b0437a580b39.jpeg,353,0.8434422016143799
+random (CUDA draw),imagenetv2-matched-frequency-format-val/159/21b3eecf37ca06f4475e7d068619ceb0b3c5e868.jpeg,354,0.8531861305236816
+random (CUDA draw),imagenetv2-matched-frequency-format-val/220/3af10849e18049ca6c11909532d6e97fbc640781.jpeg,355,0.8524873852729797
+random (CUDA draw),imagenetv2-matched-frequency-format-val/671/e4f2e032577572580b391e9cbc918c9b118e52c3.jpeg,356,0.8774623274803162
+random (CUDA draw),imagenetv2-matched-frequency-format-val/658/b46d27e5df5f0c140ee4e73a3e875a71d4bff6d9.jpeg,357,0.7991392612457275
+random (CUDA draw),imagenetv2-matched-frequency-format-val/479/bc72317576bdae4bf092fc3eb5ad92e3211bcfd9.jpeg,358,0.8232126832008362
+random (CUDA draw),imagenetv2-matched-frequency-format-val/99/6cb9b2689926ae5fea5f2f9441756869a740d05d.jpeg,359,0.8547508716583252
+random (CUDA draw),imagenetv2-matched-frequency-format-val/323/dbb31f04a254bb366082f3dab9a943314bce2e4f.jpeg,360,0.8846867680549622
+random (CUDA draw),imagenetv2-matched-frequency-format-val/910/bca3388345571b3ddc62907ad7c7a08d0f0b3f44.jpeg,361,0.814917266368866
+random (CUDA draw),imagenetv2-matched-frequency-format-val/813/bc56429ac60fe2eb841def7fdc23835a03774b8d.jpeg,362,0.8542466163635254
+random (CUDA draw),imagenetv2-matched-frequency-format-val/834/c9ad23254500e7534860b22ae06ec78ffa4af08f.jpeg,363,0.8941138982772827
+random (CUDA draw),imagenetv2-matched-frequency-format-val/943/0decee0b808b64bf00ae98a446c00a70662870d7.jpeg,364,0.8914613723754883
+random (CUDA draw),imagenetv2-matched-frequency-format-val/100/d549f1bf6bc1e6544cd09943045157add97f1cd5.jpeg,365,0.8374127149581909
+random (CUDA draw),imagenetv2-matched-frequency-format-val/805/c07998605b52ead65bf857ca71376f8e0935305f.jpeg,366,0.8904310464859009
+random (CUDA draw),imagenetv2-matched-frequency-format-val/476/66a896f6e676796918e2f0a671e9d8c1993a75df.jpeg,367,0.768906831741333
+random (CUDA draw),imagenetv2-matched-frequency-format-val/664/9cc48c3f2fd4559ec9d530c60bbd77442602c11e.jpeg,368,0.8527079224586487
+random (CUDA draw),imagenetv2-matched-frequency-format-val/936/7522db7236d8c4ec70a515375ce324caa08cc4bd.jpeg,369,0.8160958290100098
+random (CUDA draw),imagenetv2-matched-frequency-format-val/100/5523ed69c2e759e49baf87f991660d8d51d001c7.jpeg,370,0.8538636565208435
+random (CUDA draw),imagenetv2-matched-frequency-format-val/163/58ac4c67b8d82cbfa0892588f468c310e6d4eb15.jpeg,371,0.9030948877334595
+random (CUDA draw),imagenetv2-matched-frequency-format-val/529/2775366928580e23d73938af8c789de0bee83294.jpeg,372,0.7323667407035828
+random (CUDA draw),imagenetv2-matched-frequency-format-val/814/81a4045da2c0e61aefe18e796d94290e59b41791.jpeg,373,0.865261971950531
+random (CUDA draw),imagenetv2-matched-frequency-format-val/460/77ccbca3a04627365b35e9ef66bcfb80d2cbf2af.jpeg,374,0.8746888637542725
+random (CUDA draw),imagenetv2-matched-frequency-format-val/592/a7f36e450126024907883509d648f4ae6a42c896.jpeg,375,0.8467130661010742
+random (CUDA draw),imagenetv2-matched-frequency-format-val/862/2b2967ea0817ec7e71c334e8e1b98feed11eb8be.jpeg,376,0.8449649810791016
+random (CUDA draw),imagenetv2-matched-frequency-format-val/891/9718d9cdb6c5e0bb825ce7116318a604d29a2cdc.jpeg,377,0.8594699501991272
+random (CUDA draw),imagenetv2-matched-frequency-format-val/135/87167f54b932815d5140a4671b3c38c818da7ad0.jpeg,378,0.8538450598716736
+random (CUDA draw),imagenetv2-matched-frequency-format-val/109/cb2e51a4767cc034034d3254b0018e9e57437d6e.jpeg,379,0.8574215769767761
+random (CUDA draw),imagenetv2-matched-frequency-format-val/439/fe2841b941474a932baf1aa8f07598a9206e5ed5.jpeg,380,0.8920140266418457
+random (CUDA draw),imagenetv2-matched-frequency-format-val/746/9e6ff7750bf9989f22623e2baeadfd0d6b45a67a.jpeg,381,0.8195228576660156
+random (CUDA draw),imagenetv2-matched-frequency-format-val/364/81faa5f9468b496c8f052ee287945d2186e69f21.jpeg,382,0.8508033752441406
+random (CUDA draw),imagenetv2-matched-frequency-format-val/23/2603c360b85b2d107c730efa9fec182611984c88.jpeg,383,0.8670787215232849
+random (CUDA draw),imagenetv2-matched-frequency-format-val/539/92e9e462b057a569d87c736783c58aa9de999b3a.jpeg,384,0.8273103833198547
+random (CUDA draw),imagenetv2-matched-frequency-format-val/565/e5108d7d636864fa7dc6c9d80daabaabd242f104.jpeg,385,0.8410322666168213
+random (CUDA draw),imagenetv2-matched-frequency-format-val/843/faa073aa30171d0540a902d6ca4171ec2c182a97.jpeg,386,0.8835750222206116
+random (CUDA draw),imagenetv2-matched-frequency-format-val/214/9b11c2f910392ac07b8d725cf2b2925b6ee5759b.jpeg,387,0.8623921871185303
+random (CUDA draw),imagenetv2-matched-frequency-format-val/758/dcb2d56cb49f4220ae91a471b12f0dd20a2c6ac5.jpeg,388,0.8514572381973267
+random (CUDA draw),imagenetv2-matched-frequency-format-val/876/38322700c729e740549652051b764bef8ee5e316.jpeg,389,0.8278675079345703
+random (CUDA draw),imagenetv2-matched-frequency-format-val/557/553c4cfb554394f4d9be81fe42b58b32039b5895.jpeg,390,0.8727893233299255
+random (CUDA draw),imagenetv2-matched-frequency-format-val/904/4400656817ab9aa81923059c9b3f950f705854b2.jpeg,391,0.8633262515068054
+random (CUDA draw),imagenetv2-matched-frequency-format-val/750/3b95fe49b444fa72c0b52ea55aa82b5ec1639c60.jpeg,392,0.9107025861740112
+random (CUDA draw),imagenetv2-matched-frequency-format-val/615/6bed85af5edc62312f2986a6d2729f8bdc47ef99.jpeg,393,0.8237385749816895
+random (CUDA draw),imagenetv2-matched-frequency-format-val/539/3c01c8f51c11ece68deb2ca94ff33d3a3d56390c.jpeg,394,0.8702412247657776
+random (CUDA draw),imagenetv2-matched-frequency-format-val/679/71073f04b1ab8df371e6d087b57eb55e5145c0a6.jpeg,395,0.8630729913711548
+random (CUDA draw),imagenetv2-matched-frequency-format-val/879/cb7296884454858eeafa129e97f1d2336552e750.jpeg,396,0.8998848795890808
+random (CUDA draw),imagenetv2-matched-frequency-format-val/842/b59e5470c30f6e6a94db8a71496312f5bc55421f.jpeg,397,0.8287782669067383
+random (CUDA draw),imagenetv2-matched-frequency-format-val/248/f6c3ce7efaed454d32e4d67b4716463dfc9e0f90.jpeg,398,0.8254933953285217
+random (CUDA draw),imagenetv2-matched-frequency-format-val/721/06ad3bd66fa7aec2d8b79ae2349a864861260e37.jpeg,399,0.9362773895263672
+random (CUDA draw),imagenetv2-matched-frequency-format-val/382/37b0ee2747a4d407e78e5d1091141ac5d4328caf.jpeg,400,0.8654067516326904
+random (CUDA draw),imagenetv2-matched-frequency-format-val/934/870dd1d7e0850c1fbeee1b44a840a3d95ebc1dcb.jpeg,401,0.8494948148727417
+random (CUDA draw),imagenetv2-matched-frequency-format-val/359/a428444f8dbd4db138829fa8c4455fe7c7aa3c6f.jpeg,402,0.8359329700469971
+random (CUDA draw),imagenetv2-matched-frequency-format-val/631/56ba5f131b0ca820c96345484b6d433cb771c967.jpeg,403,0.8432934284210205
+random (CUDA draw),imagenetv2-matched-frequency-format-val/773/cff71e43c210fdd711cc0f1210e483aa50585ac7.jpeg,404,0.8866256475448608
+random (CUDA draw),imagenetv2-matched-frequency-format-val/7/a968f01df8a044434de30f0d601bd29e685403bf.jpeg,405,0.8925684690475464
+random (CUDA draw),imagenetv2-matched-frequency-format-val/881/022d3ab950525f18d30f5b6fd0ed36eef58c1ebb.jpeg,406,0.819625973701477
+random (CUDA draw),imagenetv2-matched-frequency-format-val/697/bdcab46d3dcf3a16e5c62a89164d424c494f4604.jpeg,407,0.8287721276283264
+random (CUDA draw),imagenetv2-matched-frequency-format-val/997/3756b3872b8d0dbb9acdcab7b1d7795a8c89a552.jpeg,408,0.8552525043487549
+random (CUDA draw),imagenetv2-matched-frequency-format-val/696/4d3bfc25f869ba10c2f30d9ff49869a323d81517.jpeg,409,0.806522786617279
+random (CUDA draw),imagenetv2-matched-frequency-format-val/737/2d796d02f8faa4252ede6acaf2d92c6b968a6694.jpeg,410,0.8714516162872314
+random (CUDA draw),imagenetv2-matched-frequency-format-val/756/ecef86e7b3cb294661d8b1c41db0529acfa9ad8d.jpeg,411,0.8594316244125366
+random (CUDA draw),imagenetv2-matched-frequency-format-val/518/7becb5cafbc89a526c49de9fd8fe55b984afa5e3.jpeg,412,0.8634979128837585
+random (CUDA draw),imagenetv2-matched-frequency-format-val/631/83a80e46277ed89ce6ec4793d532664dd8f828a8.jpeg,413,0.8085389137268066
+random (CUDA draw),imagenetv2-matched-frequency-format-val/263/59f5516a39c8fe817f387bafda918bcfddcb12db.jpeg,414,0.8343135118484497
+random (CUDA draw),imagenetv2-matched-frequency-format-val/135/1f8bc151fc7d975ac8ac1e9d39b2e3737f8eba41.jpeg,415,0.926621675491333
+random (CUDA draw),imagenetv2-matched-frequency-format-val/988/263f9c3942dc5a70fad548ed624a945049dff765.jpeg,416,0.8377090096473694
+random (CUDA draw),imagenetv2-matched-frequency-format-val/996/7bb7fb42e12e5bffc80452ccb77916612c9d4c8c.jpeg,417,0.8496138453483582
+random (CUDA draw),imagenetv2-matched-frequency-format-val/282/f616c12e77e8fd87bbf2e29f6a5c1e17d8b53ba5.jpeg,418,0.804940938949585
+random (CUDA draw),imagenetv2-matched-frequency-format-val/751/72d31d70d4b4c3c33995cf67261e10f21bbce7ba.jpeg,419,0.8489969372749329
+random (CUDA draw),imagenetv2-matched-frequency-format-val/345/d3fdd32bfbf4eddabab623a35e8203667d7915d4.jpeg,420,0.8752336502075195
+random (CUDA draw),imagenetv2-matched-frequency-format-val/393/65f915eb6223c559b59545063576e0bb75f1050b.jpeg,421,0.8609524965286255
+random (CUDA draw),imagenetv2-matched-frequency-format-val/880/4eaac6b20b3731831a51232415023bab35243123.jpeg,422,0.8738095760345459
+random (CUDA draw),imagenetv2-matched-frequency-format-val/444/225c492900706fdaee7cc48b39ee5cc3ebab7e7f.jpeg,423,0.9152562022209167
+random (CUDA draw),imagenetv2-matched-frequency-format-val/676/3e7bc1424f075dae13fcb0ba4d14437e567c129d.jpeg,424,0.7949292659759521
+random (CUDA draw),imagenetv2-matched-frequency-format-val/140/98c7f174cddea3e4a6f12fb11a5360f382a9982f.jpeg,425,0.8344932198524475
+random (CUDA draw),imagenetv2-matched-frequency-format-val/267/88e5673b376c58c59a8a4871ed3f6f2fb7c36acc.jpeg,426,0.7977988719940186
+random (CUDA draw),imagenetv2-matched-frequency-format-val/195/0dcaed7acbe0e3878b7b312dd945d98bba60a132.jpeg,427,0.8144876956939697
+random (CUDA draw),imagenetv2-matched-frequency-format-val/626/78eddcf60375a4f98e6879f001da872bc578299c.jpeg,428,0.8335416316986084
+random (CUDA draw),imagenetv2-matched-frequency-format-val/212/317abc817fc27c12ea93265ffa42159ac905bcb6.jpeg,429,0.8961926698684692
+random (CUDA draw),imagenetv2-matched-frequency-format-val/625/966dd3b015f45bafcbaf828a5674cffbca6054f9.jpeg,430,0.8491151332855225
+random (CUDA draw),imagenetv2-matched-frequency-format-val/485/1fb532ba37a5515cf229cb6960bd795306644e77.jpeg,431,0.7731491923332214
+random (CUDA draw),imagenetv2-matched-frequency-format-val/314/a724adac54d06fb1f6066ad99093f8dda0000c81.jpeg,432,0.8381124138832092
+random (CUDA draw),imagenetv2-matched-frequency-format-val/598/102a98ccee0a500df36c0f5983073527af5c8904.jpeg,433,0.8383616209030151
+random (CUDA draw),imagenetv2-matched-frequency-format-val/445/89532bf632a0c46cebc8a9504c932189f0c8f51e.jpeg,434,0.8650919198989868
+random (CUDA draw),imagenetv2-matched-frequency-format-val/854/97054c191a70c44e2450595c9ab444c08780a773.jpeg,435,0.8596314191818237
+random (CUDA draw),imagenetv2-matched-frequency-format-val/961/5b6981ebafd9b125752d7b66a468b83b49876f7d.jpeg,436,0.8091437816619873
+random (CUDA draw),imagenetv2-matched-frequency-format-val/173/f37b65f8d960999eca8f2e7770e242629f46531e.jpeg,437,0.9279030561447144
+random (CUDA draw),imagenetv2-matched-frequency-format-val/10/3b12f8a9e0fca07246affdd805e7a8c13ef22136.jpeg,438,0.8153175115585327
+random (CUDA draw),imagenetv2-matched-frequency-format-val/873/73fcb7816db4b5de82762a523129fd01f79118d8.jpeg,439,0.9258725643157959
+random (CUDA draw),imagenetv2-matched-frequency-format-val/782/306aec9a908332fbb042bca774cd006e31e94f23.jpeg,440,0.8201645612716675
+random (CUDA draw),imagenetv2-matched-frequency-format-val/957/938aba47dfb5876f6006d5a29f1c0df4d7bb6f8c.jpeg,441,0.916588544845581
+random (CUDA draw),imagenetv2-matched-frequency-format-val/894/c818c2f297bfc32a1ed75148a68c77beec251132.jpeg,442,0.8176195621490479
+random (CUDA draw),imagenetv2-matched-frequency-format-val/645/c6f0b876f51610f2883dfbec8f6efedd2393fc64.jpeg,443,0.9000250101089478
+random (CUDA draw),imagenetv2-matched-frequency-format-val/721/effb3f2bfaee15801c568bb0bf50691c6e883c67.jpeg,444,0.8401196002960205
+random (CUDA draw),imagenetv2-matched-frequency-format-val/241/84ff215186a9cbdc3db262a3e3614133dacefcc3.jpeg,445,0.8555644750595093
+random (CUDA draw),imagenetv2-matched-frequency-format-val/819/a1f32a713635af4a134aaee215b7845c02a43e67.jpeg,446,0.8599057793617249
+random (CUDA draw),imagenetv2-matched-frequency-format-val/417/9821589d881de0fbd4388d184e22a7193c1bd91e.jpeg,447,0.86680668592453
+random (CUDA draw),imagenetv2-matched-frequency-format-val/320/0d18ad57a6384fd15bd0e06b455faf256d00dc58.jpeg,448,0.875115156173706
+random (CUDA draw),imagenetv2-matched-frequency-format-val/789/2e62b291a1de3e5c3aa698707f5659d31c7850d4.jpeg,449,0.7740223407745361
+random (CUDA draw),imagenetv2-matched-frequency-format-val/58/21bd65367ed98d081960d4ac777cccf2ea8afc7b.jpeg,450,0.8634631633758545
+random (CUDA draw),imagenetv2-matched-frequency-format-val/718/63dc90a57582ca0d4c15574b57aea35870d202ea.jpeg,451,0.8914806842803955
+random (CUDA draw),imagenetv2-matched-frequency-format-val/465/b3c179a2bcd6abcde9b129f95d75fc7fb93ba707.jpeg,452,0.8014242649078369
+random (CUDA draw),imagenetv2-matched-frequency-format-val/906/2f92dd2a9f2f806ad405bd8c8c50b16306481de3.jpeg,453,0.849410891532898
+random (CUDA draw),imagenetv2-matched-frequency-format-val/654/f3ac4118b4f00f94f0991cc0b05e948352cb84ad.jpeg,454,0.8470478057861328
+random (CUDA draw),imagenetv2-matched-frequency-format-val/805/c697dd83f72ca970befe1c7cfec79d550f46ae3d.jpeg,455,0.8526486158370972
+random (CUDA draw),imagenetv2-matched-frequency-format-val/578/662069a20ce0706dc2ec9956d1856ff52d6f6cdb.jpeg,456,0.8685483336448669
+random (CUDA draw),imagenetv2-matched-frequency-format-val/623/e196c9069d3af72551a0c4417aacd436e43a0692.jpeg,457,0.8576819896697998
+random (CUDA draw),imagenetv2-matched-frequency-format-val/970/639d7c665581d5a3d54e69597b2e0e4b83c53b42.jpeg,458,0.7872612476348877
+random (CUDA draw),imagenetv2-matched-frequency-format-val/97/814c0625efee38e50105aefa4a856fe090bb6621.jpeg,459,0.8378868699073792
+random (CUDA draw),imagenetv2-matched-frequency-format-val/647/2a1d21c8af092e75e3b124b1d1e653bc9aff0a51.jpeg,460,0.8756230473518372
+random (CUDA draw),imagenetv2-matched-frequency-format-val/626/1b0e2afafe9e7c446de57343e4ce6751a056ceea.jpeg,461,0.8790460824966431
+random (CUDA draw),imagenetv2-matched-frequency-format-val/51/7c38db856b1bb3965ac6615bd74008a44ce456d7.jpeg,462,0.824651837348938
+random (CUDA draw),imagenetv2-matched-frequency-format-val/130/ee3d9dfb7476c55277fb5dc59d55ea0f37803ec6.jpeg,463,0.7702668905258179
+random (CUDA draw),imagenetv2-matched-frequency-format-val/781/4dd8a4423bfb4eda5be11f11f4d631201bf60041.jpeg,464,0.9169051051139832
+random (CUDA draw),imagenetv2-matched-frequency-format-val/266/1a918c4b95c0f5e89f725b793640380f78f0a2a6.jpeg,465,0.8698917031288147
+random (CUDA draw),imagenetv2-matched-frequency-format-val/427/a3f7e3f1e682f1af32cee09ceba7233d2e7518e7.jpeg,466,0.7972952723503113
+random (CUDA draw),imagenetv2-matched-frequency-format-val/213/97ad643c56cdbc8d5f215e504a3a9d9143e59a06.jpeg,467,0.8809858560562134
+random (CUDA draw),imagenetv2-matched-frequency-format-val/52/a5fa3b5f94be1aa34b8c0d8959781b55c512495b.jpeg,468,0.8838565349578857
+random (CUDA draw),imagenetv2-matched-frequency-format-val/599/f84b279af5329526282f97012ee59ece28b70f00.jpeg,469,0.8405617475509644
+random (CUDA draw),imagenetv2-matched-frequency-format-val/644/c44863d154db67294671bc71a0526d70c72f968d.jpeg,470,0.7606229782104492
+random (CUDA draw),imagenetv2-matched-frequency-format-val/295/fec77eb00dc1c283ff99979202d0401d8a6f2079.jpeg,471,0.8569378852844238
+random (CUDA draw),imagenetv2-matched-frequency-format-val/607/993ccd58c817a215fceb9d41b665ea1e9d9e9e6f.jpeg,472,0.8182308077812195
+random (CUDA draw),imagenetv2-matched-frequency-format-val/977/fe3f757082d0576e693cdb3a6dcb13f8e2b25b8f.jpeg,473,0.8303368091583252
+random (CUDA draw),imagenetv2-matched-frequency-format-val/236/8a1024c167e6694379ebb903545ca33106c6e1bc.jpeg,474,0.7953600883483887
+random (CUDA draw),imagenetv2-matched-frequency-format-val/816/15564d0229cec55c2a7aec5c7ff3a973ae07e3b2.jpeg,475,0.7590423822402954
+random (CUDA draw),imagenetv2-matched-frequency-format-val/648/d724276fa25e5a998d615a71be777adff7eee8f3.jpeg,476,0.7842192649841309
+random (CUDA draw),imagenetv2-matched-frequency-format-val/659/59758f82876af635d44a0900466eb40a994a8694.jpeg,477,0.8498039245605469
+random (CUDA draw),imagenetv2-matched-frequency-format-val/178/8119f170f3a69f388fb7bbebdf61c2fd5dc507c3.jpeg,478,0.8703728914260864
+random (CUDA draw),imagenetv2-matched-frequency-format-val/819/209e4cdda3986ffe45ce161573027fb342b1ad0c.jpeg,479,0.79630446434021
+random (CUDA draw),imagenetv2-matched-frequency-format-val/418/d6194bd98374a355f213bec79d3a516536c25fa7.jpeg,480,0.7908680438995361
+random (CUDA draw),imagenetv2-matched-frequency-format-val/284/2895291027a7b3a8ccbd533ac748940cac882619.jpeg,481,0.8538126945495605
+random (CUDA draw),imagenetv2-matched-frequency-format-val/786/2362cd1ef3421bd5fea7f33f066591b09fe1c989.jpeg,482,0.8341903686523438
+random (CUDA draw),imagenetv2-matched-frequency-format-val/454/64f574269d32ad7bdc56babc32d7a4a0a10e9c89.jpeg,483,0.8237082958221436
+random (CUDA draw),imagenetv2-matched-frequency-format-val/975/08e99df9049b652a1c9273ee8deceea235ec8961.jpeg,484,0.9002583026885986
+random (CUDA draw),imagenetv2-matched-frequency-format-val/229/2b0bef89e2af2690953708c913cb359e5e088d77.jpeg,485,0.8552678823471069
+random (CUDA draw),imagenetv2-matched-frequency-format-val/384/12c95b933a3817b145207a312fdaec3731e4dc28.jpeg,486,0.8558829426765442
+random (CUDA draw),imagenetv2-matched-frequency-format-val/878/e631e6bc46da6b118ca83efcf22dd48fa447225d.jpeg,487,0.8683273792266846
+random (CUDA draw),imagenetv2-matched-frequency-format-val/750/28231327582da4b6dbca651468311f8bc58db6ab.jpeg,488,0.8654055595397949
+random (CUDA draw),imagenetv2-matched-frequency-format-val/897/677b659490d91c1f55e97dc5c4bc738d926d919f.jpeg,489,0.8035746812820435
+random (CUDA draw),imagenetv2-matched-frequency-format-val/554/f3d0f73b10a8115cbb71855753936f9f6344b925.jpeg,490,0.7951205372810364
+random (CUDA draw),imagenetv2-matched-frequency-format-val/907/b3bc9cb20c0f72f711ae51e29baab0c69a18e049.jpeg,491,0.8195900321006775
+random (CUDA draw),imagenetv2-matched-frequency-format-val/901/072556832e03ed62a40eb9dcb69d00ed7b578e2d.jpeg,492,0.777398407459259
+random (CUDA draw),imagenetv2-matched-frequency-format-val/122/c8fe6b99a2fd3bac1fe71ae5ffa59cc00db4e8e3.jpeg,493,0.8108117580413818
+random (CUDA draw),imagenetv2-matched-frequency-format-val/246/0a58dce9de998c92699dc5151ed332544564e1f9.jpeg,494,0.8847270011901855
+random (CUDA draw),imagenetv2-matched-frequency-format-val/937/f30af19612629faf4a3f31bb8fd2a33de80bb1ad.jpeg,495,0.8989914655685425
+random (CUDA draw),imagenetv2-matched-frequency-format-val/338/04c4e65d359b180253714a16b27ab7bf587c3005.jpeg,496,0.861683189868927
+random (CUDA draw),imagenetv2-matched-frequency-format-val/721/a5673902ac621b10d7ee33fb0df9a039bd8be7ac.jpeg,497,0.7983193397521973
+random (CUDA draw),imagenetv2-matched-frequency-format-val/825/03c7b8aaee1d891f7818e4299b6974e0af5d6d5d.jpeg,498,0.7628445625305176
+random (CUDA draw),imagenetv2-matched-frequency-format-val/427/591426164c8450582e0c9e4ade61d5177655baac.jpeg,499,0.8650697469711304

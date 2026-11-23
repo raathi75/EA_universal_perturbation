@@ -1,0 +1,253 @@
+{
+ "A_exact_identity": {
+  "clean: nb03-C vs nb04": "200/200",
+  "clean: nb04 vs nb07": "200/200",
+  "v eps10: nb03-C vs nb04": "200/200",
+  "v eps10: nb04 vs nb07 (fixed v, no defense)": "200/200",
+  "random eps10 (CPU draw): nb03-C vs nb04": "200/200"
+ },
+ "B_saved_examples": {
+  "nb02 A describe (after preproc), universal v -> week1": "3/3 example pairs found at the same positions",
+  "nb02 B1 (real, off), universal v -> nb04 eps10": "3/3 example pairs found at the same positions",
+  "nb02 B2 (real, on), universal v -> nb06 fixed v, no defense": "3/3 example pairs found at the same positions",
+  "nb02 B2 (real, on), clean only -> nb06 clean": "3/3 example pairs found at the same positions"
+ },
+ "C_shift_test": {
+  "after-preproc clean (nb01) vs real-pipeline clean (nb04)": {
+   "n": 200,
+   "mean_sim_shift0": 0.966,
+   "best_shift": 0,
+   "mean_sim_other_shifts": 0.395,
+   "max_other_shift": 0.413,
+   "top1_same_position": 0.9
+  },
+  "splitting-on clean (nb06) vs splitting-off clean (nb04)": {
+   "n": 200,
+   "mean_sim_shift0": 0.848,
+   "best_shift": 0,
+   "mean_sim_other_shifts": 0.396,
+   "max_other_shift": 0.412,
+   "top1_same_position": 0.705
+  },
+  "nb06 clean, defended vs nb06 clean": {
+   "n": 200,
+   "mean_sim_shift0": 0.845,
+   "best_shift": 0,
+   "mean_sim_other_shifts": 0.405,
+   "max_other_shift": 0.415,
+   "top1_same_position": 0.735
+  },
+  "short answers (nb03-E) vs describe captions (nb04)": {
+   "n": 100,
+   "mean_sim_shift0": 0.503,
+   "best_shift": 0,
+   "mean_sim_other_shifts": 0.182,
+   "max_other_shift": 0.198,
+   "top1_same_position": 0.54
+  },
+  "FT-fixed clean (nb07) vs original clean (nb07)": {
+   "n": 200,
+   "mean_sim_shift0": 0.921,
+   "best_shift": 0,
+   "mean_sim_other_shifts": 0.397,
+   "max_other_shift": 0.416,
+   "top1_same_position": 0.785
+  },
+  "FT-UAT clean (nb07) vs original clean (nb07)": {
+   "n": 200,
+   "mean_sim_shift0": 0.892,
+   "best_shift": 0,
+   "mean_sim_other_shifts": 0.399,
+   "max_other_shift": 0.415,
+   "top1_same_position": 0.73
+  },
+  "rrp clean (nb07) vs original clean (nb07)": {
+   "n": 200,
+   "mean_sim_shift0": 0.823,
+   "best_shift": 0,
+   "mean_sim_other_shifts": 0.397,
+   "max_other_shift": 0.411,
+   "top1_same_position": 0.615
+  }
+ },
+ "D_ground_truth_class": [
+  {
+   "label": "nb04 clean (real pipeline, off)",
+   "n": 200,
+   "shift0": {
+    "median_rank": 54.5,
+    "top10": 0.33
+   },
+   "best_shift_by_top10": 0,
+   "other_shifts_top10_mean": 0.01,
+   "other_shifts_top10_max": 0.026,
+   "chance_top10": 0.01,
+   "first5": [
+    {
+     "pos": 0,
+     "class": "jay",
+     "caption": "In this image we can see a bird on the branch of a tree."
+    },
+    {
+     "pos": 1,
+     "class": "Dandie Dinmont",
+     "caption": "In this image we can see two dogs."
+    },
+    {
+     "pos": 2,
+     "class": "thresher",
+     "caption": "In this image we can see a machine and some objects."
+    },
+    {
+     "pos": 3,
+     "class": "Granny Smith",
+     "caption": "In this image we can see a bowl with fruits and a man standing in the "
+    },
+    {
+     "pos": 4,
+     "class": "flagpole",
+     "caption": "In this image we can see a flag, a pole and the sky."
+    }
+   ]
+  },
+  {
+   "label": "nb01 clean (after preprocessing)",
+   "n": 200,
+   "shift0": {
+    "median_rank": 58.5,
+    "top10": 0.315
+   },
+   "best_shift_by_top10": 0,
+   "other_shifts_top10_mean": 0.009,
+   "other_shifts_top10_max": 0.021,
+   "chance_top10": 0.01,
+   "first5": [
+    {
+     "pos": 0,
+     "class": "jay",
+     "caption": "In this image we can see a bird on the branch of a tree."
+    },
+    {
+     "pos": 1,
+     "class": "Dandie Dinmont",
+     "caption": "In this image we can see two dogs."
+    },
+    {
+     "pos": 2,
+     "class": "thresher",
+     "caption": "In this image we can see a machine and a wooden wall."
+    },
+    {
+     "pos": 3,
+     "class": "Granny Smith",
+     "caption": "In this image we can see a bowl with fruits and a man standing in the "
+    },
+    {
+     "pos": 4,
+     "class": "flagpole",
+     "caption": "In this image we can see a flag, in the background there is a sky."
+    }
+   ]
+  },
+  {
+   "label": "nb06 clean (splitting on)",
+   "n": 200,
+   "shift0": {
+    "median_rank": 63.5,
+    "top10": 0.335
+   },
+   "best_shift_by_top10": 0,
+   "other_shifts_top10_mean": 0.01,
+   "other_shifts_top10_max": 0.031,
+   "chance_top10": 0.01,
+   "first5": [
+    {
+     "pos": 0,
+     "class": "jay",
+     "caption": "In this image we can see a bird on the branch of a tree."
+    },
+    {
+     "pos": 1,
+     "class": "Dandie Dinmont",
+     "caption": "In this image we can see two dogs are standing on the ground."
+    },
+    {
+     "pos": 2,
+     "class": "thresher",
+     "caption": "In this image we can see a machine on the ground. In the background th"
+    },
+    {
+     "pos": 3,
+     "class": "Granny Smith",
+     "caption": "In this image we can see a man standing, a bowl, fruits in a bowl, lig"
+    },
+    {
+     "pos": 4,
+     "class": "flagpole",
+     "caption": "In this image we can see a flag, in the background there is a sky with"
+    }
+   ]
+  },
+  {
+   "label": "nb03-E short answers",
+   "n": 100,
+   "shift0": {
+    "median_rank": 56.0,
+    "top10": 0.34
+   },
+   "best_shift_by_top10": 0,
+   "other_shifts_top10_mean": 0.009,
+   "other_shifts_top10_max": 0.033,
+   "chance_top10": 0.01,
+   "first5": [
+    {
+     "pos": 0,
+     "class": "jay",
+     "caption": "Bird."
+    },
+    {
+     "pos": 1,
+     "class": "Dandie Dinmont",
+     "caption": "Dog."
+    },
+    {
+     "pos": 2,
+     "class": "thresher",
+     "caption": "Equipment."
+    },
+    {
+     "pos": 3,
+     "class": "Granny Smith",
+     "caption": "Fruit bowl."
+    },
+    {
+     "pos": 4,
+     "class": "flagpole",
+     "caption": "Flag."
+    }
+   ]
+  }
+ ],
+ "D_examples_2.2B": [
+  {
+   "pos": 0,
+   "class": "jay",
+   "caption_2.2B": "A blue jay is perched on a branch."
+  },
+  {
+   "pos": 1,
+   "class": "Dandie Dinmont",
+   "caption_2.2B": "Two dogs are standing on the grass."
+  },
+  {
+   "pos": 2,
+   "class": "thresher",
+   "caption_2.2B": "A red wagon with a black wheel and a black handle."
+  },
+  {
+   "pos": 3,
+   "class": "Granny Smith",
+   "caption_2.2B": "A man is standing in the background of this image."
+  }
+ ]
+}

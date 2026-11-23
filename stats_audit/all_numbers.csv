@@ -1,0 +1,103 @@
+section,description,draft_value,recomputed_value,n_images,ci_low,ci_high,sd,matches_draft,evidence,source_file,note
+§5 table 1,"universal v, after preprocessing, captions changed",91.0%,91.0%,200,86.2,94.2,,yes,verified,week1_results.json,
+§5 table 1,"random ±ξ (CUDA draw), after preprocessing",5.0%,5.0%,200,2.7,9.0,,yes,verified,week1_results.json,
+§5 table 1,"GoogLeNet UAP upsampled, after preprocessing",4.0%,4.0%,200,2.0,7.7,,yes,verified,week1_results.json,
+§5 table 1,"token cosine, universal v (after preprocessing)",-0.051,-0.051,500,,,0.256,yes,verified (re-evaluated),reeval/A_tokcos_after_preproc.csv (saved aggregate -0.051),
+§5 table 1,"token cosine, random ±ξ",0.846,0.846,500,,,0.041,yes,verified (re-evaluated),reeval/A_tokcos_after_preproc.csv (saved aggregate 0.846),
+§5 table 1,"token cosine, GoogLeNet UAP",0.850,0.850,500,,,missing,yes,aggregate only (no per-image values),week1_results.json,SD needs per-image re-evaluation (reeval_colab.py)
+§5 text,captions that survived v (after preprocessing),9%,9.0%,200,5.8,13.8,,yes,verified,week1_results.json,
+§5 prompt table,"describe, universal v (stand-in: nb01 captions, first 100)",91%,91.0%,100,83.8,95.2,,yes,stand-in,week1_results.json,"nb02 captions not saved; nb01 used the same path, same v and same CUDA noise on the same first 100 images; the Colab re-run of nb02 gives the identical 100 captions"
+§5 prompt table,"describe, random ±ξ (stand-in: nb01 captions, first 100)",2%,2.0%,100,0.6,7.0,,yes,stand-in,week1_results.json,same as above
+§5 prompt table,"""What is in this image?"", universal v",96%,96.0%,100,90.2,98.4,,yes,re-evaluated (Colab re-run),reeval/D_prompts_after_preproc.csv,nb02 captions not saved; re-run captions; saved aggregate 96.0%
+§5 prompt table,"""What is in this image?"", random ±ξ",12%,12.0%,100,7.0,19.8,,yes,re-evaluated (Colab re-run),reeval/D_prompts_after_preproc.csv,nb02 captions not saved; re-run captions; saved aggregate 12.0%
+§5 prompt table,"""What is the main object?"", universal v",94%,94.0%,100,87.5,97.2,,yes,re-evaluated (Colab re-run),reeval/D_prompts_after_preproc.csv,nb02 captions not saved; re-run captions; saved aggregate 94.0%
+§5 prompt table,"""What is the main object?"", random ±ξ",28%,28.0%,100,20.1,37.5,,yes,re-evaluated (Colab re-run),reeval/D_prompts_after_preproc.csv,nb02 captions not saved; re-run captions; saved aggregate 28.0%
+§5 prompt table,"yes/no, answers flipped, universal v",80%,80.0%,100,71.1,86.7,,yes,re-evaluated (Colab re-run),reeval/D_prompts_after_preproc.csv,nb02 first-word rule; saved aggregate 80.0%
+§5 text,"yes/no, still a valid yes/no, universal v",28%,28.0%,100,20.1,37.5,,yes,re-evaluated (Colab re-run),reeval/D_prompts_after_preproc.csv,nb02 first-word rule; saved aggregate 28.0%
+§5 prompt table,"yes/no, answers flipped, random ±ξ",3%,3.0%,100,1.0,8.5,,yes,re-evaluated (Colab re-run),reeval/D_prompts_after_preproc.csv,nb02 first-word rule; saved aggregate 3.0%
+§5 text,"yes/no, still a valid yes/no, random ±ξ",100%,100.0%,100,96.3,100.0,,yes,re-evaluated (Colab re-run),reeval/D_prompts_after_preproc.csv,nb02 first-word rule; saved aggregate 100.0%
+"Abstract, §2.2, §6, §8, §9","universal v, real pipeline, splitting off",71.5%,71.5%,200,64.9,77.3,,yes,verified,week2_step3_eps_sweep.json,"identical captions in nb03 part C and nb07 'fixed v, no defense'"
+"§6, §8","random ±ξ (CUDA draw, nb02), real pipeline, splitting off",3.5%,3.5%,200,1.7,7.0,,yes,re-evaluated (Colab re-run),reeval/D_pipeline_random_cuda.csv,nb02 used the CUDA noise draw and did not save captions; the saved CPU draw gives the §9 4.0%; re-run captions; saved aggregate 3.5%
+"Abstract ('at most 4%'), §9","random ±ξ (CPU draw), real pipeline, splitting off, 10/255",4.0%,4.0%,200,2.0,7.7,,yes,verified,week2_step3_eps_sweep.json,
+"§6, §8, §9","token cosine, universal v, real pipeline off",0.142,0.142,50,,,0.342,yes,verified (re-evaluated),reeval/B_tokcos_psnr_pipeline.csv (saved aggregate 0.142),computed on the first 50 images although the §6 and §8 tables say 200
+§6,"token cosine, splitting on, averaged over 17 tiles",0.688,0.688,50,,,0.051,yes,verified (re-evaluated),reeval/C_tiles_split_on.csv (saved aggregate 0.688),
+"Abstract, §2.2, §4.5, §6, §11.2","universal v, real pipeline, splitting on (121/200)",60.5%,60.5%,200,53.6,67.0,,yes,verified,week3_strong_adaptive.json,
+§6,"splitting on, first 50 images (stand-in: nb06 captions)",70.0%,70.0%,50,56.2,80.9,,yes,stand-in,week3_strong_adaptive.json,nb02 B2 captions not saved
+§6,"random ±ξ, splitting on, 50 images",2.0%,2.0%,50,0.4,10.5,,yes,re-evaluated (Colab re-run),reeval/D_pipeline_random_cuda.csv,no random-noise captions with splitting on were saved; re-run captions; saved aggregate 2.0%
+"§6, §11.1","splitting on, first 100 images (stand-in: nb06 captions)",59.0%,59.0%,100,49.2,68.1,,yes,stand-in,week3_strong_adaptive.json,nb05 captions not saved
+§6,"captions mentioning a person (person/man/woman), clean",14%,13.5%,200,9.4,18.9,,yes,verified,week2_step2_results.json,
+§6,"captions mentioning a person (person/man/woman), universal v",28%,27.5%,200,21.8,34.1,,yes,verified,week2_step2_results.json,
+§6,distinct perturbed captions (nb03 normalisation),173/200,173/200,200,,,,yes,verified,week2_step2_results.json,
+§6,perturbed captions containing 'white shirt',roughly one in six (16.7%),13.5%,200,9.4,18.9,,no,verified,week2_step2_results.json,
+§7,"local tiles mean token cosine, universal v",0.723,0.723,50,,,0.038,yes,verified (re-evaluated),reeval/C_tiles_split_on.csv (saved aggregate 0.723),mean of 16 tile means
+§7,"global tile token cosine, universal v",0.142,0.142,50,,,0.342,yes,verified (re-evaluated),reeval/C_tiles_split_on.csv (saved aggregate 0.142),
+§7,"local tiles mean token cosine, random ±ξ",0.771,0.771,50,,,0.021,yes,verified (re-evaluated),reeval/C_tiles_split_on.csv (saved aggregate 0.771),mean of 16 tile means
+§7,"global tile token cosine, random ±ξ",0.865,0.865,50,,,0.038,yes,verified (re-evaluated),reeval/C_tiles_split_on.csv (saved aggregate 0.865),
+§8,"500M, universal v",31.0%,31.0%,200,25.0,37.7,,yes,re-evaluated (Colab re-run),reeval/F_transfer_captions.csv,transfer captions not saved; re-run captions; saved aggregate 31.0%
+§8,"500M, random ±ξ",10.0%,10.0%,200,6.6,14.9,,yes,re-evaluated (Colab re-run),reeval/F_transfer_captions.csv,transfer captions not saved; re-run captions; saved aggregate 10.0%
+§8,"2.2B, universal v",7.0%,7.0%,100,3.4,13.7,,yes,re-evaluated (Colab re-run),reeval/F_transfer_captions.csv,transfer captions not saved; re-run captions; saved aggregate 7.0%
+§8,"2.2B, random ±ξ",3.0%,3.0%,100,1.0,8.5,,yes,re-evaluated (Colab re-run),reeval/F_transfer_captions.csv,transfer captions not saved; re-run captions; saved aggregate 3.0%
+§8,"500M token cosine, universal v",0.706,0.706,30,,,0.101,yes,verified (re-evaluated),reeval/F_transfer_tokcos.csv (saved aggregate 0.706),"computed on 30 images, not stated in the draft"
+§8,"2.2B token cosine, universal v",0.871,0.871,30,,,0.039,yes,verified (re-evaluated),reeval/F_transfer_tokcos.csv (saved aggregate 0.871),"computed on 30 images, not stated in the draft"
+§9,"universal v, 4/255",21.5%,21.5%,200,16.4,27.7,,yes,verified,week2_step3_eps_sweep.json,
+§9,"random ±ξ, 4/255",1.0%,1.0%,200,0.3,3.6,,yes,verified,week2_step3_eps_sweep.json,
+§9,"token cosine (real pipeline), universal v 4/255",0.623,0.623,50,,,0.152,yes,verified (re-evaluated),reeval/B_tokcos_psnr_pipeline.csv (saved aggregate 0.623),
+§9,"captions with 'person' or 'white shirt', 4/255",14%,14.0%,200,9.9,19.5,,yes,verified,week2_step3_eps_sweep.json,"nb04 definition (person or white shirt), not the §6 one"
+§9,"PSNR (dB), universal v 4/255",37.0,37.046,50,,,0.256,yes,verified (re-evaluated),reeval/B_tokcos_psnr_pipeline.csv (saved aggregate 37.046),
+§9,"universal v, 8/255",62.5%,62.5%,200,55.6,68.9,,yes,verified,week2_step3_eps_sweep.json,
+§9,"random ±ξ, 8/255",3.5%,3.5%,200,1.7,7.0,,yes,verified,week2_step3_eps_sweep.json,
+§9,"token cosine (real pipeline), universal v 8/255",0.291,0.291,50,,,0.355,yes,verified (re-evaluated),reeval/B_tokcos_psnr_pipeline.csv (saved aggregate 0.291),
+§9,"captions with 'person' or 'white shirt', 8/255",22%,22.0%,200,16.8,28.2,,yes,verified,week2_step3_eps_sweep.json,"nb04 definition (person or white shirt), not the §6 one"
+§9,"PSNR (dB), universal v 8/255",32.0,31.977,50,,,0.283,yes,verified (re-evaluated),reeval/B_tokcos_psnr_pipeline.csv (saved aggregate 31.977),
+§9,"token cosine (real pipeline), universal v 10/255",0.142,0.142,50,,,0.342,yes,verified (re-evaluated),reeval/B_tokcos_psnr_pipeline.csv (saved aggregate 0.142),
+§9,"captions with 'person' or 'white shirt', 10/255",28%,27.5%,200,21.8,34.1,,yes,verified,week2_step3_eps_sweep.json,"nb04 definition (person or white shirt), not the §6 one"
+§9,"PSNR (dB), universal v 10/255",30.1,30.075,50,,,0.297,yes,verified (re-evaluated),reeval/B_tokcos_psnr_pipeline.csv (saved aggregate 30.075),
+§9,"universal v, 16/255",91.5%,91.5%,200,86.8,94.6,,yes,verified,week2_step3_eps_sweep.json,
+§9,"random ±ξ, 16/255",4.0%,4.0%,200,2.0,7.7,,yes,verified,week2_step3_eps_sweep.json,
+§9,"token cosine (real pipeline), universal v 16/255",-0.054,-0.054,50,,,0.283,yes,verified (re-evaluated),reeval/B_tokcos_psnr_pipeline.csv (saved aggregate -0.054),
+§9,"captions with 'person' or 'white shirt', 16/255",18%,18.5%,200,13.7,24.5,,no,verified,week2_step3_eps_sweep.json,"nb04 definition (person or white shirt), not the §6 one"
+§9,"PSNR (dB), universal v 16/255",26.4,26.426,50,,,0.325,yes,verified (re-evaluated),reeval/B_tokcos_psnr_pipeline.csv (saved aggregate 26.426),
+"§10, §12","short answers, random ±ξ, text similarity",28%,28.0%,100,20.1,37.5,,yes,verified,week2_step2_results.json,
+§10 (nb03 part E),"short answers, universal v, text similarity",83.0%,83.0%,100,74.5,89.1,,yes,verified,week2_step2_results.json,printed by nb03; not quoted in the draft
+"§10, §12","short answers, random ±ξ, no shared content word",28%,28.3%,99,20.4,37.8,,yes,verified,week2_step2_results.json,"answers with no content word in the clean answer are excluded, as in nb03"
+§10,"unchanged pairs removed (exact string match) of 1,600",377,377,1600,,,,yes,verified,week2_step3_eps_sweep.json,
+§10,labelled pairs: universal / random,37 / 23,37 / 23,60,,,,yes,verified,labeling_key_DO_NOT_OPEN_before_labeling.csv,
+§10,agreement at 0.5,86.4%,,,,,,not traceable,no labels,human labels (missing),Section 10 put aside: human labels not in the repository
+§10,universal pairs labelled changed (27/37),73%,,,,,,not traceable,no labels,human labels (missing),Section 10 put aside: human labels not in the repository
+§10,random pairs labelled changed (3/23),13%,,,,,,not traceable,no labels,human labels (missing),Section 10 put aside: human labels not in the repository
+§11.1,JPEG q75: clean cost,3.0%,3.0%,200,1.4,6.4,,yes,re-evaluated (Colab re-run),reeval/E_defenses_nb05.csv,nb05 captions not saved; re-run captions; saved aggregate 3.0%
+§11.1,JPEG q75: fixed v,8.5%,8.5%,200,5.4,13.2,,yes,re-evaluated (Colab re-run),reeval/E_defenses_nb05.csv,nb05 captions not saved; re-run captions; saved aggregate 8.5%
+§11.1,JPEG q75: weak adaptive v,23.0%,23.0%,200,17.7,29.3,,yes,re-evaluated (Colab re-run),reeval/E_defenses_nb05.csv,nb05 captions not saved; re-run captions; saved aggregate 23.0%
+§11.1,blur σ1: clean cost,6.0%,6.0%,200,3.5,10.2,,yes,re-evaluated (Colab re-run),reeval/E_defenses_nb05.csv,nb05 captions not saved; re-run captions; saved aggregate 6.0%
+§11.1,blur σ1: fixed v,5.0%,5.0%,200,2.7,9.0,,yes,re-evaluated (Colab re-run),reeval/E_defenses_nb05.csv,nb05 captions not saved; re-run captions; saved aggregate 5.0%
+§11.1,blur σ1: weak adaptive v,29.5%,29.5%,200,23.6,36.2,,yes,re-evaluated (Colab re-run),reeval/E_defenses_nb05.csv,nb05 captions not saved; re-run captions; saved aggregate 29.5%
+§11.1,global tile: blanked: clean cost,23.0%,23.0%,100,15.8,32.2,,yes,re-evaluated (Colab re-run),reeval/E_defenses_nb05.csv,nb05 captions not saved; re-run captions; saved aggregate 23.0%
+§11.1,global tile: blanked: fixed v,20.0%,20.0%,100,13.3,28.9,,yes,re-evaluated (Colab re-run),reeval/E_defenses_nb05.csv,nb05 captions not saved; re-run captions; saved aggregate 20.0%
+§11.1,global tile: blanked: weak adaptive v,80.0%,80.0%,100,71.1,86.7,,yes,re-evaluated (Colab re-run),reeval/E_defenses_nb05.csv,nb05 captions not saved; re-run captions; saved aggregate 80.0%
+§11.1,random resize-pad: clean cost (stand-in: nb07),6.0%,6.0%,200,3.5,10.2,,yes,stand-in,week3_finetune_and_rrp.json,nb05 captions not saved
+§11.1,random resize-pad: fixed v (stand-in: nb07),4.0%,4.0%,200,2.0,7.7,,yes,stand-in,week3_finetune_and_rrp.json,nb05 captions not saved
+§11.1,random resize-pad: weak adaptive v (stand-in: nb07),21.0%,21.0%,200,15.9,27.2,,yes,stand-in,week3_finetune_and_rrp.json,nb05 captions not saved
+§11.1,"global tile resize-pad: clean cost, 100 images (stand-in: nb06 first 100)",1.0%,1.0%,100,0.2,5.4,,yes,stand-in,week3_strong_adaptive.json,nb05 captions not saved
+§11.1,"global tile resize-pad: fixed v, 100 images (stand-in: nb06 first 100)",2.0%,2.0%,100,0.6,7.0,,yes,stand-in,week3_strong_adaptive.json,nb05 captions not saved
+§11.1,"global tile resize-pad: weak adaptive v, 100 images (stand-in: nb06 first 100)",10.0%,10.0%,100,5.5,17.4,,yes,stand-in,week3_strong_adaptive.json,nb05 captions not saved
+§11.2,global tile: clean cost (5/200),2.5%,2.5%,200,1.1,5.7,,yes,verified,week3_strong_adaptive.json,
+§11.2,"global tile: fixed v, defended",1.5%,1.5%,200,0.5,4.3,,yes,verified,week3_strong_adaptive.json,
+§11.2,"global tile: weak adaptive v, defended",13.0%,13.0%,200,9.0,18.4,,yes,verified,week3_strong_adaptive.json,
+§11.2,"global tile: strong adaptive v, defended, after 6 epochs",30.5%,30.5% (saved aggregate),200,24.5,37.2,,not traceable,aggregate only,nb06 printed output only,6-epoch captions and perturbation were overwritten by the 12-epoch rerun
+"§11.2, §11.4","global tile: strong adaptive v (12 epochs), defended",35.5%,35.5%,200,29.2,42.3,,yes,verified,week3_strong_adaptive.json,
+§11.2,"strong adaptive v (12 epochs), no defense",29.5%,29.5%,200,23.6,36.2,,yes,verified,week3_strong_adaptive.json,
+§11.4,random resize-pad: clean cost at 0.5,6.0%,6.0%,200,3.5,10.2,,yes,verified,week3_finetune_and_rrp.json,
+§11.4,random resize-pad: clean cost at 0.7,25.0%,25.0%,200,19.5,31.4,,yes,verified,week3_finetune_and_rrp.json,
+§11.4,random resize-pad: strong adaptive v (8 epochs),29.0%,29.0%,200,23.2,35.6,,yes,verified,week3_finetune_and_rrp.json,Fig. 12 shows 28% (epoch 7); table and saved captions are epoch 8
+"§11.3, §11.4",FT-fixed: clean cost at 0.5,3.0%,3.0%,200,1.4,6.4,,yes,verified,week3_finetune_and_rrp.json,
+§11.4,FT-fixed: clean cost at 0.7,8.0%,8.0%,200,5.0,12.6,,yes,verified,week3_finetune_and_rrp.json,
+§11.3,FT-fixed: fixed v,4.0%,4.0%,200,2.0,7.7,,yes,verified,week3_finetune_and_rrp.json,
+"§11.3, §11.4",FT-fixed: adaptive v,41.0%,41.0%,200,34.4,47.9,,yes,verified,week3_finetune_and_rrp.json,
+"§11.3, §11.4",FT-UAT: clean cost at 0.5,4.5%,4.5%,200,2.4,8.3,,yes,verified,week3_finetune_and_rrp.json,
+§11.4,FT-UAT: clean cost at 0.7,13.5%,13.5%,200,9.4,18.9,,yes,verified,week3_finetune_and_rrp.json,
+§11.3,FT-UAT: fixed v,2.5%,2.5%,200,1.1,5.7,,yes,verified,week3_finetune_and_rrp.json,
+"§11.3, §11.4",FT-UAT: adaptive v,37.5%,37.5%,200,31.1,44.4,,yes,verified,week3_finetune_and_rrp.json,
+§11.3,FT-fixed / FT-UAT clean-token drift,0.971 / 0.953,0.9706 / 0.9530 (printed),50,,,missing,yes,aggregate only,nb07 printed output,
+§11.3,attacker token cosine vs FT-UAT / FT-fixed,0.675 / 0.361,0.675 / 0.361 (printed training log),500,,,missing,yes,aggregate only,nb07 printed output,"last-epoch training loss on the 500 BUILD images, not held-out images"
+§12,random noise passes token cosine < 0.9,91.6%,91.6%,500,88.8,93.7,,yes,re-evaluated (Colab re-run),reeval/A_tokcos_after_preproc.csv,"after preprocessing, 500 held-out images; saved aggregate 91.6%"
+§11.4 (missing),global tile resize-pad: clean cost at 0.7,--,15.5%,200,11.1,21.2,,new,verified,week3_strong_adaptive.json,absent from the draft table; computed from saved captions

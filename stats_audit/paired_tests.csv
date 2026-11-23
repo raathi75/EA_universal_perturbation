@@ -1,0 +1,23 @@
+comparison,condition_A,condition_B,n_paired,rate_A,rate_B,only_A,only_B,difference_points,p_value,confounded,draft_claim,note
+§11.4 strongest attack,random resize-pad,FT-UAT,200,29.0%,37.5%,18,35,-8.5,0.02701,no,no single best defense (overlapping intervals),
+§11.4 strongest attack,random resize-pad,FT-fixed,200,29.0%,41.0%,18,42,-12.0,0.00267,no,no single best defense (overlapping intervals),
+§11.4 strongest attack,FT-UAT,FT-fixed,200,37.5%,41.0%,21,28,-3.5,0.3916,no,no single best defense (overlapping intervals),
+§11.4 strongest attack,global tile resize-pad (splitting on),random resize-pad,200,35.5%,29.0%,29,16,+6.5,0.07245,yes,no single best defense (overlapping intervals),"global tile runs with splitting on (baseline 60.5%), the others with splitting off (71.5%)"
+§11.4 strongest attack,global tile resize-pad (splitting on),FT-UAT,200,35.5%,37.5%,25,29,-2.0,0.6835,yes,no single best defense (overlapping intervals),"global tile runs with splitting on (baseline 60.5%), the others with splitting off (71.5%)"
+§11.4 strongest attack,global tile resize-pad (splitting on),FT-fixed,200,35.5%,41.0%,22,33,-5.5,0.177,yes,no single best defense (overlapping intervals),"global tile runs with splitting on (baseline 60.5%), the others with splitting off (71.5%)"
+§11.4 clean cost at 0.5,random resize-pad,FT-UAT,200,6.0%,4.5%,7,4,+1.5,0.5488,no,global tile is the cheapest on clean captions,
+§11.4 clean cost at 0.5,random resize-pad,FT-fixed,200,6.0%,3.0%,9,3,+3.0,0.146,no,global tile is the cheapest on clean captions,
+§11.4 clean cost at 0.5,FT-UAT,FT-fixed,200,4.5%,3.0%,5,2,+1.5,0.4531,no,global tile is the cheapest on clean captions,
+§11.4 clean cost at 0.5,global tile resize-pad (splitting on),random resize-pad,200,2.5%,6.0%,4,11,-3.5,0.1185,yes,global tile is the cheapest on clean captions,"clean cost measured against splitting-on clean captions for the global tile, splitting-off for the others"
+§11.4 clean cost at 0.5,global tile resize-pad (splitting on),FT-UAT,200,2.5%,4.5%,4,8,-2.0,0.3877,yes,global tile is the cheapest on clean captions,"clean cost measured against splitting-on clean captions for the global tile, splitting-off for the others"
+§11.4 clean cost at 0.5,global tile resize-pad (splitting on),FT-fixed,200,2.5%,3.0%,5,6,-0.5,1,yes,global tile is the cheapest on clean captions,"clean cost measured against splitting-on clean captions for the global tile, splitting-off for the others"
+§11.4 clean cost at 0.7,random resize-pad,FT-UAT,200,25.0%,13.5%,28,5,+11.5,6.619e-05,no,global tile is the cheapest on clean captions,
+§11.4 clean cost at 0.7,random resize-pad,FT-fixed,200,25.0%,8.0%,38,4,+17.0,5.653e-08,no,global tile is the cheapest on clean captions,
+§11.4 clean cost at 0.7,FT-UAT,FT-fixed,200,13.5%,8.0%,14,3,+5.5,0.01273,no,global tile is the cheapest on clean captions,
+§11.4 clean cost at 0.7,global tile resize-pad (splitting on),random resize-pad,200,15.5%,25.0%,14,33,-9.5,0.007943,yes,global tile is the cheapest on clean captions,"clean cost measured against splitting-on clean captions for the global tile, splitting-off for the others"
+§11.4 clean cost at 0.7,global tile resize-pad (splitting on),FT-UAT,200,15.5%,13.5%,23,19,+2.0,0.644,yes,global tile is the cheapest on clean captions,"clean cost measured against splitting-on clean captions for the global tile, splitting-off for the others"
+§11.4 clean cost at 0.7,global tile resize-pad (splitting on),FT-fixed,200,15.5%,8.0%,28,13,+7.5,0.02753,yes,global tile is the cheapest on clean captions,"clean cost measured against splitting-on clean captions for the global tile, splitting-off for the others"
+§11.2,"strong adaptive v (12 epochs), defended","weak adaptive v, defended",200,35.5%,13.0%,50,5,+22.5,2.136e-10,no,strong breaks 50 captions the weak did not; reverse 5,
+§11.2,"strong adaptive v, 6 epochs, defended","strong adaptive v, 12 epochs, defended",,30.5% (printed),35.5%,,,,not computable,no,doubling from 6 to 12 epochs added five points,6-epoch captions and perturbation were overwritten; not traceable
+§11.2,"strong adaptive v (12 epochs), defended","strong adaptive v (12 epochs), no defense",200,35.5%,29.5%,26,14,+6.0,0.08069,no,does better against the defended model (35.5%) than the undefended one (29.5%),"the two rates use different clean references (defended vs undefended clean captions), as in the draft"
+§6 splitting,"real pipeline, splitting off","real pipeline, splitting on",200,71.5%,60.5%,28,6,+11.0,0.0001951,no,splitting reduces the attack by about ten points,each run is scored against its own clean captions (splitting off vs on)
