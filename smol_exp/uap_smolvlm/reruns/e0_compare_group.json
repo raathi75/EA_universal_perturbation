@@ -1,0 +1,15 @@
+{
+ "identical_clean_captions": 199,
+ "identical_perturbed_captions": 157,
+ "n": 200,
+ "their_rate_recomputed": {
+  "n": 200,
+  "changed": 0.715,
+  "ci95": [
+   0.648845269187895,
+   0.773050948267227
+  ],
+  "changed@0.7": 0.84,
+  "mean_sim": 0.34091702103614807
+ }
+}
