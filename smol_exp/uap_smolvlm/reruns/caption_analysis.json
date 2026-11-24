@@ -1,0 +1,47 @@
+{
+ "group_final": {
+  "white_shirt": 0.135,
+  "person": 0.27,
+  "distinct": 178
+ },
+ "final": {
+  "white_shirt": 0.115,
+  "person": 0.245,
+  "distinct": 173
+ },
+ "multi": {
+  "white_shirt": 0.16,
+  "person": 0.3,
+  "distinct": 167
+ },
+ "multi_all": {
+  "white_shirt": 0.1,
+  "person": 0.25,
+  "distinct": 173
+ },
+ "h6": {
+  "white_shirt": 0.3,
+  "person": 0.435,
+  "distinct": 102
+ },
+ "random": {
+  "white_shirt": 0.0,
+  "person": 0.11,
+  "distinct": 184
+ },
+ "multi_vs_group_final": {
+  "only_a": 30,
+  "only_b": 5,
+  "mcnemar_p": 2.2361520677804947e-05
+ },
+ "multi_vs_final": {
+  "only_a": 31,
+  "only_b": 2,
+  "mcnemar_p": 1.3085082173347473e-07
+ },
+ "multi_all_vs_group_final": {
+  "only_a": 25,
+  "only_b": 5,
+  "mcnemar_p": 0.0003249142318964005
+ }
+}

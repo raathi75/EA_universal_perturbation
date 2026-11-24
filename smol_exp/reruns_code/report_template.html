@@ -1,0 +1,313 @@
+<title>Re-runs UAP SmolVLM</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* Layout: one reading column (68ch prose), figures and tables use the full 980px measure; sections follow the two tasks */
+:root {
+  --bg: #f5f7fa; --surface: #ffffff; --fg: #16202c; --muted: #586373; --line: #c6ceda; --faint: #e6eaf0;
+  --accent: #2b5ea6; --atk: #c42f37;
+  --s1: #2a78d6; --s2: #eb6834;
+  --f-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #11151b; --surface: #181e26; --fg: #e5e9ef; --muted: #9aa5b4; --line: #3a4554; --faint: #252d38;
+  --accent: #86ace6; --atk: #ff6b70; --s1: #3987e5; --s2: #d95926; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #11151b; --surface: #181e26; --fg: #e5e9ef; --muted: #9aa5b4; --line: #3a4554; --faint: #252d38;
+  --accent: #86ace6; --atk: #ff6b70; --s1: #3987e5; --s2: #d95926; color-scheme: dark }
+
+body { background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 16px; line-height: 1.6; }
+.wrap { max-width: 980px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 72px; display: grid; gap: 56px; }
+header { display: grid; gap: 12px; max-width: 70ch; }
+.eyebrow { font-family: var(--f-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--f-display); font-weight: 600; font-size: clamp(30px, 5vw, 44px); line-height: 1.1; margin: 0; text-wrap: balance; }
+h2 { font-family: var(--f-display); font-weight: 600; font-size: 24px; line-height: 1.25; margin: 0; text-wrap: balance; }
+h3 { font-family: var(--f-display); font-weight: 500; font-size: 18px; margin: 0; }
+p, ul, ol { margin: 0; }
+ul, ol { padding-left: 1.3em; display: grid; gap: 6px; }
+.lead { font-size: 18px; color: var(--muted); }
+section { display: grid; gap: 18px; }
+.prose { display: grid; gap: 14px; max-width: 70ch; }
+code, .mono { font-family: var(--f-mono); font-size: .9em; }
+strong { font-weight: 600; }
+
+.keys { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.key { background: var(--surface); border: 1px solid var(--faint); border-radius: 10px; padding: 14px 16px; display: grid; gap: 4px; align-content: start; }
+.key .n { font-family: var(--f-display); font-size: 28px; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.15; }
+.key .n small { font-size: 15px; color: var(--muted); font-weight: 500; }
+.key p { font-size: 14px; color: var(--muted); }
+.key .tag { font-family: var(--f-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+
+figure { margin: 0; display: grid; gap: 10px; }
+.panel { background: var(--surface); border: 1px solid var(--faint); border-radius: 10px; padding: 16px; overflow-x: auto; position: relative; }
+figcaption { font-size: 14px; color: var(--muted); max-width: 76ch; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 7px; }
+.sw { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+svg.c { display: block; width: 100%; height: auto; font-family: var(--f-body); }
+svg.c text { fill: var(--muted); font-size: 12px; }
+svg.c text.lab { fill: var(--fg); font-size: 12.5px; }
+svg.c text.lab.b { font-weight: 600; }
+svg.c text.sec { fill: var(--muted); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; font-family: var(--f-mono); }
+svg.c .grid { stroke: var(--faint); stroke-width: 1; }
+svg.c .base { stroke: var(--line); stroke-width: 1; }
+svg.c .ref { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; }
+svg.c .ci1 { stroke: var(--s1); stroke-width: 2; stroke-linecap: round; }
+svg.c .ci2 { stroke: var(--s2); stroke-width: 2; stroke-linecap: round; }
+svg.c .d1 { fill: var(--s1); stroke: var(--surface); stroke-width: 2; }
+svg.c .d2 { fill: var(--s2); stroke: var(--surface); stroke-width: 2; }
+svg.c .l1 { stroke: var(--s1); stroke-width: 2; fill: none; }
+svg.c .l2 { stroke: var(--s2); stroke-width: 2; fill: none; }
+svg.c .hov { fill: transparent; }
+svg.c g.row:hover .hov, svg.c g.col:hover .hov { fill: var(--faint); }
+svg.c .xh { stroke: var(--line); stroke-width: 1; }
+.tip { position: absolute; pointer-events: none; background: var(--surface); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 13px; line-height: 1.45; box-shadow: 0 4px 14px rgb(0 0 0 / .14); white-space: nowrap; font-variant-numeric: tabular-nums; z-index: 2; }
+.tip b { font-family: var(--f-mono); font-weight: 500; }
+
+table { border-collapse: collapse; font-size: 14px; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--faint); vertical-align: middle; }
+th { font-weight: 600; color: var(--muted); font-size: 12px; letter-spacing: .03em; }
+td.num, th.num { text-align: right; font-family: var(--f-mono); }
+td.heat { text-align: right; font-family: var(--f-mono); border-left: 2px solid var(--surface); }
+tr.sep td { padding-top: 14px; font-family: var(--f-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--line); }
+tr.hl td:first-child { font-weight: 600; }
+.tbl { overflow-x: auto; }
+
+.callout { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; display: grid; gap: 8px; max-width: 70ch; }
+.warn { border-left-color: var(--atk); }
+blockquote { margin: 0; background: var(--surface); border: 1px solid var(--faint); border-radius: 10px; padding: 14px 16px; font-size: 15px; display: grid; gap: 10px; }
+.cap { font-family: var(--f-mono); font-size: 13px; }
+.cap .c { color: var(--muted); }
+details summary { cursor: pointer; color: var(--muted); font-size: 14px; }
+summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Projet UAP · re-runs · 22 novembre 2026</div>
+  <h1>Couches intermédiaires et transferts</h1>
+  <p class="lead">Deux questions du groupe. L'attaque devient-elle plus forte si la loss regarde aussi les couches du milieu de l'encodeur ? Jusqu'où la perturbation transfère-t-elle vers d'autres modèles ?</p>
+</header>
+
+<section>
+  <h2>En bref</h2>
+  <div class="keys">
+    <div class="key"><span class="tag">Tâche 1</span><span class="n">83,5 % <small>vs 71,0 %</small></span><p>de légendes changées sur SmolVLM-256M quand la loss combine les couches 3, 6, 9 et la sortie. Le gain est significatif (test apparié p &lt; 10⁻⁴).</p></div>
+    <div class="key"><span class="tag">Tâche 1</span><span class="n">72 % <small>vs 59 %</small></span><p>même gain avec le splitting activé, le réglage par défaut du modèle (100 images).</p></div>
+    <div class="key"><span class="tag">Tâche 2</span><span class="n">44 % <small>vs 30,5 %</small></span><p>de transfert vers SmolVLM-500M avec la combinaison de toutes les couches. Les deux encodeurs se ressemblent surtout dans leurs premières couches.</p></div>
+    <div class="key"><span class="tag">Tâche 2</span><span class="n">≈ bruit</span><p>vers ResNet-50, ViT-B/16 et SmolVLM-2.2B. En revanche, 31 à 48 % vers le SigLIP d'origine de Google.</p></div>
+  </div>
+  <div class="prose"><p>Une couche du milieu prise <em>seule</em> ne fait pas mieux que la sortie. Le gain vient de la <strong>combinaison</strong> des deux. Elle rend la perturbation plus résistante à l'arrondi 8 bits et au redimensionnement du vrai pipeline.</p></div>
+</section>
+
+<section>
+  <h2>Protocole et reproduction</h2>
+  <div class="prose">
+    <p>On a gardé tous les réglages du notebook 01 du groupe : ImageNetV2 avec la même permutation, 500 images pour construire v, ε = 10/255, Adam (pas de 1/255, batch 8, 10 époques). La loss reste le cosinus moyen entre tokens propres et perturbés. On change une seule chose : <strong>les états de l'encodeur sur lesquels on calcule ce cosinus</strong>. Pour une combinaison de couches, la loss est la moyenne des cosinus.</p>
+    <p>On mesure toujours avec le vrai pipeline : v est ajouté à l'image, celle-ci est sauvée en 8 bits puis passe par le processeur standard. La légende compte comme changée quand sa similarité MiniLM avec la légende propre passe sous 0,5. Sauf mention contraire, on utilise 200 images de test avec le splitting désactivé, et chaque taux est donné avec son intervalle de Wilson à 95 %.</p>
+    <p>Avant toute nouvelle expérience, on a vérifié que notre code retrouve les chiffres du rapport. 199 légendes propres sur 200 sont identiques mot pour mot à celles du groupe.</p>
+  </div>
+  <div class="tbl"><table>
+    <thead><tr><th>Mesure (v du groupe)</th><th class="num">Rapport</th><th class="num">Nos re-runs</th></tr></thead>
+    <tbody>
+      <tr><td>256M, splitting off, 200 images</td><td class="num">71,5 %</td><td class="num">71,0 %</td></tr>
+      <tr><td>256M, splitting on, 100 images</td><td class="num">59,0 %</td><td class="num">59,0 %</td></tr>
+      <tr><td>Cosinus des tokens en sortie (vrai pipeline)</td><td class="num">0,142</td><td class="num">0,142</td></tr>
+      <tr><td>Transfert vers 500M, 200 images</td><td class="num">31,0 %</td><td class="num">30,5 %</td></tr>
+      <tr><td>Transfert vers 2.2B, 100 images</td><td class="num">7,0 %</td><td class="num">9,0 %</td></tr>
+      <tr><td>Bruit aléatoire ±ε, 256M</td><td class="num">3,5 %</td><td class="num">2,5 %</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Tâche 1 : quelle couche viser ?</h2>
+  <figure>
+    <div class="legend" aria-hidden="true"><span><i class="sw" style="background:var(--s1)"></i>SmolVLM-256M (modèle attaqué)</span><span><i class="sw" style="background:var(--s2)"></i>SmolVLM-500M (transfert)</span><span><i style="width:16px;border-top:1px dashed var(--muted);display:inline-block"></i>v du groupe sur 256M</span></div>
+    <div class="panel" id="fp-wrap"><svg class="c" id="fp" role="img" aria-label="Légendes changées par cible de la loss, avec intervalles à 95 %. Les couches seules restent entre 40 et 76 %, la combinaison couches 3, 6, 9 et sortie atteint 83,5 % sur 256M."></svg><div class="tip" id="fp-tip" hidden></div></div>
+    <figcaption>Un point par perturbation, avec la barre de son intervalle à 95 %. « Couche k » : la loss ne regarde que la sortie de la couche k (k = 1 à 12). « Sortie » : après le post_layernorm, la cible du groupe. Survole une ligne pour voir les chiffres.</figcaption>
+  </figure>
+  <div class="prose">
+    <h3>Ce qu'on observe</h3>
+    <ul>
+      <li><strong>Une couche seule ne bat pas la sortie.</strong> Les couches 2 et 3 seules sont nettement plus faibles (40 et 55,5 %). À partir de la couche 4, on reste entre 63 et 76 %, donc dans la marge d'erreur de la sortie (69–71 %).</li>
+      <li><strong>Combiner sortie et couches intermédiaires gagne 12 points.</strong> On obtient 83,5 % pour 3 + 6 + 9 + sortie et 81 % pour toutes les couches + sortie. Sans la sortie (3 + 6 + 9), on retombe à 69,5 %. Il faut donc les deux.</li>
+      <li><strong>Le gain est solide.</strong> Sur les mêmes 200 images, la combinaison casse 30 légendes que la v du groupe ne casse pas. L'inverse n'arrive que 5 fois (McNemar exact, p &lt; 10⁻⁴).</li>
+      <li><strong>Il tient avec le splitting</strong> (100 images) : 72 % contre 59 % pour la v du groupe, et 71 % pour toutes les couches.</li>
+    </ul>
+  </div>
+  <div class="tbl"><table id="t-on"><thead><tr><th>Splitting on (réglage par défaut), 100 images</th><th class="num">Légendes changées</th><th class="num">IC 95 %</th></tr></thead><tbody></tbody></table></div>
+
+  <h3>Pourquoi la combinaison marche mieux : elle survit au vrai pipeline</h3>
+  <div class="prose"><p>On a mesuré les dégâts en sortie d'encodeur dans deux situations. Dans la première, v est ajouté directement au tenseur, comme pendant l'entraînement. Dans la seconde, v passe par le fichier 8 bits et le redimensionnement. Juste après le preprocessing, la sortie seule et la combinaison abîment autant les tokens (cosinus ≈ −0,03 à −0,06). Mais à travers le vrai pipeline, la sortie seule perd beaucoup plus de son effet.</p></div>
+  <div class="tbl"><table id="t-rob"><thead><tr><th>Cosinus des tokens en sortie (1 = intact)</th><th class="num">Après preprocessing</th><th class="num">Vrai pipeline</th><th class="num">Effet perdu</th></tr></thead><tbody></tbody></table></div>
+  <div class="prose"><p>Notre lecture : les couches intermédiaires répondent à des motifs plus grossiers, qui résistent mieux à un léger redimensionnement. Les forcer à changer aussi empêche v de miser sur des détails fins que le pipeline efface.</p></div>
+
+  <h3>Un attracteur plus fort sur la couche 6</h3>
+  <div class="prose"><p>Viser la couche 6 seule produit l'équivalent VLM des « labels dominants » de 2017. 30 % des légendes parlent d'un « person wearing a white shirt », 43,5 % mentionnent une personne, et il ne reste que <strong>102 légendes distinctes sur 200</strong>. Pour la v du groupe, c'était 13,5 %, 27 % et 178. Les légendes propres ne mentionnent une personne que dans 11 % des cas.</p></div>
+  <blockquote>
+    <div class="cap"><span class="c">propre :</span> In this image we can see two dogs.<br><span class="c">3+6+9+sortie :</span> In this image, there is a person wearing a white shirt.</div>
+    <div class="cap"><span class="c">propre :</span> In this image we can see a flag, a pole and the sky.<br><span class="c">3+6+9+sortie :</span> The name is not in this picture.</div>
+  </blockquote>
+</section>
+
+<section>
+  <h2>Tâche 2 : où l'attaque transfère</h2>
+  <h3>256M et 500M ne se ressemblent que dans leurs premières couches</h3>
+  <figure>
+    <div class="legend" aria-hidden="true"><span><i class="sw" style="background:var(--s1)"></i>Cosinus moyen par token</span><span><i class="sw" style="background:var(--s2)"></i>CKA linéaire</span></div>
+    <div class="panel" id="sim-wrap"><svg class="c" id="sim" role="img" aria-label="Ressemblance entre les encodeurs de 256M et 500M sur les mêmes images, couche par couche. Proche de 1 jusqu'à la couche 3, puis baisse, et devient négative à la couche 12."></svg><div class="tip" id="sim-tip" hidden></div></div>
+  </figure>
+  <div class="prose">
+    <p>On a passé les mêmes 50 images propres dans les deux encodeurs et comparé leurs états couche par couche. Jusqu'à la couche 3, ils sont presque identiques (cosinus ≥ 0,90, CKA ≥ 0,96). Ensuite, ils s'éloignent, et en sortie ils n'ont presque plus rien en commun. Les poids racontent la même chose : les matrices des couches 10 à 12 diffèrent de 40 à 46 % entre les deux modèles, contre 19 à 26 % pour les couches 1 à 8.</p>
+  </div>
+  <div class="callout warn"><p><strong>Correction pour le rapport.</strong> Le « 1,9 % de différence » entre les deux encodeurs est une médiane sur 197 tenseurs, dont 123 sont des biais ou des paramètres de LayerNorm qui ne bougent presque pas. Les 74 matrices de poids, qui portent 99,9 % des paramètres, diffèrent de <strong>26 % en médiane</strong>.</p></div>
+
+  <h3>Tableau des transferts</h3>
+  <figure>
+    <div class="tbl panel"><table id="t-tr"><thead><tr>
+      <th>Cible de la loss</th><th class="num">256M</th><th class="num">500M</th><th class="num">2.2B</th><th class="num">SigLIP Google</th><th class="num">ResNet-50</th><th class="num">ViT-B/16</th>
+    </tr></thead><tbody></tbody></table></div>
+    <figcaption>SmolVLM : % de légendes changées (200 images, 100 pour 2.2B). SigLIP Google (classification zero-shot), ResNet-50 et ViT-B/16 : % d'images dont la classe prédite change (fooling rate de l'article de 2017, 500 images). Précision propre : <span id="acc"></span>. La couleur est plus foncée quand la valeur est plus haute. « — » : pas mesuré.</figcaption>
+  </figure>
+  <div class="prose">
+    <ul>
+      <li><strong>Vers 500M</strong>, les combinaisons transfèrent le mieux : 44 % pour toutes les couches + sortie, 40,5 % pour 3 + 6 + 9 + sortie, contre 30,5 % pour la v du groupe. La couche 3 seule fait aussi 40,5 %, ce qui colle avec la ressemblance des premières couches. La sortie seule est la moins bonne (26 %).</li>
+      <li><strong>Vers le SigLIP d'origine de Google</strong>, la meilleure v est celle de la <strong>couche 2</strong> (48 %). C'est la couche la plus basse, donc la moins modifiée par le fine-tuning de SmolVLM. La v du groupe fait 31 %, et le bruit 14 %.</li>
+      <li><strong>Vers SmolVLM-2.2B</strong> (autre encodeur, SigLIP-SO400M, tuiles de 384 px), rien ne transfère vraiment : au plus 14 %, contre 3 % pour le bruit.</li>
+      <li><strong>Vers les classifieurs ImageNet</strong>, on reste à 1 à 5 points au-dessus du bruit. C'est le miroir du résultat du groupe, où la UAP de GoogLeNet ne faisait rien à SmolVLM.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Limites</h2>
+  <div class="prose"><ul>
+    <li>Une seule graine par perturbation. Entre deux couches seules, des écarts de 5 à 10 points sont dans la marge d'erreur (±6–7 points à 200 images).</li>
+    <li>On n'a pas optimisé le choix des couches de la combinaison (3, 6, 9 choisies a priori), ni les poids de chaque terme.</li>
+    <li>Le splitting on et 2.2B ont été mesurés sur 100 images seulement (±9–10 points).</li>
+    <li>Pour aller vite, l'entraînement s'est fait en bfloat16 (5 min par perturbation sur une RTX 4050). Notre sortie ré-entraînée retrouve la courbe de loss du groupe et le même taux (69 % contre 71 %, dans la marge).</li>
+    <li>Comme dans le rapport, on mesure si la légende <em>change</em>, pas si elle devient fausse.</li>
+    <li>Il faudrait refaire les défenses du rapport avec la nouvelle v. La comparaison des défenses reste faite avec l'ancienne.</li>
+  </ul></div>
+</section>
+
+<section>
+  <h2>À proposer au groupe</h2>
+  <div class="prose">
+    <ol>
+      <li>Ajouter au rapport un paragraphe « middle-layer loss » avec la figure de la tâche 1. Le message clé : la combinaison sortie + couches intermédiaires gagne +12 points et résiste mieux au vrai pipeline.</li>
+      <li>Remplacer « 1,9 % » par la mesure sur les matrices (26 %), et ajouter la courbe de ressemblance couche par couche à la section 8.</li>
+      <li>Ajouter les transferts vers le SigLIP de Google et vers les classifieurs dans la section 8.</li>
+      <li>Si le temps le permet : refaire l'attaque adaptative sur la défense « global tile » avec la loss combinée. C'est là qu'un gain de robustesse compterait le plus.</li>
+    </ol>
+  </div>
+  <details><summary>Où sont les fichiers</summary>
+    <div class="prose" style="margin-top:10px"><p>Code : <code>EA/reruns/</code> (<code>common.py</code>, <code>train.py</code>, <code>evaluate.py</code>, <code>transfer_other.py</code>, <code>robustness.py</code>). Perturbations : <code>EA/reruns/perturbations/v_*.npy</code>, au même format que le <code>.npy</code> du groupe. Chiffres et légendes : <code>EA/reruns/results/*.json</code>. Journal de bord : <code>EA/NOTES_david_claude.md</code>.</p></div>
+  </details>
+</section>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+(function () {
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+  const txt = (p, x, y, s, cls, anchor) => { const t = el("text", { x, y, "text-anchor": anchor || "start" }, p); if (cls) t.setAttribute("class", cls); t.textContent = s; return t; };
+  const pct = v => (v * 100).toFixed(1).replace(".", ",") + " %";
+  const ci = c => c ? `${pct(c.lo)} – ${pct(c.hi)}` : "";
+  const R = Object.fromEntries(DATA.rows.map(r => [r.id, r]));
+  function tipAt(tip, wrap, ev, html) {
+    tip.innerHTML = html; tip.hidden = false;
+    const r = wrap.getBoundingClientRect(); let x = ev.clientX - r.left + wrap.scrollLeft + 14;
+    if (x + tip.offsetWidth > wrap.scrollWidth - 6) x = ev.clientX - r.left + wrap.scrollLeft - tip.offsetWidth - 14;
+    tip.style.left = x + "px"; tip.style.top = (ev.clientY - r.top + wrap.scrollTop + 12) + "px";
+  }
+
+  // ---------- forest plot
+  (function () {
+    const svg = document.getElementById("fp"), wrap = document.getElementById("fp-wrap"), tip = document.getElementById("fp-tip");
+    const groups = [["Références", ["random", "group_final", "final"]], ["Une seule couche", ["h2", "h3", "h4", "h6", "h8", "h9", "h10", "h12"]], ["Plusieurs couches", ["multi_mid", "multi", "multi_all"]]];
+    const W = 760, L = 170, X0 = L + 10, X1 = W - 20, RH = 26, TOP = 24;
+    let y = TOP; const items = [];
+    groups.forEach(([g, ids]) => { items.push({ sec: g, y: y + 14 }); y += 24; ids.forEach(id => { if (R[id]) { items.push({ id, y: y + RH / 2 }); y += RH; } }); y += 6; });
+    const H = y + 30; svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.style.minWidth = "620px";
+    const x = v => X0 + v * (X1 - X0);
+    for (let v = 0; v <= 1.0001; v += 0.2) { el("line", { x1: x(v), x2: x(v), y1: TOP - 6, y2: H - 30, class: v === 0 ? "base" : "grid" }, svg); txt(svg, x(v), H - 12, Math.round(v * 100) + " %", null, "middle"); }
+    txt(svg, X0, 12, "légendes changées", null, "start");
+    const g0 = R.group_final.m256.p; el("line", { x1: x(g0), x2: x(g0), y1: TOP - 6, y2: H - 30, class: "ref" }, svg);
+    items.forEach(it => {
+      if (it.sec) { txt(svg, 8, it.y, it.sec, "sec"); return; }
+      const r = R[it.id], g = el("g", { class: "row" }, svg);
+      el("rect", { x: 0, y: it.y - RH / 2, width: W, height: RH, class: "hov" }, g);
+      txt(g, L, it.y + 4, r.label, "lab" + (it.id === "multi" ? " b" : ""), "end");
+      [[r.m256, 1, -4], [r.m500, 2, 4]].forEach(([c, k, dy]) => {
+        if (!c) return;
+        el("line", { x1: x(c.lo), x2: x(c.hi), y1: it.y + dy, y2: it.y + dy, class: "ci" + k }, g);
+        el("circle", { cx: x(c.p), cy: it.y + dy, r: 4.5, class: "d" + k }, g);
+      });
+      g.addEventListener("mousemove", ev => tipAt(tip, wrap, ev, `<div style="font-weight:600;margin-bottom:3px">${r.label}</div>` +
+        (r.m256 ? `<div><i class="sw" style="background:var(--s1);margin-right:6px"></i>256M <b>${pct(r.m256.p)}</b> <span style="color:var(--muted)">(${ci(r.m256)})</span></div>` : "") +
+        (r.m500 ? `<div><i class="sw" style="background:var(--s2);margin-right:6px"></i>500M <b>${pct(r.m500.p)}</b> <span style="color:var(--muted)">(${ci(r.m500)})</span></div>` : "")));
+      g.addEventListener("mouseleave", () => tip.hidden = true);
+    });
+  })();
+
+  // ---------- similarity chart
+  (function () {
+    const svg = document.getElementById("sim"), wrap = document.getElementById("sim-wrap"), tip = document.getElementById("sim-tip");
+    const S = DATA.sim, W = 760, H = 280, X0 = 52, X1 = W - 16, Y0 = 238, Y1 = 14, lo = -0.7, hi = 1;
+    svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.style.minWidth = "560px";
+    const x = i => X0 + (i + 0.5) * (X1 - X0) / S.length, y = v => Y0 - (v - lo) / (hi - lo) * (Y0 - Y1);
+    [-0.5, 0, 0.5, 1].forEach(v => { el("line", { x1: X0, x2: X1, y1: y(v), y2: y(v), class: v === 0 ? "base" : "grid" }, svg); txt(svg, X0 - 8, y(v) + 4, v.toFixed(1).replace(".", ","), null, "end"); });
+    const nm = k => k === "final" ? "sortie" : k === "h0" ? "emb." : k.slice(1);
+    S.forEach((s, i) => txt(svg, x(i), Y0 + 18, nm(s.k), null, "middle"));
+    txt(svg, (X0 + X1) / 2, H - 4, "état de l'encodeur (emb. = après patch + position embedding, k = sortie de la couche k)", null, "middle");
+    [["cos", 1], ["cka", 2]].forEach(([f, k]) => {
+      el("polyline", { points: S.map((s, i) => `${x(i)},${y(s[f])}`).join(" "), class: "l" + k }, svg);
+      S.forEach((s, i) => el("circle", { cx: x(i), cy: y(s[f]), r: 4, class: "d" + k }, svg));
+    });
+    const last = S.length - 1;
+    txt(svg, x(4) + 6, y(S[4].cos) - 10, "cosinus", "lab");
+    txt(svg, x(6) + 6, y(S[6].cka) + 18, "CKA", "lab");
+    S.forEach((s, i) => {
+      const g = el("g", { class: "col" }, svg);
+      const w = (X1 - X0) / S.length;
+      const r = el("rect", { x: x(i) - w / 2, y: Y1, width: w, height: Y0 - Y1, class: "hov" }, g); svg.insertBefore(g, svg.firstChild);
+      g.addEventListener("mousemove", ev => tipAt(tip, wrap, ev, `<div style="font-weight:600;margin-bottom:3px">${s.k === "final" ? "Sortie (post_layernorm)" : s.k === "h0" ? "Embeddings" : "Couche " + s.k.slice(1)}</div>` +
+        `<div><i class="sw" style="background:var(--s1);margin-right:6px"></i>cosinus <b>${s.cos.toFixed(3)}</b></div><div><i class="sw" style="background:var(--s2);margin-right:6px"></i>CKA <b>${s.cka.toFixed(3)}</b></div>`));
+      g.addEventListener("mouseleave", () => tip.hidden = true);
+    });
+  })();
+
+  // ---------- tables
+  const tr = (cells) => { const t = document.createElement("tr"); t.innerHTML = cells; return t; };
+  const on = document.querySelector("#t-on tbody");
+  ["random", "group_final", "final", "h3", "h6", "h9", "multi_mid", "multi", "multi_all"].forEach(id => {
+    const r = R[id]; if (!r || !r.on) return;
+    const row = tr(`<td>${r.label}</td><td class="num">${pct(r.on.p)}</td><td class="num">${ci(r.on)}</td>`); if (id === "multi") row.className = "hl"; on.appendChild(row);
+  });
+  const rob = document.querySelector("#t-rob tbody");
+  ["random", "group_final", "final", "h6", "multi_mid", "multi", "multi_all"].forEach(id => {
+    const r = R[id]; if (!r || !r.rob) return;
+    const row = tr(`<td>${r.label}</td><td class="num">${r.rob.after.toFixed(2)}</td><td class="num">${r.rob.real.toFixed(2)}</td><td class="num">${(r.rob.real - r.rob.after >= 0 ? "+" : "") + (r.rob.real - r.rob.after).toFixed(2)}</td>`);
+    if (id === "multi") row.className = "hl"; rob.appendChild(row);
+  });
+  const tt = document.querySelector("#t-tr tbody");
+  const heat = c => { if (!c) return `<td class="heat" style="color:var(--muted)">—</td>`;
+    const m = Math.round(Math.min(c.p / 0.85, 1) * 46);
+    return `<td class="heat" title="IC 95 % : ${ci(c)} (n = ${c.n})" style="background:color-mix(in srgb, var(--s1) ${m}%, var(--surface))">${(c.p * 100).toFixed(1).replace(".", ",")}</td>`; };
+  [["Références", ["random", "group_final", "final"]], ["Une seule couche", ["h2", "h3", "h4", "h6", "h8", "h9", "h10", "h12"]], ["Plusieurs couches", ["multi_mid", "multi", "multi_all"]]].forEach(([g, ids]) => {
+    tt.appendChild(tr(`<td colspan="7">${g}</td>`)).className = "sep";
+    ids.forEach(id => { const r = R[id]; if (!r) return;
+      const row = tr(`<td>${r.label}</td>${heat(r.m256)}${heat(r.m500)}${heat(r.m22)}${heat(r.siglip)}${heat(r.resnet)}${heat(r.vit)}`);
+      if (id === "multi") row.className = "hl"; tt.appendChild(row); });
+  });
+  const a = DATA.clean_acc;
+  document.getElementById("acc").textContent = `SigLIP zero-shot ${pct(a["SigLIP (Google)"])}, ResNet-50 ${pct(a["ResNet-50"])}, ViT-B/16 ${pct(a["ViT-B/16"])}`;
+})();
+</script>
