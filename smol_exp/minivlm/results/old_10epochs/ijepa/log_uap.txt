@@ -1,0 +1,44 @@
+Traceback (most recent call last):
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/uap_encoder.py", line 50, in <module>
+    encoder = Encoder(args.encoder).to(device)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/common.py", line 142, in __init__
+    from transformers import AutoImageProcessor
+ModuleNotFoundError: No module named 'transformers'
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> build (500, 3, 224, 224) held-out (500, 3, 224, 224)
+ijepa epoch 1: mean token cosine on the build set = 0.634 (1.1 min)
+ijepa epoch 2: mean token cosine on the build set = 0.452 (2.3 min)
+ijepa epoch 3: mean token cosine on the build set = 0.390 (3.6 min)
+ijepa epoch 4: mean token cosine on the build set = 0.358 (4.9 min)
+ijepa epoch 5: mean token cosine on the build set = 0.342 (6.1 min)
+ijepa epoch 6: mean token cosine on the build set = 0.331 (7.4 min)
+ijepa epoch 7: mean token cosine on the build set = 0.324 (8.7 min)
+ijepa epoch 8: mean token cosine on the build set = 0.319 (10.0 min)
+ijepa epoch 9: mean token cosine on the build set = 0.315 (11.2 min)
+ijepa epoch 10: mean token cosine on the build set = 0.311 (12.5 min)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (ijepa)                                          0.327
+random ±xi                                                   0.811
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.877
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/uap_xi10_tokens.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> build (500, 3, 224, 224) held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (ijepa)                                          0.327
+random ±xi                                                   0.811
+universal v (mae), transfer                                  0.685
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.877
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/uap_xi10_tokens.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> build (500, 3, 224, 224) held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (ijepa)                                          0.327
+random ±xi                                                   0.811
+universal v (siglip), transfer                               0.750
+universal v (clip), transfer                                 0.750
+universal v (mae), transfer                                  0.685
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.877
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/uap_xi10_tokens.json

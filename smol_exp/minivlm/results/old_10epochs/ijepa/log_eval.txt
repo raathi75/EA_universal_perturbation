@@ -1,0 +1,163 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Captions of 1000 COCO val images: clean
+>> Captions of 1000 COCO val images: universal v (ijepa)
+>> Captions of 1000 COCO val images: random ±xi
+>> Skipped (not computed yet): universal v (siglip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10.pt
+>> Skipped (not computed yet): universal v (clip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10.pt
+>> Captions of 1000 COCO val images: universal v (mae), transfer
+>> Captions of 1000 COCO val images: universal v (SmolVLM-256M, 512 -> 224), transfer
+
+ijepa, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.909   15.9% (13.8-18.3)        —
+universal v (ijepa)                                  0.302   71.7% (68.8-74.4)    70.5% (67.6-73.2)
+random ±xi                                           0.863   19.0% (16.7-21.5)     9.5% ( 7.8-11.5)
+universal v (mae), transfer                          0.743   27.8% (25.1-30.7)    20.2% (17.8-22.8)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.880   17.2% (15.0-19.7)     5.3% ( 4.1- 6.9)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a fireplace and a table. 
+  v    : A book with a picture of a dog on it. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear with a white face and brown fur. 
+  v    : A bear with a large nose and a large black and white face. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A couple of chairs and a table in a room. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a tree. 
+  v    : A picture of a city street with a clock on the side of the street. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/coco_captions_stage2.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Clean captions of 500 images
+Traceback (most recent call last):
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/evaluate_captions.py", line 58, in <module>
+    assert caps['clean_again'] == caps['clean'][:20], 'non-deterministic decoding'
+AssertionError: non-deterministic decoding
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Skipped (not computed yet): universal v (siglip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10.pt
+>> Skipped (not computed yet): universal v (clip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10.pt
+
+ijepa, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.909   15.9% (13.8-18.3)        —
+universal v (ijepa)                                  0.302   71.7% (68.8-74.4)    70.5% (67.6-73.2)
+random ±xi                                           0.863   19.0% (16.7-21.5)     9.5% ( 7.8-11.5)
+universal v (mae), transfer                          0.743   27.8% (25.1-30.7)    20.2% (17.8-22.8)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.880   17.2% (15.0-19.7)     5.3% ( 4.1- 6.9)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a fireplace and a table. 
+  v    : A book with a picture of a dog on it. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear with a white face and brown fur. 
+  v    : A bear with a large nose and a large black and white face. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A couple of chairs and a table in a room. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a tree. 
+  v    : A picture of a city street with a clock on the side of the street. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/coco_captions_stage2.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Determinism check: 32/32 identical captions when decoding again
+>> Captions with universal v (ijepa)
+>> Captions with random ±xi
+>> Skipped (not computed yet): universal v (siglip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10.pt
+>> Skipped (not computed yet): universal v (clip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10.pt
+>> Captions with universal v (mae), transfer
+>> Captions with universal v (SmolVLM-256M, 512 -> 224), transfer
+
+ijepa, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (ijepa)                                  72.0% (65.4-77.8)   75.8% (71.9-79.3)      90.6%
+random ±xi                                           16.0% (11.6-21.7)   17.4% (14.3-21.0)      41.0%
+universal v (mae), transfer                          30.0% (24.1-36.7)   30.8% (26.9-35.0)      54.2%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.5% ( 5.4-13.2)   12.0% ( 9.4-15.1)      30.0%
+
+Examples (clean -> universal v):
+   A bird is sitting on a branch of a tree. 
+   -> A bird is perched on a branch in a tree.
+   Two dogs standing in a field with grass. 
+   -> A white and black lace scarf is on a white and black blanket.
+   A red fire truck sitting on the ground. 
+   -> A picture of a man wearing a suit and tie.
+   A woman holding a bowl of fruit in her hand. 
+   -> A banana is on a table with a book.
+   A large red and white kite with a clock on it. 
+   -> A man wearing a hat and a white shirt.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/captions_stage2_xi10.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Captions of 1000 COCO val images: universal v (siglip), transfer
+>> Captions of 1000 COCO val images: universal v (clip), transfer
+
+ijepa, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.909   15.9% (13.8-18.3)        —
+universal v (ijepa)                                  0.302   71.7% (68.8-74.4)    70.5% (67.6-73.2)
+random ±xi                                           0.863   19.0% (16.7-21.5)     9.5% ( 7.8-11.5)
+universal v (mae), transfer                          0.743   27.8% (25.1-30.7)    20.2% (17.8-22.8)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.880   17.2% (15.0-19.7)     5.3% ( 4.1- 6.9)
+universal v (siglip), transfer                       0.818   22.8% (20.3-25.5)    14.2% (12.2-16.5)
+universal v (clip), transfer                         0.838   21.4% (19.0-24.0)    13.3% (11.3-15.5)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a fireplace and a table. 
+  v    : A book with a picture of a dog on it. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear with a white face and brown fur. 
+  v    : A bear with a large nose and a large black and white face. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A couple of chairs and a table in a room. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a tree. 
+  v    : A picture of a city street with a clock on the side of the street. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/coco_captions_stage2.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Determinism check: 32/32 identical captions when decoding again
+>> Captions with universal v (siglip), transfer
+>> Captions with universal v (clip), transfer
+
+ijepa, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (ijepa)                                  72.0% (65.4-77.8)   75.8% (71.9-79.3)      90.6%
+random ±xi                                           16.0% (11.6-21.7)   17.4% (14.3-21.0)      41.0%
+universal v (mae), transfer                          30.0% (24.1-36.7)   30.8% (26.9-35.0)      54.2%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.5% ( 5.4-13.2)   12.0% ( 9.4-15.1)      30.0%
+universal v (siglip), transfer                       20.5% (15.5-26.6)   20.4% (17.1-24.2)      46.2%
+universal v (clip), transfer                         23.5% (18.2-29.8)   21.0% (17.7-24.8)      44.2%
+
+Examples (clean -> universal v):
+   A bird is sitting on a branch of a tree. 
+   -> A bird is perched on a branch in a tree.
+   Two dogs standing in a field with grass. 
+   -> A white and black lace scarf is on a white and black blanket.
+   A red fire truck sitting on the ground. 
+   -> A picture of a man wearing a suit and tie.
+   A woman holding a bowl of fruit in her hand. 
+   -> A banana is on a table with a book.
+   A large red and white kite with a clock on it. 
+   -> A man wearing a hat and a white shirt.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/ijepa/captions_stage2_xi10.json

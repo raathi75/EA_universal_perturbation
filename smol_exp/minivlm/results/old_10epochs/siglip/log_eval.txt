@@ -1,0 +1,126 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Captions of 1000 COCO val images: clean
+>> Captions of 1000 COCO val images: universal v (siglip)
+>> Captions of 1000 COCO val images: random ±xi
+>> Captions of 1000 COCO val images: universal v (clip), transfer
+>> Captions of 1000 COCO val images: universal v (ijepa), transfer
+>> Captions of 1000 COCO val images: universal v (mae), transfer
+>> Captions of 1000 COCO val images: universal v (SmolVLM-256M, 512 -> 224), transfer
+
+siglip, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                1.175    2.9% ( 2.0- 4.1)        —
+universal v (siglip)                                 0.772   15.4% (13.3-17.8)    20.7% (18.3-23.3)
+random ±xi                                           1.148    4.2% ( 3.1- 5.6)     4.6% ( 3.5- 6.1)
+universal v (clip), transfer                         0.945   10.4% ( 8.7-12.4)    14.8% (12.7-17.1)
+universal v (ijepa), transfer                        1.063    7.8% ( 6.3- 9.6)    10.9% ( 9.1-13.0)
+universal v (mae), transfer                          1.051    7.8% ( 6.3- 9.6)     9.4% ( 7.7-11.4)
+universal v (SmolVLM-256M, 512 -> 224), transfer     1.155    3.6% ( 2.6- 4.9)     2.8% ( 1.9- 4.0)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a tv and a table. 
+  v    : A picture of a living room with a large screen. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear standing in a grassy field. 
+  v    : A brown bear with a large mouth and a large nose. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a bookcase. 
+  v    : A bedroom with a bed and a window with a book on it. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign is shown with a tree in the background. 
+  v    : A stop sign with a red and white paint job. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/coco_captions_stage2.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Clean captions of 500 images
+>> Determinism check: 32/32 identical captions when decoding again
+>> Captions with universal v (siglip)
+>> Captions with random ±xi
+>> Captions with universal v (clip), transfer
+>> Captions with universal v (ijepa), transfer
+>> Captions with universal v (mae), transfer
+>> Captions with universal v (SmolVLM-256M, 512 -> 224), transfer
+
+siglip, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (siglip)                                 39.0% (32.5-45.9)   42.0% (37.8-46.4)      74.4%
+random ±xi                                           11.5% ( 7.8-16.7)   10.8% ( 8.4-13.8)      35.4%
+universal v (clip), transfer                         32.5% (26.4-39.3)   31.0% (27.1-35.2)      61.6%
+universal v (ijepa), transfer                        23.5% (18.2-29.8)   22.0% (18.6-25.8)      48.8%
+universal v (mae), transfer                          22.5% (17.3-28.8)   20.2% (16.9-23.9)      48.8%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.0% ( 5.0-12.6)    8.4% ( 6.3-11.2)      26.8%
+
+Examples (clean -> universal v):
+   A blue and white bird sitting on a branch. 
+   -> A bird is sitting on a branch in a tree.
+   Two dogs standing in a grassy area with a sky behind them. 
+   -> A dog and a dog with a dog in the background.
+   A vintage vintage car is shown in a wooden frame. 
+   -> A toy car is shown with a red wheel.
+   A man standing in front of a bowl of fruit. 
+   -> A man sitting in a bowl with a bunch of food.
+   A flag with a green and white color is on a pole. 
+   -> A flag with a flag with a star on it.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/captions_stage2_xi10.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+siglip, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                1.175    2.9% ( 2.0- 4.1)        —
+universal v (siglip)                                 0.772   15.4% (13.3-17.8)    20.7% (18.3-23.3)
+random ±xi                                           1.148    4.2% ( 3.1- 5.6)     4.6% ( 3.5- 6.1)
+universal v (clip), transfer                         0.945   10.4% ( 8.7-12.4)    14.8% (12.7-17.1)
+universal v (ijepa), transfer                        1.063    7.8% ( 6.3- 9.6)    10.9% ( 9.1-13.0)
+universal v (mae), transfer                          1.051    7.8% ( 6.3- 9.6)     9.4% ( 7.7-11.4)
+universal v (SmolVLM-256M, 512 -> 224), transfer     1.155    3.6% ( 2.6- 4.9)     2.8% ( 1.9- 4.0)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a tv and a table. 
+  v    : A picture of a living room with a large screen. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear standing in a grassy field. 
+  v    : A brown bear with a large mouth and a large nose. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a bookcase. 
+  v    : A bedroom with a bed and a window with a book on it. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign is shown with a tree in the background. 
+  v    : A stop sign with a red and white paint job. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/coco_captions_stage2.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Determinism check: 32/32 identical captions when decoding again
+
+siglip, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (siglip)                                 39.0% (32.5-45.9)   42.0% (37.8-46.4)      74.4%
+random ±xi                                           11.5% ( 7.8-16.7)   10.8% ( 8.4-13.8)      35.4%
+universal v (clip), transfer                         32.5% (26.4-39.3)   31.0% (27.1-35.2)      61.6%
+universal v (ijepa), transfer                        23.5% (18.2-29.8)   22.0% (18.6-25.8)      48.8%
+universal v (mae), transfer                          22.5% (17.3-28.8)   20.2% (16.9-23.9)      48.8%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.0% ( 5.0-12.6)    8.4% ( 6.3-11.2)      26.8%
+
+Examples (clean -> universal v):
+   A blue and white bird sitting on a branch. 
+   -> A bird is sitting on a branch in a tree.
+   Two dogs standing in a grassy area with a sky behind them. 
+   -> A dog and a dog with a dog in the background.
+   A vintage vintage car is shown in a wooden frame. 
+   -> A toy car is shown with a red wheel.
+   A man standing in front of a bowl of fruit. 
+   -> A man sitting in a bowl with a bunch of food.
+   A flag with a green and white color is on a pole. 
+   -> A flag with a flag with a star on it.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/captions_stage2_xi10.json

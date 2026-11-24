@@ -1,0 +1,55 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> processor views per image: 1
+>> mean |differentiable preprocessing - processor| = 0.00000
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 768)
+>> clean captions of the 40 build images (target of the end-to-end attack)
+  xi 2/255: images 0-3 done, caption likelihood 0.000
+  xi 2/255: images 4-7 done, caption likelihood 0.000
+  xi 2/255: images 8-11 done, caption likelihood 0.000
+  xi 2/255: images 12-15 done, caption likelihood 0.000
+  xi 2/255: images 16-19 done, caption likelihood 0.000
+  xi 2/255: images 20-23 done, caption likelihood 0.000
+  xi 2/255: images 24-27 done, caption likelihood 0.000
+  xi 2/255: images 28-31 done, caption likelihood 0.000
+  xi 2/255: images 32-35 done, caption likelihood 0.000
+  xi 2/255: images 36-39 done, caption likelihood 0.000
+>> smolvlm-256m, xi 2/255: 85% of the 40 captions changed (mean similarity 0.28)
+  xi 4/255: images 0-3 done, caption likelihood 0.000
+  xi 4/255: images 4-7 done, caption likelihood 0.000
+  xi 4/255: images 8-11 done, caption likelihood 0.000
+  xi 4/255: images 12-15 done, caption likelihood 0.000
+  xi 4/255: images 16-19 done, caption likelihood 0.000
+  xi 4/255: images 20-23 done, caption likelihood 0.000
+  xi 4/255: images 24-27 done, caption likelihood 0.000
+  xi 4/255: images 28-31 done, caption likelihood 0.000
+  xi 4/255: images 32-35 done, caption likelihood 0.000
+  xi 4/255: images 36-39 done, caption likelihood 0.000
+>> smolvlm-256m, xi 4/255: 88% of the 40 captions changed (mean similarity 0.27)
+  xi 10/255: images 0-3 done, caption likelihood 0.000
+  xi 10/255: images 4-7 done, caption likelihood 0.000
+  xi 10/255: images 8-11 done, caption likelihood 0.000
+  xi 10/255: images 12-15 done, caption likelihood 0.000
+  xi 10/255: images 16-19 done, caption likelihood 0.000
+  xi 10/255: images 20-23 done, caption likelihood 0.000
+  xi 10/255: images 24-27 done, caption likelihood 0.000
+  xi 10/255: images 28-31 done, caption likelihood 0.000
+  xi 10/255: images 32-35 done, caption likelihood 0.000
+  xi 10/255: images 36-39 done, caption likelihood 0.000
+>> smolvlm-256m, xi 10/255: 93% of the 40 captions changed (mean similarity 0.24)
+
+smolvlm-256m, per-image attack (40 images, 100 PGD steps), captions changed:
+  xi 2/255        85%   (caption likelihood 0.000)
+  xi 4/255        88%   (caption likelihood 0.000)
+  xi 10/255       93%   (caption likelihood 0.000)
+
+Examples (clean -> attacked at the largest budget):
+  In this image we can see a bird on the branch of a tree.
+  -> blue jay with white face, black wings, and blue body with 1 next to a vertical FF tree with gray tree trunk. blue jay with a wooden post and tree in back.
+  In this image we can see two dogs.
+  -> A white5th-estate recipient 2 in a 90-degree forward plate saw running 2012 on its way to the fence. 2 of the white5th
+  In this image we can see a machine and a wooden structure.
+  -> red red red red red red red red red red red red red red red red red red red red red red red red red red red red red red red red red red red red red red red red
+  In this image we can see a bowl with fruits and a man standing in the background.
+  -> A man situand on front of green green Patty green Pourses on top of a side table on of green green green green blue green green green green blue then in a room with lit up
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/smolvlm-256m/single_image.json

@@ -1,0 +1,8 @@
+torch>=2.0
+torchvision>=0.15
+transformers>=4.47   # I-JEPA (IJepaModel) and SigLIP
+peft
+sentence-transformers
+pycocoevalcap
+pillow
+numpy

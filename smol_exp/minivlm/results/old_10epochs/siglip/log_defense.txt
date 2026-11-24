@@ -1,0 +1,88 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> Original tokens of the 500 build images (anchor)
+=== Fine-tuning siglip, FT-fixed ===
+>> Fine-tuning 427.7M parameters (all)
+siglip FT-fixed epoch 1/3: perturbed-vs-original loss 0.357 | clean drift loss 0.0519 | 0.6 min
+siglip FT-fixed epoch 2/3: perturbed-vs-original loss 0.275 | clean drift loss 0.0644 | 0.6 min
+siglip FT-fixed epoch 3/3: perturbed-vs-original loss 0.249 | clean drift loss 0.0568 | 0.6 min
+>> Saved /Data/gurvan.nkouathio-kemnhou/minivlm/defense/siglip_FT-fixed.pt
+=== Adaptive v against siglip, FT-fixed ===
+  adaptive v epoch 1/7: token cosine 0.758 (0.2 min)
+  adaptive v epoch 2/7: token cosine 0.661 (0.4 min)
+  adaptive v epoch 3/7: token cosine 0.588 (0.6 min)
+  adaptive v epoch 4/7: token cosine 0.533 (0.9 min)
+  adaptive v epoch 5/7: token cosine 0.510 (1.1 min)
+  adaptive v epoch 6/7: token cosine 0.494 (1.3 min)
+  adaptive v epoch 7/7: token cosine 0.487 (1.5 min)
+siglip FT-fixed: clean drift token cos 0.9432 | token cos fixed v 0.778, adaptive v 0.508 (held-out)
+=== Fine-tuning siglip, FT-UAT ===
+>> Fine-tuning 427.7M parameters (all)
+siglip FT-UAT epoch 1/3: perturbed-vs-original loss 0.362 | clean drift loss 0.0551 | attacker token cos 0.704 | 0.9 min
+siglip FT-UAT epoch 2/3: perturbed-vs-original loss 0.307 | clean drift loss 0.0623 | attacker token cos 0.742 | 0.9 min
+siglip FT-UAT epoch 3/3: perturbed-vs-original loss 0.294 | clean drift loss 0.0568 | attacker token cos 0.751 | 0.9 min
+>> Saved /Data/gurvan.nkouathio-kemnhou/minivlm/defense/siglip_FT-UAT.pt
+=== Adaptive v against siglip, FT-UAT ===
+  adaptive v epoch 1/7: token cosine 0.702 (0.2 min)
+  adaptive v epoch 2/7: token cosine 0.613 (0.4 min)
+  adaptive v epoch 3/7: token cosine 0.577 (0.6 min)
+  adaptive v epoch 4/7: token cosine 0.537 (0.9 min)
+  adaptive v epoch 5/7: token cosine 0.515 (1.1 min)
+  adaptive v epoch 6/7: token cosine 0.501 (1.3 min)
+  adaptive v epoch 7/7: token cosine 0.493 (1.5 min)
+siglip FT-UAT: clean drift token cos 0.9405 | token cos fixed v 0.770, adaptive v 0.517 (held-out)
+`torch_dtype` is deprecated! Use `dtype` instead!
+=== Captions with the FT-fixed encoder (1000 COCO val, 500 ImageNetV2 held-out images) ===
+=== Captions with the FT-UAT encoder (1000 COCO val, 500 ImageNetV2 held-out images) ===
+
+siglip: fine-tuned encoder as a defense (COCO val, 1000 images; changed = vs clean captions of the same model)
+condition                            CIDEr     wrong   changed   ImageNetV2 changed@0.5 (all)
+original encoder, clean              1.175      2.9%         —
+original encoder, fixed v            0.772     15.4%     20.7%
+FT-fixed, clean                      1.177      3.2%      1.9%     5.6% (3.9-8.0)  <- cost: vs original model
+FT-fixed, fixed v                    1.098      6.6%      6.9%    13.0% (10.3-16.2)
+FT-fixed, adaptive v                 0.507     49.6%     55.1%    59.6% (55.2-63.8)
+FT-UAT, clean                        1.185      3.7%      1.7%     6.0% (4.2-8.4)  <- cost: vs original model
+FT-UAT, fixed v                      1.111      7.2%      8.0%    14.6% (11.8-18.0)
+FT-UAT, adaptive v                   0.425     57.7%     63.7%    69.0% (64.8-72.9)
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/defense_ft.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/defense_ft_captions.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> Original tokens of the 500 build images (anchor)
+>> Loaded /Data/gurvan.nkouathio-kemnhou/minivlm/defense/siglip_FT-fixed.pt
+=== Adaptive v against siglip, FT-fixed ===
+  adaptive v, start (original v): token cosine on the build images 0.804
+  adaptive v epoch 1/7: token cosine 0.758 during the epoch, 0.697 at its end (0.4 min)
+  adaptive v epoch 2/7: token cosine 0.661 during the epoch, 0.612 at its end (0.7 min)
+  adaptive v epoch 3/7: token cosine 0.588 during the epoch, 0.545 at its end (0.9 min)
+  adaptive v epoch 4/7: token cosine 0.533 during the epoch, 0.510 at its end (1.2 min)
+  adaptive v epoch 5/7: token cosine 0.510 during the epoch, 0.496 at its end (1.5 min)
+  adaptive v epoch 6/7: token cosine 0.494 during the epoch, 0.480 at its end (1.7 min)
+  adaptive v epoch 7/7: token cosine 0.487 during the epoch, 0.474 at its end (2.0 min)
+  adaptive v: kept epoch 7 (token cosine on the build images 0.474)
+siglip FT-fixed: clean drift token cos 0.9432 | token cos fixed v 0.778, adaptive v 0.508 (held-out)
+>> Loaded /Data/gurvan.nkouathio-kemnhou/minivlm/defense/siglip_FT-UAT.pt
+=== Adaptive v against siglip, FT-UAT ===
+  adaptive v, start (original v): token cosine on the build images 0.785
+  adaptive v epoch 1/7: token cosine 0.702 during the epoch, 0.631 at its end (0.4 min)
+  adaptive v epoch 2/7: token cosine 0.613 during the epoch, 0.591 at its end (0.7 min)
+  adaptive v epoch 3/7: token cosine 0.577 during the epoch, 0.549 at its end (0.9 min)
+  adaptive v epoch 4/7: token cosine 0.537 during the epoch, 0.518 at its end (1.2 min)
+  adaptive v epoch 5/7: token cosine 0.515 during the epoch, 0.499 at its end (1.5 min)
+  adaptive v epoch 6/7: token cosine 0.501 during the epoch, 0.491 at its end (1.8 min)
+  adaptive v epoch 7/7: token cosine 0.493 during the epoch, 0.486 at its end (2.0 min)
+  adaptive v: kept epoch 7 (token cosine on the build images 0.486)
+siglip FT-UAT: clean drift token cos 0.9405 | token cos fixed v 0.770, adaptive v 0.517 (held-out)
+`torch_dtype` is deprecated! Use `dtype` instead!
+=== Captions with the FT-fixed encoder (1000 COCO val, 500 ImageNetV2 held-out images) ===
+=== Captions with the FT-UAT encoder (1000 COCO val, 500 ImageNetV2 held-out images) ===
+
+siglip: fine-tuned encoder as a defense (COCO val, 1000 images; changed = vs clean captions of the same model)
+condition                            CIDEr     wrong   changed   ImageNetV2 changed@0.5 (all)
+original encoder, clean              1.175      2.9%         —
+original encoder, fixed v            0.772     15.4%     20.7%
+FT-fixed, clean                      1.177      3.2%      1.9%     5.6% (3.9-8.0)  <- cost: vs original model
+FT-fixed, fixed v                    1.098      6.6%      6.9%    13.0% (10.3-16.2)
+FT-fixed, adaptive v                 0.507     49.6%     55.1%    59.6% (55.2-63.8)
+FT-UAT, clean                        1.185      3.7%      1.7%     6.0% (4.2-8.4)  <- cost: vs original model
+FT-UAT, fixed v                      1.111      7.2%      8.0%    14.6% (11.8-18.0)
+FT-UAT, adaptive v                   0.425     57.7%     63.7%    69.0% (64.8-72.9)
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/defense_ft.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/defense_ft_captions.json

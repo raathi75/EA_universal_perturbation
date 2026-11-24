@@ -1,0 +1,23 @@
+{
+ "model": "qwen2-vl-2b",
+ "size": 448,
+ "token_cos": {
+  "universal v (qwen2-vl-2b)": 0.8779511451721191,
+  "universal v (qwen2-vl-2b, caption loss)": 0.9310399293899536,
+  "random \u00b1xi": 0.9526863694190979,
+  "universal v (siglip), transfer": 0.9524919390678406,
+  "universal v (clip), transfer": 0.9528600573539734,
+  "universal v (ijepa), transfer": 0.9506726861000061,
+  "universal v (mae), transfer": 0.9538460969924927,
+  "universal v (smolvlm (report)), transfer": 0.9495644569396973,
+  "universal v (smolvlm-256m), transfer": 0.9489969611167908,
+  "universal v (llava-ov-0.5b), transfer": 0.9455956220626831,
+  "universal v (qwen2-vl-2b-224), transfer": 0.9541264176368713,
+  "universal v (qwen2-vl-2b), seed 1": 0.8723832368850708,
+  "universal v (qwen2-vl-2b), seed 2": 0.8263881206512451,
+  "random \u00b1xi, draw 1": 0.9531914591789246,
+  "random \u00b1xi, draw 2": 0.9529475569725037,
+  "random \u00b1xi, draw 3": 0.9527906775474548,
+  "random \u00b1xi, draw 4": 0.953260064125061
+ }
+}

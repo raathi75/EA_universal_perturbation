@@ -1,0 +1,36 @@
+{
+ "encoder": "clip",
+ "n_images": 500,
+ "variants": {
+  "no-defense": {
+   "fixed v": {
+    "token_cos": 0.3029264509677887,
+    "connector_cos": 0.7380022406578064
+   },
+   "adaptive v": {
+    "token_cos": 0.299242228269577,
+    "connector_cos": 0.7362977862358093
+   }
+  },
+  "FT-fixed": {
+   "fixed v": {
+    "token_cos": 0.820391833782196,
+    "connector_cos": 0.9298127293586731
+   },
+   "adaptive v": {
+    "token_cos": 0.5652957558631897,
+    "connector_cos": 0.8317845463752747
+   }
+  },
+  "FT-UAT": {
+   "fixed v": {
+    "token_cos": 0.8133335709571838,
+    "connector_cos": 0.927008867263794
+   },
+   "adaptive v": {
+    "token_cos": 0.5633571147918701,
+    "connector_cos": 0.8459212183952332
+   }
+  }
+ }
+}

@@ -1,0 +1,90 @@
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> Original tokens of the 500 build images (anchor)
+=== Fine-tuning mae, FT-fixed ===
+>> Fine-tuning 630.8M parameters (all)
+mae FT-fixed epoch 1/3: perturbed-vs-original loss 0.051 | clean drift loss 0.0047 | 0.8 min
+mae FT-fixed epoch 2/3: perturbed-vs-original loss 0.030 | clean drift loss 0.0021 | 0.8 min
+mae FT-fixed epoch 3/3: perturbed-vs-original loss 0.026 | clean drift loss 0.0015 | 0.8 min
+>> Saved /Data/gurvan.nkouathio-kemnhou/minivlm/defense/mae_FT-fixed.pt
+=== Adaptive v against mae, FT-fixed ===
+  adaptive v epoch 1/7: token cosine 0.919 (0.3 min)
+  adaptive v epoch 2/7: token cosine 0.877 (0.6 min)
+  adaptive v epoch 3/7: token cosine 0.861 (0.9 min)
+  adaptive v epoch 4/7: token cosine 0.847 (1.2 min)
+  adaptive v epoch 5/7: token cosine 0.836 (1.5 min)
+  adaptive v epoch 6/7: token cosine 0.823 (1.7 min)
+  adaptive v epoch 7/7: token cosine 0.814 (2.0 min)
+mae FT-fixed: clean drift token cos 0.9986 | token cos fixed v 0.975, adaptive v 0.810 (held-out)
+=== Fine-tuning mae, FT-UAT ===
+>> Fine-tuning 630.8M parameters (all)
+mae FT-UAT epoch 1/3: perturbed-vs-original loss 0.060 | clean drift loss 0.0069 | attacker token cos 0.949 | 1.2 min
+mae FT-UAT epoch 2/3: perturbed-vs-original loss 0.043 | clean drift loss 0.0047 | attacker token cos 0.962 | 1.2 min
+mae FT-UAT epoch 3/3: perturbed-vs-original loss 0.040 | clean drift loss 0.0040 | attacker token cos 0.964 | 1.2 min
+>> Saved /Data/gurvan.nkouathio-kemnhou/minivlm/defense/mae_FT-UAT.pt
+=== Adaptive v against mae, FT-UAT ===
+  adaptive v epoch 1/7: token cosine 0.951 (0.3 min)
+  adaptive v epoch 2/7: token cosine 0.905 (0.6 min)
+  adaptive v epoch 3/7: token cosine 0.838 (0.9 min)
+  adaptive v epoch 4/7: token cosine 0.732 (1.2 min)
+  adaptive v epoch 5/7: token cosine 0.702 (1.4 min)
+  adaptive v epoch 6/7: token cosine 0.681 (1.7 min)
+  adaptive v epoch 7/7: token cosine 0.872 (2.0 min)
+mae FT-UAT: clean drift token cos 0.9963 | token cos fixed v 0.969, adaptive v 0.972 (held-out)
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+=== Captions with the FT-fixed encoder (1000 COCO val, 500 ImageNetV2 held-out images) ===
+=== Captions with the FT-UAT encoder (1000 COCO val, 500 ImageNetV2 held-out images) ===
+
+mae: fine-tuned encoder as a defense (COCO val, 1000 images; changed = vs clean captions of the same model)
+condition                            CIDEr     wrong   changed   ImageNetV2 changed@0.5 (all)
+original encoder, clean              0.919     13.6%         —
+original encoder, fixed v            0.404     56.5%     57.4%
+FT-fixed, clean                      0.926     13.8%      1.7%     4.6% (3.1-6.8)  <- cost: vs original model
+FT-fixed, fixed v                    0.924     16.1%      6.2%    14.4% (11.6-17.7)
+FT-fixed, adaptive v                 0.329     65.2%     65.9%    75.4% (71.4-79.0)
+FT-UAT, clean                        0.926     14.1%      2.3%     5.8% (4.1-8.2)  <- cost: vs original model
+FT-UAT, fixed v                      0.899     15.3%      9.0%    21.0% (17.7-24.8)
+FT-UAT, adaptive v                   0.897     17.2%      9.3%    19.0% (15.8-22.7)
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/defense_ft.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/defense_ft_captions.json
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> Original tokens of the 500 build images (anchor)
+>> Loaded /Data/gurvan.nkouathio-kemnhou/minivlm/defense/mae_FT-fixed.pt
+=== Adaptive v against mae, FT-fixed ===
+  adaptive v, start (original v): token cosine on the build images 0.976
+  adaptive v epoch 1/7: token cosine 0.919 during the epoch, 0.888 at its end (0.5 min)
+  adaptive v epoch 2/7: token cosine 0.877 during the epoch, 0.867 at its end (0.9 min)
+  adaptive v epoch 3/7: token cosine 0.861 during the epoch, 0.854 at its end (1.2 min)
+  adaptive v epoch 4/7: token cosine 0.848 during the epoch, 0.841 at its end (1.6 min)
+  adaptive v epoch 5/7: token cosine 0.837 during the epoch, 0.830 at its end (1.9 min)
+  adaptive v epoch 6/7: token cosine 0.824 during the epoch, 0.818 at its end (2.3 min)
+  adaptive v epoch 7/7: token cosine 0.815 during the epoch, 0.809 at its end (2.7 min)
+  adaptive v: kept epoch 7 (token cosine on the build images 0.809)
+mae FT-fixed: clean drift token cos 0.9986 | token cos fixed v 0.975, adaptive v 0.811 (held-out)
+>> Loaded /Data/gurvan.nkouathio-kemnhou/minivlm/defense/mae_FT-UAT.pt
+=== Adaptive v against mae, FT-UAT ===
+  adaptive v, start (original v): token cosine on the build images 0.969
+  adaptive v epoch 1/7: token cosine 0.951 during the epoch, 0.923 at its end (0.5 min)
+  adaptive v epoch 2/7: token cosine 0.901 during the epoch, 0.887 at its end (0.9 min)
+  adaptive v epoch 3/7: token cosine 0.867 during the epoch, 0.821 at its end (1.2 min)
+  adaptive v epoch 4/7: token cosine 0.755 during the epoch, 0.707 at its end (1.6 min)
+  adaptive v epoch 5/7: token cosine 0.694 during the epoch, 0.687 at its end (2.0 min)
+  adaptive v epoch 6/7: token cosine 0.697 during the epoch, 0.755 at its end (2.3 min)
+  adaptive v epoch 7/7: token cosine 0.725 during the epoch, 0.727 at its end (2.7 min)
+  adaptive v: kept epoch 5 (token cosine on the build images 0.687)
+mae FT-UAT: clean drift token cos 0.9963 | token cos fixed v 0.969, adaptive v 0.694 (held-out)
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+=== Captions with the FT-fixed encoder (1000 COCO val, 500 ImageNetV2 held-out images) ===
+=== Captions with the FT-UAT encoder (1000 COCO val, 500 ImageNetV2 held-out images) ===
+
+mae: fine-tuned encoder as a defense (COCO val, 1000 images; changed = vs clean captions of the same model)
+condition                            CIDEr     wrong   changed   ImageNetV2 changed@0.5 (all)
+original encoder, clean              0.919     13.6%         —
+original encoder, fixed v            0.404     56.5%     57.4%
+FT-fixed, clean                      0.926     13.8%      1.7%     4.6% (3.1-6.8)  <- cost: vs original model
+FT-fixed, fixed v                    0.924     16.1%      6.2%    14.4% (11.6-17.7)
+FT-fixed, adaptive v                 0.331     65.3%     66.5%    76.0% (72.1-79.5)
+FT-UAT, clean                        0.926     14.1%      2.3%     5.8% (4.1-8.2)  <- cost: vs original model
+FT-UAT, fixed v                      0.899     15.3%      9.0%    21.0% (17.7-24.8)
+FT-UAT, adaptive v                   0.313     73.0%     72.7%    77.0% (73.1-80.5)
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/defense_ft.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/defense_ft_captions.json

@@ -1,0 +1,45 @@
+Traceback (most recent call last):
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/uap_encoder.py", line 50, in <module>
+    encoder = Encoder(args.encoder).to(device)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/common.py", line 142, in __init__
+    from transformers import AutoImageProcessor
+ModuleNotFoundError: No module named 'transformers'
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> build (500, 3, 224, 224) held-out (500, 3, 224, 224)
+mae epoch 1: mean token cosine on the build set = 0.875 (2.5 min)
+mae epoch 2: mean token cosine on the build set = 0.799 (4.7 min)
+mae epoch 3: mean token cosine on the build set = 0.871 (6.9 min)
+mae epoch 4: mean token cosine on the build set = 0.933 (9.0 min)
+mae epoch 5: mean token cosine on the build set = 0.908 (11.1 min)
+mae epoch 6: mean token cosine on the build set = 0.887 (13.3 min)
+mae epoch 7: mean token cosine on the build set = 0.871 (15.3 min)
+mae epoch 8: mean token cosine on the build set = 0.854 (16.9 min)
+mae epoch 9: mean token cosine on the build set = 0.838 (18.5 min)
+mae epoch 10: mean token cosine on the build set = 0.822 (20.1 min)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.815
+random ±xi                                                   0.972
+universal v (ijepa), transfer                                0.909
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_tokens.json
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> build (500, 3, 224, 224) held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.815
+random ±xi                                                   0.972
+universal v (ijepa), transfer                                0.909
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_tokens.json
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> build (500, 3, 224, 224) held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.815
+random ±xi                                                   0.972
+universal v (siglip), transfer                               0.942
+universal v (clip), transfer                                 0.936
+universal v (ijepa), transfer                                0.909
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_tokens.json

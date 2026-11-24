@@ -1,0 +1,13 @@
+{
+ "model": "llava-ov-0.5b",
+ "size": 384,
+ "token_cos": {
+  "universal v (llava-ov-0.5b)": 0.16828586161136627,
+  "random \u00b1xi": 0.7731008529663086,
+  "universal v (siglip), transfer": 0.6693939566612244,
+  "universal v (clip), transfer": 0.66379714012146,
+  "universal v (ijepa), transfer": 0.6794440746307373,
+  "universal v (mae), transfer": 0.7381579875946045,
+  "universal v (smolvlm (report)), transfer": 0.7821003198623657
+ }
+}

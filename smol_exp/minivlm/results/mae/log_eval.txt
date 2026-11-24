@@ -1,0 +1,680 @@
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Captions of 1000 COCO val images: clean
+>> Captions of 1000 COCO val images: universal v (mae)
+>> Captions of 1000 COCO val images: universal v (mae, connector-output)
+>> Captions of 1000 COCO val images: random ±xi
+>> Skipped (not computed yet): universal v (siglip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10.pt
+>> Skipped (not computed yet): universal v (clip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10.pt
+>> Captions of 1000 COCO val images: universal v (ijepa), transfer
+>> Captions of 1000 COCO val images: universal v (SmolVLM-256M, 512 -> 224), transfer
+
+mae, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.919   13.6% (11.6-15.9)        —
+universal v (mae)                                    0.121   93.1% (91.4-94.5)    93.6% (91.9-95.0)
+universal v (mae, connector-output)                  0.292   69.8% (66.9-72.6)    70.6% (67.7-73.3)
+random ±xi                                           0.927   14.1% (12.1-16.4)     6.5% ( 5.1- 8.2)
+universal v (ijepa), transfer                        0.696   31.4% (28.6-34.3)    27.3% (24.6-30.1)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.920   14.0% (12.0-16.3)     4.4% ( 3.3- 5.9)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a large TV and a large wooden table. 
+  v    : A group of people standing next to each other. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear standing in a grassy area. 
+  v    : A group of people standing next to each other. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A group of people standing next to each other. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a building. 
+  v    : A group of people standing next to each other. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_captions_stage2.json
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Clean captions of 500 images
+>> Determinism check: 32/32 identical captions when decoding again
+>> Captions with universal v (mae)
+>> Captions with universal v (mae, connector-output)
+>> Captions with random ±xi
+>> Skipped (not computed yet): universal v (siglip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10.pt
+>> Skipped (not computed yet): universal v (clip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10.pt
+>> Captions with universal v (ijepa), transfer
+>> Captions with universal v (SmolVLM-256M, 512 -> 224), transfer
+
+mae, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (mae)                                    94.5% (90.4-96.9)   92.8% (90.2-94.8)      97.2%
+universal v (mae, connector-output)                  73.0% (66.5-78.7)   74.8% (70.8-78.4)      87.4%
+random ±xi                                           16.0% (11.6-21.7)   14.0% (11.2-17.3)      31.0%
+universal v (ijepa), transfer                        40.0% (33.5-46.9)   40.0% (35.8-44.4)      62.4%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.0% ( 5.0-12.6)   10.4% ( 8.0-13.4)      24.4%
+
+Examples (clean -> universal v):
+   A bird perched on a branch in a tree. 
+   -> A group of people wearing blue and wearing a red shirt.
+   Two dogs standing in a field with grass. 
+   -> A group of people standing next to each other.
+   A red fire hydrant sitting on the ground next to a building. 
+   -> A group of people standing next to each other.
+   A bowl of fruit sitting on a counter. 
+   -> A group of people standing next to each other.
+   A man wearing a red shirt and a white tie. 
+   -> A group of people standing next to each other.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/captions_stage2_xi10.json
+=== python eval_coco.py --encoder mae (Sun Nov 22 08:20:14 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Skipped (not computed yet): universal v (mae, caption loss) /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_cap_xi10.pt
+>> Captions of 1000 COCO val images: universal v (siglip), transfer
+>> Captions of 1000 COCO val images: universal v (clip), transfer
+>> Captions of 1000 COCO val images: universal v (mae), seed 1
+>> Captions of 1000 COCO val images: universal v (mae), seed 2
+>> Captions of 1000 COCO val images: random ±xi, draw 1
+>> Captions of 1000 COCO val images: random ±xi, draw 2
+>> Captions of 1000 COCO val images: random ±xi, draw 3
+>> Captions of 1000 COCO val images: random ±xi, draw 4
+
+mae, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.919   13.6% (11.6-15.9)        —
+universal v (mae)                                    0.121   93.1% (91.4-94.5)    93.6% (91.9-95.0)
+universal v (mae, connector-output)                  0.292   69.8% (66.9-72.6)    70.6% (67.7-73.3)
+random ±xi                                           0.927   14.1% (12.1-16.4)     6.5% ( 5.1- 8.2)
+universal v (ijepa), transfer                        0.696   31.4% (28.6-34.3)    27.3% (24.6-30.1)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.920   14.0% (12.0-16.3)     4.4% ( 3.3- 5.9)
+universal v (siglip), transfer                       0.787   21.3% (18.9-23.9)    17.6% (15.4-20.1)
+universal v (clip), transfer                         0.797   22.5% (20.0-25.2)    17.2% (15.0-19.7)
+universal v (mae), seed 1                            0.123   92.2% (90.4-93.7)    93.1% (91.4-94.5)
+universal v (mae), seed 2                            0.106   93.8% (92.1-95.1)    94.3% (92.7-95.6)
+random ±xi, draw 1                                   0.918   15.0% (12.9-17.3)     6.4% ( 5.0- 8.1)
+random ±xi, draw 2                                   0.925   14.5% (12.5-16.8)     6.6% ( 5.2- 8.3)
+random ±xi, draw 3                                   0.922   14.1% (12.1-16.4)     6.3% ( 5.0- 8.0)
+random ±xi, draw 4                                   0.926   15.2% (13.1-17.6)     5.6% ( 4.3- 7.2)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a large TV and a large wooden table. 
+  v    : A group of people standing next to each other. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear standing in a grassy area. 
+  v    : A group of people standing next to each other. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A group of people standing next to each other. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a building. 
+  v    : A group of people standing next to each other. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_captions_stage2.json
+=== python evaluate_captions.py --encoder mae (Sun Nov 22 08:23:19 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Determinism check: 32/32 identical captions when decoding again
+>> Skipped (not computed yet): universal v (mae, caption loss) /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_cap_xi10.pt
+>> Captions with universal v (siglip), transfer
+>> Captions with universal v (clip), transfer
+>> Captions with universal v (mae), seed 1
+>> Captions with universal v (mae), seed 2
+>> Captions with random ±xi, draw 1
+>> Captions with random ±xi, draw 2
+>> Captions with random ±xi, draw 3
+>> Captions with random ±xi, draw 4
+
+mae, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (mae)                                    94.5% (90.4-96.9)   92.8% (90.2-94.8)      97.2%
+universal v (mae, connector-output)                  73.0% (66.5-78.7)   74.8% (70.8-78.4)      87.4%
+random ±xi                                           16.0% (11.6-21.7)   14.0% (11.2-17.3)      31.0%
+universal v (ijepa), transfer                        40.0% (33.5-46.9)   40.0% (35.8-44.4)      62.4%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.0% ( 5.0-12.6)   10.4% ( 8.0-13.4)      24.4%
+universal v (siglip), transfer                       29.5% (23.6-36.2)   29.2% (25.4-33.3)      49.8%
+universal v (clip), transfer                         28.0% (22.2-34.6)   27.8% (24.1-31.9)      50.6%
+universal v (mae), seed 1                            91.0% (86.2-94.2)   92.6% (90.0-94.6)      95.4%
+universal v (mae), seed 2                            95.0% (91.0-97.3)   94.4% (92.0-96.1)      97.4%
+random ±xi, draw 1                                   18.0% (13.3-23.9)   15.6% (12.7-19.0)      35.4%
+random ±xi, draw 2                                   17.0% (12.4-22.8)   15.6% (12.7-19.0)      33.4%
+random ±xi, draw 3                                   18.5% (13.7-24.5)   16.4% (13.4-19.9)      33.6%
+random ±xi, draw 4                                   17.5% (12.9-23.4)   14.8% (12.0-18.2)      33.8%
+
+Examples (clean -> universal v):
+   A bird perched on a branch in a tree. 
+   -> A group of people wearing blue and wearing a red shirt.
+   Two dogs standing in a field with grass. 
+   -> A group of people standing next to each other.
+   A red fire hydrant sitting on the ground next to a building. 
+   -> A group of people standing next to each other.
+   A bowl of fruit sitting on a counter. 
+   -> A group of people standing next to each other.
+   A man wearing a red shirt and a white tie. 
+   -> A group of people standing next to each other.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/captions_stage2_xi10.json
+=== python eval_coco.py --encoder mae (Sun Nov 22 08:37:21 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Captions of 1000 COCO val images: universal v (mae, caption loss)
+
+mae, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.919   13.6% (11.6-15.9)        —
+universal v (mae)                                    0.121   93.1% (91.4-94.5)    93.6% (91.9-95.0)
+universal v (mae, connector-output)                  0.292   69.8% (66.9-72.6)    70.6% (67.7-73.3)
+random ±xi                                           0.927   14.1% (12.1-16.4)     6.5% ( 5.1- 8.2)
+universal v (ijepa), transfer                        0.696   31.4% (28.6-34.3)    27.3% (24.6-30.1)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.920   14.0% (12.0-16.3)     4.4% ( 3.3- 5.9)
+universal v (siglip), transfer                       0.787   21.3% (18.9-23.9)    17.6% (15.4-20.1)
+universal v (clip), transfer                         0.797   22.5% (20.0-25.2)    17.2% (15.0-19.7)
+universal v (mae), seed 1                            0.123   92.2% (90.4-93.7)    93.1% (91.4-94.5)
+universal v (mae), seed 2                            0.106   93.8% (92.1-95.1)    94.3% (92.7-95.6)
+random ±xi, draw 1                                   0.918   15.0% (12.9-17.3)     6.4% ( 5.0- 8.1)
+random ±xi, draw 2                                   0.925   14.5% (12.5-16.8)     6.6% ( 5.2- 8.3)
+random ±xi, draw 3                                   0.922   14.1% (12.1-16.4)     6.3% ( 5.0- 8.0)
+random ±xi, draw 4                                   0.926   15.2% (13.1-17.6)     5.6% ( 4.3- 7.2)
+universal v (mae, caption loss)                      0.116   87.4% (85.2-89.3)    88.7% (86.6-90.5)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a large TV and a large wooden table. 
+  v    : A group of people standing next to each other. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear standing in a grassy area. 
+  v    : A group of people standing next to each other. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A group of people standing next to each other. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a building. 
+  v    : A group of people standing next to each other. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_captions_stage2.json
+=== python evaluate_captions.py --encoder mae (Sun Nov 22 08:38:09 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Determinism check: 32/32 identical captions when decoding again
+>> Captions with universal v (mae, caption loss)
+
+mae, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (mae)                                    94.5% (90.4-96.9)   92.8% (90.2-94.8)      97.2%
+universal v (mae, connector-output)                  73.0% (66.5-78.7)   74.8% (70.8-78.4)      87.4%
+random ±xi                                           16.0% (11.6-21.7)   14.0% (11.2-17.3)      31.0%
+universal v (ijepa), transfer                        40.0% (33.5-46.9)   40.0% (35.8-44.4)      62.4%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.0% ( 5.0-12.6)   10.4% ( 8.0-13.4)      24.4%
+universal v (siglip), transfer                       29.5% (23.6-36.2)   29.2% (25.4-33.3)      49.8%
+universal v (clip), transfer                         28.0% (22.2-34.6)   27.8% (24.1-31.9)      50.6%
+universal v (mae), seed 1                            91.0% (86.2-94.2)   92.6% (90.0-94.6)      95.4%
+universal v (mae), seed 2                            95.0% (91.0-97.3)   94.4% (92.0-96.1)      97.4%
+random ±xi, draw 1                                   18.0% (13.3-23.9)   15.6% (12.7-19.0)      35.4%
+random ±xi, draw 2                                   17.0% (12.4-22.8)   15.6% (12.7-19.0)      33.4%
+random ±xi, draw 3                                   18.5% (13.7-24.5)   16.4% (13.4-19.9)      33.6%
+random ±xi, draw 4                                   17.5% (12.9-23.4)   14.8% (12.0-18.2)      33.8%
+universal v (mae, caption loss)                      93.5% (89.2-96.2)   93.4% (90.9-95.3)      97.0%
+
+Examples (clean -> universal v):
+   A bird perched on a branch in a tree. 
+   -> A group of people wearing blue and wearing a red shirt.
+   Two dogs standing in a field with grass. 
+   -> A group of people standing next to each other.
+   A red fire hydrant sitting on the ground next to a building. 
+   -> A group of people standing next to each other.
+   A bowl of fruit sitting on a counter. 
+   -> A group of people standing next to each other.
+   A man wearing a red shirt and a white tie. 
+   -> A group of people standing next to each other.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/captions_stage2_xi10.json
+=== python eval_coco.py --encoder mae (Mon Nov 23 12:33:25 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+mae, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.919   13.6% (11.6-15.9)        —
+universal v (mae)                                    0.121   93.1% (91.4-94.5)    93.6% (91.9-95.0)
+universal v (mae, connector-output)                  0.292   69.8% (66.9-72.6)    70.6% (67.7-73.3)
+random ±xi                                           0.927   14.1% (12.1-16.4)     6.5% ( 5.1- 8.2)
+universal v (ijepa), transfer                        0.696   31.4% (28.6-34.3)    27.3% (24.6-30.1)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.920   14.0% (12.0-16.3)     4.4% ( 3.3- 5.9)
+universal v (siglip), transfer                       0.787   21.3% (18.9-23.9)    17.6% (15.4-20.1)
+universal v (clip), transfer                         0.797   22.5% (20.0-25.2)    17.2% (15.0-19.7)
+universal v (mae), seed 1                            0.123   92.2% (90.4-93.7)    93.1% (91.4-94.5)
+universal v (mae), seed 2                            0.106   93.8% (92.1-95.1)    94.3% (92.7-95.6)
+random ±xi, draw 1                                   0.918   15.0% (12.9-17.3)     6.4% ( 5.0- 8.1)
+random ±xi, draw 2                                   0.925   14.5% (12.5-16.8)     6.6% ( 5.2- 8.3)
+random ±xi, draw 3                                   0.922   14.1% (12.1-16.4)     6.3% ( 5.0- 8.0)
+random ±xi, draw 4                                   0.926   15.2% (13.1-17.6)     5.6% ( 4.3- 7.2)
+universal v (mae, caption loss)                      0.116   87.4% (85.2-89.3)    88.7% (86.6-90.5)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a large TV and a large wooden table. 
+  v    : A group of people standing next to each other. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear standing in a grassy area. 
+  v    : A group of people standing next to each other. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A group of people standing next to each other. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a building. 
+  v    : A group of people standing next to each other. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_captions_stage2.json
+=== python evaluate_captions.py --encoder mae (Mon Nov 23 12:33:43 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Determinism check: 32/32 identical captions when decoding again
+
+mae, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (mae)                                    94.5% (90.4-96.9)   92.8% (90.2-94.8)      97.2%
+universal v (mae, connector-output)                  73.0% (66.5-78.7)   74.8% (70.8-78.4)      87.4%
+random ±xi                                           16.0% (11.6-21.7)   14.0% (11.2-17.3)      31.0%
+universal v (ijepa), transfer                        40.0% (33.5-46.9)   40.0% (35.8-44.4)      62.4%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.0% ( 5.0-12.6)   10.4% ( 8.0-13.4)      24.4%
+universal v (siglip), transfer                       29.5% (23.6-36.2)   29.2% (25.4-33.3)      49.8%
+universal v (clip), transfer                         28.0% (22.2-34.6)   27.8% (24.1-31.9)      50.6%
+universal v (mae), seed 1                            91.0% (86.2-94.2)   92.6% (90.0-94.6)      95.4%
+universal v (mae), seed 2                            95.0% (91.0-97.3)   94.4% (92.0-96.1)      97.4%
+random ±xi, draw 1                                   18.0% (13.3-23.9)   15.6% (12.7-19.0)      35.4%
+random ±xi, draw 2                                   17.0% (12.4-22.8)   15.6% (12.7-19.0)      33.4%
+random ±xi, draw 3                                   18.5% (13.7-24.5)   16.4% (13.4-19.9)      33.6%
+random ±xi, draw 4                                   17.5% (12.9-23.4)   14.8% (12.0-18.2)      33.8%
+universal v (mae, caption loss)                      93.5% (89.2-96.2)   93.4% (90.9-95.3)      97.0%
+
+Examples (clean -> universal v):
+   A bird perched on a branch in a tree. 
+   -> A group of people wearing blue and wearing a red shirt.
+   Two dogs standing in a field with grass. 
+   -> A group of people standing next to each other.
+   A red fire hydrant sitting on the ground next to a building. 
+   -> A group of people standing next to each other.
+   A bowl of fruit sitting on a counter. 
+   -> A group of people standing next to each other.
+   A man wearing a red shirt and a white tie. 
+   -> A group of people standing next to each other.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/captions_stage2_xi10.json
+=== python eval_coco.py --encoder mae (Mon Nov 23 12:34:57 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+mae, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.919   13.6% (11.6-15.9)        —
+universal v (mae)                                    0.121   93.1% (91.4-94.5)    93.6% (91.9-95.0)
+universal v (mae, connector-output)                  0.292   69.8% (66.9-72.6)    70.6% (67.7-73.3)
+random ±xi                                           0.927   14.1% (12.1-16.4)     6.5% ( 5.1- 8.2)
+universal v (ijepa), transfer                        0.696   31.4% (28.6-34.3)    27.3% (24.6-30.1)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.920   14.0% (12.0-16.3)     4.4% ( 3.3- 5.9)
+universal v (siglip), transfer                       0.787   21.3% (18.9-23.9)    17.6% (15.4-20.1)
+universal v (clip), transfer                         0.797   22.5% (20.0-25.2)    17.2% (15.0-19.7)
+universal v (mae), seed 1                            0.123   92.2% (90.4-93.7)    93.1% (91.4-94.5)
+universal v (mae), seed 2                            0.106   93.8% (92.1-95.1)    94.3% (92.7-95.6)
+random ±xi, draw 1                                   0.918   15.0% (12.9-17.3)     6.4% ( 5.0- 8.1)
+random ±xi, draw 2                                   0.925   14.5% (12.5-16.8)     6.6% ( 5.2- 8.3)
+random ±xi, draw 3                                   0.922   14.1% (12.1-16.4)     6.3% ( 5.0- 8.0)
+random ±xi, draw 4                                   0.926   15.2% (13.1-17.6)     5.6% ( 4.3- 7.2)
+universal v (mae, caption loss)                      0.116   87.4% (85.2-89.3)    88.7% (86.6-90.5)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a large TV and a large wooden table. 
+  v    : A group of people standing next to each other. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear standing in a grassy area. 
+  v    : A group of people standing next to each other. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A group of people standing next to each other. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a building. 
+  v    : A group of people standing next to each other. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_captions_stage2.json
+=== python evaluate_captions.py --encoder mae (Mon Nov 23 12:35:12 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Determinism check: 32/32 identical captions when decoding again
+
+mae, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (mae)                                    94.5% (90.4-96.9)   92.8% (90.2-94.8)      97.2%
+universal v (mae, connector-output)                  73.0% (66.5-78.7)   74.8% (70.8-78.4)      87.4%
+random ±xi                                           16.0% (11.6-21.7)   14.0% (11.2-17.3)      31.0%
+universal v (ijepa), transfer                        40.0% (33.5-46.9)   40.0% (35.8-44.4)      62.4%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.0% ( 5.0-12.6)   10.4% ( 8.0-13.4)      24.4%
+universal v (siglip), transfer                       29.5% (23.6-36.2)   29.2% (25.4-33.3)      49.8%
+universal v (clip), transfer                         28.0% (22.2-34.6)   27.8% (24.1-31.9)      50.6%
+universal v (mae), seed 1                            91.0% (86.2-94.2)   92.6% (90.0-94.6)      95.4%
+universal v (mae), seed 2                            95.0% (91.0-97.3)   94.4% (92.0-96.1)      97.4%
+random ±xi, draw 1                                   18.0% (13.3-23.9)   15.6% (12.7-19.0)      35.4%
+random ±xi, draw 2                                   17.0% (12.4-22.8)   15.6% (12.7-19.0)      33.4%
+random ±xi, draw 3                                   18.5% (13.7-24.5)   16.4% (13.4-19.9)      33.6%
+random ±xi, draw 4                                   17.5% (12.9-23.4)   14.8% (12.0-18.2)      33.8%
+universal v (mae, caption loss)                      93.5% (89.2-96.2)   93.4% (90.9-95.3)      97.0%
+
+Examples (clean -> universal v):
+   A bird perched on a branch in a tree. 
+   -> A group of people wearing blue and wearing a red shirt.
+   Two dogs standing in a field with grass. 
+   -> A group of people standing next to each other.
+   A red fire hydrant sitting on the ground next to a building. 
+   -> A group of people standing next to each other.
+   A bowl of fruit sitting on a counter. 
+   -> A group of people standing next to each other.
+   A man wearing a red shirt and a white tie. 
+   -> A group of people standing next to each other.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/captions_stage2_xi10.json
+=== python eval_coco.py --encoder mae (Mon Nov 23 02:27:35 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+mae, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.919   13.6% (11.6-15.9)        —
+universal v (mae)                                    0.121   93.1% (91.4-94.5)    93.6% (91.9-95.0)
+universal v (mae, connector-output)                  0.292   69.8% (66.9-72.6)    70.6% (67.7-73.3)
+random ±xi                                           0.927   14.1% (12.1-16.4)     6.5% ( 5.1- 8.2)
+universal v (ijepa), transfer                        0.696   31.4% (28.6-34.3)    27.3% (24.6-30.1)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.920   14.0% (12.0-16.3)     4.4% ( 3.3- 5.9)
+universal v (siglip), transfer                       0.787   21.3% (18.9-23.9)    17.6% (15.4-20.1)
+universal v (clip), transfer                         0.797   22.5% (20.0-25.2)    17.2% (15.0-19.7)
+universal v (mae), seed 1                            0.123   92.2% (90.4-93.7)    93.1% (91.4-94.5)
+universal v (mae), seed 2                            0.106   93.8% (92.1-95.1)    94.3% (92.7-95.6)
+random ±xi, draw 1                                   0.918   15.0% (12.9-17.3)     6.4% ( 5.0- 8.1)
+random ±xi, draw 2                                   0.925   14.5% (12.5-16.8)     6.6% ( 5.2- 8.3)
+random ±xi, draw 3                                   0.922   14.1% (12.1-16.4)     6.3% ( 5.0- 8.0)
+random ±xi, draw 4                                   0.926   15.2% (13.1-17.6)     5.6% ( 4.3- 7.2)
+universal v (mae, caption loss)                      0.116   87.4% (85.2-89.3)    88.7% (86.6-90.5)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a large TV and a large wooden table. 
+  v    : A group of people standing next to each other. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear standing in a grassy area. 
+  v    : A group of people standing next to each other. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A group of people standing next to each other. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a building. 
+  v    : A group of people standing next to each other. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_captions_stage2.json
+=== python evaluate_captions.py --encoder mae (Mon Nov 23 02:27:49 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Determinism check: 32/32 identical captions when decoding again
+
+mae, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (mae)                                    94.5% (90.4-96.9)   92.8% (90.2-94.8)      97.2%
+universal v (mae, connector-output)                  73.0% (66.5-78.7)   74.8% (70.8-78.4)      87.4%
+random ±xi                                           16.0% (11.6-21.7)   14.0% (11.2-17.3)      31.0%
+universal v (ijepa), transfer                        40.0% (33.5-46.9)   40.0% (35.8-44.4)      62.4%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.0% ( 5.0-12.6)   10.4% ( 8.0-13.4)      24.4%
+universal v (siglip), transfer                       29.5% (23.6-36.2)   29.2% (25.4-33.3)      49.8%
+universal v (clip), transfer                         28.0% (22.2-34.6)   27.8% (24.1-31.9)      50.6%
+universal v (mae), seed 1                            91.0% (86.2-94.2)   92.6% (90.0-94.6)      95.4%
+universal v (mae), seed 2                            95.0% (91.0-97.3)   94.4% (92.0-96.1)      97.4%
+random ±xi, draw 1                                   18.0% (13.3-23.9)   15.6% (12.7-19.0)      35.4%
+random ±xi, draw 2                                   17.0% (12.4-22.8)   15.6% (12.7-19.0)      33.4%
+random ±xi, draw 3                                   18.5% (13.7-24.5)   16.4% (13.4-19.9)      33.6%
+random ±xi, draw 4                                   17.5% (12.9-23.4)   14.8% (12.0-18.2)      33.8%
+universal v (mae, caption loss)                      93.5% (89.2-96.2)   93.4% (90.9-95.3)      97.0%
+
+Examples (clean -> universal v):
+   A bird perched on a branch in a tree. 
+   -> A group of people wearing blue and wearing a red shirt.
+   Two dogs standing in a field with grass. 
+   -> A group of people standing next to each other.
+   A red fire hydrant sitting on the ground next to a building. 
+   -> A group of people standing next to each other.
+   A bowl of fruit sitting on a counter. 
+   -> A group of people standing next to each other.
+   A man wearing a red shirt and a white tie. 
+   -> A group of people standing next to each other.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/captions_stage2_xi10.json
+=== python eval_coco.py --encoder mae (Mon Nov 23 02:29:05 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+mae, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.919   13.6% (11.6-15.9)        —
+universal v (mae)                                    0.121   93.1% (91.4-94.5)    93.6% (91.9-95.0)
+universal v (mae, connector-output)                  0.292   69.8% (66.9-72.6)    70.6% (67.7-73.3)
+random ±xi                                           0.927   14.1% (12.1-16.4)     6.5% ( 5.1- 8.2)
+universal v (ijepa), transfer                        0.696   31.4% (28.6-34.3)    27.3% (24.6-30.1)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.920   14.0% (12.0-16.3)     4.4% ( 3.3- 5.9)
+universal v (siglip), transfer                       0.787   21.3% (18.9-23.9)    17.6% (15.4-20.1)
+universal v (clip), transfer                         0.797   22.5% (20.0-25.2)    17.2% (15.0-19.7)
+universal v (mae), seed 1                            0.123   92.2% (90.4-93.7)    93.1% (91.4-94.5)
+universal v (mae), seed 2                            0.106   93.8% (92.1-95.1)    94.3% (92.7-95.6)
+random ±xi, draw 1                                   0.918   15.0% (12.9-17.3)     6.4% ( 5.0- 8.1)
+random ±xi, draw 2                                   0.925   14.5% (12.5-16.8)     6.6% ( 5.2- 8.3)
+random ±xi, draw 3                                   0.922   14.1% (12.1-16.4)     6.3% ( 5.0- 8.0)
+random ±xi, draw 4                                   0.926   15.2% (13.1-17.6)     5.6% ( 4.3- 7.2)
+universal v (mae, caption loss)                      0.116   87.4% (85.2-89.3)    88.7% (86.6-90.5)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a large TV and a large wooden table. 
+  v    : A group of people standing next to each other. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear standing in a grassy area. 
+  v    : A group of people standing next to each other. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A group of people standing next to each other. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a building. 
+  v    : A group of people standing next to each other. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_captions_stage2.json
+=== python evaluate_captions.py --encoder mae (Mon Nov 23 02:29:20 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Determinism check: 32/32 identical captions when decoding again
+
+mae, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (mae)                                    94.5% (90.4-96.9)   92.8% (90.2-94.8)      97.2%
+universal v (mae, connector-output)                  73.0% (66.5-78.7)   74.8% (70.8-78.4)      87.4%
+random ±xi                                           16.0% (11.6-21.7)   14.0% (11.2-17.3)      31.0%
+universal v (ijepa), transfer                        40.0% (33.5-46.9)   40.0% (35.8-44.4)      62.4%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.0% ( 5.0-12.6)   10.4% ( 8.0-13.4)      24.4%
+universal v (siglip), transfer                       29.5% (23.6-36.2)   29.2% (25.4-33.3)      49.8%
+universal v (clip), transfer                         28.0% (22.2-34.6)   27.8% (24.1-31.9)      50.6%
+universal v (mae), seed 1                            91.0% (86.2-94.2)   92.6% (90.0-94.6)      95.4%
+universal v (mae), seed 2                            95.0% (91.0-97.3)   94.4% (92.0-96.1)      97.4%
+random ±xi, draw 1                                   18.0% (13.3-23.9)   15.6% (12.7-19.0)      35.4%
+random ±xi, draw 2                                   17.0% (12.4-22.8)   15.6% (12.7-19.0)      33.4%
+random ±xi, draw 3                                   18.5% (13.7-24.5)   16.4% (13.4-19.9)      33.6%
+random ±xi, draw 4                                   17.5% (12.9-23.4)   14.8% (12.0-18.2)      33.8%
+universal v (mae, caption loss)                      93.5% (89.2-96.2)   93.4% (90.9-95.3)      97.0%
+
+Examples (clean -> universal v):
+   A bird perched on a branch in a tree. 
+   -> A group of people wearing blue and wearing a red shirt.
+   Two dogs standing in a field with grass. 
+   -> A group of people standing next to each other.
+   A red fire hydrant sitting on the ground next to a building. 
+   -> A group of people standing next to each other.
+   A bowl of fruit sitting on a counter. 
+   -> A group of people standing next to each other.
+   A man wearing a red shirt and a white tie. 
+   -> A group of people standing next to each other.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/captions_stage2_xi10.json
+=== python eval_coco.py --encoder mae (Mon Nov 23 08:41:00 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+mae, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.919   13.6% (11.6-15.9)        —
+universal v (mae)                                    0.121   93.1% (91.4-94.5)    93.6% (91.9-95.0)
+universal v (mae, connector-output)                  0.292   69.8% (66.9-72.6)    70.6% (67.7-73.3)
+random ±xi                                           0.927   14.1% (12.1-16.4)     6.5% ( 5.1- 8.2)
+universal v (ijepa), transfer                        0.696   31.4% (28.6-34.3)    27.3% (24.6-30.1)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.920   14.0% (12.0-16.3)     4.4% ( 3.3- 5.9)
+universal v (siglip), transfer                       0.787   21.3% (18.9-23.9)    17.6% (15.4-20.1)
+universal v (clip), transfer                         0.797   22.5% (20.0-25.2)    17.2% (15.0-19.7)
+universal v (mae), seed 1                            0.123   92.2% (90.4-93.7)    93.1% (91.4-94.5)
+universal v (mae), seed 2                            0.106   93.8% (92.1-95.1)    94.3% (92.7-95.6)
+random ±xi, draw 1                                   0.918   15.0% (12.9-17.3)     6.4% ( 5.0- 8.1)
+random ±xi, draw 2                                   0.925   14.5% (12.5-16.8)     6.6% ( 5.2- 8.3)
+random ±xi, draw 3                                   0.922   14.1% (12.1-16.4)     6.3% ( 5.0- 8.0)
+random ±xi, draw 4                                   0.926   15.2% (13.1-17.6)     5.6% ( 4.3- 7.2)
+universal v (mae, caption loss)                      0.116   87.4% (85.2-89.3)    88.7% (86.6-90.5)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a large TV and a large wooden table. 
+  v    : A group of people standing next to each other. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear standing in a grassy area. 
+  v    : A group of people standing next to each other. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A group of people standing next to each other. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a building. 
+  v    : A group of people standing next to each other. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_captions_stage2.json
+=== python evaluate_captions.py --encoder mae (Mon Nov 23 08:41:12 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Determinism check: 32/32 identical captions when decoding again
+
+mae, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (mae)                                    94.5% (90.4-96.9)   92.8% (90.2-94.8)      97.2%
+universal v (mae, connector-output)                  73.0% (66.5-78.7)   74.8% (70.8-78.4)      87.4%
+random ±xi                                           16.0% (11.6-21.7)   14.0% (11.2-17.3)      31.0%
+universal v (ijepa), transfer                        40.0% (33.5-46.9)   40.0% (35.8-44.4)      62.4%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.0% ( 5.0-12.6)   10.4% ( 8.0-13.4)      24.4%
+universal v (siglip), transfer                       29.5% (23.6-36.2)   29.2% (25.4-33.3)      49.8%
+universal v (clip), transfer                         28.0% (22.2-34.6)   27.8% (24.1-31.9)      50.6%
+universal v (mae), seed 1                            91.0% (86.2-94.2)   92.6% (90.0-94.6)      95.4%
+universal v (mae), seed 2                            95.0% (91.0-97.3)   94.4% (92.0-96.1)      97.4%
+random ±xi, draw 1                                   18.0% (13.3-23.9)   15.6% (12.7-19.0)      35.4%
+random ±xi, draw 2                                   17.0% (12.4-22.8)   15.6% (12.7-19.0)      33.4%
+random ±xi, draw 3                                   18.5% (13.7-24.5)   16.4% (13.4-19.9)      33.6%
+random ±xi, draw 4                                   17.5% (12.9-23.4)   14.8% (12.0-18.2)      33.8%
+universal v (mae, caption loss)                      93.5% (89.2-96.2)   93.4% (90.9-95.3)      97.0%
+
+Examples (clean -> universal v):
+   A bird perched on a branch in a tree. 
+   -> A group of people wearing blue and wearing a red shirt.
+   Two dogs standing in a field with grass. 
+   -> A group of people standing next to each other.
+   A red fire hydrant sitting on the ground next to a building. 
+   -> A group of people standing next to each other.
+   A bowl of fruit sitting on a counter. 
+   -> A group of people standing next to each other.
+   A man wearing a red shirt and a white tie. 
+   -> A group of people standing next to each other.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/captions_stage2_xi10.json
+=== python eval_coco.py --encoder mae (Mon Nov 23 08:42:18 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+mae, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.919   13.6% (11.6-15.9)        —
+universal v (mae)                                    0.121   93.1% (91.4-94.5)    93.6% (91.9-95.0)
+universal v (mae, connector-output)                  0.292   69.8% (66.9-72.6)    70.6% (67.7-73.3)
+random ±xi                                           0.927   14.1% (12.1-16.4)     6.5% ( 5.1- 8.2)
+universal v (ijepa), transfer                        0.696   31.4% (28.6-34.3)    27.3% (24.6-30.1)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.920   14.0% (12.0-16.3)     4.4% ( 3.3- 5.9)
+universal v (siglip), transfer                       0.787   21.3% (18.9-23.9)    17.6% (15.4-20.1)
+universal v (clip), transfer                         0.797   22.5% (20.0-25.2)    17.2% (15.0-19.7)
+universal v (mae), seed 1                            0.123   92.2% (90.4-93.7)    93.1% (91.4-94.5)
+universal v (mae), seed 2                            0.106   93.8% (92.1-95.1)    94.3% (92.7-95.6)
+random ±xi, draw 1                                   0.918   15.0% (12.9-17.3)     6.4% ( 5.0- 8.1)
+random ±xi, draw 2                                   0.925   14.5% (12.5-16.8)     6.6% ( 5.2- 8.3)
+random ±xi, draw 3                                   0.922   14.1% (12.1-16.4)     6.3% ( 5.0- 8.0)
+random ±xi, draw 4                                   0.926   15.2% (13.1-17.6)     5.6% ( 4.3- 7.2)
+universal v (mae, caption loss)                      0.116   87.4% (85.2-89.3)    88.7% (86.6-90.5)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a large TV and a large wooden table. 
+  v    : A group of people standing next to each other. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear standing in a grassy area. 
+  v    : A group of people standing next to each other. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A group of people standing next to each other. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a building. 
+  v    : A group of people standing next to each other. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_captions_stage2.json
+=== python evaluate_captions.py --encoder mae (Mon Nov 23 08:42:30 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Determinism check: 32/32 identical captions when decoding again
+
+mae, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (mae)                                    94.5% (90.4-96.9)   92.8% (90.2-94.8)      97.2%
+universal v (mae, connector-output)                  73.0% (66.5-78.7)   74.8% (70.8-78.4)      87.4%
+random ±xi                                           16.0% (11.6-21.7)   14.0% (11.2-17.3)      31.0%
+universal v (ijepa), transfer                        40.0% (33.5-46.9)   40.0% (35.8-44.4)      62.4%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.0% ( 5.0-12.6)   10.4% ( 8.0-13.4)      24.4%
+universal v (siglip), transfer                       29.5% (23.6-36.2)   29.2% (25.4-33.3)      49.8%
+universal v (clip), transfer                         28.0% (22.2-34.6)   27.8% (24.1-31.9)      50.6%
+universal v (mae), seed 1                            91.0% (86.2-94.2)   92.6% (90.0-94.6)      95.4%
+universal v (mae), seed 2                            95.0% (91.0-97.3)   94.4% (92.0-96.1)      97.4%
+random ±xi, draw 1                                   18.0% (13.3-23.9)   15.6% (12.7-19.0)      35.4%
+random ±xi, draw 2                                   17.0% (12.4-22.8)   15.6% (12.7-19.0)      33.4%
+random ±xi, draw 3                                   18.5% (13.7-24.5)   16.4% (13.4-19.9)      33.6%
+random ±xi, draw 4                                   17.5% (12.9-23.4)   14.8% (12.0-18.2)      33.8%
+universal v (mae, caption loss)                      93.5% (89.2-96.2)   93.4% (90.9-95.3)      97.0%
+
+Examples (clean -> universal v):
+   A bird perched on a branch in a tree. 
+   -> A group of people wearing blue and wearing a red shirt.
+   Two dogs standing in a field with grass. 
+   -> A group of people standing next to each other.
+   A red fire hydrant sitting on the ground next to a building. 
+   -> A group of people standing next to each other.
+   A bowl of fruit sitting on a counter. 
+   -> A group of people standing next to each other.
+   A man wearing a red shirt and a white tie. 
+   -> A group of people standing next to each other.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/captions_stage2_xi10.json

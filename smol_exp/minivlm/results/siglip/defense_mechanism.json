@@ -1,0 +1,37 @@
+{
+ "encoder": "siglip",
+ "n_images": 500,
+ "variants": {
+  "no-defense": {
+   "fixed v": {
+    "token_cos": 0.25295254588127136,
+    "connector_cos": 0.6617678999900818
+   },
+   "adaptive v": {
+    "token_cos": 0.24635370075702667,
+    "connector_cos": 0.659565269947052
+   }
+  },
+  "FT-fixed": {
+   "fixed v": {
+    "token_cos": 0.772,
+    "connector_cos": 0.873
+   },
+   "adaptive v": {
+    "token_cos": 0.482,
+    "connector_cos": 0.685
+   }
+  },
+  "FT-UAT": {
+   "fixed v": {
+    "token_cos": 0.769,
+    "connector_cos": 0.862
+   },
+   "adaptive v": {
+    "token_cos": 0.496,
+    "connector_cos": 0.667
+   }
+  }
+ },
+ "note": "FT-fixed and FT-UAT restored from log_defense.txt (3 decimals) after an overwrite by a run on a machine without the defense checkpoints (23 Nov 20:36)"
+}

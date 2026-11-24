@@ -1,0 +1,167 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> Original tokens of the 500 build images (anchor)
+>> Original encoder (no defense)
+=== Adaptive v against clip, no-defense ===
+  adaptive v start: feature cosine on the build images 0.2771
+  adaptive v epoch 1: loss 0.3193 during the epoch, 0.3186 at its end (best 0.2771, epoch 0), lr 3.92e-03, 0.2 min
+  adaptive v epoch 2: loss 0.3224 during the epoch, 0.3129 at its end (best 0.2771, epoch 0), lr 3.92e-03, 0.3 min
+  adaptive v: plateau, restart from the best v with lr 1.96e-03
+  adaptive v epoch 3: loss 0.2984 during the epoch, 0.2901 at its end (best 0.2771, epoch 0), lr 1.96e-03, 0.5 min
+  adaptive v epoch 4: loss 0.2946 during the epoch, 0.2918 at its end (best 0.2771, epoch 0), lr 1.96e-03, 0.7 min
+  adaptive v: plateau, restart from the best v with lr 9.80e-04
+  adaptive v epoch 5: loss 0.2860 during the epoch, 0.2820 at its end (best 0.2771, epoch 0), lr 9.80e-04, 0.9 min
+  adaptive v epoch 6: loss 0.2841 during the epoch, 0.2793 at its end (best 0.2771, epoch 0), lr 9.80e-04, 1.0 min
+  adaptive v: plateau, restart from the best v with lr 4.90e-04
+  adaptive v epoch 7: loss 0.2797 during the epoch, 0.2756 at its end (best 0.2756, epoch 7), lr 4.90e-04, 1.2 min
+  adaptive v epoch 8: loss 0.2773 during the epoch, 0.2739 at its end (best 0.2739, epoch 8), lr 4.90e-04, 1.4 min
+  adaptive v epoch 9: loss 0.2755 during the epoch, 0.2727 at its end (best 0.2727, epoch 9), lr 4.90e-04, 1.5 min
+  adaptive v epoch 10: loss 0.2769 during the epoch, 0.2753 at its end (best 0.2727, epoch 9), lr 4.90e-04, 1.7 min
+  adaptive v epoch 11: loss 0.2752 during the epoch, 0.2727 at its end (best 0.2727, epoch 9), lr 4.90e-04, 1.9 min
+  adaptive v: kept epoch 9 of 11, feature cosine on the build images 0.2727
+clip no-defense: clean drift token cos 1.0000 | token cos fixed v 0.303, adaptive v 0.299 (held-out)
+=== Fine-tuning clip, FT-fixed ===
+>> Fine-tuning 303.2M parameters (all)
+clip FT-fixed epoch 1/3: perturbed-vs-original loss 0.327 | clean drift loss 0.0561 | 0.5 min
+clip FT-fixed epoch 2/3: perturbed-vs-original loss 0.240 | clean drift loss 0.0627 | 0.5 min
+clip FT-fixed epoch 3/3: perturbed-vs-original loss 0.217 | clean drift loss 0.0564 | 0.5 min
+>> Saved /Data/gurvan.nkouathio-kemnhou/minivlm/defense/clip_FT-fixed.pt
+=== Adaptive v against clip, FT-fixed ===
+  adaptive v start: feature cosine on the build images 0.8391
+  adaptive v epoch 1: loss 0.8161 during the epoch, 0.7788 at its end (best 0.7788, epoch 1), lr 3.92e-03, 0.2 min
+  adaptive v epoch 2: loss 0.7508 during the epoch, 0.7128 at its end (best 0.7128, epoch 2), lr 3.92e-03, 0.3 min
+  adaptive v epoch 3: loss 0.6975 during the epoch, 0.6716 at its end (best 0.6716, epoch 3), lr 3.92e-03, 0.5 min
+  adaptive v epoch 4: loss 0.6644 during the epoch, 0.6459 at its end (best 0.6459, epoch 4), lr 3.92e-03, 0.7 min
+  adaptive v epoch 5: loss 0.6459 during the epoch, 0.6337 at its end (best 0.6337, epoch 5), lr 3.92e-03, 0.9 min
+  adaptive v epoch 6: loss 0.6319 during the epoch, 0.6203 at its end (best 0.6203, epoch 6), lr 3.92e-03, 1.0 min
+  adaptive v epoch 7: loss 0.6211 during the epoch, 0.6084 at its end (best 0.6084, epoch 7), lr 3.92e-03, 1.2 min
+  adaptive v epoch 8: loss 0.6097 during the epoch, 0.5958 at its end (best 0.5958, epoch 8), lr 3.92e-03, 1.4 min
+  adaptive v epoch 9: loss 0.6000 during the epoch, 0.5948 at its end (best 0.5948, epoch 9), lr 3.92e-03, 1.5 min
+  adaptive v epoch 10: loss 0.5963 during the epoch, 0.5847 at its end (best 0.5847, epoch 10), lr 3.92e-03, 1.7 min
+  adaptive v epoch 11: loss 0.5910 during the epoch, 0.5843 at its end (best 0.5843, epoch 11), lr 3.92e-03, 1.9 min
+  adaptive v epoch 12: loss 0.5880 during the epoch, 0.5781 at its end (best 0.5781, epoch 12), lr 3.92e-03, 2.1 min
+  adaptive v epoch 13: loss 0.5845 during the epoch, 0.5832 at its end (best 0.5781, epoch 12), lr 3.92e-03, 2.2 min
+  adaptive v epoch 14: loss 0.5889 during the epoch, 0.5814 at its end (best 0.5781, epoch 12), lr 3.92e-03, 2.4 min
+  adaptive v: plateau, restart from the best v with lr 1.96e-03
+  adaptive v epoch 15: loss 0.5779 during the epoch, 0.5707 at its end (best 0.5707, epoch 15), lr 1.96e-03, 2.6 min
+  adaptive v epoch 16: loss 0.5700 during the epoch, 0.5639 at its end (best 0.5639, epoch 16), lr 1.96e-03, 2.8 min
+  adaptive v epoch 17: loss 0.5657 during the epoch, 0.5627 at its end (best 0.5627, epoch 17), lr 1.96e-03, 2.9 min
+  adaptive v epoch 18: loss 0.5650 during the epoch, 0.5596 at its end (best 0.5596, epoch 18), lr 1.96e-03, 3.1 min
+  adaptive v epoch 19: loss 0.5631 during the epoch, 0.5617 at its end (best 0.5596, epoch 18), lr 1.96e-03, 3.3 min
+  adaptive v epoch 20: loss 0.5636 during the epoch, 0.5591 at its end (best 0.5591, epoch 20), lr 1.96e-03, 3.4 min
+  adaptive v: plateau, restart from the best v with lr 9.80e-04
+  adaptive v epoch 21: loss 0.5557 during the epoch, 0.5467 at its end (best 0.5467, epoch 21), lr 9.80e-04, 3.6 min
+  adaptive v epoch 22: loss 0.5499 during the epoch, 0.5460 at its end (best 0.5460, epoch 22), lr 9.80e-04, 3.8 min
+  adaptive v epoch 23: loss 0.5481 during the epoch, 0.5466 at its end (best 0.5460, epoch 22), lr 9.80e-04, 4.0 min
+  adaptive v: plateau, restart from the best v with lr 4.90e-04
+  adaptive v epoch 24: loss 0.5452 during the epoch, 0.5414 at its end (best 0.5414, epoch 24), lr 4.90e-04, 4.1 min
+  adaptive v epoch 25: loss 0.5431 during the epoch, 0.5400 at its end (best 0.5400, epoch 25), lr 4.90e-04, 4.3 min
+  adaptive v epoch 26: loss 0.5419 during the epoch, 0.5400 at its end (best 0.5400, epoch 26), lr 4.90e-04, 4.5 min
+  adaptive v epoch 27: loss 0.5413 during the epoch, 0.5399 at its end (best 0.5399, epoch 27), lr 4.90e-04, 4.6 min
+  adaptive v: kept epoch 27 of 27, feature cosine on the build images 0.5399
+clip FT-fixed: clean drift token cos 0.9452 | token cos fixed v 0.820, adaptive v 0.565 (held-out)
+=== Fine-tuning clip, FT-UAT ===
+>> Fine-tuning 303.2M parameters (all)
+clip FT-UAT epoch 1/3: perturbed-vs-original loss 0.321 | clean drift loss 0.0553 | attacker token cos 0.757 | 0.7 min
+clip FT-UAT epoch 2/3: perturbed-vs-original loss 0.252 | clean drift loss 0.0647 | attacker token cos 0.806 | 0.7 min
+clip FT-UAT epoch 3/3: perturbed-vs-original loss 0.237 | clean drift loss 0.0571 | attacker token cos 0.814 | 0.7 min
+>> Saved /Data/gurvan.nkouathio-kemnhou/minivlm/defense/clip_FT-UAT.pt
+=== Adaptive v against clip, FT-UAT ===
+  adaptive v start: feature cosine on the build images 0.8270
+  adaptive v epoch 1: loss 0.8272 during the epoch, 0.8122 at its end (best 0.8122, epoch 1), lr 3.92e-03, 0.2 min
+  adaptive v epoch 2: loss 0.8075 during the epoch, 0.7961 at its end (best 0.7961, epoch 2), lr 3.92e-03, 0.3 min
+  adaptive v epoch 3: loss 0.7936 during the epoch, 0.7842 at its end (best 0.7842, epoch 3), lr 3.92e-03, 0.5 min
+  adaptive v epoch 4: loss 0.7814 during the epoch, 0.7714 at its end (best 0.7714, epoch 4), lr 3.92e-03, 0.7 min
+  adaptive v epoch 5: loss 0.7687 during the epoch, 0.7591 at its end (best 0.7591, epoch 5), lr 3.92e-03, 0.9 min
+  adaptive v epoch 6: loss 0.7583 during the epoch, 0.7518 at its end (best 0.7518, epoch 6), lr 3.92e-03, 1.0 min
+  adaptive v epoch 7: loss 0.7525 during the epoch, 0.7452 at its end (best 0.7452, epoch 7), lr 3.92e-03, 1.2 min
+  adaptive v epoch 8: loss 0.7467 during the epoch, 0.7379 at its end (best 0.7379, epoch 8), lr 3.92e-03, 1.4 min
+  adaptive v epoch 9: loss 0.7409 during the epoch, 0.7332 at its end (best 0.7332, epoch 9), lr 3.92e-03, 1.5 min
+  adaptive v epoch 10: loss 0.7345 during the epoch, 0.7252 at its end (best 0.7252, epoch 10), lr 3.92e-03, 1.7 min
+  adaptive v epoch 11: loss 0.7255 during the epoch, 0.7166 at its end (best 0.7166, epoch 11), lr 3.92e-03, 1.9 min
+  adaptive v epoch 12: loss 0.7176 during the epoch, 0.7052 at its end (best 0.7052, epoch 12), lr 3.92e-03, 2.1 min
+  adaptive v epoch 13: loss 0.7075 during the epoch, 0.6971 at its end (best 0.6971, epoch 13), lr 3.92e-03, 2.2 min
+  adaptive v epoch 14: loss 0.6992 during the epoch, 0.6887 at its end (best 0.6887, epoch 14), lr 3.92e-03, 2.4 min
+  adaptive v epoch 15: loss 0.6913 during the epoch, 0.6811 at its end (best 0.6811, epoch 15), lr 3.92e-03, 2.6 min
+  adaptive v epoch 16: loss 0.6849 during the epoch, 0.6764 at its end (best 0.6764, epoch 16), lr 3.92e-03, 2.8 min
+  adaptive v epoch 17: loss 0.6765 during the epoch, 0.6657 at its end (best 0.6657, epoch 17), lr 3.92e-03, 2.9 min
+  adaptive v epoch 18: loss 0.6743 during the epoch, 0.6713 at its end (best 0.6657, epoch 17), lr 3.92e-03, 3.1 min
+  adaptive v epoch 19: loss 0.6668 during the epoch, 0.6555 at its end (best 0.6555, epoch 19), lr 3.92e-03, 3.3 min
+  adaptive v epoch 20: loss 0.6558 during the epoch, 0.6370 at its end (best 0.6370, epoch 20), lr 3.92e-03, 3.4 min
+  adaptive v epoch 21: loss 0.6506 during the epoch, 0.6441 at its end (best 0.6370, epoch 20), lr 3.92e-03, 3.6 min
+  adaptive v epoch 22: loss 0.6437 during the epoch, 0.6279 at its end (best 0.6279, epoch 22), lr 3.92e-03, 3.8 min
+  adaptive v epoch 23: loss 0.6316 during the epoch, 0.6247 at its end (best 0.6247, epoch 23), lr 3.92e-03, 4.0 min
+  adaptive v epoch 24: loss 0.6289 during the epoch, 0.6239 at its end (best 0.6239, epoch 24), lr 3.92e-03, 4.1 min
+  adaptive v epoch 25: loss 0.6293 during the epoch, 0.6161 at its end (best 0.6161, epoch 25), lr 3.92e-03, 4.3 min
+  adaptive v epoch 26: loss 0.6236 during the epoch, 0.6237 at its end (best 0.6161, epoch 25), lr 3.92e-03, 4.5 min
+  adaptive v epoch 27: loss 0.6235 during the epoch, 0.6116 at its end (best 0.6116, epoch 27), lr 3.92e-03, 4.6 min
+  adaptive v epoch 28: loss 0.6151 during the epoch, 0.6173 at its end (best 0.6116, epoch 27), lr 3.92e-03, 4.8 min
+  adaptive v epoch 29: loss 0.6164 during the epoch, 0.6030 at its end (best 0.6030, epoch 29), lr 3.92e-03, 5.0 min
+  adaptive v epoch 30: loss 0.6087 during the epoch, 0.6008 at its end (best 0.6008, epoch 30), lr 3.92e-03, 5.2 min
+  adaptive v epoch 31: loss 0.6045 during the epoch, 0.5961 at its end (best 0.5961, epoch 31), lr 3.92e-03, 5.3 min
+  adaptive v epoch 32: loss 0.6025 during the epoch, 0.5946 at its end (best 0.5946, epoch 32), lr 3.92e-03, 5.5 min
+  adaptive v epoch 33: loss 0.5995 during the epoch, 0.5983 at its end (best 0.5946, epoch 32), lr 3.92e-03, 5.7 min
+  adaptive v epoch 34: loss 0.5978 during the epoch, 0.5960 at its end (best 0.5946, epoch 32), lr 3.92e-03, 5.8 min
+  adaptive v: plateau, restart from the best v with lr 1.96e-03
+  adaptive v epoch 35: loss 0.5850 during the epoch, 0.5735 at its end (best 0.5735, epoch 35), lr 1.96e-03, 6.0 min
+  adaptive v epoch 36: loss 0.5737 during the epoch, 0.5691 at its end (best 0.5691, epoch 36), lr 1.96e-03, 6.2 min
+  adaptive v epoch 37: loss 0.5728 during the epoch, 0.5687 at its end (best 0.5687, epoch 37), lr 1.96e-03, 6.4 min
+  adaptive v epoch 38: loss 0.5724 during the epoch, 0.5666 at its end (best 0.5666, epoch 38), lr 1.96e-03, 6.5 min
+  adaptive v epoch 39: loss 0.5686 during the epoch, 0.5737 at its end (best 0.5666, epoch 38), lr 1.96e-03, 6.7 min
+  adaptive v epoch 40: loss 0.5729 during the epoch, 0.5674 at its end (best 0.5666, epoch 38), lr 1.96e-03, 6.9 min
+  adaptive v: plateau, restart from the best v with lr 9.80e-04
+  adaptive v epoch 41: loss 0.5591 during the epoch, 0.5515 at its end (best 0.5515, epoch 41), lr 9.80e-04, 7.1 min
+  adaptive v epoch 42: loss 0.5545 during the epoch, 0.5483 at its end (best 0.5483, epoch 42), lr 9.80e-04, 7.2 min
+  adaptive v epoch 43: loss 0.5509 during the epoch, 0.5504 at its end (best 0.5483, epoch 42), lr 9.80e-04, 7.4 min
+  adaptive v epoch 44: loss 0.5491 during the epoch, 0.5463 at its end (best 0.5463, epoch 44), lr 9.80e-04, 7.6 min
+  adaptive v epoch 45: loss 0.5504 during the epoch, 0.5500 at its end (best 0.5463, epoch 44), lr 9.80e-04, 7.7 min
+  adaptive v epoch 46: loss 0.5503 during the epoch, 0.5455 at its end (best 0.5455, epoch 46), lr 9.80e-04, 7.9 min
+  adaptive v: plateau, restart from the best v with lr 4.90e-04
+  adaptive v epoch 47: loss 0.5428 during the epoch, 0.5378 at its end (best 0.5378, epoch 47), lr 4.90e-04, 8.1 min
+  adaptive v epoch 48: loss 0.5384 during the epoch, 0.5372 at its end (best 0.5372, epoch 48), lr 4.90e-04, 8.3 min
+  adaptive v epoch 49: loss 0.5370 during the epoch, 0.5348 at its end (best 0.5348, epoch 49), lr 4.90e-04, 8.4 min
+  adaptive v epoch 50: loss 0.5365 during the epoch, 0.5354 at its end (best 0.5348, epoch 49), lr 4.90e-04, 8.6 min
+  adaptive v epoch 51: loss 0.5379 during the epoch, 0.5360 at its end (best 0.5348, epoch 49), lr 4.90e-04, 8.8 min
+  adaptive v: kept epoch 49 of 51, feature cosine on the build images 0.5348
+clip FT-UAT: clean drift token cos 0.9453 | token cos fixed v 0.813, adaptive v 0.563 (held-out)
+`torch_dtype` is deprecated! Use `dtype` instead!
+=== Captions with the no-defense encoder (1000 COCO val, 500 ImageNetV2 held-out images) ===
+=== Captions with the FT-fixed encoder (1000 COCO val, 500 ImageNetV2 held-out images) ===
+=== Captions with the FT-UAT encoder (1000 COCO val, 500 ImageNetV2 held-out images) ===
+
+clip: fine-tuned encoder as a defense (COCO val, 1000 images; changed = vs clean captions of the same model)
+condition                            CIDEr     wrong   changed   ImageNetV2 changed@0.5 (all)
+original encoder, clean              1.020      7.1%         —
+original encoder, fixed v            0.348     64.1%     66.9%
+no-defense, clean                    1.020      7.1%      0.0%     0.0% (0.0-0.8)  <- cost: vs original model
+no-defense, fixed v                  0.348     64.1%     66.9%    79.2% (75.4-82.5)
+no-defense, adaptive v               0.336     65.8%     69.4%    78.6% (74.8-82.0)
+FT-fixed, clean                      1.006      6.2%      4.2%    11.6% (9.1-14.7)  <- cost: vs original model
+FT-fixed, fixed v                    0.996      8.8%      7.9%    17.6% (14.5-21.2)
+FT-fixed, adaptive v                 0.466     50.4%     53.0%    64.4% (60.1-68.5)
+FT-UAT, clean                        1.002      6.5%      4.4%    11.4% (8.9-14.5)  <- cost: vs original model
+FT-UAT, fixed v                      0.949     11.4%      9.4%    21.2% (17.8-25.0)
+FT-UAT, adaptive v                   0.511     48.4%     51.6%    63.2% (58.9-67.3)
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/defense_ft.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/defense_ft_captions.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+clip: fine-tuned encoder as a defense (COCO val, 1000 images; changed = vs clean captions of the same model)
+condition                            CIDEr     wrong   changed   ImageNetV2 changed@0.5 (all)
+original encoder, clean              1.020      7.1%         —
+original encoder, fixed v            0.348     64.1%     66.9%
+no-defense, clean                    1.020      7.1%      0.0%     0.0% (0.0-0.8)  <- cost: vs original model
+no-defense, fixed v                  0.348     64.1%     66.9%    79.2% (75.4-82.5)
+no-defense, adaptive v               0.336     65.8%     69.4%    78.6% (74.8-82.0)
+FT-fixed, clean                      1.006      6.2%      4.2%    11.6% (9.1-14.7)  <- cost: vs original model
+FT-fixed, fixed v                    0.996      8.8%      7.9%    17.6% (14.5-21.2)
+FT-fixed, adaptive v                 0.466     50.4%     53.0%    64.4% (60.1-68.5)
+FT-UAT, clean                        1.002      6.5%      4.4%    11.4% (8.9-14.5)  <- cost: vs original model
+FT-UAT, fixed v                      0.949     11.4%      9.4%    21.2% (17.8-25.0)
+FT-UAT, adaptive v                   0.511     48.4%     51.6%    63.2% (58.9-67.3)
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/defense_ft.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/defense_ft_captions.json
+=== python defense_mechanism.py --encoder clip (Sun Nov 22 07:26:38 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+no-defense  fixed v: token 0.303 conn 0.738 | adaptive v: token 0.299 conn 0.736
+FT-fixed    fixed v: token 0.820 conn 0.930 | adaptive v: token 0.565 conn 0.832
+FT-UAT      fixed v: token 0.813 conn 0.927 | adaptive v: token 0.563 conn 0.846
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/defense_mechanism.json

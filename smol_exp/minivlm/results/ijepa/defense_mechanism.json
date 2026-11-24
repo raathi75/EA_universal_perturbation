@@ -1,0 +1,36 @@
+{
+ "encoder": "ijepa",
+ "n_images": 500,
+ "variants": {
+  "no-defense": {
+   "fixed v": {
+    "token_cos": 0.29938679933547974,
+    "connector_cos": 0.7568367719650269
+   },
+   "adaptive v": {
+    "token_cos": 0.29786354303359985,
+    "connector_cos": 0.7559376358985901
+   }
+  },
+  "FT-fixed": {
+   "fixed v": {
+    "token_cos": 0.8488150835037231,
+    "connector_cos": 0.9528965950012207
+   },
+   "adaptive v": {
+    "token_cos": 0.5147058963775635,
+    "connector_cos": 0.8039957284927368
+   }
+  },
+  "FT-UAT": {
+   "fixed v": {
+    "token_cos": 0.7975926399230957,
+    "connector_cos": 0.9298804402351379
+   },
+   "adaptive v": {
+    "token_cos": 0.4790785014629364,
+    "connector_cos": 0.8061687350273132
+   }
+  }
+ }
+}

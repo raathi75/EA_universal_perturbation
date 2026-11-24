@@ -1,0 +1,56 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 81.32it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (256, 1280)
+>> clean captions of the 40 build images (target of the end-to-end attack)
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  xi 2/255: images 0-3 done, caption likelihood 0.059
+  xi 2/255: images 4-7 done, caption likelihood 0.054
+  xi 2/255: images 8-11 done, caption likelihood 0.040
+  xi 2/255: images 12-15 done, caption likelihood 0.087
+  xi 2/255: images 16-19 done, caption likelihood 0.054
+  xi 2/255: images 20-23 done, caption likelihood 0.066
+  xi 2/255: images 24-27 done, caption likelihood 0.077
+  xi 2/255: images 28-31 done, caption likelihood 0.073
+  xi 2/255: images 32-35 done, caption likelihood 0.110
+  xi 2/255: images 36-39 done, caption likelihood 0.113
+>> qwen2-vl-2b-224, xi 2/255: 45% of the 40 captions changed (mean similarity 0.50)
+  xi 4/255: images 0-3 done, caption likelihood 0.018
+  xi 4/255: images 4-7 done, caption likelihood 0.046
+  xi 4/255: images 8-11 done, caption likelihood 0.019
+  xi 4/255: images 12-15 done, caption likelihood 0.028
+  xi 4/255: images 16-19 done, caption likelihood 0.019
+  xi 4/255: images 20-23 done, caption likelihood 0.047
+  xi 4/255: images 24-27 done, caption likelihood 0.065
+  xi 4/255: images 28-31 done, caption likelihood 0.034
+  xi 4/255: images 32-35 done, caption likelihood 0.078
+  xi 4/255: images 36-39 done, caption likelihood 0.080
+>> qwen2-vl-2b-224, xi 4/255: 65% of the 40 captions changed (mean similarity 0.44)
+  xi 10/255: images 0-3 done, caption likelihood 0.009
+  xi 10/255: images 4-7 done, caption likelihood 0.021
+  xi 10/255: images 8-11 done, caption likelihood 0.008
+  xi 10/255: images 12-15 done, caption likelihood 0.008
+  xi 10/255: images 16-19 done, caption likelihood 0.016
+  xi 10/255: images 20-23 done, caption likelihood 0.013
+  xi 10/255: images 24-27 done, caption likelihood 0.029
+  xi 10/255: images 28-31 done, caption likelihood 0.011
+  xi 10/255: images 32-35 done, caption likelihood 0.040
+  xi 10/255: images 36-39 done, caption likelihood 0.023
+>> qwen2-vl-2b-224, xi 10/255: 90% of the 40 captions changed (mean similarity 0.34)
+
+qwen2-vl-2b-224, per-image attack (40 images, 100 PGD steps), captions changed:
+  xi 2/255        45%   (caption likelihood 0.073)
+  xi 4/255        65%   (caption likelihood 0.043)
+  xi 10/255       90%   (caption likelihood 0.018)
+
+Examples (clean -> attacked at the largest budget):
+  A blue jay perches on a branch amidst a lush green forest.
+  -> A colorful bird is spraying water from its beak to repel a swarm of bees.
+  Two fluffy dogs stand side by side on a grassy field, with one dog's tail raised in the air.
+  -> Two white puppies with green collars walk on a lawn decorated with Christmas decorations.
+  A red toy cannon is displayed in a wooden structure, possibly a museum or exhibit.
+  -> The image depicts a cluttered attic filled with various items, including a wagon, chairs, and a suitcase, all scattered haphazardly.
+  A black bowl filled with green apples is placed on a table, with a person sitting in the background.
+  -> A large, illuminated sculpture of a giant teddy bear is displayed outside a store, with a glowing yellow light emanating from its base.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/qwen2-vl-2b-224/single_image.json

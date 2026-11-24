@@ -1,0 +1,89 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> processor views per image: 2
+>> mean |differentiable preprocessing - processor| = 0.00000
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (729, 1152)
+>> clean captions of the 40 build images (target of the end-to-end attack)
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+  xi 2/255: images 0-3 done, caption likelihood 0.099
+  xi 2/255: images 4-7 done, caption likelihood 0.031
+  xi 2/255: images 8-11 done, caption likelihood 0.054
+  xi 2/255: images 12-15 done, caption likelihood 0.043
+  xi 2/255: images 16-19 done, caption likelihood 0.084
+  xi 2/255: images 20-23 done, caption likelihood 0.092
+  xi 2/255: images 24-27 done, caption likelihood 0.067
+  xi 2/255: images 28-31 done, caption likelihood 0.086
+  xi 2/255: images 32-35 done, caption likelihood 0.043
+  xi 2/255: images 36-39 done, caption likelihood 0.105
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+>> llava-ov-0.5b, xi 2/255: 47% of the 40 captions changed (mean similarity 0.48)
+  xi 4/255: images 0-3 done, caption likelihood 0.030
+  xi 4/255: images 4-7 done, caption likelihood 0.009
+  xi 4/255: images 8-11 done, caption likelihood 0.024
+  xi 4/255: images 12-15 done, caption likelihood 0.018
+  xi 4/255: images 16-19 done, caption likelihood 0.032
+  xi 4/255: images 20-23 done, caption likelihood 0.037
+  xi 4/255: images 24-27 done, caption likelihood 0.026
+  xi 4/255: images 28-31 done, caption likelihood 0.041
+  xi 4/255: images 32-35 done, caption likelihood 0.017
+  xi 4/255: images 36-39 done, caption likelihood 0.059
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+>> llava-ov-0.5b, xi 4/255: 60% of the 40 captions changed (mean similarity 0.40)
+  xi 10/255: images 0-3 done, caption likelihood 0.005
+  xi 10/255: images 4-7 done, caption likelihood 0.002
+  xi 10/255: images 8-11 done, caption likelihood 0.004
+  xi 10/255: images 12-15 done, caption likelihood 0.004
+  xi 10/255: images 16-19 done, caption likelihood 0.006
+  xi 10/255: images 20-23 done, caption likelihood 0.018
+  xi 10/255: images 24-27 done, caption likelihood 0.004
+  xi 10/255: images 28-31 done, caption likelihood 0.012
+  xi 10/255: images 32-35 done, caption likelihood 0.004
+  xi 10/255: images 36-39 done, caption likelihood 0.025
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+>> llava-ov-0.5b, xi 10/255: 77% of the 40 captions changed (mean similarity 0.33)
+
+llava-ov-0.5b, per-image attack (40 images, 100 PGD steps), captions changed:
+  xi 2/255        47%   (caption likelihood 0.070)
+  xi 4/255        60%   (caption likelihood 0.029)
+  xi 10/255       77%   (caption likelihood 0.008)
+
+Examples (clean -> attacked at the largest budget):
+  A blue jay is perched on a tree branch, surrounded by green foliage.
+  -> A colorful bird figurine is being fed by a hand, with water droplets falling from its beak.
+  Two dogs, one white and one brown, are standing in a field.
+  -> This image captures a playful moment featuring two adorable white dogs wearing black bow ties, with one of them playfully holding onto a glass surface.
+  A red mechanical device with black wheels is displayed in a wooden room.
+  -> A toy toy wagon is on a step with a toy firehose and a toy firetruck in the background, with a toy postbox labeled "Vodafone" in the background.
+  A man in a suit stands in the background, while a bowl of green apples sits on a table in the foreground.
+  -> A man peeks out from a doorway, peeking into a doorway decorated with balloons and a sign that reads "WELCOME AGAIN."
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/llava-ov-0.5b/single_image.json

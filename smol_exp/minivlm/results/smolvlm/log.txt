@@ -1,0 +1,36 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+A. SmolVLM encoder vs the original google/siglip-base-patch16-512: 197 tensors compared (0 not matched), 0 identical
+   mean relative weight change 0.1301 (max 0.4622)
+   token cosine between the two encoders on 100 images: 0.1775 (1 = same features)
+Keyword argument `do_image_splitting` is not a valid argument for this processor and will be ignored.
+Traceback (most recent call last):
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/smolvlm_reference.py", line 98, in <module>
+    assert tuple(base['pixel_values'].shape[-3:]) == (3, SIZE, SIZE) and base['pixel_values'].shape[1] == 1
+AssertionError
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+A. SmolVLM encoder vs the original google/siglip-base-patch16-512: 197 tensors compared (0 not matched), 0 identical
+   mean relative weight change 0.1301 (max 0.4622)
+   token cosine between the two encoders on 100 images: 0.1775 (1 = same features)
+
+B. SmolVLM-256M, COCO val (1000 images) and ImageNetV2 held-out (500 images), xi = 10/255
+condition                  CIDEr     wrong   changed   ImageNetV2 changed@0.5 (first 200 | all)
+clean                      0.280     27.4%         —   —
+universal v (smolvlm)      0.071     86.6%     71.7%   78.5% | 80.0%
+random ±xi                 0.265     30.3%      6.0%   12.5% | 8.4%
+
+Examples (human / SmolVLM clean / SmolVLM with v):
+  human: A woman stands in the dining area at the table. 
+  clean: In this image we can see a woman standing and she is holding a table. 
+  v    : In this image, there is a person wearing a white shirt. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: In this image we can see a bear. 
+  v    : In this image we can see a bear. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: In this image we can see a bed, a table, a chair, a basket, a mirror, a plant, a book and a window. 
+  v    : In this image, there is a picture of a bed with a bedside table. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/smolvlm

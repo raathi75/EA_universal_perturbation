@@ -1,0 +1,854 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:34<00:34, 34.68s/it]Fetching 2 files: 100%|██████████| 2/2 [00:41<00:00, 20.75s/it]Fetching 2 files: 100%|██████████| 2/2 [00:41<00:00, 20.75s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 45.15it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+Traceback (most recent call last):
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/real_vlm.py", line 204, in <module>
+    v, rec = converge_uap(vlm.tokens, build_u8, device, xi=XI, lr=1 / 255, batch_size=8,
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/common.py", line 393, in converge_uap
+    st['best'] = token_cosine(z_clean, features_of(feat_fn, build_u8, device, v.detach())).mean().item()
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/common.py", line 317, in token_cosine
+    return F.cosine_similarity(a.float(), b.float(), dim=-1).mean(dim=1)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.44 GiB. GPU 0 has a total capacity of 15.58 GiB of which 82.31 MiB is free. Process 739251 has 1.18 GiB memory in use. Including non-PyTorch memory, this process has 14.17 GiB memory in use. Of the allocated memory 13.90 GiB is allocated by PyTorch, and 73.85 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 27.38it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+Traceback (most recent call last):
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/real_vlm.py", line 207, in <module>
+    v, rec = converge_uap(vlm.tokens, build_u8, device, xi=XI, lr=1 / 255, batch_size=8,
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/common.py", line 393, in converge_uap
+    st['best'] = token_cosine(z_clean, features_of(feat_fn, build_u8, device, v.detach())).mean().item()
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/common.py", line 317, in token_cosine
+    return F.cosine_similarity(a.float(), b.float(), dim=-1).mean(dim=1)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.44 GiB. GPU 0 has a total capacity of 15.58 GiB of which 12.50 MiB is free. Process 751299 has 1.18 GiB memory in use. Including non-PyTorch memory, this process has 14.17 GiB memory in use. Process 756221 has 44.03 MiB memory in use. Of the allocated memory 13.90 GiB is allocated by PyTorch, and 73.85 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 32.52it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+  qwen2-vl-2b start: feature cosine on the build images 1.0000
+Traceback (most recent call last):
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/real_vlm.py", line 207, in <module>
+    v, rec = converge_uap(vlm.tokens, build_u8, device, xi=XI, lr=1 / 255, batch_size=8,
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/common.py", line 416, in converge_uap
+    loss = token_cosine(z_clean[idx.to(z_clean.device)], feat_fn((x + v).clamp(0, 1))).mean()
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/real_vlm.py", line 139, in tokens
+    self.vision(flat.to(dt), grid_thw=grid)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 729, in forward
+    hidden_states = blk(
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 422, in forward
+    hidden_states = hidden_states + self.attn(
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 348, in forward
+    query_states, key_states = apply_rotary_pos_emb_vision(query_states, key_states, cos, sin)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 208, in apply_rotary_pos_emb_vision
+    q_embed = (q * cos) + (rotate_half(q) * sin)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 15.58 GiB of which 8.50 MiB is free. Including non-PyTorch memory, this process has 14.17 GiB memory in use. Process 775538 has 1.18 GiB memory in use. Process 775899 has 44.03 MiB memory in use. Of the allocated memory 13.96 GiB is allocated by PyTorch, and 11.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 56.26it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+  qwen2-vl-2b start: feature cosine on the build images 1.0000
+Traceback (most recent call last):
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/real_vlm.py", line 207, in <module>
+    v, rec = converge_uap(vlm.tokens, build_u8, device, xi=XI, lr=1 / 255, batch_size=8,
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/common.py", line 416, in converge_uap
+    loss = token_cosine(z_clean[idx.to(z_clean.device)], feat_fn((x + v).clamp(0, 1))).mean()
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/real_vlm.py", line 139, in tokens
+    self.vision(flat.to(dt), grid_thw=grid)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 729, in forward
+    hidden_states = blk(
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 422, in forward
+    hidden_states = hidden_states + self.attn(
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 348, in forward
+    query_states, key_states = apply_rotary_pos_emb_vision(query_states, key_states, cos, sin)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 208, in apply_rotary_pos_emb_vision
+    q_embed = (q * cos) + (rotate_half(q) * sin)
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/venv-universal/lib64/python3.9/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 153, in rotate_half
+    return torch.cat((-x2, x1), dim=-1)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 15.58 GiB of which 18.31 MiB is free. Process 775538 has 1.18 GiB memory in use. Including non-PyTorch memory, this process has 14.23 GiB memory in use. Of the allocated memory 14.01 GiB is allocated by PyTorch, and 18.69 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 24.72it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+  qwen2-vl-2b start: feature cosine on the build images 1.0000
+  qwen2-vl-2b epoch 1: loss 0.9436 during the epoch, 0.9344 at its end (best 0.9344, epoch 1), lr 3.92e-03, 4.4 min
+  qwen2-vl-2b epoch 2: loss 0.9315 during the epoch, 0.9262 at its end (best 0.9262, epoch 2), lr 3.92e-03, 8.8 min
+  qwen2-vl-2b epoch 3: loss 0.9245 during the epoch, 0.9196 at its end (best 0.9196, epoch 3), lr 3.92e-03, 13.3 min
+  qwen2-vl-2b epoch 4: loss 0.9163 during the epoch, 0.9102 at its end (best 0.9102, epoch 4), lr 3.92e-03, 17.7 min
+  qwen2-vl-2b epoch 5: loss 0.9090 during the epoch, 0.9052 at its end (best 0.9052, epoch 5), lr 3.92e-03, 21.9 min
+  qwen2-vl-2b epoch 6: loss 0.9034 during the epoch, 0.9008 at its end (best 0.9008, epoch 6), lr 3.92e-03, 26.3 min
+  qwen2-vl-2b epoch 7: loss 0.9015 during the epoch, 0.9030 at its end (best 0.9008, epoch 6), lr 3.92e-03, 30.7 min
+  qwen2-vl-2b epoch 8: loss 0.9104 during the epoch, 0.9170 at its end (best 0.9008, epoch 6), lr 3.92e-03, 35.2 min
+  qwen2-vl-2b: plateau, restart from the best v with lr 1.96e-03
+  qwen2-vl-2b epoch 9: loss 0.8979 during the epoch, 0.8967 at its end (best 0.8967, epoch 9), lr 1.96e-03, 39.6 min
+  qwen2-vl-2b epoch 10: loss 0.8946 during the epoch, 0.8913 at its end (best 0.8913, epoch 10), lr 1.96e-03, 44.0 min
+  qwen2-vl-2b epoch 11: loss 0.8932 during the epoch, 0.8945 at its end (best 0.8913, epoch 10), lr 1.96e-03, 48.3 min
+  qwen2-vl-2b epoch 12: loss 0.8958 during the epoch, 0.8936 at its end (best 0.8913, epoch 10), lr 1.96e-03, 52.7 min
+  qwen2-vl-2b: plateau, restart from the best v with lr 9.80e-04
+  qwen2-vl-2b epoch 13: loss 0.8898 during the epoch, 0.8869 at its end (best 0.8869, epoch 13), lr 9.80e-04, 57.1 min
+  qwen2-vl-2b epoch 14: loss 0.8860 during the epoch, 0.8837 at its end (best 0.8837, epoch 14), lr 9.80e-04, 61.5 min
+  qwen2-vl-2b epoch 15: loss 0.8847 during the epoch, 0.8822 at its end (best 0.8822, epoch 15), lr 9.80e-04, 66.0 min
+  qwen2-vl-2b epoch 16: loss 0.8820 during the epoch, 0.8827 at its end (best 0.8822, epoch 15), lr 9.80e-04, 70.2 min
+  qwen2-vl-2b epoch 17: loss 0.8849 during the epoch, 0.8828 at its end (best 0.8822, epoch 15), lr 9.80e-04, 74.6 min
+  qwen2-vl-2b: plateau, restart from the best v with lr 4.90e-04
+  qwen2-vl-2b epoch 18: loss 0.8816 during the epoch, 0.8798 at its end (best 0.8798, epoch 18), lr 4.90e-04, 79.0 min
+  qwen2-vl-2b epoch 19: loss 0.8797 during the epoch, 0.8785 at its end (best 0.8785, epoch 19), lr 4.90e-04, 83.5 min
+  qwen2-vl-2b epoch 20: loss 0.8784 during the epoch, 0.8772 at its end (best 0.8772, epoch 20), lr 4.90e-04, 87.9 min
+  qwen2-vl-2b epoch 21: loss 0.8772 during the epoch, 0.8762 at its end (best 0.8762, epoch 21), lr 4.90e-04, 92.3 min
+  qwen2-vl-2b epoch 22: loss 0.8768 during the epoch, 0.8764 at its end (best 0.8762, epoch 21), lr 4.90e-04, 96.5 min
+  qwen2-vl-2b epoch 23: loss 0.8761 during the epoch, 0.8741 at its end (best 0.8741, epoch 23), lr 4.90e-04, 101.0 min
+  qwen2-vl-2b epoch 24: loss 0.8744 during the epoch, 0.8735 at its end (best 0.8735, epoch 24), lr 4.90e-04, 105.4 min
+  qwen2-vl-2b epoch 25: loss 0.8747 during the epoch, 0.8733 at its end (best 0.8733, epoch 25), lr 4.90e-04, 109.8 min
+  qwen2-vl-2b: kept epoch 25 of 25, feature cosine on the build images 0.8733
+universal v (qwen2-vl-2b)                               token cos 0.878
+random ±xi                                              token cos 0.953
+universal v (siglip), transfer                          token cos 0.952
+universal v (clip), transfer                            token cos 0.953
+universal v (ijepa), transfer                           token cos 0.951
+universal v (mae), transfer                             token cos 0.954
+universal v (smolvlm (report)), transfer                token cos 0.950
+universal v (smolvlm-256m), transfer                    token cos 0.949
+universal v (llava-ov-0.5b), transfer                   token cos 0.946
+>> COCO val, 1000 images: clean
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+>> ImageNetV2 held-out, 500 images: clean
+>> COCO val, 1000 images: universal v (qwen2-vl-2b)
+>> ImageNetV2 held-out, 500 images: universal v (qwen2-vl-2b)
+>> COCO val, 1000 images: random ±xi
+>> ImageNetV2 held-out, 500 images: random ±xi
+>> COCO val, 1000 images: universal v (siglip), transfer
+>> ImageNetV2 held-out, 500 images: universal v (siglip), transfer
+>> COCO val, 1000 images: universal v (clip), transfer
+>> ImageNetV2 held-out, 500 images: universal v (clip), transfer
+>> COCO val, 1000 images: universal v (ijepa), transfer
+>> ImageNetV2 held-out, 500 images: universal v (ijepa), transfer
+>> COCO val, 1000 images: universal v (mae), transfer
+>> ImageNetV2 held-out, 500 images: universal v (mae), transfer
+>> COCO val, 1000 images: universal v (smolvlm (report)), transfer
+>> ImageNetV2 held-out, 500 images: universal v (smolvlm (report)), transfer
+>> COCO val, 1000 images: universal v (smolvlm-256m), transfer
+>> ImageNetV2 held-out, 500 images: universal v (smolvlm-256m), transfer
+>> COCO val, 1000 images: universal v (llava-ov-0.5b), transfer
+>> ImageNetV2 held-out, 500 images: universal v (llava-ov-0.5b), transfer
+
+qwen2-vl-2b (448 px), COCO val (1000 images) and ImageNetV2 held-out (500 images), xi = 10/255
+condition                                                 CIDEr    wrong   changed   ImageNetV2 changed@0.5
+clean                                                     0.322     1.6%         —   —
+universal v (qwen2-vl-2b)                                 0.537     3.7%      2.2%   5.6% (3.9-8.0)
+random ±xi                                                0.353     2.6%      1.0%   1.0% (0.4-2.3)
+universal v (siglip), transfer                            0.288     4.8%      3.5%   3.4% (2.1-5.4)
+universal v (clip), transfer                              0.286     6.6%      5.1%   6.4% (4.6-8.9)
+universal v (ijepa), transfer                             0.321     4.5%      2.2%   3.4% (2.1-5.4)
+universal v (mae), transfer                               0.340     3.6%      1.5%   1.0% (0.4-2.3)
+universal v (smolvlm (report)), transfer                  0.352     2.8%      1.0%   2.4% (1.4-4.1)
+universal v (smolvlm-256m), transfer                      0.348     2.9%      1.2%   1.8% (0.9-3.4)
+universal v (llava-ov-0.5b), transfer                     0.324     5.1%      3.8%   4.2% (2.8-6.3)
+
+Examples (human / clean / own v):
+  human: A woman stands in the dining area at the table. 
+  clean: The image depicts a cozy, well-lit dining area with a warm, yellowish tone. The room features a large window with a radiator, a dining table with chairs, and a television on a 
+  v    : A person is standing in a living room with a dining table, chairs, and a television. The room has yellow walls and a wooden floor. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A large, brown bear with a fluffy coat is sitting on a grassy field. 
+  v    : A large, brown bear with a black nose and ears is sitting on grass. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A cozy bedroom with a large bed covered in a blue comforter, a wooden dresser, a window with a view of greenery, and a bookshelf filled with books. 
+  v    : A cozy bedroom with a large window, a bookshelf filled with books, a bed with a blue comforter, a mirror, and a basket on the floor. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/qwen2-vl-2b
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 79.28it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+>> clean captions of the 500 build images (target of the end-to-end attack)
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  qwen2-vl-2b caption start: score on the build images 0.5849
+  qwen2-vl-2b caption epoch 1: loss 0.4891 during the epoch, 0.4761 at its end (best 0.4761, epoch 1), lr 1.57e-02, 3.2 min
+  qwen2-vl-2b caption epoch 2: loss 0.4819 during the epoch, 0.4677 at its end (best 0.4677, epoch 2), lr 1.57e-02, 6.4 min
+  qwen2-vl-2b caption epoch 3: loss 0.4781 during the epoch, 0.4682 at its end (best 0.4677, epoch 2), lr 1.57e-02, 9.6 min
+  qwen2-vl-2b caption epoch 4: loss 0.4757 during the epoch, 0.4549 at its end (best 0.4549, epoch 4), lr 1.57e-02, 12.8 min
+  qwen2-vl-2b caption epoch 5: loss 0.4757 during the epoch, 0.4692 at its end (best 0.4549, epoch 4), lr 1.57e-02, 16.0 min
+  qwen2-vl-2b caption epoch 6: loss 0.4731 during the epoch, 0.4504 at its end (best 0.4504, epoch 6), lr 1.57e-02, 19.2 min
+  qwen2-vl-2b caption epoch 7: loss 0.4653 during the epoch, 0.4473 at its end (best 0.4473, epoch 7), lr 1.57e-02, 22.4 min
+  qwen2-vl-2b caption epoch 8: loss 0.4584 during the epoch, 0.4712 at its end (best 0.4473, epoch 7), lr 1.57e-02, 25.6 min
+  qwen2-vl-2b caption epoch 9: loss 0.4704 during the epoch, 0.4489 at its end (best 0.4473, epoch 7), lr 1.57e-02, 28.8 min
+  qwen2-vl-2b caption: plateau, restart from the best v with lr 7.84e-03
+  qwen2-vl-2b caption epoch 10: loss 0.4636 during the epoch, 0.4383 at its end (best 0.4383, epoch 10), lr 7.84e-03, 32.0 min
+  qwen2-vl-2b caption epoch 11: loss 0.4597 during the epoch, 0.4615 at its end (best 0.4383, epoch 10), lr 7.84e-03, 35.2 min
+  qwen2-vl-2b caption epoch 12: loss 0.4671 during the epoch, 0.4663 at its end (best 0.4383, epoch 10), lr 7.84e-03, 38.4 min
+  qwen2-vl-2b caption: plateau, restart from the best v with lr 3.92e-03
+  qwen2-vl-2b caption epoch 13: loss 0.4465 during the epoch, 0.4270 at its end (best 0.4270, epoch 13), lr 3.92e-03, 41.6 min
+  qwen2-vl-2b caption epoch 14: loss 0.4511 during the epoch, 0.4367 at its end (best 0.4270, epoch 13), lr 3.92e-03, 46.4 min
+  qwen2-vl-2b caption epoch 15: loss 0.4509 during the epoch, 0.4435 at its end (best 0.4270, epoch 13), lr 3.92e-03, 51.8 min
+  qwen2-vl-2b caption: plateau, restart from the best v with lr 1.96e-03
+  qwen2-vl-2b caption epoch 16: loss 0.4300 during the epoch, 0.4041 at its end (best 0.4041, epoch 16), lr 1.96e-03, 55.3 min
+  qwen2-vl-2b caption epoch 17: loss 0.4105 during the epoch, 0.3912 at its end (best 0.3912, epoch 17), lr 1.96e-03, 58.0 min
+  qwen2-vl-2b caption epoch 18: loss 0.3951 during the epoch, 0.3788 at its end (best 0.3788, epoch 18), lr 1.96e-03, 60.6 min
+  qwen2-vl-2b caption epoch 19: loss 0.3860 during the epoch, 0.3683 at its end (best 0.3683, epoch 19), lr 1.96e-03, 63.3 min
+  qwen2-vl-2b caption epoch 20: loss 0.3843 during the epoch, 0.3656 at its end (best 0.3656, epoch 20), lr 1.96e-03, 66.0 min
+  qwen2-vl-2b caption epoch 21: loss 0.3730 during the epoch, 0.3604 at its end (best 0.3604, epoch 21), lr 1.96e-03, 68.7 min
+  qwen2-vl-2b caption epoch 22: loss 0.3754 during the epoch, 0.3616 at its end (best 0.3604, epoch 21), lr 1.96e-03, 71.4 min
+  qwen2-vl-2b caption epoch 23: loss 0.3774 during the epoch, 0.3677 at its end (best 0.3604, epoch 21), lr 1.96e-03, 74.0 min
+  qwen2-vl-2b caption: kept epoch 21 of 23, score on the build images 0.3604
+universal v (qwen2-vl-2b)                               token cos 0.878
+universal v (qwen2-vl-2b, caption loss)                 token cos 0.932
+random ±xi                                              token cos 0.953
+universal v (siglip), transfer                          token cos 0.952
+universal v (clip), transfer                            token cos 0.953
+universal v (ijepa), transfer                           token cos 0.951
+universal v (mae), transfer                             token cos 0.954
+universal v (smolvlm (report)), transfer                token cos 0.950
+universal v (smolvlm-256m), transfer                    token cos 0.949
+universal v (llava-ov-0.5b), transfer                   token cos 0.946
+>> COCO val, 1000 images: universal v (qwen2-vl-2b, caption loss)
+>> ImageNetV2 held-out, 500 images: universal v (qwen2-vl-2b, caption loss)
+
+qwen2-vl-2b (448 px), COCO val (1000 images) and ImageNetV2 held-out (500 images), xi = 10/255
+condition                                                 CIDEr    wrong   changed   ImageNetV2 changed@0.5
+clean                                                     0.322     1.6%         —   —
+universal v (qwen2-vl-2b)                                 0.537     3.7%      2.2%   5.6% (3.9-8.0)
+random ±xi                                                0.353     2.6%      1.0%   1.0% (0.4-2.3)
+universal v (siglip), transfer                            0.288     4.8%      3.5%   3.4% (2.1-5.4)
+universal v (clip), transfer                              0.286     6.6%      5.1%   6.4% (4.6-8.9)
+universal v (ijepa), transfer                             0.321     4.5%      2.2%   3.4% (2.1-5.4)
+universal v (mae), transfer                               0.340     3.6%      1.5%   1.0% (0.4-2.3)
+universal v (smolvlm (report)), transfer                  0.352     2.8%      1.0%   2.4% (1.4-4.1)
+universal v (smolvlm-256m), transfer                      0.348     2.9%      1.2%   1.8% (0.9-3.4)
+universal v (llava-ov-0.5b), transfer                     0.324     5.1%      3.8%   4.2% (2.8-6.3)
+universal v (qwen2-vl-2b, caption loss)                   0.331     6.2%      3.7%   7.8% (5.8-10.5)
+
+Examples (human / clean / own v):
+  human: A woman stands in the dining area at the table. 
+  clean: The image depicts a cozy, well-lit dining area with a warm, yellowish tone. The room features a large window with a radiator, a dining table with chairs, and a television on a 
+  v    : A person is standing in a living room with a dining table, chairs, and a television. The room has yellow walls and a wooden floor. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A large, brown bear with a fluffy coat is sitting on a grassy field. 
+  v    : A large, brown bear with a black nose and ears is sitting on grass. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A cozy bedroom with a large bed covered in a blue comforter, a wooden dresser, a window with a view of greenery, and a bookshelf filled with books. 
+  v    : A cozy bedroom with a large window, a bookshelf filled with books, a bed with a blue comforter, a mirror, and a basket on the floor. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/qwen2-vl-2b
+=== python real_vlm.py --model qwen2-vl-2b --target caption --lr 0.5 (Sun Nov 22 09:32:11 PM CET 2026) ===
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 80.99it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+  qwen2-vl-2b caption start: score on the build images 0.5849
+  qwen2-vl-2b caption epoch 1: loss 0.5311 during the epoch, 0.4979 at its end (best 0.4979, epoch 1), lr 1.96e-03, 2.7 min
+  qwen2-vl-2b caption epoch 2: loss 0.4929 during the epoch, 0.4768 at its end (best 0.4768, epoch 2), lr 1.96e-03, 5.4 min
+  qwen2-vl-2b caption epoch 3: loss 0.4748 during the epoch, 0.4607 at its end (best 0.4607, epoch 3), lr 1.96e-03, 8.0 min
+  qwen2-vl-2b caption epoch 4: loss 0.4611 during the epoch, 0.4403 at its end (best 0.4403, epoch 4), lr 1.96e-03, 10.7 min
+  qwen2-vl-2b caption epoch 5: loss 0.4325 during the epoch, 0.4089 at its end (best 0.4089, epoch 5), lr 1.96e-03, 13.4 min
+  qwen2-vl-2b caption epoch 6: loss 0.4112 during the epoch, 0.3883 at its end (best 0.3883, epoch 6), lr 1.96e-03, 16.1 min
+  qwen2-vl-2b caption epoch 7: loss 0.3824 during the epoch, 0.3648 at its end (best 0.3648, epoch 7), lr 1.96e-03, 18.7 min
+  qwen2-vl-2b caption epoch 8: loss 0.3657 during the epoch, 0.3599 at its end (best 0.3599, epoch 8), lr 1.96e-03, 21.4 min
+  qwen2-vl-2b caption epoch 9: loss 0.3635 during the epoch, 0.3503 at its end (best 0.3503, epoch 9), lr 1.96e-03, 24.1 min
+  qwen2-vl-2b caption epoch 10: loss 0.3521 during the epoch, 0.3338 at its end (best 0.3338, epoch 10), lr 1.96e-03, 26.8 min
+  qwen2-vl-2b caption epoch 11: loss 0.3487 during the epoch, 0.3364 at its end (best 0.3338, epoch 10), lr 1.96e-03, 29.5 min
+  qwen2-vl-2b caption epoch 12: loss 0.3409 during the epoch, 0.3274 at its end (best 0.3274, epoch 12), lr 1.96e-03, 32.1 min
+  qwen2-vl-2b caption epoch 13: loss 0.3303 during the epoch, 0.3170 at its end (best 0.3170, epoch 13), lr 1.96e-03, 34.8 min
+  qwen2-vl-2b caption epoch 14: loss 0.3294 during the epoch, 0.3340 at its end (best 0.3170, epoch 13), lr 1.96e-03, 37.5 min
+  qwen2-vl-2b caption epoch 15: loss 0.3306 during the epoch, 0.3271 at its end (best 0.3170, epoch 13), lr 1.96e-03, 40.2 min
+  qwen2-vl-2b caption: plateau, restart from the best v with lr 9.80e-04
+  qwen2-vl-2b caption epoch 16: loss 0.3132 during the epoch, 0.2965 at its end (best 0.2965, epoch 16), lr 9.80e-04, 42.9 min
+  qwen2-vl-2b caption epoch 17: loss 0.3006 during the epoch, 0.2894 at its end (best 0.2894, epoch 17), lr 9.80e-04, 45.5 min
+  qwen2-vl-2b caption epoch 18: loss 0.2952 during the epoch, 0.2935 at its end (best 0.2894, epoch 17), lr 9.80e-04, 48.2 min
+  qwen2-vl-2b caption epoch 19: loss 0.2929 during the epoch, 0.2830 at its end (best 0.2830, epoch 19), lr 9.80e-04, 50.9 min
+  qwen2-vl-2b caption epoch 20: loss 0.2860 during the epoch, 0.2721 at its end (best 0.2721, epoch 20), lr 9.80e-04, 53.6 min
+  qwen2-vl-2b caption epoch 21: loss 0.2806 during the epoch, 0.2726 at its end (best 0.2721, epoch 20), lr 9.80e-04, 56.3 min
+  qwen2-vl-2b caption epoch 22: loss 0.2818 during the epoch, 0.2735 at its end (best 0.2721, epoch 20), lr 9.80e-04, 58.9 min
+  qwen2-vl-2b caption: plateau, restart from the best v with lr 4.90e-04
+  qwen2-vl-2b caption epoch 23: loss 0.2752 during the epoch, 0.2595 at its end (best 0.2595, epoch 23), lr 4.90e-04, 61.6 min
+  qwen2-vl-2b caption epoch 24: loss 0.2622 during the epoch, 0.2517 at its end (best 0.2517, epoch 24), lr 4.90e-04, 64.3 min
+  qwen2-vl-2b caption epoch 25: loss 0.2570 during the epoch, 0.2486 at its end (best 0.2486, epoch 25), lr 4.90e-04, 67.0 min
+  qwen2-vl-2b caption epoch 26: loss 0.2525 during the epoch, 0.2449 at its end (best 0.2449, epoch 26), lr 4.90e-04, 69.6 min
+  qwen2-vl-2b caption epoch 27: loss 0.2454 during the epoch, 0.2378 at its end (best 0.2378, epoch 27), lr 4.90e-04, 72.3 min
+  qwen2-vl-2b caption epoch 28: loss 0.2422 during the epoch, 0.2353 at its end (best 0.2353, epoch 28), lr 4.90e-04, 75.0 min
+  qwen2-vl-2b caption epoch 29: loss 0.2378 during the epoch, 0.2309 at its end (best 0.2309, epoch 29), lr 4.90e-04, 77.7 min
+  qwen2-vl-2b caption epoch 30: loss 0.2365 during the epoch, 0.2323 at its end (best 0.2309, epoch 29), lr 4.90e-04, 80.4 min
+  qwen2-vl-2b caption epoch 31: loss 0.2366 during the epoch, 0.2306 at its end (best 0.2306, epoch 31), lr 4.90e-04, 83.0 min
+  qwen2-vl-2b caption: plateau, restart from the best v with lr 2.45e-04
+  qwen2-vl-2b caption epoch 32: loss 0.2315 during the epoch, 0.2213 at its end (best 0.2213, epoch 32), lr 2.45e-04, 85.7 min
+  qwen2-vl-2b caption epoch 33: loss 0.2224 during the epoch, 0.2152 at its end (best 0.2152, epoch 33), lr 2.45e-04, 88.4 min
+  qwen2-vl-2b caption epoch 34: loss 0.2163 during the epoch, 0.2103 at its end (best 0.2103, epoch 34), lr 2.45e-04, 91.1 min
+  qwen2-vl-2b caption epoch 35: loss 0.2124 during the epoch, 0.2067 at its end (best 0.2067, epoch 35), lr 2.45e-04, 93.7 min
+  qwen2-vl-2b caption epoch 36: loss 0.2098 during the epoch, 0.2041 at its end (best 0.2041, epoch 36), lr 2.45e-04, 96.4 min
+  qwen2-vl-2b caption epoch 37: loss 0.2067 during the epoch, 0.2022 at its end (best 0.2022, epoch 37), lr 2.45e-04, 99.1 min
+  qwen2-vl-2b caption epoch 38: loss 0.2045 during the epoch, 0.2008 at its end (best 0.2008, epoch 38), lr 2.45e-04, 101.8 min
+  qwen2-vl-2b caption epoch 39: loss 0.2053 during the epoch, 0.1989 at its end (best 0.1989, epoch 39), lr 2.45e-04, 104.5 min
+  qwen2-vl-2b caption epoch 40: loss 0.2007 during the epoch, 0.1969 at its end (best 0.1969, epoch 40), lr 2.45e-04, 107.1 min
+  qwen2-vl-2b caption epoch 41: loss 0.1991 during the epoch, 0.1958 at its end (best 0.1958, epoch 41), lr 2.45e-04, 109.8 min
+  qwen2-vl-2b caption epoch 42: loss 0.1982 during the epoch, 0.1939 at its end (best 0.1939, epoch 42), lr 2.45e-04, 112.5 min
+  qwen2-vl-2b caption epoch 43: loss 0.1964 during the epoch, 0.1927 at its end (best 0.1927, epoch 43), lr 2.45e-04, 115.2 min
+  qwen2-vl-2b caption epoch 44: loss 0.1958 during the epoch, 0.1927 at its end (best 0.1927, epoch 44), lr 2.45e-04, 117.9 min
+  qwen2-vl-2b caption epoch 45: loss 0.1953 during the epoch, 0.1904 at its end (best 0.1904, epoch 45), lr 2.45e-04, 120.5 min
+  qwen2-vl-2b caption epoch 46: loss 0.1934 during the epoch, 0.1907 at its end (best 0.1904, epoch 45), lr 2.45e-04, 123.2 min
+  qwen2-vl-2b caption epoch 47: loss 0.1932 during the epoch, 0.1895 at its end (best 0.1895, epoch 47), lr 2.45e-04, 125.9 min
+  qwen2-vl-2b caption: kept epoch 47 of 47, score on the build images 0.1895
+universal v (qwen2-vl-2b)                               token cos 0.878
+universal v (qwen2-vl-2b, caption loss)                 token cos 0.931
+random ±xi                                              token cos 0.953
+universal v (siglip), transfer                          token cos 0.952
+universal v (clip), transfer                            token cos 0.953
+universal v (ijepa), transfer                           token cos 0.951
+universal v (mae), transfer                             token cos 0.954
+universal v (smolvlm (report)), transfer                token cos 0.950
+universal v (smolvlm-256m), transfer                    token cos 0.949
+universal v (llava-ov-0.5b), transfer                   token cos 0.946
+universal v (qwen2-vl-2b-224), transfer                 token cos 0.954
+random ±xi, draw 1                                      token cos 0.953
+random ±xi, draw 2                                      token cos 0.953
+random ±xi, draw 3                                      token cos 0.953
+random ±xi, draw 4                                      token cos 0.953
+>> COCO val, 1000 images: universal v (qwen2-vl-2b, caption loss)
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+>> ImageNetV2 held-out, 500 images: universal v (qwen2-vl-2b, caption loss)
+>> COCO val, 1000 images: universal v (qwen2-vl-2b-224), transfer
+>> ImageNetV2 held-out, 500 images: universal v (qwen2-vl-2b-224), transfer
+>> COCO val, 1000 images: random ±xi, draw 1
+>> ImageNetV2 held-out, 500 images: random ±xi, draw 1
+>> COCO val, 1000 images: random ±xi, draw 2
+>> ImageNetV2 held-out, 500 images: random ±xi, draw 2
+>> COCO val, 1000 images: random ±xi, draw 3
+>> ImageNetV2 held-out, 500 images: random ±xi, draw 3
+>> COCO val, 1000 images: random ±xi, draw 4
+>> ImageNetV2 held-out, 500 images: random ±xi, draw 4
+
+qwen2-vl-2b (448 px), COCO val (1000 images) and ImageNetV2 held-out (500 images), xi = 10/255
+condition                                                 CIDEr    wrong   changed   ImageNetV2 changed@0.5
+clean                                                     0.322     1.6%         —   —
+universal v (qwen2-vl-2b)                                 0.537     3.7%      2.2%   5.6% (3.9-8.0)
+random ±xi                                                0.353     2.6%      1.0%   1.0% (0.4-2.3)
+universal v (siglip), transfer                            0.288     4.8%      3.5%   3.4% (2.1-5.4)
+universal v (clip), transfer                              0.286     6.6%      5.1%   6.4% (4.6-8.9)
+universal v (ijepa), transfer                             0.321     4.5%      2.2%   3.4% (2.1-5.4)
+universal v (mae), transfer                               0.340     3.6%      1.5%   1.0% (0.4-2.3)
+universal v (smolvlm (report)), transfer                  0.352     2.8%      1.0%   2.4% (1.4-4.1)
+universal v (smolvlm-256m), transfer                      0.348     2.9%      1.2%   1.8% (0.9-3.4)
+universal v (llava-ov-0.5b), transfer                     0.324     5.1%      3.8%   4.2% (2.8-6.3)
+universal v (qwen2-vl-2b, caption loss)                   0.283    18.6%     18.6%   27.8% (24.1-31.9)
+universal v (qwen2-vl-2b-224), transfer                   0.336     3.4%      1.2%   1.4% (0.7-2.9)
+random ±xi, draw 1                                        0.345     2.7%      1.4%   1.8% (0.9-3.4)
+random ±xi, draw 2                                        0.341     3.3%      0.6%   1.2% (0.6-2.6)
+random ±xi, draw 3                                        0.348     2.7%      0.7%   1.4% (0.7-2.9)
+random ±xi, draw 4                                        0.355     2.7%      0.8%   1.8% (0.9-3.4)
+
+Examples (human / clean / own v):
+  human: A woman stands in the dining area at the table. 
+  clean: The image depicts a cozy, well-lit dining area with a warm, yellowish tone. The room features a large window with a radiator, a dining table with chairs, and a television on a 
+  v    : A person is standing in a living room with a dining table, chairs, and a television. The room has yellow walls and a wooden floor. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A large, brown bear with a fluffy coat is sitting on a grassy field. 
+  v    : A large, brown bear with a black nose and ears is sitting on grass. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A cozy bedroom with a large bed covered in a blue comforter, a wooden dresser, a window with a view of greenery, and a bookshelf filled with books. 
+  v    : A cozy bedroom with a large window, a bookshelf filled with books, a bed with a blue comforter, a mirror, and a basket on the floor. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/qwen2-vl-2b
+=== python real_vlm.py --model qwen2-vl-2b --seed 1 (Mon Nov 23 12:03:09 AM CET 2026) ===
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: d508b95a-4a06-481d-ba3b-63212827f4ef)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct/resolve/main/processor_config.json
+Retrying in 1s [Retry 1/5].
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: ea119e88-660a-41cc-902c-7f7dc07d8be7)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct/resolve/main/tokenizer_config.json
+Retrying in 1s [Retry 1/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 2d74571b-1011-4259-8ab1-51a5307ab9fd)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct/resolve/main/processor_config.json
+Retrying in 1s [Retry 1/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: cee1ae72-f893-4edd-a006-80a2572c1d4f)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct/resolve/main/processor_config.json
+Retrying in 2s [Retry 2/5].
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 82.25it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+  qwen2-vl-2b tokens start: score on the build images 0.9578
+  qwen2-vl-2b tokens epoch 1: loss 0.9415 during the epoch, 0.9358 at its end (best 0.9358, epoch 1), lr 3.92e-03, 2.1 min
+  qwen2-vl-2b tokens epoch 2: loss 0.9332 during the epoch, 0.9282 at its end (best 0.9282, epoch 2), lr 3.92e-03, 4.2 min
+  qwen2-vl-2b tokens epoch 3: loss 0.9250 during the epoch, 0.9193 at its end (best 0.9193, epoch 3), lr 3.92e-03, 6.3 min
+  qwen2-vl-2b tokens epoch 4: loss 0.9187 during the epoch, 0.9148 at its end (best 0.9148, epoch 4), lr 3.92e-03, 8.4 min
+  qwen2-vl-2b tokens epoch 5: loss 0.9144 during the epoch, 0.9119 at its end (best 0.9119, epoch 5), lr 3.92e-03, 10.5 min
+  qwen2-vl-2b tokens epoch 6: loss 0.9092 during the epoch, 0.9066 at its end (best 0.9066, epoch 6), lr 3.92e-03, 12.5 min
+  qwen2-vl-2b tokens epoch 7: loss 0.9078 during the epoch, 0.9047 at its end (best 0.9047, epoch 7), lr 3.92e-03, 14.6 min
+  qwen2-vl-2b tokens epoch 8: loss 0.9038 during the epoch, 0.9008 at its end (best 0.9008, epoch 8), lr 3.92e-03, 16.7 min
+  qwen2-vl-2b tokens epoch 9: loss 0.9009 during the epoch, 0.8983 at its end (best 0.8983, epoch 9), lr 3.92e-03, 18.8 min
+  qwen2-vl-2b tokens epoch 10: loss 0.8996 during the epoch, 0.8994 at its end (best 0.8983, epoch 9), lr 3.92e-03, 20.9 min
+  qwen2-vl-2b tokens epoch 11: loss 0.9003 during the epoch, 0.8974 at its end (best 0.8974, epoch 11), lr 3.92e-03, 23.0 min
+  qwen2-vl-2b tokens: plateau, restart from the best v with lr 1.96e-03
+  qwen2-vl-2b tokens epoch 12: loss 0.8942 during the epoch, 0.8903 at its end (best 0.8903, epoch 12), lr 1.96e-03, 25.1 min
+=== python real_vlm.py --model qwen2-vl-2b --target caption --lr 0.5 (Mon Nov 23 12:40:40 PM CET 2026) ===
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 81.91it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+universal v (qwen2-vl-2b)                               token cos 0.878
+universal v (qwen2-vl-2b, caption loss)                 token cos 0.931
+random ±xi                                              token cos 0.953
+universal v (siglip), transfer                          token cos 0.952
+universal v (clip), transfer                            token cos 0.953
+universal v (ijepa), transfer                           token cos 0.951
+universal v (mae), transfer                             token cos 0.954
+universal v (smolvlm (report)), transfer                token cos 0.950
+universal v (smolvlm-256m), transfer                    token cos 0.949
+universal v (llava-ov-0.5b), transfer                   token cos 0.946
+universal v (qwen2-vl-2b-224), transfer                 token cos 0.954
+random ±xi, draw 1                                      token cos 0.953
+random ±xi, draw 2                                      token cos 0.953
+random ±xi, draw 3                                      token cos 0.953
+random ±xi, draw 4                                      token cos 0.953
+
+qwen2-vl-2b (448 px), COCO val (1000 images) and ImageNetV2 held-out (500 images), xi = 10/255
+condition                                                 CIDEr    wrong   changed   ImageNetV2 changed@0.5
+clean                                                     0.322     1.6%         —   —
+universal v (qwen2-vl-2b)                                 0.537     3.7%      2.2%   5.6% (3.9-8.0)
+random ±xi                                                0.353     2.6%      1.0%   1.0% (0.4-2.3)
+universal v (siglip), transfer                            0.288     4.8%      3.5%   3.4% (2.1-5.4)
+universal v (clip), transfer                              0.286     6.6%      5.1%   6.4% (4.6-8.9)
+universal v (ijepa), transfer                             0.321     4.5%      2.2%   3.4% (2.1-5.4)
+universal v (mae), transfer                               0.340     3.6%      1.5%   1.0% (0.4-2.3)
+universal v (smolvlm (report)), transfer                  0.352     2.8%      1.0%   2.4% (1.4-4.1)
+universal v (smolvlm-256m), transfer                      0.348     2.9%      1.2%   1.8% (0.9-3.4)
+universal v (llava-ov-0.5b), transfer                     0.324     5.1%      3.8%   4.2% (2.8-6.3)
+universal v (qwen2-vl-2b, caption loss)                   0.283    18.6%     18.6%   27.8% (24.1-31.9)
+universal v (qwen2-vl-2b-224), transfer                   0.336     3.4%      1.2%   1.4% (0.7-2.9)
+random ±xi, draw 1                                        0.345     2.7%      1.4%   1.8% (0.9-3.4)
+random ±xi, draw 2                                        0.341     3.3%      0.6%   1.2% (0.6-2.6)
+random ±xi, draw 3                                        0.348     2.7%      0.7%   1.4% (0.7-2.9)
+random ±xi, draw 4                                        0.355     2.7%      0.8%   1.8% (0.9-3.4)
+
+Examples (human / clean / own v):
+  human: A woman stands in the dining area at the table. 
+  clean: The image depicts a cozy, well-lit dining area with a warm, yellowish tone. The room features a large window with a radiator, a dining table with chairs, and a television on a 
+  v    : A person is standing in a living room with a dining table, chairs, and a television. The room has yellow walls and a wooden floor. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A large, brown bear with a fluffy coat is sitting on a grassy field. 
+  v    : A large, brown bear with a black nose and ears is sitting on grass. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A cozy bedroom with a large bed covered in a blue comforter, a wooden dresser, a window with a view of greenery, and a bookshelf filled with books. 
+  v    : A cozy bedroom with a large window, a bookshelf filled with books, a bed with a blue comforter, a mirror, and a basket on the floor. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/qwen2-vl-2b
+=== python real_vlm.py --model qwen2-vl-2b --seed 1 (Mon Nov 23 12:48:45 PM CET 2026) ===
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 80.76it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+>> qwen2-vl-2b tokens: resuming at epoch 12
+  qwen2-vl-2b tokens epoch 13: loss 0.8909 during the epoch, 0.8891 at its end (best 0.8891, epoch 13), lr 1.96e-03, 2.2 min
+  qwen2-vl-2b tokens epoch 14: loss 0.8892 during the epoch, 0.8867 at its end (best 0.8867, epoch 14), lr 1.96e-03, 4.4 min
+  qwen2-vl-2b tokens epoch 15: loss 0.8885 during the epoch, 0.8873 at its end (best 0.8867, epoch 14), lr 1.96e-03, 6.5 min
+  qwen2-vl-2b tokens epoch 16: loss 0.8888 during the epoch, 0.8870 at its end (best 0.8867, epoch 14), lr 1.96e-03, 8.7 min
+  qwen2-vl-2b tokens: plateau, restart from the best v with lr 9.80e-04
+  qwen2-vl-2b tokens epoch 17: loss 0.8861 during the epoch, 0.8822 at its end (best 0.8822, epoch 17), lr 9.80e-04, 10.9 min
+  qwen2-vl-2b tokens epoch 18: loss 0.8819 during the epoch, 0.8792 at its end (best 0.8792, epoch 18), lr 9.80e-04, 13.1 min
+  qwen2-vl-2b tokens epoch 19: loss 0.8812 during the epoch, 0.8798 at its end (best 0.8792, epoch 18), lr 9.80e-04, 15.2 min
+  qwen2-vl-2b tokens epoch 20: loss 0.8795 during the epoch, 0.8777 at its end (best 0.8777, epoch 20), lr 9.80e-04, 17.4 min
+  qwen2-vl-2b tokens epoch 21: loss 0.8781 during the epoch, 0.8761 at its end (best 0.8761, epoch 21), lr 9.80e-04, 19.6 min
+  qwen2-vl-2b tokens epoch 22: loss 0.8758 during the epoch, 0.8743 at its end (best 0.8743, epoch 22), lr 9.80e-04, 21.8 min
+  qwen2-vl-2b tokens epoch 23: loss 0.8741 during the epoch, 0.8724 at its end (best 0.8724, epoch 23), lr 9.80e-04, 24.0 min
+  qwen2-vl-2b tokens epoch 24: loss 0.8745 during the epoch, 0.8731 at its end (best 0.8724, epoch 23), lr 9.80e-04, 26.1 min
+  qwen2-vl-2b tokens epoch 25: loss 0.8735 during the epoch, 0.8714 at its end (best 0.8714, epoch 25), lr 9.80e-04, 28.3 min
+  qwen2-vl-2b tokens: plateau, restart from the best v with lr 4.90e-04
+  qwen2-vl-2b tokens epoch 26: loss 0.8713 during the epoch, 0.8675 at its end (best 0.8675, epoch 26), lr 4.90e-04, 30.5 min
+=== python real_vlm.py --model qwen2-vl-2b --target caption --lr 0.5 (Mon Nov 23 02:34:56 PM CET 2026) ===
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 81.33it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+universal v (qwen2-vl-2b)                               token cos 0.878
+universal v (qwen2-vl-2b, caption loss)                 token cos 0.931
+random ±xi                                              token cos 0.953
+universal v (siglip), transfer                          token cos 0.952
+universal v (clip), transfer                            token cos 0.953
+universal v (ijepa), transfer                           token cos 0.951
+universal v (mae), transfer                             token cos 0.954
+universal v (smolvlm (report)), transfer                token cos 0.950
+universal v (smolvlm-256m), transfer                    token cos 0.949
+universal v (llava-ov-0.5b), transfer                   token cos 0.946
+universal v (qwen2-vl-2b-224), transfer                 token cos 0.954
+random ±xi, draw 1                                      token cos 0.953
+random ±xi, draw 2                                      token cos 0.953
+random ±xi, draw 3                                      token cos 0.953
+random ±xi, draw 4                                      token cos 0.953
+
+qwen2-vl-2b (448 px), COCO val (1000 images) and ImageNetV2 held-out (500 images), xi = 10/255
+condition                                                 CIDEr    wrong   changed   ImageNetV2 changed@0.5
+clean                                                     0.322     1.6%         —   —
+universal v (qwen2-vl-2b)                                 0.537     3.7%      2.2%   5.6% (3.9-8.0)
+random ±xi                                                0.353     2.6%      1.0%   1.0% (0.4-2.3)
+universal v (siglip), transfer                            0.288     4.8%      3.5%   3.4% (2.1-5.4)
+universal v (clip), transfer                              0.286     6.6%      5.1%   6.4% (4.6-8.9)
+universal v (ijepa), transfer                             0.321     4.5%      2.2%   3.4% (2.1-5.4)
+universal v (mae), transfer                               0.340     3.6%      1.5%   1.0% (0.4-2.3)
+universal v (smolvlm (report)), transfer                  0.352     2.8%      1.0%   2.4% (1.4-4.1)
+universal v (smolvlm-256m), transfer                      0.348     2.9%      1.2%   1.8% (0.9-3.4)
+universal v (llava-ov-0.5b), transfer                     0.324     5.1%      3.8%   4.2% (2.8-6.3)
+universal v (qwen2-vl-2b, caption loss)                   0.283    18.6%     18.6%   27.8% (24.1-31.9)
+universal v (qwen2-vl-2b-224), transfer                   0.336     3.4%      1.2%   1.4% (0.7-2.9)
+random ±xi, draw 1                                        0.345     2.7%      1.4%   1.8% (0.9-3.4)
+random ±xi, draw 2                                        0.341     3.3%      0.6%   1.2% (0.6-2.6)
+random ±xi, draw 3                                        0.348     2.7%      0.7%   1.4% (0.7-2.9)
+random ±xi, draw 4                                        0.355     2.7%      0.8%   1.8% (0.9-3.4)
+
+Examples (human / clean / own v):
+  human: A woman stands in the dining area at the table. 
+  clean: The image depicts a cozy, well-lit dining area with a warm, yellowish tone. The room features a large window with a radiator, a dining table with chairs, and a television on a 
+  v    : A person is standing in a living room with a dining table, chairs, and a television. The room has yellow walls and a wooden floor. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A large, brown bear with a fluffy coat is sitting on a grassy field. 
+  v    : A large, brown bear with a black nose and ears is sitting on grass. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A cozy bedroom with a large bed covered in a blue comforter, a wooden dresser, a window with a view of greenery, and a bookshelf filled with books. 
+  v    : A cozy bedroom with a large window, a bookshelf filled with books, a bed with a blue comforter, a mirror, and a basket on the floor. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/qwen2-vl-2b
+=== python real_vlm.py --model qwen2-vl-2b --seed 1 (Mon Nov 23 02:43:21 PM CET 2026) ===
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 80.64it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+>> qwen2-vl-2b tokens: resuming at epoch 26
+  qwen2-vl-2b tokens epoch 27: loss 0.8677 during the epoch, 0.8659 at its end (best 0.8659, epoch 27), lr 4.90e-04, 2.2 min
+  qwen2-vl-2b tokens epoch 28: loss 0.8664 during the epoch, 0.8645 at its end (best 0.8645, epoch 28), lr 4.90e-04, 4.4 min
+  qwen2-vl-2b tokens epoch 29: loss 0.8651 during the epoch, 0.8639 at its end (best 0.8639, epoch 29), lr 4.90e-04, 6.5 min
+  qwen2-vl-2b tokens epoch 30: loss 0.8658 during the epoch, 0.8657 at its end (best 0.8639, epoch 29), lr 4.90e-04, 8.7 min
+  qwen2-vl-2b tokens: kept epoch 29 of 30, score on the build images 0.8639
+universal v (qwen2-vl-2b)                               token cos 0.878
+universal v (qwen2-vl-2b, caption loss)                 token cos 0.931
+random ±xi                                              token cos 0.953
+universal v (siglip), transfer                          token cos 0.952
+universal v (clip), transfer                            token cos 0.953
+universal v (ijepa), transfer                           token cos 0.951
+universal v (mae), transfer                             token cos 0.954
+universal v (smolvlm (report)), transfer                token cos 0.950
+universal v (smolvlm-256m), transfer                    token cos 0.949
+universal v (llava-ov-0.5b), transfer                   token cos 0.946
+universal v (qwen2-vl-2b-224), transfer                 token cos 0.954
+universal v (qwen2-vl-2b), seed 1                       token cos 0.872
+random ±xi, draw 1                                      token cos 0.953
+random ±xi, draw 2                                      token cos 0.953
+random ±xi, draw 3                                      token cos 0.953
+random ±xi, draw 4                                      token cos 0.953
+>> COCO val, 1000 images: universal v (qwen2-vl-2b), seed 1
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+>> ImageNetV2 held-out, 500 images: universal v (qwen2-vl-2b), seed 1
+
+qwen2-vl-2b (448 px), COCO val (1000 images) and ImageNetV2 held-out (500 images), xi = 10/255
+condition                                                 CIDEr    wrong   changed   ImageNetV2 changed@0.5
+clean                                                     0.322     1.6%         —   —
+universal v (qwen2-vl-2b)                                 0.537     3.7%      2.2%   5.6% (3.9-8.0)
+random ±xi                                                0.353     2.6%      1.0%   1.0% (0.4-2.3)
+universal v (siglip), transfer                            0.288     4.8%      3.5%   3.4% (2.1-5.4)
+universal v (clip), transfer                              0.286     6.6%      5.1%   6.4% (4.6-8.9)
+universal v (ijepa), transfer                             0.321     4.5%      2.2%   3.4% (2.1-5.4)
+universal v (mae), transfer                               0.340     3.6%      1.5%   1.0% (0.4-2.3)
+universal v (smolvlm (report)), transfer                  0.352     2.8%      1.0%   2.4% (1.4-4.1)
+universal v (smolvlm-256m), transfer                      0.348     2.9%      1.2%   1.8% (0.9-3.4)
+universal v (llava-ov-0.5b), transfer                     0.324     5.1%      3.8%   4.2% (2.8-6.3)
+universal v (qwen2-vl-2b, caption loss)                   0.283    18.6%     18.6%   27.8% (24.1-31.9)
+universal v (qwen2-vl-2b-224), transfer                   0.336     3.4%      1.2%   1.4% (0.7-2.9)
+random ±xi, draw 1                                        0.345     2.7%      1.4%   1.8% (0.9-3.4)
+random ±xi, draw 2                                        0.341     3.3%      0.6%   1.2% (0.6-2.6)
+random ±xi, draw 3                                        0.348     2.7%      0.7%   1.4% (0.7-2.9)
+random ±xi, draw 4                                        0.355     2.7%      0.8%   1.8% (0.9-3.4)
+universal v (qwen2-vl-2b), seed 1                         0.255     9.6%      8.4%   14.8% (12.0-18.2)
+
+Examples (human / clean / own v):
+  human: A woman stands in the dining area at the table. 
+  clean: The image depicts a cozy, well-lit dining area with a warm, yellowish tone. The room features a large window with a radiator, a dining table with chairs, and a television on a 
+  v    : A person is standing in a living room with a dining table, chairs, and a television. The room has yellow walls and a wooden floor. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A large, brown bear with a fluffy coat is sitting on a grassy field. 
+  v    : A large, brown bear with a black nose and ears is sitting on grass. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A cozy bedroom with a large bed covered in a blue comforter, a wooden dresser, a window with a view of greenery, and a bookshelf filled with books. 
+  v    : A cozy bedroom with a large window, a bookshelf filled with books, a bed with a blue comforter, a mirror, and a basket on the floor. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/qwen2-vl-2b
+=== python real_vlm.py --model qwen2-vl-2b --seed 2 (Mon Nov 23 03:04:27 PM CET 2026) ===
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 79.09it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+  qwen2-vl-2b tokens start: score on the build images 0.9577
+  qwen2-vl-2b tokens epoch 1: loss 0.9405 during the epoch, 0.9330 at its end (best 0.9330, epoch 1), lr 3.92e-03, 2.2 min
+  qwen2-vl-2b tokens epoch 2: loss 0.9308 during the epoch, 0.9259 at its end (best 0.9259, epoch 2), lr 3.92e-03, 4.4 min
+  qwen2-vl-2b tokens epoch 3: loss 0.9235 during the epoch, 0.9168 at its end (best 0.9168, epoch 3), lr 3.92e-03, 6.5 min
+=== python real_vlm.py --model qwen2-vl-2b --target caption --lr 0.5 (Mon Nov 23 08:47:47 PM CET 2026) ===
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 84.45it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+universal v (qwen2-vl-2b)                               token cos 0.878
+universal v (qwen2-vl-2b, caption loss)                 token cos 0.931
+random ±xi                                              token cos 0.953
+universal v (siglip), transfer                          token cos 0.952
+universal v (clip), transfer                            token cos 0.953
+universal v (ijepa), transfer                           token cos 0.951
+universal v (mae), transfer                             token cos 0.954
+universal v (smolvlm (report)), transfer                token cos 0.950
+universal v (smolvlm-256m), transfer                    token cos 0.949
+universal v (llava-ov-0.5b), transfer                   token cos 0.946
+universal v (qwen2-vl-2b-224), transfer                 token cos 0.954
+universal v (qwen2-vl-2b), seed 1                       token cos 0.872
+random ±xi, draw 1                                      token cos 0.953
+random ±xi, draw 2                                      token cos 0.953
+random ±xi, draw 3                                      token cos 0.953
+random ±xi, draw 4                                      token cos 0.953
+
+qwen2-vl-2b (448 px), COCO val (1000 images) and ImageNetV2 held-out (500 images), xi = 10/255
+condition                                                 CIDEr    wrong   changed   ImageNetV2 changed@0.5
+clean                                                     0.322     1.6%         —   —
+universal v (qwen2-vl-2b)                                 0.537     3.7%      2.2%   5.6% (3.9-8.0)
+random ±xi                                                0.353     2.6%      1.0%   1.0% (0.4-2.3)
+universal v (siglip), transfer                            0.288     4.8%      3.5%   3.4% (2.1-5.4)
+universal v (clip), transfer                              0.286     6.6%      5.1%   6.4% (4.6-8.9)
+universal v (ijepa), transfer                             0.321     4.5%      2.2%   3.4% (2.1-5.4)
+universal v (mae), transfer                               0.340     3.6%      1.5%   1.0% (0.4-2.3)
+universal v (smolvlm (report)), transfer                  0.352     2.8%      1.0%   2.4% (1.4-4.1)
+universal v (smolvlm-256m), transfer                      0.348     2.9%      1.2%   1.8% (0.9-3.4)
+universal v (llava-ov-0.5b), transfer                     0.324     5.1%      3.8%   4.2% (2.8-6.3)
+universal v (qwen2-vl-2b, caption loss)                   0.283    18.6%     18.6%   27.8% (24.1-31.9)
+universal v (qwen2-vl-2b-224), transfer                   0.336     3.4%      1.2%   1.4% (0.7-2.9)
+random ±xi, draw 1                                        0.345     2.7%      1.4%   1.8% (0.9-3.4)
+random ±xi, draw 2                                        0.341     3.3%      0.6%   1.2% (0.6-2.6)
+random ±xi, draw 3                                        0.348     2.7%      0.7%   1.4% (0.7-2.9)
+random ±xi, draw 4                                        0.355     2.7%      0.8%   1.8% (0.9-3.4)
+universal v (qwen2-vl-2b), seed 1                         0.255     9.6%      8.4%   14.8% (12.0-18.2)
+
+Examples (human / clean / own v):
+  human: A woman stands in the dining area at the table. 
+  clean: The image depicts a cozy, well-lit dining area with a warm, yellowish tone. The room features a large window with a radiator, a dining table with chairs, and a television on a 
+  v    : A person is standing in a living room with a dining table, chairs, and a television. The room has yellow walls and a wooden floor. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A large, brown bear with a fluffy coat is sitting on a grassy field. 
+  v    : A large, brown bear with a black nose and ears is sitting on grass. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A cozy bedroom with a large bed covered in a blue comforter, a wooden dresser, a window with a view of greenery, and a bookshelf filled with books. 
+  v    : A cozy bedroom with a large window, a bookshelf filled with books, a bed with a blue comforter, a mirror, and a basket on the floor. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/qwen2-vl-2b
+=== python real_vlm.py --model qwen2-vl-2b --seed 1 (Mon Nov 23 08:56:23 PM CET 2026) ===
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 82.12it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+universal v (qwen2-vl-2b)                               token cos 0.878
+universal v (qwen2-vl-2b, caption loss)                 token cos 0.931
+random ±xi                                              token cos 0.953
+universal v (siglip), transfer                          token cos 0.952
+universal v (clip), transfer                            token cos 0.953
+universal v (ijepa), transfer                           token cos 0.951
+universal v (mae), transfer                             token cos 0.954
+universal v (smolvlm (report)), transfer                token cos 0.950
+universal v (smolvlm-256m), transfer                    token cos 0.949
+universal v (llava-ov-0.5b), transfer                   token cos 0.946
+universal v (qwen2-vl-2b-224), transfer                 token cos 0.954
+universal v (qwen2-vl-2b), seed 1                       token cos 0.872
+random ±xi, draw 1                                      token cos 0.953
+random ±xi, draw 2                                      token cos 0.953
+random ±xi, draw 3                                      token cos 0.953
+random ±xi, draw 4                                      token cos 0.953
+
+qwen2-vl-2b (448 px), COCO val (1000 images) and ImageNetV2 held-out (500 images), xi = 10/255
+condition                                                 CIDEr    wrong   changed   ImageNetV2 changed@0.5
+clean                                                     0.322     1.6%         —   —
+universal v (qwen2-vl-2b)                                 0.537     3.7%      2.2%   5.6% (3.9-8.0)
+random ±xi                                                0.353     2.6%      1.0%   1.0% (0.4-2.3)
+universal v (siglip), transfer                            0.288     4.8%      3.5%   3.4% (2.1-5.4)
+universal v (clip), transfer                              0.286     6.6%      5.1%   6.4% (4.6-8.9)
+universal v (ijepa), transfer                             0.321     4.5%      2.2%   3.4% (2.1-5.4)
+universal v (mae), transfer                               0.340     3.6%      1.5%   1.0% (0.4-2.3)
+universal v (smolvlm (report)), transfer                  0.352     2.8%      1.0%   2.4% (1.4-4.1)
+universal v (smolvlm-256m), transfer                      0.348     2.9%      1.2%   1.8% (0.9-3.4)
+universal v (llava-ov-0.5b), transfer                     0.324     5.1%      3.8%   4.2% (2.8-6.3)
+universal v (qwen2-vl-2b, caption loss)                   0.283    18.6%     18.6%   27.8% (24.1-31.9)
+universal v (qwen2-vl-2b-224), transfer                   0.336     3.4%      1.2%   1.4% (0.7-2.9)
+random ±xi, draw 1                                        0.345     2.7%      1.4%   1.8% (0.9-3.4)
+random ±xi, draw 2                                        0.341     3.3%      0.6%   1.2% (0.6-2.6)
+random ±xi, draw 3                                        0.348     2.7%      0.7%   1.4% (0.7-2.9)
+random ±xi, draw 4                                        0.355     2.7%      0.8%   1.8% (0.9-3.4)
+universal v (qwen2-vl-2b), seed 1                         0.255     9.6%      8.4%   14.8% (12.0-18.2)
+
+Examples (human / clean / own v):
+  human: A woman stands in the dining area at the table. 
+  clean: The image depicts a cozy, well-lit dining area with a warm, yellowish tone. The room features a large window with a radiator, a dining table with chairs, and a television on a 
+  v    : A person is standing in a living room with a dining table, chairs, and a television. The room has yellow walls and a wooden floor. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A large, brown bear with a fluffy coat is sitting on a grassy field. 
+  v    : A large, brown bear with a black nose and ears is sitting on grass. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A cozy bedroom with a large bed covered in a blue comforter, a wooden dresser, a window with a view of greenery, and a bookshelf filled with books. 
+  v    : A cozy bedroom with a large window, a bookshelf filled with books, a bed with a blue comforter, a mirror, and a basket on the floor. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/qwen2-vl-2b
+=== python real_vlm.py --model qwen2-vl-2b --seed 2 (Mon Nov 23 09:04:56 PM CET 2026) ===
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 81.81it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+>> qwen2-vl-2b tokens: resuming at epoch 3
+  qwen2-vl-2b tokens epoch 4: loss 0.9183 during the epoch, 0.9143 at its end (best 0.9143, epoch 4), lr 3.92e-03, 2.1 min
+  qwen2-vl-2b tokens epoch 5: loss 0.9133 during the epoch, 0.9110 at its end (best 0.9110, epoch 5), lr 3.92e-03, 4.2 min
+  qwen2-vl-2b tokens epoch 6: loss 0.9096 during the epoch, 0.9045 at its end (best 0.9045, epoch 6), lr 3.92e-03, 6.3 min
+  qwen2-vl-2b tokens epoch 7: loss 0.9055 during the epoch, 0.9008 at its end (best 0.9008, epoch 7), lr 3.92e-03, 8.4 min
+  qwen2-vl-2b tokens epoch 8: loss 0.8962 during the epoch, 0.8916 at its end (best 0.8916, epoch 8), lr 3.92e-03, 10.5 min
+  qwen2-vl-2b tokens epoch 9: loss 0.8903 during the epoch, 0.8883 at its end (best 0.8883, epoch 9), lr 3.92e-03, 12.6 min
+  qwen2-vl-2b tokens epoch 10: loss 0.8905 during the epoch, 0.8924 at its end (best 0.8883, epoch 9), lr 3.92e-03, 14.7 min
+  qwen2-vl-2b tokens epoch 11: loss 0.8901 during the epoch, 0.8838 at its end (best 0.8838, epoch 11), lr 3.92e-03, 16.8 min
+  qwen2-vl-2b tokens epoch 12: loss 0.8846 during the epoch, 0.8826 at its end (best 0.8826, epoch 12), lr 3.92e-03, 18.9 min
+  qwen2-vl-2b tokens epoch 13: loss 0.8814 during the epoch, 0.8797 at its end (best 0.8797, epoch 13), lr 3.92e-03, 21.0 min
+  qwen2-vl-2b tokens epoch 14: loss 0.8862 during the epoch, 0.8917 at its end (best 0.8797, epoch 13), lr 3.92e-03, 23.1 min
+  qwen2-vl-2b tokens epoch 15: loss 0.8880 during the epoch, 0.8825 at its end (best 0.8797, epoch 13), lr 3.92e-03, 25.2 min
+  qwen2-vl-2b tokens: plateau, restart from the best v with lr 1.96e-03
+  qwen2-vl-2b tokens epoch 16: loss 0.8775 during the epoch, 0.8756 at its end (best 0.8756, epoch 16), lr 1.96e-03, 27.3 min
+  qwen2-vl-2b tokens epoch 17: loss 0.8727 during the epoch, 0.8727 at its end (best 0.8727, epoch 17), lr 1.96e-03, 29.4 min
+  qwen2-vl-2b tokens epoch 18: loss 0.8725 during the epoch, 0.8687 at its end (best 0.8687, epoch 18), lr 1.96e-03, 31.5 min
+  qwen2-vl-2b tokens epoch 19: loss 0.8700 during the epoch, 0.8680 at its end (best 0.8680, epoch 19), lr 1.96e-03, 33.6 min
+  qwen2-vl-2b tokens epoch 20: loss 0.8731 during the epoch, 0.8706 at its end (best 0.8680, epoch 19), lr 1.96e-03, 35.7 min
+  qwen2-vl-2b tokens: plateau, restart from the best v with lr 9.80e-04
+  qwen2-vl-2b tokens epoch 21: loss 0.8654 during the epoch, 0.8609 at its end (best 0.8609, epoch 21), lr 9.80e-04, 37.8 min
+  qwen2-vl-2b tokens epoch 22: loss 0.8598 during the epoch, 0.8567 at its end (best 0.8567, epoch 22), lr 9.80e-04, 39.9 min
+  qwen2-vl-2b tokens epoch 23: loss 0.8560 during the epoch, 0.8554 at its end (best 0.8554, epoch 23), lr 9.80e-04, 42.0 min
+  qwen2-vl-2b tokens epoch 24: loss 0.8553 during the epoch, 0.8519 at its end (best 0.8519, epoch 24), lr 9.80e-04, 44.1 min
+  qwen2-vl-2b tokens epoch 25: loss 0.8529 during the epoch, 0.8508 at its end (best 0.8508, epoch 25), lr 9.80e-04, 46.2 min
+  qwen2-vl-2b tokens epoch 26: loss 0.8512 during the epoch, 0.8505 at its end (best 0.8505, epoch 26), lr 9.80e-04, 48.3 min
+  qwen2-vl-2b tokens epoch 27: loss 0.8507 during the epoch, 0.8480 at its end (best 0.8480, epoch 27), lr 9.80e-04, 50.4 min
+  qwen2-vl-2b tokens epoch 28: loss 0.8488 during the epoch, 0.8477 at its end (best 0.8477, epoch 28), lr 9.80e-04, 52.5 min
+  qwen2-vl-2b tokens epoch 29: loss 0.8479 during the epoch, 0.8459 at its end (best 0.8459, epoch 29), lr 9.80e-04, 54.6 min
+  qwen2-vl-2b tokens epoch 30: loss 0.8476 during the epoch, 0.8461 at its end (best 0.8459, epoch 29), lr 9.80e-04, 56.7 min
+  qwen2-vl-2b tokens epoch 31: loss 0.8464 during the epoch, 0.8445 at its end (best 0.8445, epoch 31), lr 9.80e-04, 58.8 min
+  qwen2-vl-2b tokens epoch 32: loss 0.8441 during the epoch, 0.8412 at its end (best 0.8412, epoch 32), lr 9.80e-04, 60.9 min
+  qwen2-vl-2b tokens epoch 33: loss 0.8427 during the epoch, 0.8405 at its end (best 0.8405, epoch 33), lr 9.80e-04, 63.0 min
+  qwen2-vl-2b tokens epoch 34: loss 0.8418 during the epoch, 0.8399 at its end (best 0.8399, epoch 34), lr 9.80e-04, 65.0 min
+  qwen2-vl-2b tokens: plateau, restart from the best v with lr 4.90e-04
+  qwen2-vl-2b tokens epoch 35: loss 0.8373 during the epoch, 0.8327 at its end (best 0.8327, epoch 35), lr 4.90e-04, 67.1 min
+  qwen2-vl-2b tokens epoch 36: loss 0.8319 during the epoch, 0.8292 at its end (best 0.8292, epoch 36), lr 4.90e-04, 69.2 min
+  qwen2-vl-2b tokens epoch 37: loss 0.8304 during the epoch, 0.8287 at its end (best 0.8287, epoch 37), lr 4.90e-04, 71.3 min
+  qwen2-vl-2b tokens epoch 38: loss 0.8285 during the epoch, 0.8252 at its end (best 0.8252, epoch 38), lr 4.90e-04, 73.4 min
+  qwen2-vl-2b tokens epoch 39: loss 0.8267 during the epoch, 0.8242 at its end (best 0.8242, epoch 39), lr 4.90e-04, 75.5 min
+  qwen2-vl-2b tokens epoch 40: loss 0.8242 during the epoch, 0.8228 at its end (best 0.8228, epoch 40), lr 4.90e-04, 77.6 min
+  qwen2-vl-2b tokens epoch 41: loss 0.8228 during the epoch, 0.8213 at its end (best 0.8213, epoch 41), lr 4.90e-04, 79.7 min
+  qwen2-vl-2b tokens epoch 42: loss 0.8215 during the epoch, 0.8200 at its end (best 0.8200, epoch 42), lr 4.90e-04, 81.8 min
+  qwen2-vl-2b tokens epoch 43: loss 0.8202 during the epoch, 0.8191 at its end (best 0.8191, epoch 43), lr 4.90e-04, 83.9 min
+  qwen2-vl-2b tokens epoch 44: loss 0.8202 during the epoch, 0.8178 at its end (best 0.8178, epoch 44), lr 4.90e-04, 86.0 min
+  qwen2-vl-2b tokens epoch 45: loss 0.8181 during the epoch, 0.8164 at its end (best 0.8164, epoch 45), lr 4.90e-04, 88.1 min
+  qwen2-vl-2b tokens epoch 46: loss 0.8172 during the epoch, 0.8161 at its end (best 0.8161, epoch 46), lr 4.90e-04, 90.2 min
+  qwen2-vl-2b tokens epoch 47: loss 0.8167 during the epoch, 0.8142 at its end (best 0.8142, epoch 47), lr 4.90e-04, 92.3 min
+  qwen2-vl-2b tokens epoch 48: loss 0.8154 during the epoch, 0.8140 at its end (best 0.8140, epoch 48), lr 4.90e-04, 94.4 min
+  qwen2-vl-2b tokens epoch 49: loss 0.8144 during the epoch, 0.8136 at its end (best 0.8136, epoch 49), lr 4.90e-04, 96.5 min
+  qwen2-vl-2b tokens: kept epoch 49 of 49, score on the build images 0.8136
+universal v (qwen2-vl-2b)                               token cos 0.878
+universal v (qwen2-vl-2b, caption loss)                 token cos 0.931
+random ±xi                                              token cos 0.953
+universal v (siglip), transfer                          token cos 0.952
+universal v (clip), transfer                            token cos 0.953
+universal v (ijepa), transfer                           token cos 0.951
+universal v (mae), transfer                             token cos 0.954
+universal v (smolvlm (report)), transfer                token cos 0.950
+universal v (smolvlm-256m), transfer                    token cos 0.949
+universal v (llava-ov-0.5b), transfer                   token cos 0.946
+universal v (qwen2-vl-2b-224), transfer                 token cos 0.954
+universal v (qwen2-vl-2b), seed 1                       token cos 0.872
+universal v (qwen2-vl-2b), seed 2                       token cos 0.826
+random ±xi, draw 1                                      token cos 0.953
+random ±xi, draw 2                                      token cos 0.953
+random ±xi, draw 3                                      token cos 0.953
+random ±xi, draw 4                                      token cos 0.953
+>> COCO val, 1000 images: universal v (qwen2-vl-2b), seed 2
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+>> ImageNetV2 held-out, 500 images: universal v (qwen2-vl-2b), seed 2
+
+qwen2-vl-2b (448 px), COCO val (1000 images) and ImageNetV2 held-out (500 images), xi = 10/255
+condition                                                 CIDEr    wrong   changed   ImageNetV2 changed@0.5
+clean                                                     0.322     1.6%         —   —
+universal v (qwen2-vl-2b)                                 0.537     3.7%      2.2%   5.6% (3.9-8.0)
+random ±xi                                                0.353     2.6%      1.0%   1.0% (0.4-2.3)
+universal v (siglip), transfer                            0.288     4.8%      3.5%   3.4% (2.1-5.4)
+universal v (clip), transfer                              0.286     6.6%      5.1%   6.4% (4.6-8.9)
+universal v (ijepa), transfer                             0.321     4.5%      2.2%   3.4% (2.1-5.4)
+universal v (mae), transfer                               0.340     3.6%      1.5%   1.0% (0.4-2.3)
+universal v (smolvlm (report)), transfer                  0.352     2.8%      1.0%   2.4% (1.4-4.1)
+universal v (smolvlm-256m), transfer                      0.348     2.9%      1.2%   1.8% (0.9-3.4)
+universal v (llava-ov-0.5b), transfer                     0.324     5.1%      3.8%   4.2% (2.8-6.3)
+universal v (qwen2-vl-2b, caption loss)                   0.283    18.6%     18.6%   27.8% (24.1-31.9)
+universal v (qwen2-vl-2b-224), transfer                   0.336     3.4%      1.2%   1.4% (0.7-2.9)
+random ±xi, draw 1                                        0.345     2.7%      1.4%   1.8% (0.9-3.4)
+random ±xi, draw 2                                        0.341     3.3%      0.6%   1.2% (0.6-2.6)
+random ±xi, draw 3                                        0.348     2.7%      0.7%   1.4% (0.7-2.9)
+random ±xi, draw 4                                        0.355     2.7%      0.8%   1.8% (0.9-3.4)
+universal v (qwen2-vl-2b), seed 1                         0.255     9.6%      8.4%   14.8% (12.0-18.2)
+universal v (qwen2-vl-2b), seed 2                         0.363     8.0%      7.2%   13.4% (10.7-16.7)
+
+Examples (human / clean / own v):
+  human: A woman stands in the dining area at the table. 
+  clean: The image depicts a cozy, well-lit dining area with a warm, yellowish tone. The room features a large window with a radiator, a dining table with chairs, and a television on a 
+  v    : A person is standing in a living room with a dining table, chairs, and a television. The room has yellow walls and a wooden floor. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A large, brown bear with a fluffy coat is sitting on a grassy field. 
+  v    : A large, brown bear with a black nose and ears is sitting on grass. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A cozy bedroom with a large bed covered in a blue comforter, a wooden dresser, a window with a view of greenery, and a bookshelf filled with books. 
+  v    : A cozy bedroom with a large window, a bookshelf filled with books, a bed with a blue comforter, a mirror, and a basket on the floor. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/qwen2-vl-2b

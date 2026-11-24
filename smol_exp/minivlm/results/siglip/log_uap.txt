@@ -1,0 +1,373 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+  siglip tokens start: feature cosine on the build images 1.0000
+  siglip tokens epoch 1: loss 0.6161 during the epoch, 0.4827 at its end (best 0.4827, epoch 1), lr 3.92e-03, 0.2 min
+  siglip tokens epoch 2: loss 0.4450 during the epoch, 0.4054 at its end (best 0.4054, epoch 2), lr 3.92e-03, 0.4 min
+  siglip tokens epoch 3: loss 0.3978 during the epoch, 0.3762 at its end (best 0.3762, epoch 3), lr 3.92e-03, 0.6 min
+  siglip tokens epoch 4: loss 0.3723 during the epoch, 0.3654 at its end (best 0.3654, epoch 4), lr 3.92e-03, 0.8 min
+  siglip tokens epoch 5: loss 0.3658 during the epoch, 0.3490 at its end (best 0.3490, epoch 5), lr 3.92e-03, 1.0 min
+  siglip tokens epoch 6: loss 0.3504 during the epoch, 0.3368 at its end (best 0.3368, epoch 6), lr 3.92e-03, 1.2 min
+  siglip tokens epoch 7: loss 0.3503 during the epoch, 0.3432 at its end (best 0.3368, epoch 6), lr 3.92e-03, 1.4 min
+  siglip tokens epoch 8: loss 0.3470 during the epoch, 0.3452 at its end (best 0.3368, epoch 6), lr 3.92e-03, 1.6 min
+  siglip tokens: plateau, restart from the best v with lr 1.96e-03
+  siglip tokens epoch 9: loss 0.3364 during the epoch, 0.3222 at its end (best 0.3222, epoch 9), lr 1.96e-03, 1.8 min
+  siglip tokens epoch 10: loss 0.3189 during the epoch, 0.3108 at its end (best 0.3108, epoch 10), lr 1.96e-03, 2.0 min
+  siglip tokens epoch 11: loss 0.3111 during the epoch, 0.3072 at its end (best 0.3072, epoch 11), lr 1.96e-03, 2.2 min
+  siglip tokens epoch 12: loss 0.3193 during the epoch, 0.3246 at its end (best 0.3072, epoch 11), lr 1.96e-03, 2.5 min
+  siglip tokens epoch 13: loss 0.3204 during the epoch, 0.3051 at its end (best 0.3051, epoch 13), lr 1.96e-03, 2.7 min
+  siglip tokens epoch 14: loss 0.3083 during the epoch, 0.3051 at its end (best 0.3051, epoch 14), lr 1.96e-03, 2.9 min
+  siglip tokens epoch 15: loss 0.3031 during the epoch, 0.2971 at its end (best 0.2971, epoch 15), lr 1.96e-03, 3.1 min
+  siglip tokens epoch 16: loss 0.3027 during the epoch, 0.3014 at its end (best 0.2971, epoch 15), lr 1.96e-03, 3.3 min
+  siglip tokens epoch 17: loss 0.3038 during the epoch, 0.2913 at its end (best 0.2913, epoch 17), lr 1.96e-03, 3.5 min
+  siglip tokens epoch 18: loss 0.2893 during the epoch, 0.2823 at its end (best 0.2823, epoch 18), lr 1.96e-03, 3.7 min
+  siglip tokens epoch 19: loss 0.2981 during the epoch, 0.2983 at its end (best 0.2823, epoch 18), lr 1.96e-03, 3.9 min
+  siglip tokens epoch 20: loss 0.2935 during the epoch, 0.2817 at its end (best 0.2817, epoch 20), lr 1.96e-03, 4.1 min
+  siglip tokens: plateau, restart from the best v with lr 9.80e-04
+  siglip tokens epoch 21: loss 0.2807 during the epoch, 0.2679 at its end (best 0.2679, epoch 21), lr 9.80e-04, 4.3 min
+  siglip tokens epoch 22: loss 0.2720 during the epoch, 0.2699 at its end (best 0.2679, epoch 21), lr 9.80e-04, 4.5 min
+  siglip tokens epoch 23: loss 0.2686 during the epoch, 0.2616 at its end (best 0.2616, epoch 23), lr 9.80e-04, 4.7 min
+  siglip tokens epoch 24: loss 0.2678 during the epoch, 0.2726 at its end (best 0.2616, epoch 23), lr 9.80e-04, 4.9 min
+  siglip tokens epoch 25: loss 0.2680 during the epoch, 0.2607 at its end (best 0.2607, epoch 25), lr 9.80e-04, 5.1 min
+  siglip tokens: plateau, restart from the best v with lr 4.90e-04
+  siglip tokens epoch 26: loss 0.2572 during the epoch, 0.2475 at its end (best 0.2475, epoch 26), lr 4.90e-04, 5.3 min
+  siglip tokens epoch 27: loss 0.2468 during the epoch, 0.2424 at its end (best 0.2424, epoch 27), lr 4.90e-04, 5.5 min
+  siglip tokens epoch 28: loss 0.2433 during the epoch, 0.2384 at its end (best 0.2384, epoch 28), lr 4.90e-04, 5.7 min
+  siglip tokens epoch 29: loss 0.2401 during the epoch, 0.2366 at its end (best 0.2366, epoch 29), lr 4.90e-04, 5.9 min
+  siglip tokens epoch 30: loss 0.2371 during the epoch, 0.2348 at its end (best 0.2348, epoch 30), lr 4.90e-04, 6.2 min
+  siglip tokens epoch 31: loss 0.2359 during the epoch, 0.2318 at its end (best 0.2318, epoch 31), lr 4.90e-04, 6.4 min
+  siglip tokens epoch 32: loss 0.2329 during the epoch, 0.2309 at its end (best 0.2309, epoch 32), lr 4.90e-04, 6.6 min
+  siglip tokens epoch 33: loss 0.2326 during the epoch, 0.2282 at its end (best 0.2282, epoch 33), lr 4.90e-04, 6.8 min
+  siglip tokens epoch 34: loss 0.2296 during the epoch, 0.2267 at its end (best 0.2267, epoch 34), lr 4.90e-04, 7.0 min
+  siglip tokens epoch 35: loss 0.2292 during the epoch, 0.2246 at its end (best 0.2246, epoch 35), lr 4.90e-04, 7.2 min
+  siglip tokens epoch 36: loss 0.2291 during the epoch, 0.2267 at its end (best 0.2246, epoch 35), lr 4.90e-04, 7.4 min
+  siglip tokens epoch 37: loss 0.2285 during the epoch, 0.2236 at its end (best 0.2236, epoch 37), lr 4.90e-04, 7.6 min
+  siglip tokens: kept epoch 37 of 37, feature cosine on the build images 0.2236
+
+perturbation (held-out, 500 images)                      token cos
+universal v (siglip)                                         0.253
+random ±xi                                                   0.722
+universal v (clip), transfer                                 0.447
+universal v (ijepa), transfer                                0.543
+universal v (mae), transfer                                  0.661
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.809
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_tokens.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target connector: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+  siglip connector start: feature cosine on the build images 1.0000
+  siglip connector epoch 1: loss 0.8425 during the epoch, 0.7870 at its end (best 0.7870, epoch 1), lr 3.92e-03, 0.2 min
+  siglip connector epoch 2: loss 0.7683 during the epoch, 0.7429 at its end (best 0.7429, epoch 2), lr 3.92e-03, 0.4 min
+  siglip connector epoch 3: loss 0.7293 during the epoch, 0.7010 at its end (best 0.7010, epoch 3), lr 3.92e-03, 0.6 min
+  siglip connector epoch 4: loss 0.6976 during the epoch, 0.6849 at its end (best 0.6849, epoch 4), lr 3.92e-03, 0.8 min
+  siglip connector epoch 5: loss 0.6842 during the epoch, 0.6733 at its end (best 0.6733, epoch 5), lr 3.92e-03, 1.0 min
+  siglip connector epoch 6: loss 0.6825 during the epoch, 0.6654 at its end (best 0.6654, epoch 6), lr 3.92e-03, 1.2 min
+  siglip connector epoch 7: loss 0.6716 during the epoch, 0.6674 at its end (best 0.6654, epoch 6), lr 3.92e-03, 1.4 min
+  siglip connector epoch 8: loss 0.6593 during the epoch, 0.6538 at its end (best 0.6538, epoch 8), lr 3.92e-03, 1.6 min
+  siglip connector epoch 9: loss 0.6587 during the epoch, 0.6439 at its end (best 0.6439, epoch 9), lr 3.92e-03, 1.8 min
+  siglip connector epoch 10: loss 0.6459 during the epoch, 0.6355 at its end (best 0.6355, epoch 10), lr 3.92e-03, 2.1 min
+  siglip connector epoch 11: loss 0.6342 during the epoch, 0.6214 at its end (best 0.6214, epoch 11), lr 3.92e-03, 2.3 min
+  siglip connector epoch 12: loss 0.6230 during the epoch, 0.6098 at its end (best 0.6098, epoch 12), lr 3.92e-03, 2.5 min
+  siglip connector epoch 13: loss 0.6207 during the epoch, 0.6077 at its end (best 0.6077, epoch 13), lr 3.92e-03, 2.7 min
+  siglip connector epoch 14: loss 0.6178 during the epoch, 0.6293 at its end (best 0.6077, epoch 13), lr 3.92e-03, 2.9 min
+  siglip connector epoch 15: loss 0.6266 during the epoch, 0.6212 at its end (best 0.6077, epoch 13), lr 3.92e-03, 3.1 min
+  siglip connector: plateau, restart from the best v with lr 1.96e-03
+  siglip connector epoch 16: loss 0.6071 during the epoch, 0.5889 at its end (best 0.5889, epoch 16), lr 1.96e-03, 3.3 min
+  siglip connector epoch 17: loss 0.5859 during the epoch, 0.5763 at its end (best 0.5763, epoch 17), lr 1.96e-03, 3.5 min
+  siglip connector epoch 18: loss 0.5757 during the epoch, 0.5658 at its end (best 0.5658, epoch 18), lr 1.96e-03, 3.7 min
+  siglip connector epoch 19: loss 0.5658 during the epoch, 0.5593 at its end (best 0.5593, epoch 19), lr 1.96e-03, 3.9 min
+  siglip connector epoch 20: loss 0.5589 during the epoch, 0.5492 at its end (best 0.5492, epoch 20), lr 1.96e-03, 4.1 min
+  siglip connector epoch 21: loss 0.5673 during the epoch, 0.5606 at its end (best 0.5492, epoch 20), lr 1.96e-03, 4.3 min
+  siglip connector epoch 22: loss 0.5594 during the epoch, 0.5469 at its end (best 0.5469, epoch 22), lr 1.96e-03, 4.5 min
+  siglip connector epoch 23: loss 0.5519 during the epoch, 0.5526 at its end (best 0.5469, epoch 22), lr 1.96e-03, 4.7 min
+  siglip connector epoch 24: loss 0.5528 during the epoch, 0.5476 at its end (best 0.5469, epoch 22), lr 1.96e-03, 4.9 min
+  siglip connector: plateau, restart from the best v with lr 9.80e-04
+  siglip connector epoch 25: loss 0.5442 during the epoch, 0.5284 at its end (best 0.5284, epoch 25), lr 9.80e-04, 5.1 min
+  siglip connector epoch 26: loss 0.5297 during the epoch, 0.5211 at its end (best 0.5211, epoch 26), lr 9.80e-04, 5.3 min
+  siglip connector epoch 27: loss 0.5272 during the epoch, 0.5269 at its end (best 0.5211, epoch 26), lr 9.80e-04, 5.5 min
+  siglip connector epoch 28: loss 0.5258 during the epoch, 0.5216 at its end (best 0.5211, epoch 26), lr 9.80e-04, 5.7 min
+  siglip connector: plateau, restart from the best v with lr 4.90e-04
+  siglip connector epoch 29: loss 0.5220 during the epoch, 0.5115 at its end (best 0.5115, epoch 29), lr 4.90e-04, 5.9 min
+  siglip connector epoch 30: loss 0.5132 during the epoch, 0.5084 at its end (best 0.5084, epoch 30), lr 4.90e-04, 6.2 min
+  siglip connector epoch 31: loss 0.5082 during the epoch, 0.4999 at its end (best 0.4999, epoch 31), lr 4.90e-04, 6.4 min
+  siglip connector epoch 32: loss 0.5020 during the epoch, 0.4969 at its end (best 0.4969, epoch 32), lr 4.90e-04, 6.6 min
+  siglip connector epoch 33: loss 0.4984 during the epoch, 0.4943 at its end (best 0.4943, epoch 33), lr 4.90e-04, 6.8 min
+  siglip connector epoch 34: loss 0.4953 during the epoch, 0.4895 at its end (best 0.4895, epoch 34), lr 4.90e-04, 7.0 min
+  siglip connector epoch 35: loss 0.4906 during the epoch, 0.4852 at its end (best 0.4852, epoch 35), lr 4.90e-04, 7.2 min
+  siglip connector epoch 36: loss 0.4895 during the epoch, 0.4889 at its end (best 0.4852, epoch 35), lr 4.90e-04, 7.4 min
+  siglip connector epoch 37: loss 0.4935 during the epoch, 0.4853 at its end (best 0.4852, epoch 35), lr 4.90e-04, 7.6 min
+  siglip connector: kept epoch 35 of 37, feature cosine on the build images 0.4852
+
+perturbation (held-out, 500 images)        connector cos  token cos
+connector-output v                                 0.527      0.400
+token v (uap_xi10.pt)                              0.662      0.253
+random ±xi                                         0.879      0.722
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_conn_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_conn_xi10_tokens.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (siglip)                                         0.253
+random ±xi                                                   0.722
+universal v (clip), transfer                                 0.447
+universal v (ijepa), transfer                                0.543
+universal v (mae), transfer                                  0.661
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.809
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_tokens.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> siglip, target caption: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+>> clean captions of the 500 build images (target of the end-to-end attack)
+  siglip caption start: score on the build images 0.4083
+  siglip caption epoch 1: loss 0.3414 during the epoch, 0.3176 at its end (best 0.3176, epoch 1), lr 1.57e-02, 0.3 min
+  siglip caption epoch 2: loss 0.3214 during the epoch, 0.2970 at its end (best 0.2970, epoch 2), lr 1.57e-02, 0.6 min
+  siglip caption epoch 3: loss 0.3025 during the epoch, 0.2819 at its end (best 0.2819, epoch 3), lr 1.57e-02, 0.9 min
+  siglip caption epoch 4: loss 0.2935 during the epoch, 0.2747 at its end (best 0.2747, epoch 4), lr 1.57e-02, 1.3 min
+  siglip caption epoch 5: loss 0.2843 during the epoch, 0.2738 at its end (best 0.2738, epoch 5), lr 1.57e-02, 1.6 min
+  siglip caption epoch 6: loss 0.2887 during the epoch, 0.2710 at its end (best 0.2710, epoch 6), lr 1.57e-02, 1.9 min
+  siglip caption epoch 7: loss 0.2825 during the epoch, 0.2766 at its end (best 0.2710, epoch 6), lr 1.57e-02, 2.2 min
+  siglip caption epoch 8: loss 0.2861 during the epoch, 0.2719 at its end (best 0.2710, epoch 6), lr 1.57e-02, 2.6 min
+  siglip caption: plateau, restart from the best v with lr 7.84e-03
+  siglip caption epoch 9: loss 0.2924 during the epoch, 0.2727 at its end (best 0.2710, epoch 6), lr 7.84e-03, 2.9 min
+  siglip caption epoch 10: loss 0.2839 during the epoch, 0.2679 at its end (best 0.2679, epoch 10), lr 7.84e-03, 3.2 min
+  siglip caption epoch 11: loss 0.2782 during the epoch, 0.2677 at its end (best 0.2677, epoch 11), lr 7.84e-03, 3.6 min
+  siglip caption epoch 12: loss 0.2760 during the epoch, 0.2574 at its end (best 0.2574, epoch 12), lr 7.84e-03, 3.9 min
+  siglip caption epoch 13: loss 0.2801 during the epoch, 0.2848 at its end (best 0.2574, epoch 12), lr 7.84e-03, 4.2 min
+  siglip caption epoch 14: loss 0.2861 during the epoch, 0.2656 at its end (best 0.2574, epoch 12), lr 7.84e-03, 4.5 min
+  siglip caption: plateau, restart from the best v with lr 3.92e-03
+  siglip caption epoch 15: loss 0.2704 during the epoch, 0.2532 at its end (best 0.2532, epoch 15), lr 3.92e-03, 4.9 min
+  siglip caption epoch 16: loss 0.2568 during the epoch, 0.2362 at its end (best 0.2362, epoch 16), lr 3.92e-03, 5.2 min
+  siglip caption epoch 17: loss 0.2431 during the epoch, 0.2266 at its end (best 0.2266, epoch 17), lr 3.92e-03, 5.5 min
+  siglip caption epoch 18: loss 0.2374 during the epoch, 0.2251 at its end (best 0.2251, epoch 18), lr 3.92e-03, 5.8 min
+  siglip caption epoch 19: loss 0.2369 during the epoch, 0.2282 at its end (best 0.2251, epoch 18), lr 3.92e-03, 6.2 min
+  siglip caption epoch 20: loss 0.2392 during the epoch, 0.2242 at its end (best 0.2242, epoch 20), lr 3.92e-03, 6.5 min
+  siglip caption: plateau, restart from the best v with lr 1.96e-03
+  siglip caption epoch 21: loss 0.2265 during the epoch, 0.1998 at its end (best 0.1998, epoch 21), lr 1.96e-03, 6.8 min
+  siglip caption epoch 22: loss 0.2101 during the epoch, 0.2041 at its end (best 0.1998, epoch 21), lr 1.96e-03, 7.2 min
+  siglip caption epoch 23: loss 0.2091 during the epoch, 0.1968 at its end (best 0.1968, epoch 23), lr 1.96e-03, 7.5 min
+  siglip caption epoch 24: loss 0.2049 during the epoch, 0.1893 at its end (best 0.1893, epoch 24), lr 1.96e-03, 7.8 min
+  siglip caption epoch 25: loss 0.1976 during the epoch, 0.1854 at its end (best 0.1854, epoch 25), lr 1.96e-03, 8.2 min
+  siglip caption epoch 26: loss 0.1903 during the epoch, 0.1852 at its end (best 0.1852, epoch 26), lr 1.96e-03, 8.5 min
+  siglip caption epoch 27: loss 0.1930 during the epoch, 0.1828 at its end (best 0.1828, epoch 27), lr 1.96e-03, 8.8 min
+  siglip caption epoch 28: loss 0.1905 during the epoch, 0.1797 at its end (best 0.1797, epoch 28), lr 1.96e-03, 9.2 min
+  siglip caption epoch 29: loss 0.1936 during the epoch, 0.1933 at its end (best 0.1797, epoch 28), lr 1.96e-03, 9.5 min
+  siglip caption epoch 30: loss 0.1943 during the epoch, 0.1818 at its end (best 0.1797, epoch 28), lr 1.96e-03, 9.8 min
+  siglip caption: kept epoch 28 of 30, score on the build images 0.1797
+caption-loss v                           token cos 0.508
+token v (uap_xi10.pt)                    token cos 0.253
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_cap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_cap_xi10_tokens.json
+=== python uap_encoder.py --encoder siglip --target tokens --seed 1 (Sun Nov 22 07:31:19 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+  siglip tokens start: score on the build images 0.8013
+  siglip tokens epoch 1: loss 0.5832 during the epoch, 0.4757 at its end (best 0.4757, epoch 1), lr 3.92e-03, 0.4 min
+  siglip tokens epoch 2: loss 0.4482 during the epoch, 0.4096 at its end (best 0.4096, epoch 2), lr 3.92e-03, 0.8 min
+  siglip tokens epoch 3: loss 0.4025 during the epoch, 0.3880 at its end (best 0.3880, epoch 3), lr 3.92e-03, 1.2 min
+  siglip tokens epoch 4: loss 0.3869 during the epoch, 0.3853 at its end (best 0.3853, epoch 4), lr 3.92e-03, 1.6 min
+  siglip tokens epoch 5: loss 0.3891 during the epoch, 0.3788 at its end (best 0.3788, epoch 5), lr 3.92e-03, 2.0 min
+  siglip tokens epoch 6: loss 0.3713 during the epoch, 0.3524 at its end (best 0.3524, epoch 6), lr 3.92e-03, 2.3 min
+  siglip tokens epoch 7: loss 0.3542 during the epoch, 0.3439 at its end (best 0.3439, epoch 7), lr 3.92e-03, 2.7 min
+  siglip tokens epoch 8: loss 0.3462 during the epoch, 0.3590 at its end (best 0.3439, epoch 7), lr 3.92e-03, 3.1 min
+  siglip tokens epoch 9: loss 0.3850 during the epoch, 0.4237 at its end (best 0.3439, epoch 7), lr 3.92e-03, 3.5 min
+  siglip tokens: plateau, restart from the best v with lr 1.96e-03
+  siglip tokens epoch 10: loss 0.3436 during the epoch, 0.3300 at its end (best 0.3300, epoch 10), lr 1.96e-03, 3.9 min
+  siglip tokens epoch 11: loss 0.3251 during the epoch, 0.3158 at its end (best 0.3158, epoch 11), lr 1.96e-03, 4.3 min
+  siglip tokens epoch 12: loss 0.3235 during the epoch, 0.3259 at its end (best 0.3158, epoch 11), lr 1.96e-03, 4.7 min
+  siglip tokens epoch 13: loss 0.3228 during the epoch, 0.3119 at its end (best 0.3119, epoch 13), lr 1.96e-03, 5.1 min
+  siglip tokens epoch 14: loss 0.3228 during the epoch, 0.3124 at its end (best 0.3119, epoch 13), lr 1.96e-03, 5.5 min
+  siglip tokens epoch 15: loss 0.3145 during the epoch, 0.3060 at its end (best 0.3060, epoch 15), lr 1.96e-03, 5.9 min
+  siglip tokens epoch 16: loss 0.3143 during the epoch, 0.3061 at its end (best 0.3060, epoch 15), lr 1.96e-03, 6.3 min
+  siglip tokens epoch 17: loss 0.3082 during the epoch, 0.3030 at its end (best 0.3030, epoch 17), lr 1.96e-03, 6.6 min
+  siglip tokens epoch 18: loss 0.3108 during the epoch, 0.3049 at its end (best 0.3030, epoch 17), lr 1.96e-03, 7.0 min
+  siglip tokens epoch 19: loss 0.3062 during the epoch, 0.2980 at its end (best 0.2980, epoch 19), lr 1.96e-03, 7.4 min
+  siglip tokens epoch 20: loss 0.2990 during the epoch, 0.2981 at its end (best 0.2980, epoch 19), lr 1.96e-03, 7.8 min
+  siglip tokens epoch 21: loss 0.3143 during the epoch, 0.3136 at its end (best 0.2980, epoch 19), lr 1.96e-03, 8.2 min
+  siglip tokens: plateau, restart from the best v with lr 9.80e-04
+  siglip tokens epoch 22: loss 0.2956 during the epoch, 0.2860 at its end (best 0.2860, epoch 22), lr 9.80e-04, 8.6 min
+  siglip tokens epoch 23: loss 0.2854 during the epoch, 0.2787 at its end (best 0.2787, epoch 23), lr 9.80e-04, 9.0 min
+  siglip tokens epoch 24: loss 0.2838 during the epoch, 0.2762 at its end (best 0.2762, epoch 24), lr 9.80e-04, 9.4 min
+  siglip tokens epoch 25: loss 0.2758 during the epoch, 0.2740 at its end (best 0.2740, epoch 25), lr 9.80e-04, 9.8 min
+  siglip tokens epoch 26: loss 0.2761 during the epoch, 0.2715 at its end (best 0.2715, epoch 26), lr 9.80e-04, 10.2 min
+  siglip tokens epoch 27: loss 0.2769 during the epoch, 0.2773 at its end (best 0.2715, epoch 26), lr 9.80e-04, 10.6 min
+  siglip tokens epoch 28: loss 0.2783 during the epoch, 0.2757 at its end (best 0.2715, epoch 26), lr 9.80e-04, 11.0 min
+  siglip tokens: plateau, restart from the best v with lr 4.90e-04
+  siglip tokens epoch 29: loss 0.2695 during the epoch, 0.2630 at its end (best 0.2630, epoch 29), lr 4.90e-04, 11.3 min
+  siglip tokens epoch 30: loss 0.2624 during the epoch, 0.2572 at its end (best 0.2572, epoch 30), lr 4.90e-04, 11.7 min
+  siglip tokens epoch 31: loss 0.2577 during the epoch, 0.2529 at its end (best 0.2529, epoch 31), lr 4.90e-04, 12.1 min
+  siglip tokens epoch 32: loss 0.2545 during the epoch, 0.2515 at its end (best 0.2515, epoch 32), lr 4.90e-04, 12.5 min
+  siglip tokens epoch 33: loss 0.2529 during the epoch, 0.2505 at its end (best 0.2505, epoch 33), lr 4.90e-04, 12.9 min
+  siglip tokens epoch 34: loss 0.2526 during the epoch, 0.2486 at its end (best 0.2486, epoch 34), lr 4.90e-04, 13.3 min
+  siglip tokens epoch 35: loss 0.2512 during the epoch, 0.2467 at its end (best 0.2467, epoch 35), lr 4.90e-04, 13.7 min
+  siglip tokens epoch 36: loss 0.2494 during the epoch, 0.2472 at its end (best 0.2467, epoch 35), lr 4.90e-04, 14.1 min
+  siglip tokens epoch 37: loss 0.2504 during the epoch, 0.2473 at its end (best 0.2467, epoch 35), lr 4.90e-04, 14.5 min
+  siglip tokens: kept epoch 35 of 37, score on the build images 0.2467
+
+perturbation (held-out, 500 images)                      token cos
+universal v (siglip)                                         0.273
+random ±xi                                                   0.722
+universal v (clip), transfer                                 0.448
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.809
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s1.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s1_tokens.json
+=== python uap_encoder.py --encoder siglip --target tokens --seed 2 (Sun Nov 22 07:46:39 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+  siglip tokens start: score on the build images 0.8016
+  siglip tokens epoch 1: loss 0.5839 during the epoch, 0.4634 at its end (best 0.4634, epoch 1), lr 3.92e-03, 0.4 min
+  siglip tokens epoch 2: loss 0.4265 during the epoch, 0.4066 at its end (best 0.4066, epoch 2), lr 3.92e-03, 0.8 min
+  siglip tokens epoch 3: loss 0.3937 during the epoch, 0.3615 at its end (best 0.3615, epoch 3), lr 3.92e-03, 1.2 min
+  siglip tokens epoch 4: loss 0.3635 during the epoch, 0.3420 at its end (best 0.3420, epoch 4), lr 3.92e-03, 1.6 min
+  siglip tokens epoch 5: loss 0.3510 during the epoch, 0.3371 at its end (best 0.3371, epoch 5), lr 3.92e-03, 2.0 min
+  siglip tokens epoch 6: loss 0.3344 during the epoch, 0.3267 at its end (best 0.3267, epoch 6), lr 3.92e-03, 2.3 min
+  siglip tokens epoch 7: loss 0.3291 during the epoch, 0.3151 at its end (best 0.3151, epoch 7), lr 3.92e-03, 2.7 min
+  siglip tokens epoch 8: loss 0.3400 during the epoch, 0.3307 at its end (best 0.3151, epoch 7), lr 3.92e-03, 3.1 min
+  siglip tokens epoch 9: loss 0.3222 during the epoch, 0.3174 at its end (best 0.3151, epoch 7), lr 3.92e-03, 3.5 min
+  siglip tokens: plateau, restart from the best v with lr 1.96e-03
+  siglip tokens epoch 10: loss 0.3125 during the epoch, 0.2995 at its end (best 0.2995, epoch 10), lr 1.96e-03, 3.9 min
+  siglip tokens epoch 11: loss 0.2953 during the epoch, 0.2882 at its end (best 0.2882, epoch 11), lr 1.96e-03, 4.3 min
+  siglip tokens epoch 12: loss 0.2911 during the epoch, 0.2791 at its end (best 0.2791, epoch 12), lr 1.96e-03, 4.7 min
+  siglip tokens epoch 13: loss 0.2849 during the epoch, 0.2806 at its end (best 0.2791, epoch 12), lr 1.96e-03, 5.1 min
+  siglip tokens epoch 14: loss 0.2807 during the epoch, 0.2685 at its end (best 0.2685, epoch 14), lr 1.96e-03, 5.3 min
+  siglip tokens epoch 15: loss 0.2798 during the epoch, 0.2751 at its end (best 0.2685, epoch 14), lr 1.96e-03, 5.5 min
+  siglip tokens epoch 16: loss 0.2904 during the epoch, 0.2973 at its end (best 0.2685, epoch 14), lr 1.96e-03, 5.7 min
+  siglip tokens: plateau, restart from the best v with lr 9.80e-04
+  siglip tokens epoch 17: loss 0.2703 during the epoch, 0.2632 at its end (best 0.2632, epoch 17), lr 9.80e-04, 5.9 min
+  siglip tokens epoch 18: loss 0.2596 during the epoch, 0.2523 at its end (best 0.2523, epoch 18), lr 9.80e-04, 6.1 min
+  siglip tokens epoch 19: loss 0.2544 during the epoch, 0.2526 at its end (best 0.2523, epoch 18), lr 9.80e-04, 6.4 min
+  siglip tokens epoch 20: loss 0.2562 during the epoch, 0.2549 at its end (best 0.2523, epoch 18), lr 9.80e-04, 6.6 min
+  siglip tokens: plateau, restart from the best v with lr 4.90e-04
+  siglip tokens epoch 21: loss 0.2547 during the epoch, 0.2469 at its end (best 0.2469, epoch 21), lr 4.90e-04, 6.8 min
+  siglip tokens epoch 22: loss 0.2478 during the epoch, 0.2442 at its end (best 0.2442, epoch 22), lr 4.90e-04, 7.0 min
+  siglip tokens epoch 23: loss 0.2450 during the epoch, 0.2412 at its end (best 0.2412, epoch 23), lr 4.90e-04, 7.2 min
+  siglip tokens epoch 24: loss 0.2431 during the epoch, 0.2387 at its end (best 0.2387, epoch 24), lr 4.90e-04, 7.4 min
+  siglip tokens epoch 25: loss 0.2400 during the epoch, 0.2362 at its end (best 0.2362, epoch 25), lr 4.90e-04, 7.6 min
+  siglip tokens epoch 26: loss 0.2395 during the epoch, 0.2360 at its end (best 0.2360, epoch 26), lr 4.90e-04, 7.8 min
+  siglip tokens epoch 27: loss 0.2374 during the epoch, 0.2331 at its end (best 0.2331, epoch 27), lr 4.90e-04, 8.0 min
+  siglip tokens epoch 28: loss 0.2344 during the epoch, 0.2300 at its end (best 0.2300, epoch 28), lr 4.90e-04, 8.2 min
+  siglip tokens epoch 29: loss 0.2325 during the epoch, 0.2290 at its end (best 0.2290, epoch 29), lr 4.90e-04, 8.4 min
+  siglip tokens epoch 30: loss 0.2320 during the epoch, 0.2296 at its end (best 0.2290, epoch 29), lr 4.90e-04, 8.6 min
+  siglip tokens: kept epoch 29 of 30, score on the build images 0.2290
+
+perturbation (held-out, 500 images)                      token cos
+universal v (siglip)                                         0.262
+random ±xi                                                   0.722
+universal v (clip), transfer                                 0.457
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.809
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s2.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s2_tokens.json
+=== python uap_encoder.py --encoder siglip --target tokens (Sun Nov 22 07:59:20 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (siglip)                                         0.253
+random ±xi                                                   0.722
+universal v (clip), transfer                                 0.447
+universal v (ijepa), transfer                                0.543
+universal v (mae), transfer                                  0.661
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.809
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_tokens.json
+=== python uap_encoder.py --encoder siglip --target tokens --seed 1 (Mon Nov 23 12:29:58 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (siglip)                                         0.273
+random ±xi                                                   0.722
+universal v (clip), transfer                                 0.448
+universal v (ijepa), transfer                                0.539
+universal v (mae), transfer                                  0.644
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.809
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s1.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s1_tokens.json
+=== python uap_encoder.py --encoder siglip --target tokens --seed 2 (Mon Nov 23 12:30:32 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (siglip)                                         0.262
+random ±xi                                                   0.722
+universal v (clip), transfer                                 0.457
+universal v (ijepa), transfer                                0.522
+universal v (mae), transfer                                  0.672
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.809
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s2.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s2_tokens.json
+=== python uap_encoder.py --encoder siglip --target tokens (Mon Nov 23 12:31:35 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (siglip)                                         0.253
+random ±xi                                                   0.722
+universal v (clip), transfer                                 0.447
+universal v (ijepa), transfer                                0.543
+universal v (mae), transfer                                  0.661
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.809
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_tokens.json
+=== python uap_encoder.py --encoder siglip --target tokens --seed 1 (Mon Nov 23 02:24:08 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (siglip)                                         0.273
+random ±xi                                                   0.722
+universal v (clip), transfer                                 0.448
+universal v (ijepa), transfer                                0.539
+universal v (mae), transfer                                  0.644
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.809
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s1.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s1_tokens.json
+=== python uap_encoder.py --encoder siglip --target tokens --seed 2 (Mon Nov 23 02:24:43 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (siglip)                                         0.262
+random ±xi                                                   0.722
+universal v (clip), transfer                                 0.457
+universal v (ijepa), transfer                                0.522
+universal v (mae), transfer                                  0.672
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.809
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s2.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s2_tokens.json
+=== python uap_encoder.py --encoder siglip --target tokens (Mon Nov 23 02:25:40 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (siglip)                                         0.253
+random ±xi                                                   0.722
+universal v (clip), transfer                                 0.447
+universal v (ijepa), transfer                                0.543
+universal v (mae), transfer                                  0.661
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.809
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_tokens.json
+=== python uap_encoder.py --encoder siglip --target tokens --seed 1 (Mon Nov 23 08:37:58 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (siglip)                                         0.273
+random ±xi                                                   0.722
+universal v (clip), transfer                                 0.448
+universal v (ijepa), transfer                                0.539
+universal v (mae), transfer                                  0.644
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.809
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s1.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s1_tokens.json
+=== python uap_encoder.py --encoder siglip --target tokens --seed 2 (Mon Nov 23 08:38:28 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (siglip)                                         0.262
+random ±xi                                                   0.722
+universal v (clip), transfer                                 0.457
+universal v (ijepa), transfer                                0.522
+universal v (mae), transfer                                  0.672
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.809
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s2.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_s2_tokens.json
+=== python uap_encoder.py --encoder siglip --target tokens (Mon Nov 23 08:39:17 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> siglip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (siglip)                                         0.253
+random ±xi                                                   0.722
+universal v (clip), transfer                                 0.447
+universal v (ijepa), transfer                                0.543
+universal v (mae), transfer                                  0.661
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.809
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10_tokens.json

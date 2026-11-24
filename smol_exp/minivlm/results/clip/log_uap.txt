@@ -1,0 +1,295 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> clip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+  clip tokens start: feature cosine on the build images 1.0000
+  clip tokens epoch 1: loss 0.6838 during the epoch, 0.5551 at its end (best 0.5551, epoch 1), lr 3.92e-03, 0.2 min
+  clip tokens epoch 2: loss 0.5039 during the epoch, 0.4537 at its end (best 0.4537, epoch 2), lr 3.92e-03, 0.3 min
+  clip tokens epoch 3: loss 0.4421 during the epoch, 0.4260 at its end (best 0.4260, epoch 3), lr 3.92e-03, 0.5 min
+  clip tokens epoch 4: loss 0.4129 during the epoch, 0.3940 at its end (best 0.3940, epoch 4), lr 3.92e-03, 0.7 min
+  clip tokens epoch 5: loss 0.3933 during the epoch, 0.3920 at its end (best 0.3920, epoch 5), lr 3.92e-03, 0.8 min
+  clip tokens epoch 6: loss 0.3891 during the epoch, 0.3763 at its end (best 0.3763, epoch 6), lr 3.92e-03, 1.0 min
+  clip tokens epoch 7: loss 0.3761 during the epoch, 0.3622 at its end (best 0.3622, epoch 7), lr 3.92e-03, 1.2 min
+  clip tokens epoch 8: loss 0.3680 during the epoch, 0.3663 at its end (best 0.3622, epoch 7), lr 3.92e-03, 1.4 min
+  clip tokens epoch 9: loss 0.3650 during the epoch, 0.3558 at its end (best 0.3558, epoch 9), lr 3.92e-03, 1.5 min
+  clip tokens epoch 10: loss 0.3623 during the epoch, 0.3528 at its end (best 0.3528, epoch 10), lr 3.92e-03, 1.7 min
+  clip tokens epoch 11: loss 0.3554 during the epoch, 0.3465 at its end (best 0.3465, epoch 11), lr 3.92e-03, 1.9 min
+  clip tokens epoch 12: loss 0.3517 during the epoch, 0.3467 at its end (best 0.3465, epoch 11), lr 3.92e-03, 2.0 min
+  clip tokens epoch 13: loss 0.3499 during the epoch, 0.3421 at its end (best 0.3421, epoch 13), lr 3.92e-03, 2.2 min
+  clip tokens epoch 14: loss 0.3467 during the epoch, 0.3393 at its end (best 0.3393, epoch 14), lr 3.92e-03, 2.4 min
+  clip tokens epoch 15: loss 0.3427 during the epoch, 0.3367 at its end (best 0.3367, epoch 15), lr 3.92e-03, 2.6 min
+  clip tokens epoch 16: loss 0.3454 during the epoch, 0.3365 at its end (best 0.3365, epoch 16), lr 3.92e-03, 2.7 min
+  clip tokens epoch 17: loss 0.3436 during the epoch, 0.3394 at its end (best 0.3365, epoch 16), lr 3.92e-03, 2.9 min
+  clip tokens: plateau, restart from the best v with lr 1.96e-03
+  clip tokens epoch 18: loss 0.3316 during the epoch, 0.3198 at its end (best 0.3198, epoch 18), lr 1.96e-03, 3.1 min
+  clip tokens epoch 19: loss 0.3207 during the epoch, 0.3145 at its end (best 0.3145, epoch 19), lr 1.96e-03, 3.2 min
+  clip tokens epoch 20: loss 0.3197 during the epoch, 0.3190 at its end (best 0.3145, epoch 19), lr 1.96e-03, 3.4 min
+  clip tokens epoch 21: loss 0.3209 during the epoch, 0.3118 at its end (best 0.3118, epoch 21), lr 1.96e-03, 3.6 min
+  clip tokens epoch 22: loss 0.3352 during the epoch, 0.3276 at its end (best 0.3118, epoch 21), lr 1.96e-03, 3.7 min
+  clip tokens epoch 23: loss 0.3246 during the epoch, 0.3148 at its end (best 0.3118, epoch 21), lr 1.96e-03, 3.9 min
+  clip tokens: plateau, restart from the best v with lr 9.80e-04
+  clip tokens epoch 24: loss 0.3110 during the epoch, 0.3014 at its end (best 0.3014, epoch 24), lr 9.80e-04, 4.1 min
+  clip tokens epoch 25: loss 0.3020 during the epoch, 0.2971 at its end (best 0.2971, epoch 25), lr 9.80e-04, 4.3 min
+  clip tokens epoch 26: loss 0.2984 during the epoch, 0.2956 at its end (best 0.2956, epoch 26), lr 9.80e-04, 4.4 min
+  clip tokens epoch 27: loss 0.2964 during the epoch, 0.2915 at its end (best 0.2915, epoch 27), lr 9.80e-04, 4.6 min
+  clip tokens epoch 28: loss 0.2959 during the epoch, 0.2949 at its end (best 0.2915, epoch 27), lr 9.80e-04, 4.8 min
+  clip tokens epoch 29: loss 0.2946 during the epoch, 0.2902 at its end (best 0.2902, epoch 29), lr 9.80e-04, 4.9 min
+  clip tokens epoch 30: loss 0.2915 during the epoch, 0.2870 at its end (best 0.2870, epoch 30), lr 9.80e-04, 5.1 min
+  clip tokens epoch 31: loss 0.2899 during the epoch, 0.2866 at its end (best 0.2866, epoch 31), lr 9.80e-04, 5.3 min
+  clip tokens epoch 32: loss 0.2893 during the epoch, 0.2866 at its end (best 0.2866, epoch 32), lr 9.80e-04, 5.5 min
+  clip tokens: plateau, restart from the best v with lr 4.90e-04
+  clip tokens epoch 33: loss 0.2851 during the epoch, 0.2797 at its end (best 0.2797, epoch 33), lr 4.90e-04, 5.6 min
+  clip tokens epoch 34: loss 0.2800 during the epoch, 0.2777 at its end (best 0.2777, epoch 34), lr 4.90e-04, 5.8 min
+  clip tokens epoch 35: loss 0.2801 during the epoch, 0.2771 at its end (best 0.2771, epoch 35), lr 4.90e-04, 6.0 min
+  clip tokens epoch 36: loss 0.2794 during the epoch, 0.2772 at its end (best 0.2771, epoch 35), lr 4.90e-04, 6.1 min
+  clip tokens: kept epoch 35 of 36, feature cosine on the build images 0.2771
+
+perturbation (held-out, 500 images)                      token cos
+universal v (clip)                                           0.303
+random ±xi                                                   0.772
+universal v (ijepa), transfer                                0.600
+universal v (mae), transfer                                  0.710
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.817
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10_tokens.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> clip, target connector: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+  clip connector start: feature cosine on the build images 1.0000
+  clip connector epoch 1: loss 0.8969 during the epoch, 0.8616 at its end (best 0.8616, epoch 1), lr 3.92e-03, 0.2 min
+  clip connector epoch 2: loss 0.8528 during the epoch, 0.8359 at its end (best 0.8359, epoch 2), lr 3.92e-03, 0.3 min
+  clip connector epoch 3: loss 0.8364 during the epoch, 0.8250 at its end (best 0.8250, epoch 3), lr 3.92e-03, 0.5 min
+  clip connector epoch 4: loss 0.8236 during the epoch, 0.8168 at its end (best 0.8168, epoch 4), lr 3.92e-03, 0.7 min
+  clip connector epoch 5: loss 0.8242 during the epoch, 0.8134 at its end (best 0.8134, epoch 5), lr 3.92e-03, 0.8 min
+  clip connector epoch 6: loss 0.8149 during the epoch, 0.8094 at its end (best 0.8094, epoch 6), lr 3.92e-03, 1.0 min
+  clip connector epoch 7: loss 0.8101 during the epoch, 0.8053 at its end (best 0.8053, epoch 7), lr 3.92e-03, 1.2 min
+  clip connector epoch 8: loss 0.8079 during the epoch, 0.8016 at its end (best 0.8016, epoch 8), lr 3.92e-03, 1.4 min
+  clip connector epoch 9: loss 0.8056 during the epoch, 0.7994 at its end (best 0.7994, epoch 9), lr 3.92e-03, 1.5 min
+  clip connector epoch 10: loss 0.8018 during the epoch, 0.7967 at its end (best 0.7967, epoch 10), lr 3.92e-03, 1.7 min
+  clip connector epoch 11: loss 0.7979 during the epoch, 0.7914 at its end (best 0.7914, epoch 11), lr 3.92e-03, 1.9 min
+  clip connector epoch 12: loss 0.7886 during the epoch, 0.7805 at its end (best 0.7805, epoch 12), lr 3.92e-03, 2.0 min
+  clip connector epoch 13: loss 0.7916 during the epoch, 0.7933 at its end (best 0.7805, epoch 12), lr 3.92e-03, 2.2 min
+  clip connector epoch 14: loss 0.8006 during the epoch, 0.7996 at its end (best 0.7805, epoch 12), lr 3.92e-03, 2.4 min
+  clip connector: plateau, restart from the best v with lr 1.96e-03
+  clip connector epoch 15: loss 0.7773 during the epoch, 0.7633 at its end (best 0.7633, epoch 15), lr 1.96e-03, 2.6 min
+  clip connector epoch 16: loss 0.7658 during the epoch, 0.7632 at its end (best 0.7632, epoch 16), lr 1.96e-03, 2.7 min
+  clip connector epoch 17: loss 0.7629 during the epoch, 0.7508 at its end (best 0.7508, epoch 17), lr 1.96e-03, 2.9 min
+  clip connector epoch 18: loss 0.7559 during the epoch, 0.7563 at its end (best 0.7508, epoch 17), lr 1.96e-03, 3.1 min
+  clip connector epoch 19: loss 0.7596 during the epoch, 0.7508 at its end (best 0.7508, epoch 17), lr 1.96e-03, 3.2 min
+  clip connector: plateau, restart from the best v with lr 9.80e-04
+  clip connector epoch 20: loss 0.7503 during the epoch, 0.7431 at its end (best 0.7431, epoch 20), lr 9.80e-04, 3.4 min
+  clip connector epoch 21: loss 0.7422 during the epoch, 0.7329 at its end (best 0.7329, epoch 21), lr 9.80e-04, 3.6 min
+  clip connector epoch 22: loss 0.7344 during the epoch, 0.7285 at its end (best 0.7285, epoch 22), lr 9.80e-04, 3.8 min
+  clip connector epoch 23: loss 0.7332 during the epoch, 0.7278 at its end (best 0.7278, epoch 23), lr 9.80e-04, 3.9 min
+  clip connector epoch 24: loss 0.7280 during the epoch, 0.7220 at its end (best 0.7220, epoch 24), lr 9.80e-04, 4.1 min
+  clip connector epoch 25: loss 0.7235 during the epoch, 0.7222 at its end (best 0.7220, epoch 24), lr 9.80e-04, 4.3 min
+  clip connector epoch 26: loss 0.7251 during the epoch, 0.7162 at its end (best 0.7162, epoch 26), lr 9.80e-04, 4.4 min
+  clip connector epoch 27: loss 0.7159 during the epoch, 0.7117 at its end (best 0.7117, epoch 27), lr 9.80e-04, 4.6 min
+  clip connector epoch 28: loss 0.7160 during the epoch, 0.7109 at its end (best 0.7109, epoch 28), lr 9.80e-04, 4.8 min
+  clip connector epoch 29: loss 0.7121 during the epoch, 0.7060 at its end (best 0.7060, epoch 29), lr 9.80e-04, 5.0 min
+  clip connector epoch 30: loss 0.7112 during the epoch, 0.7113 at its end (best 0.7060, epoch 29), lr 9.80e-04, 5.1 min
+  clip connector epoch 31: loss 0.7149 during the epoch, 0.7112 at its end (best 0.7060, epoch 29), lr 9.80e-04, 5.3 min
+  clip connector: plateau, restart from the best v with lr 4.90e-04
+  clip connector epoch 32: loss 0.7064 during the epoch, 0.6983 at its end (best 0.6983, epoch 32), lr 4.90e-04, 5.5 min
+  clip connector epoch 33: loss 0.6991 during the epoch, 0.6953 at its end (best 0.6953, epoch 33), lr 4.90e-04, 5.6 min
+  clip connector epoch 34: loss 0.6957 during the epoch, 0.6908 at its end (best 0.6908, epoch 34), lr 4.90e-04, 5.8 min
+  clip connector epoch 35: loss 0.6922 during the epoch, 0.6869 at its end (best 0.6869, epoch 35), lr 4.90e-04, 6.0 min
+  clip connector epoch 36: loss 0.6913 during the epoch, 0.6877 at its end (best 0.6869, epoch 35), lr 4.90e-04, 6.2 min
+  clip connector epoch 37: loss 0.6888 during the epoch, 0.6834 at its end (best 0.6834, epoch 37), lr 4.90e-04, 6.3 min
+  clip connector epoch 38: loss 0.6845 during the epoch, 0.6803 at its end (best 0.6803, epoch 38), lr 4.90e-04, 6.5 min
+  clip connector epoch 39: loss 0.6848 during the epoch, 0.6794 at its end (best 0.6794, epoch 39), lr 4.90e-04, 6.7 min
+  clip connector epoch 40: loss 0.6812 during the epoch, 0.6774 at its end (best 0.6774, epoch 40), lr 4.90e-04, 6.8 min
+  clip connector epoch 41: loss 0.6792 during the epoch, 0.6768 at its end (best 0.6768, epoch 41), lr 4.90e-04, 7.0 min
+  clip connector epoch 42: loss 0.6792 during the epoch, 0.6741 at its end (best 0.6741, epoch 42), lr 4.90e-04, 7.2 min
+  clip connector epoch 43: loss 0.6755 during the epoch, 0.6719 at its end (best 0.6719, epoch 43), lr 4.90e-04, 7.4 min
+  clip connector epoch 44: loss 0.6742 during the epoch, 0.6710 at its end (best 0.6710, epoch 44), lr 4.90e-04, 7.5 min
+  clip connector epoch 45: loss 0.6751 during the epoch, 0.6725 at its end (best 0.6710, epoch 44), lr 4.90e-04, 7.7 min
+  clip connector: kept epoch 44 of 45, feature cosine on the build images 0.6710
+
+perturbation (held-out, 500 images)        connector cos  token cos
+connector-output v                                 0.710      0.510
+token v (uap_xi10.pt)                              0.738      0.303
+random ±xi                                         0.920      0.772
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_conn_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_conn_xi10_tokens.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> clip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (clip)                                           0.303
+random ±xi                                                   0.772
+universal v (siglip), transfer                               0.538
+universal v (ijepa), transfer                                0.600
+universal v (mae), transfer                                  0.710
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.817
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10_tokens.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> clip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (clip)                                           0.303
+random ±xi                                                   0.772
+universal v (siglip), transfer                               0.538
+universal v (ijepa), transfer                                0.600
+universal v (mae), transfer                                  0.710
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.817
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10_tokens.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> clip, target connector: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)        connector cos  token cos
+connector-output v                                 0.710      0.510
+token v (uap_xi10.pt)                              0.738      0.303
+random ±xi                                         0.920      0.772
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_conn_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_conn_xi10_tokens.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> clip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (clip)                                           0.303
+random ±xi                                                   0.772
+universal v (siglip), transfer                               0.538
+universal v (ijepa), transfer                                0.600
+universal v (mae), transfer                                  0.710
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.817
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10_tokens.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> clip, target caption: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+>> clean captions of the 500 build images (target of the end-to-end attack)
+  clip caption start: score on the build images 0.3721
+  clip caption epoch 1: loss 0.3393 during the epoch, 0.3125 at its end (best 0.3125, epoch 1), lr 1.57e-02, 0.3 min
+  clip caption epoch 2: loss 0.3196 during the epoch, 0.3108 at its end (best 0.3108, epoch 2), lr 1.57e-02, 0.6 min
+  clip caption epoch 3: loss 0.3206 during the epoch, 0.3135 at its end (best 0.3108, epoch 2), lr 1.57e-02, 0.9 min
+  clip caption epoch 4: loss 0.3174 during the epoch, 0.3115 at its end (best 0.3108, epoch 2), lr 1.57e-02, 1.2 min
+  clip caption: plateau, restart from the best v with lr 7.84e-03
+  clip caption epoch 5: loss 0.3191 during the epoch, 0.2946 at its end (best 0.2946, epoch 5), lr 7.84e-03, 1.5 min
+  clip caption epoch 6: loss 0.3098 during the epoch, 0.3073 at its end (best 0.2946, epoch 5), lr 7.84e-03, 1.8 min
+  clip caption epoch 7: loss 0.3096 during the epoch, 0.2915 at its end (best 0.2915, epoch 7), lr 7.84e-03, 2.1 min
+  clip caption epoch 8: loss 0.3069 during the epoch, 0.3021 at its end (best 0.2915, epoch 7), lr 7.84e-03, 2.4 min
+  clip caption epoch 9: loss 0.3074 during the epoch, 0.2898 at its end (best 0.2898, epoch 9), lr 7.84e-03, 2.6 min
+  clip caption epoch 10: loss 0.2966 during the epoch, 0.2893 at its end (best 0.2893, epoch 10), lr 7.84e-03, 2.9 min
+  clip caption epoch 11: loss 0.3005 during the epoch, 0.2873 at its end (best 0.2873, epoch 11), lr 7.84e-03, 3.2 min
+  clip caption epoch 12: loss 0.2933 during the epoch, 0.2851 at its end (best 0.2851, epoch 12), lr 7.84e-03, 3.5 min
+  clip caption epoch 13: loss 0.2934 during the epoch, 0.2819 at its end (best 0.2819, epoch 13), lr 7.84e-03, 3.8 min
+  clip caption epoch 14: loss 0.2842 during the epoch, 0.2679 at its end (best 0.2679, epoch 14), lr 7.84e-03, 4.1 min
+  clip caption epoch 15: loss 0.2830 during the epoch, 0.2843 at its end (best 0.2679, epoch 14), lr 7.84e-03, 4.4 min
+  clip caption epoch 16: loss 0.2969 during the epoch, 0.2865 at its end (best 0.2679, epoch 14), lr 7.84e-03, 4.7 min
+  clip caption: plateau, restart from the best v with lr 3.92e-03
+  clip caption epoch 17: loss 0.2861 during the epoch, 0.2670 at its end (best 0.2670, epoch 17), lr 3.92e-03, 5.0 min
+  clip caption epoch 18: loss 0.2711 during the epoch, 0.2592 at its end (best 0.2592, epoch 18), lr 3.92e-03, 5.3 min
+  clip caption epoch 19: loss 0.2683 during the epoch, 0.2528 at its end (best 0.2528, epoch 19), lr 3.92e-03, 5.6 min
+  clip caption epoch 20: loss 0.2586 during the epoch, 0.2423 at its end (best 0.2423, epoch 20), lr 3.92e-03, 5.9 min
+  clip caption epoch 21: loss 0.2512 during the epoch, 0.2364 at its end (best 0.2364, epoch 21), lr 3.92e-03, 6.2 min
+  clip caption epoch 22: loss 0.2542 during the epoch, 0.2570 at its end (best 0.2364, epoch 21), lr 3.92e-03, 6.5 min
+  clip caption epoch 23: loss 0.2586 during the epoch, 0.2536 at its end (best 0.2364, epoch 21), lr 3.92e-03, 6.8 min
+  clip caption: plateau, restart from the best v with lr 1.96e-03
+  clip caption epoch 24: loss 0.2420 during the epoch, 0.2248 at its end (best 0.2248, epoch 24), lr 1.96e-03, 7.1 min
+  clip caption epoch 25: loss 0.2295 during the epoch, 0.2169 at its end (best 0.2169, epoch 25), lr 1.96e-03, 7.4 min
+  clip caption epoch 26: loss 0.2239 during the epoch, 0.2114 at its end (best 0.2114, epoch 26), lr 1.96e-03, 7.7 min
+  clip caption epoch 27: loss 0.2176 during the epoch, 0.2078 at its end (best 0.2078, epoch 27), lr 1.96e-03, 8.0 min
+  clip caption epoch 28: loss 0.2163 during the epoch, 0.2040 at its end (best 0.2040, epoch 28), lr 1.96e-03, 8.2 min
+  clip caption epoch 29: loss 0.2132 during the epoch, 0.2045 at its end (best 0.2040, epoch 28), lr 1.96e-03, 8.5 min
+  clip caption epoch 30: loss 0.2191 during the epoch, 0.2082 at its end (best 0.2040, epoch 28), lr 1.96e-03, 8.8 min
+  clip caption: kept epoch 28 of 30, score on the build images 0.2040
+caption-loss v                           token cos 0.603
+token v (uap_xi10.pt)                    token cos 0.303
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_cap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_cap_xi10_tokens.json
+=== python uap_encoder.py --encoder clip --target tokens --seed 1 (Sun Nov 22 07:29:42 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> clip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+  clip tokens start: score on the build images 0.8253
+  clip tokens epoch 1: loss 0.6478 during the epoch, 0.5242 at its end (best 0.5242, epoch 1), lr 3.92e-03, 0.3 min
+  clip tokens epoch 2: loss 0.4851 during the epoch, 0.4462 at its end (best 0.4462, epoch 2), lr 3.92e-03, 0.6 min
+  clip tokens epoch 3: loss 0.4362 during the epoch, 0.4143 at its end (best 0.4143, epoch 3), lr 3.92e-03, 0.9 min
+  clip tokens epoch 4: loss 0.4085 during the epoch, 0.3935 at its end (best 0.3935, epoch 4), lr 3.92e-03, 1.1 min
+  clip tokens epoch 5: loss 0.3971 during the epoch, 0.3993 at its end (best 0.3935, epoch 4), lr 3.92e-03, 1.3 min
+  clip tokens epoch 6: loss 0.3909 during the epoch, 0.3723 at its end (best 0.3723, epoch 6), lr 3.92e-03, 1.4 min
+  clip tokens epoch 7: loss 0.3838 during the epoch, 0.3777 at its end (best 0.3723, epoch 6), lr 3.92e-03, 1.6 min
+  clip tokens epoch 8: loss 0.3907 during the epoch, 0.3793 at its end (best 0.3723, epoch 6), lr 3.92e-03, 1.8 min
+  clip tokens: plateau, restart from the best v with lr 1.96e-03
+  clip tokens epoch 9: loss 0.3721 during the epoch, 0.3590 at its end (best 0.3590, epoch 9), lr 1.96e-03, 2.0 min
+  clip tokens epoch 10: loss 0.3599 during the epoch, 0.3567 at its end (best 0.3567, epoch 10), lr 1.96e-03, 2.2 min
+  clip tokens epoch 11: loss 0.3565 during the epoch, 0.3503 at its end (best 0.3503, epoch 11), lr 1.96e-03, 2.4 min
+  clip tokens epoch 12: loss 0.3538 during the epoch, 0.3499 at its end (best 0.3499, epoch 12), lr 1.96e-03, 2.6 min
+  clip tokens epoch 13: loss 0.3534 during the epoch, 0.3545 at its end (best 0.3499, epoch 12), lr 1.96e-03, 2.8 min
+  clip tokens: plateau, restart from the best v with lr 9.80e-04
+  clip tokens epoch 14: loss 0.3445 during the epoch, 0.3334 at its end (best 0.3334, epoch 14), lr 9.80e-04, 3.0 min
+  clip tokens epoch 15: loss 0.3345 during the epoch, 0.3305 at its end (best 0.3305, epoch 15), lr 9.80e-04, 3.1 min
+  clip tokens epoch 16: loss 0.3312 during the epoch, 0.3250 at its end (best 0.3250, epoch 16), lr 9.80e-04, 3.3 min
+  clip tokens epoch 17: loss 0.3262 during the epoch, 0.3241 at its end (best 0.3241, epoch 17), lr 9.80e-04, 3.5 min
+  clip tokens epoch 18: loss 0.3262 during the epoch, 0.3221 at its end (best 0.3221, epoch 18), lr 9.80e-04, 3.7 min
+  clip tokens epoch 19: loss 0.3249 during the epoch, 0.3195 at its end (best 0.3195, epoch 19), lr 9.80e-04, 4.0 min
+  clip tokens epoch 20: loss 0.3228 during the epoch, 0.3217 at its end (best 0.3195, epoch 19), lr 9.80e-04, 4.3 min
+  clip tokens epoch 21: loss 0.3251 during the epoch, 0.3228 at its end (best 0.3195, epoch 19), lr 9.80e-04, 4.5 min
+  clip tokens: plateau, restart from the best v with lr 4.90e-04
+  clip tokens epoch 22: loss 0.3195 during the epoch, 0.3154 at its end (best 0.3154, epoch 22), lr 4.90e-04, 4.8 min
+  clip tokens epoch 23: loss 0.3149 during the epoch, 0.3123 at its end (best 0.3123, epoch 23), lr 4.90e-04, 5.1 min
+  clip tokens epoch 24: loss 0.3134 during the epoch, 0.3101 at its end (best 0.3101, epoch 24), lr 4.90e-04, 5.4 min
+  clip tokens epoch 25: loss 0.3113 during the epoch, 0.3090 at its end (best 0.3090, epoch 25), lr 4.90e-04, 5.7 min
+  clip tokens epoch 26: loss 0.3116 during the epoch, 0.3083 at its end (best 0.3083, epoch 26), lr 4.90e-04, 5.9 min
+  clip tokens epoch 27: loss 0.3115 during the epoch, 0.3075 at its end (best 0.3075, epoch 27), lr 4.90e-04, 6.1 min
+  clip tokens: kept epoch 27 of 27, score on the build images 0.3075
+
+perturbation (held-out, 500 images)                      token cos
+universal v (clip)                                           0.332
+random ±xi                                                   0.772
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.817
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10_s1.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10_s1_tokens.json
+=== python uap_encoder.py --encoder clip --target tokens --seed 2 (Sun Nov 22 07:36:27 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> clip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+  clip tokens start: score on the build images 0.8257
+  clip tokens epoch 1: loss 0.6529 during the epoch, 0.5301 at its end (best 0.5301, epoch 1), lr 3.92e-03, 0.2 min
+  clip tokens epoch 2: loss 0.4842 during the epoch, 0.4422 at its end (best 0.4422, epoch 2), lr 3.92e-03, 0.4 min
+  clip tokens epoch 3: loss 0.4270 during the epoch, 0.4033 at its end (best 0.4033, epoch 3), lr 3.92e-03, 0.6 min
+  clip tokens epoch 4: loss 0.4083 during the epoch, 0.3896 at its end (best 0.3896, epoch 4), lr 3.92e-03, 0.7 min
+  clip tokens epoch 5: loss 0.3902 during the epoch, 0.3856 at its end (best 0.3856, epoch 5), lr 3.92e-03, 0.9 min
+  clip tokens epoch 6: loss 0.3829 during the epoch, 0.3709 at its end (best 0.3709, epoch 6), lr 3.92e-03, 1.1 min
+  clip tokens epoch 7: loss 0.3725 during the epoch, 0.3639 at its end (best 0.3639, epoch 7), lr 3.92e-03, 1.3 min
+  clip tokens epoch 8: loss 0.3682 during the epoch, 0.3622 at its end (best 0.3622, epoch 8), lr 3.92e-03, 1.5 min
+  clip tokens epoch 9: loss 0.3632 during the epoch, 0.3586 at its end (best 0.3586, epoch 9), lr 3.92e-03, 1.7 min
+  clip tokens epoch 10: loss 0.3600 during the epoch, 0.3542 at its end (best 0.3542, epoch 10), lr 3.92e-03, 1.9 min
+  clip tokens epoch 11: loss 0.3580 during the epoch, 0.3515 at its end (best 0.3515, epoch 11), lr 3.92e-03, 2.1 min
+  clip tokens epoch 12: loss 0.3579 during the epoch, 0.3536 at its end (best 0.3515, epoch 11), lr 3.92e-03, 2.4 min
+  clip tokens epoch 13: loss 0.3629 during the epoch, 0.3510 at its end (best 0.3510, epoch 13), lr 3.92e-03, 2.7 min
+  clip tokens: plateau, restart from the best v with lr 1.96e-03
+  clip tokens epoch 14: loss 0.3481 during the epoch, 0.3332 at its end (best 0.3332, epoch 14), lr 1.96e-03, 3.0 min
+  clip tokens epoch 15: loss 0.3329 during the epoch, 0.3262 at its end (best 0.3262, epoch 15), lr 1.96e-03, 3.3 min
+  clip tokens epoch 16: loss 0.3291 during the epoch, 0.3231 at its end (best 0.3231, epoch 16), lr 1.96e-03, 3.6 min
+  clip tokens epoch 17: loss 0.3300 during the epoch, 0.3226 at its end (best 0.3226, epoch 17), lr 1.96e-03, 3.9 min
+  clip tokens epoch 18: loss 0.3229 during the epoch, 0.3172 at its end (best 0.3172, epoch 18), lr 1.96e-03, 4.1 min
+  clip tokens epoch 19: loss 0.3229 during the epoch, 0.3182 at its end (best 0.3172, epoch 18), lr 1.96e-03, 4.3 min
+  clip tokens epoch 20: loss 0.3202 during the epoch, 0.3148 at its end (best 0.3148, epoch 20), lr 1.96e-03, 4.5 min
+  clip tokens epoch 21: loss 0.3226 during the epoch, 0.3154 at its end (best 0.3148, epoch 20), lr 1.96e-03, 4.7 min
+  clip tokens epoch 22: loss 0.3176 during the epoch, 0.3118 at its end (best 0.3118, epoch 22), lr 1.96e-03, 4.9 min
+  clip tokens epoch 23: loss 0.3180 during the epoch, 0.3128 at its end (best 0.3118, epoch 22), lr 1.96e-03, 5.1 min
+  clip tokens epoch 24: loss 0.3147 during the epoch, 0.3141 at its end (best 0.3118, epoch 22), lr 1.96e-03, 5.3 min
+  clip tokens: plateau, restart from the best v with lr 9.80e-04
+  clip tokens epoch 25: loss 0.3096 during the epoch, 0.3018 at its end (best 0.3018, epoch 25), lr 9.80e-04, 5.5 min
+  clip tokens epoch 26: loss 0.3047 during the epoch, 0.3011 at its end (best 0.3011, epoch 26), lr 9.80e-04, 5.7 min
+  clip tokens epoch 27: loss 0.3023 during the epoch, 0.2982 at its end (best 0.2982, epoch 27), lr 9.80e-04, 5.9 min
+  clip tokens epoch 28: loss 0.2987 during the epoch, 0.2941 at its end (best 0.2941, epoch 28), lr 9.80e-04, 6.0 min
+  clip tokens epoch 29: loss 0.2958 during the epoch, 0.2919 at its end (best 0.2919, epoch 29), lr 9.80e-04, 6.2 min
+  clip tokens epoch 30: loss 0.2953 during the epoch, 0.2919 at its end (best 0.2919, epoch 30), lr 9.80e-04, 6.4 min
+  clip tokens epoch 31: loss 0.2951 during the epoch, 0.2943 at its end (best 0.2919, epoch 30), lr 9.80e-04, 6.6 min
+  clip tokens: plateau, restart from the best v with lr 4.90e-04
+  clip tokens epoch 32: loss 0.2924 during the epoch, 0.2879 at its end (best 0.2879, epoch 32), lr 4.90e-04, 6.8 min
+  clip tokens epoch 33: loss 0.2885 during the epoch, 0.2869 at its end (best 0.2869, epoch 33), lr 4.90e-04, 7.1 min
+  clip tokens epoch 34: loss 0.2875 during the epoch, 0.2838 at its end (best 0.2838, epoch 34), lr 4.90e-04, 7.4 min
+  clip tokens epoch 35: loss 0.2859 during the epoch, 0.2837 at its end (best 0.2837, epoch 35), lr 4.90e-04, 7.6 min
+  clip tokens epoch 36: loss 0.2852 during the epoch, 0.2840 at its end (best 0.2837, epoch 35), lr 4.90e-04, 7.9 min
+  clip tokens: kept epoch 35 of 36, score on the build images 0.2837
+
+perturbation (held-out, 500 images)                      token cos
+universal v (clip)                                           0.310
+random ±xi                                                   0.772
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.817
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10_s2.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10_s2_tokens.json
+=== python uap_encoder.py --encoder clip --target tokens (Sun Nov 22 07:49:16 PM CET 2026) ===
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+>> clip, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (clip)                                           0.303
+random ±xi                                                   0.772
+universal v (siglip), transfer                               0.538
+universal v (ijepa), transfer                                0.600
+universal v (mae), transfer                                  0.710
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.817
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10_tokens.json

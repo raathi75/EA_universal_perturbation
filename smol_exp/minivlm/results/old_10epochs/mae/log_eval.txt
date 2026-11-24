@@ -1,0 +1,163 @@
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Captions of 1000 COCO val images: clean
+>> Captions of 1000 COCO val images: universal v (mae)
+>> Captions of 1000 COCO val images: random ±xi
+>> Skipped (not computed yet): universal v (siglip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10.pt
+>> Skipped (not computed yet): universal v (clip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10.pt
+>> Captions of 1000 COCO val images: universal v (ijepa), transfer
+>> Captions of 1000 COCO val images: universal v (SmolVLM-256M, 512 -> 224), transfer
+
+mae, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.919   13.6% (11.6-15.9)        —
+universal v (mae)                                    0.404   56.5% (53.4-59.5)    57.4% (54.3-60.4)
+random ±xi                                           0.927   14.1% (12.1-16.4)     6.5% ( 5.1- 8.2)
+universal v (ijepa), transfer                        0.710   28.0% (25.3-30.9)    23.7% (21.2-26.4)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.920   14.0% (12.0-16.3)     4.4% ( 3.3- 5.9)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a large TV and a large wooden table. 
+  v    : A large room with a large window and a large wall. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear standing in a grassy area. 
+  v    : A large brown bear is standing in a field. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A room with a fireplace and a window. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a building. 
+  v    : A stop sign with a sign on it. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_captions_stage2.json
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Clean captions of 500 images
+Traceback (most recent call last):
+  File "/users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/evaluate_captions.py", line 58, in <module>
+    assert caps['clean_again'] == caps['clean'][:20], 'non-deterministic decoding'
+AssertionError: non-deterministic decoding
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Skipped (not computed yet): universal v (siglip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10.pt
+>> Skipped (not computed yet): universal v (clip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10.pt
+
+mae, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.919   13.6% (11.6-15.9)        —
+universal v (mae)                                    0.404   56.5% (53.4-59.5)    57.4% (54.3-60.4)
+random ±xi                                           0.927   14.1% (12.1-16.4)     6.5% ( 5.1- 8.2)
+universal v (ijepa), transfer                        0.710   28.0% (25.3-30.9)    23.7% (21.2-26.4)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.920   14.0% (12.0-16.3)     4.4% ( 3.3- 5.9)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a large TV and a large wooden table. 
+  v    : A large room with a large window and a large wall. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear standing in a grassy area. 
+  v    : A large brown bear is standing in a field. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A room with a fireplace and a window. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a building. 
+  v    : A stop sign with a sign on it. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_captions_stage2.json
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Determinism check: 32/32 identical captions when decoding again
+>> Captions with universal v (mae)
+>> Captions with random ±xi
+>> Skipped (not computed yet): universal v (siglip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip/uap_xi10.pt
+>> Skipped (not computed yet): universal v (clip), transfer /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/clip/uap_xi10.pt
+>> Captions with universal v (ijepa), transfer
+>> Captions with universal v (SmolVLM-256M, 512 -> 224), transfer
+
+mae, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (mae)                                    68.5% (61.8-74.5)   67.6% (63.4-71.6)      88.0%
+random ±xi                                           16.0% (11.6-21.7)   14.0% (11.2-17.3)      31.0%
+universal v (ijepa), transfer                        38.0% (31.6-44.9)   35.4% (31.3-39.7)      58.4%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.0% ( 5.0-12.6)   10.4% ( 8.0-13.4)      24.4%
+
+Examples (clean -> universal v):
+   A bird perched on a branch in a tree. 
+   -> A bird is perched on a branch in a tree.
+   Two dogs standing in a field with grass. 
+   -> A picture of a horse in a zoo.
+   A red fire hydrant sitting on the ground next to a building. 
+   -> A red fire hydrant with a fire extinguisher on it.
+   A bowl of fruit sitting on a counter. 
+   -> A restaurant with a large window and a large table.
+   A man wearing a red shirt and a white tie. 
+   -> A picture of a building with a window and a building with a window.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/captions_stage2_xi10.json
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Captions of 1000 COCO val images: universal v (siglip), transfer
+>> Captions of 1000 COCO val images: universal v (clip), transfer
+
+mae, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                0.919   13.6% (11.6-15.9)        —
+universal v (mae)                                    0.404   56.5% (53.4-59.5)    57.4% (54.3-60.4)
+random ±xi                                           0.927   14.1% (12.1-16.4)     6.5% ( 5.1- 8.2)
+universal v (ijepa), transfer                        0.710   28.0% (25.3-30.9)    23.7% (21.2-26.4)
+universal v (SmolVLM-256M, 512 -> 224), transfer     0.920   14.0% (12.0-16.3)     4.4% ( 3.3- 5.9)
+universal v (siglip), transfer                       0.815   20.8% (18.4-23.4)    15.8% (13.7-18.2)
+universal v (clip), transfer                         0.806   20.3% (17.9-22.9)    16.1% (14.0-18.5)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a large TV and a large wooden table. 
+  v    : A large room with a large window and a large wall. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear standing in a grassy area. 
+  v    : A large brown bear is standing in a field. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a window. 
+  v    : A room with a fireplace and a window. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign with a sign on it in front of a building. 
+  v    : A stop sign with a sign on it. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/coco_captions_stage2.json
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Determinism check: 32/32 identical captions when decoding again
+>> Captions with universal v (siglip), transfer
+>> Captions with universal v (clip), transfer
+
+mae, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (mae)                                    68.5% (61.8-74.5)   67.6% (63.4-71.6)      88.0%
+random ±xi                                           16.0% (11.6-21.7)   14.0% (11.2-17.3)      31.0%
+universal v (ijepa), transfer                        38.0% (31.6-44.9)   35.4% (31.3-39.7)      58.4%
+universal v (SmolVLM-256M, 512 -> 224), transfer      8.0% ( 5.0-12.6)   10.4% ( 8.0-13.4)      24.4%
+universal v (siglip), transfer                       25.0% (19.5-31.4)   24.6% (21.0-28.6)      48.8%
+universal v (clip), transfer                         29.0% (23.2-35.6)   27.6% (23.9-31.7)      51.4%
+
+Examples (clean -> universal v):
+   A bird perched on a branch in a tree. 
+   -> A bird is perched on a branch in a tree.
+   Two dogs standing in a field with grass. 
+   -> A picture of a horse in a zoo.
+   A red fire hydrant sitting on the ground next to a building. 
+   -> A red fire hydrant with a fire extinguisher on it.
+   A bowl of fruit sitting on a counter. 
+   -> A restaurant with a large window and a large table.
+   A man wearing a red shirt and a white tie. 
+   -> A picture of a building with a window and a building with a window.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/captions_stage2_xi10.json

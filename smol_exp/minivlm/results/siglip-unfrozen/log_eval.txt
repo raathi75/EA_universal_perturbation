@@ -1,0 +1,66 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Captions of 1000 COCO val images: clean
+>> Captions of 1000 COCO val images: universal v (siglip-unfrozen)
+>> Captions of 1000 COCO val images: universal v (siglip-unfrozen, connector-output)
+>> Captions of 1000 COCO val images: random ±xi
+>> Captions of 1000 COCO val images: universal v (siglip), transfer
+>> Captions of 1000 COCO val images: universal v (SmolVLM-256M, 512 -> 224), transfer
+
+siglip-unfrozen, stage 2, 1000 COCO val images, xi = 10/255
+condition                                            CIDEr wrong (far from humans)     changed (vs clean)
+clean                                                1.200    3.3% ( 2.4- 4.6)        —
+universal v (siglip-unfrozen)                        0.758   18.5% (16.2-21.0)    22.5% (20.0-25.2)
+universal v (siglip-unfrozen, connector-output)      0.850   15.2% (13.1-17.6)    19.9% (17.5-22.5)
+random ±xi                                           1.151    4.0% ( 3.0- 5.4)     4.5% ( 3.4- 6.0)
+universal v (siglip), transfer                       0.766   18.4% (16.1-20.9)    24.1% (21.6-26.8)
+universal v (SmolVLM-256M, 512 -> 224), transfer     1.169    3.9% ( 2.9- 5.3)     2.4% ( 1.6- 3.5)
+
+Examples (human / clean / universal v):
+  human: A woman stands in the dining area at the table. 
+  clean: A living room with a tv and a table. 
+  v    : A woman is standing in a kitchen with a pair of binoculars. 
+
+  human: A big burly grizzly bear is show with grass in the background. 
+  clean: A brown bear with a large head and a large body. 
+  v    : A large brown bear with a picture of it on the back of it. 
+
+  human: Bedroom scene with a bookcase, blue comforter and window. 
+  clean: A bedroom with a bed, a dresser, and a book shelf. 
+  v    : A bedroom with a bed, a dresser, and a book on the floor. 
+
+  human: A stop sign is mounted upside-down on it's post. 
+  clean: A stop sign is shown with a tree in the background. 
+  v    : A stop sign with a picture of a tree in the background. 
+
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip-unfrozen/coco_stage2.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip-unfrozen/coco_captions_stage2.json
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> Clean captions of 500 images
+>> Determinism check: 32/32 identical captions when decoding again
+>> Captions with universal v (siglip-unfrozen)
+>> Captions with universal v (siglip-unfrozen, connector-output)
+>> Captions with random ±xi
+>> Captions with universal v (siglip), transfer
+>> Captions with universal v (SmolVLM-256M, 512 -> 224), transfer
+
+siglip-unfrozen, stage 2, xi = 10/255: captions changed (95% CI)
+perturbation                                               first 200 @0.5               all @0.5   all @0.7
+universal v (siglip-unfrozen)                        43.0% (36.3-49.9)   42.8% (38.5-47.2)      72.6%
+universal v (siglip-unfrozen, connector-output)      37.0% (30.6-43.9)   37.8% (33.7-42.1)      67.4%
+random ±xi                                            6.5% ( 3.8-10.8)    8.2% ( 6.1-10.9)      32.2%
+universal v (siglip), transfer                       44.5% (37.8-51.4)   43.6% (39.3-48.0)      73.4%
+universal v (SmolVLM-256M, 512 -> 224), transfer      5.5% ( 3.1- 9.6)    6.4% ( 4.6- 8.9)      26.2%
+
+Examples (clean -> universal v):
+   A blue and white bird sitting on a branch. 
+   -> A bird is sitting on a branch in a tree.
+   Two dogs standing in a grassy field with trees in the background. 
+   -> A dog and a cat are shown in a picture.
+   A vintage vintage car is shown in a wooden frame. 
+   -> A vintage vintage car with a red wheel on it.
+   A man in a business suit holding a bowl of green apples. 
+   -> A man in a black shirt and a green hat holding a bowl of apples.
+   A flag with a green and white color is on a pole. 
+   -> A flag with a green and white flag on it.
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip-unfrozen/eval_captions_stage2_xi10.json and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/siglip-unfrozen/captions_stage2_xi10.json

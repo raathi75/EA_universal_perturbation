@@ -1,0 +1,410 @@
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+  mae tokens start: feature cosine on the build images 1.0000
+  mae tokens epoch 1: loss 0.8743 during the epoch, 0.8278 at its end (best 0.8278, epoch 1), lr 3.92e-03, 0.3 min
+  mae tokens epoch 2: loss 0.8123 during the epoch, 0.7937 at its end (best 0.7937, epoch 2), lr 3.92e-03, 0.5 min
+  mae tokens epoch 3: loss 0.7815 during the epoch, 0.7675 at its end (best 0.7675, epoch 3), lr 3.92e-03, 0.8 min
+  mae tokens epoch 4: loss 0.7651 during the epoch, 0.8041 at its end (best 0.7675, epoch 3), lr 3.92e-03, 1.1 min
+  mae tokens epoch 5: loss 0.7710 during the epoch, 0.7333 at its end (best 0.7333, epoch 5), lr 3.92e-03, 1.3 min
+  mae tokens epoch 6: loss 0.7311 during the epoch, 0.5856 at its end (best 0.5856, epoch 6), lr 3.92e-03, 1.6 min
+  mae tokens epoch 7: loss 0.8311 during the epoch, 0.9511 at its end (best 0.5856, epoch 6), lr 3.92e-03, 1.9 min
+  mae tokens epoch 8: loss 0.9389 during the epoch, 0.9260 at its end (best 0.5856, epoch 6), lr 3.92e-03, 2.2 min
+  mae tokens: plateau, restart from the best v with lr 1.96e-03
+  mae tokens epoch 9: loss 0.3689 during the epoch, 0.2718 at its end (best 0.2718, epoch 9), lr 1.96e-03, 2.4 min
+  mae tokens epoch 10: loss 0.4503 during the epoch, 0.4115 at its end (best 0.2718, epoch 9), lr 1.96e-03, 2.7 min
+  mae tokens epoch 11: loss 0.3163 during the epoch, 0.2552 at its end (best 0.2552, epoch 11), lr 1.96e-03, 3.0 min
+  mae tokens epoch 12: loss 0.2483 during the epoch, 0.2233 at its end (best 0.2233, epoch 12), lr 1.96e-03, 3.3 min
+  mae tokens epoch 13: loss 0.2132 during the epoch, 0.2121 at its end (best 0.2121, epoch 13), lr 1.96e-03, 3.6 min
+  mae tokens epoch 14: loss 0.2056 during the epoch, 0.1907 at its end (best 0.1907, epoch 14), lr 1.96e-03, 3.8 min
+  mae tokens epoch 15: loss 0.1913 during the epoch, 0.1848 at its end (best 0.1848, epoch 15), lr 1.96e-03, 4.1 min
+  mae tokens epoch 16: loss 0.1915 during the epoch, 0.2013 at its end (best 0.1848, epoch 15), lr 1.96e-03, 4.4 min
+  mae tokens epoch 17: loss 0.1804 during the epoch, 0.1685 at its end (best 0.1685, epoch 17), lr 1.96e-03, 4.7 min
+  mae tokens epoch 18: loss 0.1561 during the epoch, 0.1387 at its end (best 0.1387, epoch 18), lr 1.96e-03, 4.9 min
+  mae tokens epoch 19: loss 0.1528 during the epoch, 0.1463 at its end (best 0.1387, epoch 18), lr 1.96e-03, 5.2 min
+  mae tokens epoch 20: loss 0.1418 during the epoch, 0.1345 at its end (best 0.1345, epoch 20), lr 1.96e-03, 5.5 min
+  mae tokens epoch 21: loss 0.1299 during the epoch, 0.1303 at its end (best 0.1303, epoch 21), lr 1.96e-03, 5.8 min
+  mae tokens epoch 22: loss 0.1369 during the epoch, 0.1204 at its end (best 0.1204, epoch 22), lr 1.96e-03, 6.0 min
+  mae tokens epoch 23: loss 0.1238 during the epoch, 0.1212 at its end (best 0.1204, epoch 22), lr 1.96e-03, 6.3 min
+  mae tokens epoch 24: loss 0.1201 during the epoch, 0.1162 at its end (best 0.1162, epoch 24), lr 1.96e-03, 6.6 min
+  mae tokens epoch 25: loss 0.1244 during the epoch, 0.1373 at its end (best 0.1162, epoch 24), lr 1.96e-03, 6.9 min
+  mae tokens epoch 26: loss 0.1428 during the epoch, 0.1207 at its end (best 0.1162, epoch 24), lr 1.96e-03, 7.2 min
+  mae tokens: plateau, restart from the best v with lr 9.80e-04
+  mae tokens epoch 27: loss 0.1056 during the epoch, 0.0896 at its end (best 0.0896, epoch 27), lr 9.80e-04, 7.4 min
+  mae tokens epoch 28: loss 0.0984 during the epoch, 0.0983 at its end (best 0.0896, epoch 27), lr 9.80e-04, 7.7 min
+  mae tokens epoch 29: loss 0.0973 during the epoch, 0.0902 at its end (best 0.0896, epoch 27), lr 9.80e-04, 8.0 min
+  mae tokens: plateau, restart from the best v with lr 4.90e-04
+  mae tokens epoch 30: loss 0.0935 during the epoch, 0.0873 at its end (best 0.0873, epoch 30), lr 4.90e-04, 8.3 min
+  mae tokens epoch 31: loss 0.0886 during the epoch, 0.0835 at its end (best 0.0835, epoch 31), lr 4.90e-04, 8.5 min
+  mae tokens epoch 32: loss 0.0869 during the epoch, 0.0842 at its end (best 0.0835, epoch 31), lr 4.90e-04, 8.8 min
+  mae tokens epoch 33: loss 0.0846 during the epoch, 0.0816 at its end (best 0.0816, epoch 33), lr 4.90e-04, 9.1 min
+  mae tokens epoch 34: loss 0.0816 during the epoch, 0.0795 at its end (best 0.0795, epoch 34), lr 4.90e-04, 9.4 min
+  mae tokens epoch 35: loss 0.0798 during the epoch, 0.0791 at its end (best 0.0791, epoch 35), lr 4.90e-04, 9.7 min
+  mae tokens epoch 36: loss 0.0799 during the epoch, 0.0791 at its end (best 0.0791, epoch 35), lr 4.90e-04, 9.9 min
+  mae tokens: kept epoch 35 of 36, feature cosine on the build images 0.0791
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.092
+random ±xi                                                   0.973
+universal v (ijepa), transfer                                0.905
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_tokens.json
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target connector: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+  mae connector start: feature cosine on the build images 1.0000
+  mae connector epoch 1: loss 0.8737 during the epoch, 0.7693 at its end (best 0.7693, epoch 1), lr 3.92e-03, 0.3 min
+  mae connector epoch 2: loss 0.7383 during the epoch, 0.7034 at its end (best 0.7034, epoch 2), lr 3.92e-03, 0.6 min
+  mae connector epoch 3: loss 0.6931 during the epoch, 0.6713 at its end (best 0.6713, epoch 3), lr 3.92e-03, 0.8 min
+  mae connector epoch 4: loss 0.6637 during the epoch, 0.6450 at its end (best 0.6450, epoch 4), lr 3.92e-03, 1.1 min
+  mae connector epoch 5: loss 0.6393 during the epoch, 0.6183 at its end (best 0.6183, epoch 5), lr 3.92e-03, 1.4 min
+  mae connector epoch 6: loss 0.6150 during the epoch, 0.6030 at its end (best 0.6030, epoch 6), lr 3.92e-03, 1.7 min
+  mae connector epoch 7: loss 0.6012 during the epoch, 0.5869 at its end (best 0.5869, epoch 7), lr 3.92e-03, 1.9 min
+  mae connector epoch 8: loss 0.5899 during the epoch, 0.5782 at its end (best 0.5782, epoch 8), lr 3.92e-03, 2.2 min
+  mae connector epoch 9: loss 0.5806 during the epoch, 0.5697 at its end (best 0.5697, epoch 9), lr 3.92e-03, 2.5 min
+  mae connector epoch 10: loss 0.5702 during the epoch, 0.5556 at its end (best 0.5556, epoch 10), lr 3.92e-03, 2.8 min
+  mae connector epoch 11: loss 0.5602 during the epoch, 0.5478 at its end (best 0.5478, epoch 11), lr 3.92e-03, 3.1 min
+  mae connector epoch 12: loss 0.5522 during the epoch, 0.5397 at its end (best 0.5397, epoch 12), lr 3.92e-03, 3.3 min
+  mae connector epoch 13: loss 0.5458 during the epoch, 0.5336 at its end (best 0.5336, epoch 13), lr 3.92e-03, 3.6 min
+  mae connector epoch 14: loss 0.5408 during the epoch, 0.5295 at its end (best 0.5295, epoch 14), lr 3.92e-03, 3.9 min
+  mae connector epoch 15: loss 0.5347 during the epoch, 0.5236 at its end (best 0.5236, epoch 15), lr 3.92e-03, 4.2 min
+  mae connector epoch 16: loss 0.5299 during the epoch, 0.5205 at its end (best 0.5205, epoch 16), lr 3.92e-03, 4.4 min
+  mae connector epoch 17: loss 0.5275 during the epoch, 0.5169 at its end (best 0.5169, epoch 17), lr 3.92e-03, 4.7 min
+  mae connector epoch 18: loss 0.5195 during the epoch, 0.5114 at its end (best 0.5114, epoch 18), lr 3.92e-03, 5.0 min
+  mae connector epoch 19: loss 0.5145 during the epoch, 0.5057 at its end (best 0.5057, epoch 19), lr 3.92e-03, 5.3 min
+  mae connector epoch 20: loss 0.5114 during the epoch, 0.5027 at its end (best 0.5027, epoch 20), lr 3.92e-03, 5.5 min
+  mae connector epoch 21: loss 0.5081 during the epoch, 0.4930 at its end (best 0.4930, epoch 21), lr 3.92e-03, 5.8 min
+  mae connector epoch 22: loss 0.4982 during the epoch, 0.4867 at its end (best 0.4867, epoch 22), lr 3.92e-03, 6.1 min
+  mae connector epoch 23: loss 0.5276 during the epoch, 0.5332 at its end (best 0.4867, epoch 22), lr 3.92e-03, 6.4 min
+  mae connector epoch 24: loss 0.5089 during the epoch, 0.4847 at its end (best 0.4847, epoch 24), lr 3.92e-03, 6.7 min
+  mae connector epoch 25: loss 0.4867 during the epoch, 0.4695 at its end (best 0.4695, epoch 25), lr 3.92e-03, 6.9 min
+  mae connector epoch 26: loss 0.4817 during the epoch, 0.4686 at its end (best 0.4686, epoch 26), lr 3.92e-03, 7.2 min
+  mae connector epoch 27: loss 0.4808 during the epoch, 0.4641 at its end (best 0.4641, epoch 27), lr 3.92e-03, 7.5 min
+  mae connector epoch 28: loss 0.4736 during the epoch, 0.4535 at its end (best 0.4535, epoch 28), lr 3.92e-03, 7.8 min
+  mae connector epoch 29: loss 0.4571 during the epoch, 0.4440 at its end (best 0.4440, epoch 29), lr 3.92e-03, 8.0 min
+  mae connector epoch 30: loss 0.4519 during the epoch, 0.4501 at its end (best 0.4440, epoch 29), lr 3.92e-03, 8.3 min
+  mae connector epoch 31: loss 0.4626 during the epoch, 0.4390 at its end (best 0.4390, epoch 31), lr 3.92e-03, 8.6 min
+  mae connector epoch 32: loss 0.4522 during the epoch, 0.4516 at its end (best 0.4390, epoch 31), lr 3.92e-03, 8.9 min
+  mae connector epoch 33: loss 0.4470 during the epoch, 0.4334 at its end (best 0.4334, epoch 33), lr 3.92e-03, 9.2 min
+  mae connector epoch 34: loss 0.4379 during the epoch, 0.4423 at its end (best 0.4334, epoch 33), lr 3.92e-03, 9.4 min
+  mae connector epoch 35: loss 0.4387 during the epoch, 0.4217 at its end (best 0.4217, epoch 35), lr 3.92e-03, 9.7 min
+  mae connector epoch 36: loss 0.4444 during the epoch, 0.4293 at its end (best 0.4217, epoch 35), lr 3.92e-03, 10.0 min
+  mae connector epoch 37: loss 0.4334 during the epoch, 0.4200 at its end (best 0.4200, epoch 37), lr 3.92e-03, 10.3 min
+  mae connector epoch 38: loss 0.4267 during the epoch, 0.4173 at its end (best 0.4173, epoch 38), lr 3.92e-03, 10.5 min
+  mae connector epoch 39: loss 0.4578 during the epoch, 0.4383 at its end (best 0.4173, epoch 38), lr 3.92e-03, 10.8 min
+  mae connector epoch 40: loss 0.4304 during the epoch, 0.4197 at its end (best 0.4173, epoch 38), lr 3.92e-03, 11.1 min
+  mae connector: plateau, restart from the best v with lr 1.96e-03
+  mae connector epoch 41: loss 0.4216 during the epoch, 0.4070 at its end (best 0.4070, epoch 41), lr 1.96e-03, 11.4 min
+  mae connector epoch 42: loss 0.4100 during the epoch, 0.3965 at its end (best 0.3965, epoch 42), lr 1.96e-03, 11.6 min
+  mae connector epoch 43: loss 0.4061 during the epoch, 0.3991 at its end (best 0.3965, epoch 42), lr 1.96e-03, 11.9 min
+  mae connector epoch 44: loss 0.4040 during the epoch, 0.3964 at its end (best 0.3964, epoch 44), lr 1.96e-03, 12.2 min
+  mae connector: plateau, restart from the best v with lr 9.80e-04
+  mae connector epoch 45: loss 0.4010 during the epoch, 0.3900 at its end (best 0.3900, epoch 45), lr 9.80e-04, 12.5 min
+  mae connector epoch 46: loss 0.3954 during the epoch, 0.3859 at its end (best 0.3859, epoch 46), lr 9.80e-04, 12.8 min
+  mae connector epoch 47: loss 0.3955 during the epoch, 0.3884 at its end (best 0.3859, epoch 46), lr 9.80e-04, 13.0 min
+  mae connector epoch 48: loss 0.3941 during the epoch, 0.4016 at its end (best 0.3859, epoch 46), lr 9.80e-04, 13.3 min
+  mae connector: plateau, restart from the best v with lr 4.90e-04
+  mae connector epoch 49: loss 0.3898 during the epoch, 0.3841 at its end (best 0.3841, epoch 49), lr 4.90e-04, 13.6 min
+  mae connector epoch 50: loss 0.3889 during the epoch, 0.3824 at its end (best 0.3824, epoch 50), lr 4.90e-04, 13.9 min
+  mae connector epoch 51: loss 0.3882 during the epoch, 0.3822 at its end (best 0.3822, epoch 51), lr 4.90e-04, 14.1 min
+  mae connector epoch 52: loss 0.3848 during the epoch, 0.3811 at its end (best 0.3811, epoch 52), lr 4.90e-04, 14.4 min
+  mae connector epoch 53: loss 0.3843 during the epoch, 0.3820 at its end (best 0.3811, epoch 52), lr 4.90e-04, 14.7 min
+  mae connector epoch 54: loss 0.3857 during the epoch, 0.3828 at its end (best 0.3811, epoch 52), lr 4.90e-04, 15.0 min
+  mae connector: kept epoch 52 of 54, feature cosine on the build images 0.3811
+
+perturbation (held-out, 500 images)        connector cos  token cos
+connector-output v                                 0.418      0.804
+token v (uap_xi10.pt)                              0.507      0.092
+random ±xi                                         0.982      0.973
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_conn_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_conn_xi10_tokens.json
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.092
+random ±xi                                                   0.973
+universal v (ijepa), transfer                                0.905
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_tokens.json
+=== python uap_encoder.py --encoder mae --target tokens --seed 1 (Sun Nov 22 07:59:50 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+  mae tokens start: score on the build images 0.9846
+  mae tokens epoch 1: loss 0.8783 during the epoch, 0.8253 at its end (best 0.8253, epoch 1), lr 3.92e-03, 0.3 min
+  mae tokens epoch 2: loss 0.8058 during the epoch, 0.7861 at its end (best 0.7861, epoch 2), lr 3.92e-03, 0.6 min
+  mae tokens epoch 3: loss 0.7785 during the epoch, 0.8499 at its end (best 0.7861, epoch 2), lr 3.92e-03, 0.8 min
+  mae tokens epoch 4: loss 0.7916 during the epoch, 0.7762 at its end (best 0.7762, epoch 4), lr 3.92e-03, 1.1 min
+  mae tokens epoch 5: loss 0.6979 during the epoch, 0.7510 at its end (best 0.7510, epoch 5), lr 3.92e-03, 1.4 min
+  mae tokens epoch 6: loss 0.5952 during the epoch, 0.4414 at its end (best 0.4414, epoch 6), lr 3.92e-03, 1.7 min
+  mae tokens epoch 7: loss 0.4316 during the epoch, 0.4203 at its end (best 0.4203, epoch 7), lr 3.92e-03, 1.9 min
+  mae tokens epoch 8: loss 0.6669 during the epoch, 0.9664 at its end (best 0.4203, epoch 7), lr 3.92e-03, 2.2 min
+  mae tokens epoch 9: loss 0.9657 during the epoch, 0.9651 at its end (best 0.4203, epoch 7), lr 3.92e-03, 2.5 min
+  mae tokens: plateau, restart from the best v with lr 1.96e-03
+  mae tokens epoch 10: loss 0.2964 during the epoch, 0.2392 at its end (best 0.2392, epoch 10), lr 1.96e-03, 2.8 min
+  mae tokens epoch 11: loss 0.2373 during the epoch, 0.2318 at its end (best 0.2318, epoch 11), lr 1.96e-03, 3.0 min
+  mae tokens epoch 12: loss 0.2209 during the epoch, 0.2106 at its end (best 0.2106, epoch 12), lr 1.96e-03, 3.3 min
+  mae tokens epoch 13: loss 0.2029 during the epoch, 0.1917 at its end (best 0.1917, epoch 13), lr 1.96e-03, 3.6 min
+  mae tokens epoch 14: loss 0.1954 during the epoch, 0.1826 at its end (best 0.1826, epoch 14), lr 1.96e-03, 3.9 min
+  mae tokens epoch 15: loss 0.2065 during the epoch, 0.3723 at its end (best 0.1826, epoch 14), lr 1.96e-03, 4.2 min
+  mae tokens epoch 16: loss 0.2731 during the epoch, 0.2297 at its end (best 0.1826, epoch 14), lr 1.96e-03, 4.4 min
+  mae tokens: plateau, restart from the best v with lr 9.80e-04
+  mae tokens epoch 17: loss 0.1735 during the epoch, 0.1593 at its end (best 0.1593, epoch 17), lr 9.80e-04, 4.7 min
+  mae tokens epoch 18: loss 0.1498 during the epoch, 0.1416 at its end (best 0.1416, epoch 18), lr 9.80e-04, 5.0 min
+  mae tokens epoch 19: loss 0.1386 during the epoch, 0.1376 at its end (best 0.1376, epoch 19), lr 9.80e-04, 5.3 min
+  mae tokens epoch 20: loss 0.2208 during the epoch, 0.1704 at its end (best 0.1376, epoch 19), lr 9.80e-04, 5.5 min
+  mae tokens epoch 21: loss 0.1579 during the epoch, 0.1620 at its end (best 0.1376, epoch 19), lr 9.80e-04, 5.8 min
+  mae tokens: plateau, restart from the best v with lr 4.90e-04
+  mae tokens epoch 22: loss 0.1328 during the epoch, 0.1240 at its end (best 0.1240, epoch 22), lr 4.90e-04, 6.1 min
+  mae tokens epoch 23: loss 0.1205 during the epoch, 0.1190 at its end (best 0.1190, epoch 23), lr 4.90e-04, 6.4 min
+  mae tokens epoch 24: loss 0.1234 during the epoch, 0.1195 at its end (best 0.1190, epoch 23), lr 4.90e-04, 6.6 min
+  mae tokens epoch 25: loss 0.1179 during the epoch, 0.1151 at its end (best 0.1151, epoch 25), lr 4.90e-04, 6.9 min
+  mae tokens epoch 26: loss 0.1150 during the epoch, 0.1127 at its end (best 0.1127, epoch 26), lr 4.90e-04, 7.2 min
+  mae tokens epoch 27: loss 0.1131 during the epoch, 0.1095 at its end (best 0.1095, epoch 27), lr 4.90e-04, 7.5 min
+  mae tokens epoch 28: loss 0.1155 during the epoch, 0.1091 at its end (best 0.1091, epoch 28), lr 4.90e-04, 7.8 min
+  mae tokens epoch 29: loss 0.1274 during the epoch, 0.1215 at its end (best 0.1091, epoch 28), lr 4.90e-04, 8.0 min
+  mae tokens: kept epoch 28 of 29, score on the build images 0.1091
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.137
+random ±xi                                                   0.973
+universal v (siglip), transfer                               0.939
+universal v (clip), transfer                                 0.934
+universal v (ijepa), transfer                                0.904
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s1.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s1_tokens.json
+=== python uap_encoder.py --encoder mae --target tokens --seed 2 (Sun Nov 22 08:08:38 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+  mae tokens start: score on the build images 0.9845
+  mae tokens epoch 1: loss 0.8805 during the epoch, 0.8282 at its end (best 0.8282, epoch 1), lr 3.92e-03, 0.3 min
+  mae tokens epoch 2: loss 0.8093 during the epoch, 0.7910 at its end (best 0.7910, epoch 2), lr 3.92e-03, 0.6 min
+  mae tokens epoch 3: loss 0.7809 during the epoch, 0.7702 at its end (best 0.7702, epoch 3), lr 3.92e-03, 0.8 min
+  mae tokens epoch 4: loss 0.7648 during the epoch, 0.7562 at its end (best 0.7562, epoch 4), lr 3.92e-03, 1.1 min
+  mae tokens epoch 5: loss 0.7519 during the epoch, 0.7457 at its end (best 0.7457, epoch 5), lr 3.92e-03, 1.4 min
+  mae tokens epoch 6: loss 0.7400 during the epoch, 0.7335 at its end (best 0.7335, epoch 6), lr 3.92e-03, 1.7 min
+  mae tokens epoch 7: loss 0.7319 during the epoch, 0.7283 at its end (best 0.7283, epoch 7), lr 3.92e-03, 1.9 min
+  mae tokens epoch 8: loss 0.7448 during the epoch, 0.8113 at its end (best 0.7283, epoch 7), lr 3.92e-03, 2.2 min
+  mae tokens epoch 9: loss 0.6507 during the epoch, 0.4927 at its end (best 0.4927, epoch 9), lr 3.92e-03, 2.5 min
+  mae tokens epoch 10: loss 0.3792 during the epoch, 0.2938 at its end (best 0.2938, epoch 10), lr 3.92e-03, 2.8 min
+  mae tokens epoch 11: loss 0.3088 during the epoch, 0.2839 at its end (best 0.2839, epoch 11), lr 3.92e-03, 3.0 min
+  mae tokens epoch 12: loss 0.3248 during the epoch, 0.3277 at its end (best 0.2839, epoch 11), lr 3.92e-03, 3.3 min
+  mae tokens epoch 13: loss 0.2571 during the epoch, 0.2739 at its end (best 0.2739, epoch 13), lr 3.92e-03, 3.6 min
+  mae tokens epoch 14: loss 0.3526 during the epoch, 0.2570 at its end (best 0.2570, epoch 14), lr 3.92e-03, 3.9 min
+  mae tokens epoch 15: loss 0.2371 during the epoch, 0.2253 at its end (best 0.2253, epoch 15), lr 3.92e-03, 4.2 min
+  mae tokens epoch 16: loss 0.2057 during the epoch, 0.1980 at its end (best 0.1980, epoch 16), lr 3.92e-03, 4.4 min
+  mae tokens epoch 17: loss 0.2136 during the epoch, 0.1986 at its end (best 0.1980, epoch 16), lr 3.92e-03, 4.7 min
+  mae tokens epoch 18: loss 0.1724 during the epoch, 0.1742 at its end (best 0.1742, epoch 18), lr 3.92e-03, 5.0 min
+  mae tokens epoch 19: loss 0.1726 during the epoch, 0.1874 at its end (best 0.1742, epoch 18), lr 3.92e-03, 5.3 min
+  mae tokens epoch 20: loss 0.1955 during the epoch, 0.1704 at its end (best 0.1704, epoch 20), lr 3.92e-03, 5.5 min
+  mae tokens epoch 21: loss 0.1657 during the epoch, 0.1542 at its end (best 0.1542, epoch 21), lr 3.92e-03, 5.8 min
+  mae tokens epoch 22: loss 0.1670 during the epoch, 0.1570 at its end (best 0.1542, epoch 21), lr 3.92e-03, 6.1 min
+  mae tokens epoch 23: loss 0.1581 during the epoch, 0.1538 at its end (best 0.1538, epoch 23), lr 3.92e-03, 6.4 min
+  mae tokens: plateau, restart from the best v with lr 1.96e-03
+  mae tokens epoch 24: loss 0.1384 during the epoch, 0.1255 at its end (best 0.1255, epoch 24), lr 1.96e-03, 6.6 min
+  mae tokens epoch 25: loss 0.1285 during the epoch, 0.1110 at its end (best 0.1110, epoch 25), lr 1.96e-03, 6.9 min
+  mae tokens epoch 26: loss 0.1084 during the epoch, 0.0964 at its end (best 0.0964, epoch 26), lr 1.96e-03, 7.2 min
+  mae tokens epoch 27: loss 0.0976 during the epoch, 0.0918 at its end (best 0.0918, epoch 27), lr 1.96e-03, 7.5 min
+  mae tokens epoch 28: loss 0.0957 during the epoch, 0.0905 at its end (best 0.0905, epoch 28), lr 1.96e-03, 7.8 min
+  mae tokens epoch 29: loss 0.0921 during the epoch, 0.0961 at its end (best 0.0905, epoch 28), lr 1.96e-03, 8.0 min
+  mae tokens epoch 30: loss 0.1199 during the epoch, 0.1074 at its end (best 0.0905, epoch 28), lr 1.96e-03, 8.3 min
+  mae tokens: plateau, restart from the best v with lr 9.80e-04
+  mae tokens epoch 31: loss 0.0923 during the epoch, 0.0850 at its end (best 0.0850, epoch 31), lr 9.80e-04, 8.6 min
+  mae tokens epoch 32: loss 0.0874 during the epoch, 0.0815 at its end (best 0.0815, epoch 32), lr 9.80e-04, 8.9 min
+  mae tokens epoch 33: loss 0.0799 during the epoch, 0.0774 at its end (best 0.0774, epoch 33), lr 9.80e-04, 9.1 min
+  mae tokens epoch 34: loss 0.0774 during the epoch, 0.0755 at its end (best 0.0755, epoch 34), lr 9.80e-04, 9.4 min
+  mae tokens epoch 35: loss 0.0861 during the epoch, 0.0769 at its end (best 0.0755, epoch 34), lr 9.80e-04, 9.7 min
+  mae tokens epoch 36: loss 0.1083 during the epoch, 0.0967 at its end (best 0.0755, epoch 34), lr 9.80e-04, 10.0 min
+  mae tokens: plateau, restart from the best v with lr 4.90e-04
+  mae tokens epoch 37: loss 0.0763 during the epoch, 0.0720 at its end (best 0.0720, epoch 37), lr 4.90e-04, 10.2 min
+  mae tokens epoch 38: loss 0.0726 during the epoch, 0.0714 at its end (best 0.0714, epoch 38), lr 4.90e-04, 10.5 min
+  mae tokens epoch 39: loss 0.0726 during the epoch, 0.0728 at its end (best 0.0714, epoch 38), lr 4.90e-04, 10.8 min
+  mae tokens: kept epoch 38 of 39, score on the build images 0.0714
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.074
+random ±xi                                                   0.973
+universal v (siglip), transfer                               0.936
+universal v (clip), transfer                                 0.932
+universal v (ijepa), transfer                                0.902
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s2.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s2_tokens.json
+=== python uap_encoder.py --encoder mae --target tokens (Sun Nov 22 08:24:54 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.092
+random ±xi                                                   0.973
+universal v (siglip), transfer                               0.937
+universal v (clip), transfer                                 0.934
+universal v (ijepa), transfer                                0.905
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_tokens.json
+=== python uap_encoder.py --encoder mae --target caption --lr 4 (Sun Nov 22 08:25:33 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> mae, target caption: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+>> clean captions of the 500 build images (target of the end-to-end attack)
+  mae caption start: score on the build images 0.3761
+  mae caption epoch 1: loss 0.3165 during the epoch, 0.2444 at its end (best 0.2444, epoch 1), lr 1.57e-02, 0.4 min
+  mae caption epoch 2: loss 0.2251 during the epoch, 0.1740 at its end (best 0.1740, epoch 2), lr 1.57e-02, 0.8 min
+  mae caption epoch 3: loss 0.1714 during the epoch, 0.1412 at its end (best 0.1412, epoch 3), lr 1.57e-02, 1.2 min
+  mae caption epoch 4: loss 0.1465 during the epoch, 0.1281 at its end (best 0.1281, epoch 4), lr 1.57e-02, 1.6 min
+  mae caption epoch 5: loss 0.1332 during the epoch, 0.1193 at its end (best 0.1193, epoch 5), lr 1.57e-02, 2.0 min
+  mae caption epoch 6: loss 0.1263 during the epoch, 0.1142 at its end (best 0.1142, epoch 6), lr 1.57e-02, 2.4 min
+  mae caption epoch 7: loss 0.1163 during the epoch, 0.1084 at its end (best 0.1084, epoch 7), lr 1.57e-02, 2.8 min
+  mae caption epoch 8: loss 0.1145 during the epoch, 0.1045 at its end (best 0.1045, epoch 8), lr 1.57e-02, 3.2 min
+  mae caption epoch 9: loss 0.1108 during the epoch, 0.1048 at its end (best 0.1045, epoch 8), lr 1.57e-02, 3.6 min
+  mae caption epoch 10: loss 0.1090 during the epoch, 0.1006 at its end (best 0.1006, epoch 10), lr 1.57e-02, 4.0 min
+  mae caption epoch 11: loss 0.1070 during the epoch, 0.0991 at its end (best 0.0991, epoch 11), lr 1.57e-02, 4.4 min
+  mae caption epoch 12: loss 0.1062 during the epoch, 0.0992 at its end (best 0.0991, epoch 11), lr 1.57e-02, 4.8 min
+  mae caption epoch 13: loss 0.1042 during the epoch, 0.0955 at its end (best 0.0955, epoch 13), lr 1.57e-02, 5.2 min
+  mae caption epoch 14: loss 0.1040 during the epoch, 0.0964 at its end (best 0.0955, epoch 13), lr 1.57e-02, 5.6 min
+  mae caption epoch 15: loss 0.1023 during the epoch, 0.0945 at its end (best 0.0945, epoch 15), lr 1.57e-02, 6.0 min
+  mae caption epoch 16: loss 0.1011 during the epoch, 0.1002 at its end (best 0.0945, epoch 15), lr 1.57e-02, 6.4 min
+  mae caption epoch 17: loss 0.1020 during the epoch, 0.0937 at its end (best 0.0937, epoch 17), lr 1.57e-02, 6.8 min
+  mae caption: plateau, restart from the best v with lr 7.84e-03
+  mae caption epoch 18: loss 0.0990 during the epoch, 0.0857 at its end (best 0.0857, epoch 18), lr 7.84e-03, 7.2 min
+  mae caption epoch 19: loss 0.0893 during the epoch, 0.0848 at its end (best 0.0848, epoch 19), lr 7.84e-03, 7.6 min
+  mae caption epoch 20: loss 0.0893 during the epoch, 0.0826 at its end (best 0.0826, epoch 20), lr 7.84e-03, 8.0 min
+  mae caption epoch 21: loss 0.0890 during the epoch, 0.0835 at its end (best 0.0826, epoch 20), lr 7.84e-03, 8.4 min
+  mae caption epoch 22: loss 0.0884 during the epoch, 0.0838 at its end (best 0.0826, epoch 20), lr 7.84e-03, 8.8 min
+  mae caption: plateau, restart from the best v with lr 3.92e-03
+  mae caption epoch 23: loss 0.0869 during the epoch, 0.0780 at its end (best 0.0780, epoch 23), lr 3.92e-03, 9.2 min
+  mae caption epoch 24: loss 0.0813 during the epoch, 0.0772 at its end (best 0.0772, epoch 24), lr 3.92e-03, 9.6 min
+  mae caption epoch 25: loss 0.0804 during the epoch, 0.0772 at its end (best 0.0772, epoch 25), lr 3.92e-03, 10.0 min
+  mae caption: plateau, restart from the best v with lr 1.96e-03
+  mae caption epoch 26: loss 0.0793 during the epoch, 0.0735 at its end (best 0.0735, epoch 26), lr 1.96e-03, 10.4 min
+  mae caption epoch 27: loss 0.0762 during the epoch, 0.0732 at its end (best 0.0732, epoch 27), lr 1.96e-03, 10.8 min
+  mae caption epoch 28: loss 0.0760 during the epoch, 0.0728 at its end (best 0.0728, epoch 28), lr 1.96e-03, 11.2 min
+  mae caption: kept epoch 28 of 28, score on the build images 0.0728
+caption-loss v                           token cos 0.846
+token v (uap_xi10.pt)                    token cos 0.092
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_cap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_cap_xi10_tokens.json
+=== python uap_encoder.py --encoder mae --target tokens --seed 1 (Mon Nov 23 12:32:05 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.137
+random ±xi                                                   0.973
+universal v (siglip), transfer                               0.939
+universal v (clip), transfer                                 0.934
+universal v (ijepa), transfer                                0.904
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s1.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s1_tokens.json
+=== python uap_encoder.py --encoder mae --target tokens --seed 2 (Mon Nov 23 12:32:45 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.074
+random ±xi                                                   0.973
+universal v (siglip), transfer                               0.936
+universal v (clip), transfer                                 0.932
+universal v (ijepa), transfer                                0.902
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s2.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s2_tokens.json
+=== python uap_encoder.py --encoder mae --target tokens (Mon Nov 23 12:33:54 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.092
+random ±xi                                                   0.973
+universal v (siglip), transfer                               0.937
+universal v (clip), transfer                                 0.934
+universal v (ijepa), transfer                                0.905
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_tokens.json
+=== python uap_encoder.py --encoder mae --target caption --lr 4 (Mon Nov 23 12:34:33 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> mae, target caption: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+caption-loss v                           token cos 0.846
+token v (uap_xi10.pt)                    token cos 0.092
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_cap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_cap_xi10_tokens.json
+=== python uap_encoder.py --encoder mae --target tokens --seed 1 (Mon Nov 23 02:26:12 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.137
+random ±xi                                                   0.973
+universal v (siglip), transfer                               0.939
+universal v (clip), transfer                                 0.934
+universal v (ijepa), transfer                                0.904
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s1.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s1_tokens.json
+=== python uap_encoder.py --encoder mae --target tokens --seed 2 (Mon Nov 23 02:26:53 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.074
+random ±xi                                                   0.973
+universal v (siglip), transfer                               0.936
+universal v (clip), transfer                                 0.932
+universal v (ijepa), transfer                                0.902
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s2.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s2_tokens.json
+=== python uap_encoder.py --encoder mae --target tokens (Mon Nov 23 02:28:00 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.092
+random ±xi                                                   0.973
+universal v (siglip), transfer                               0.937
+universal v (clip), transfer                                 0.934
+universal v (ijepa), transfer                                0.905
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_tokens.json
+=== python uap_encoder.py --encoder mae --target caption --lr 4 (Mon Nov 23 02:28:42 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> mae, target caption: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+caption-loss v                           token cos 0.846
+token v (uap_xi10.pt)                    token cos 0.092
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_cap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_cap_xi10_tokens.json
+=== python uap_encoder.py --encoder mae --target tokens --seed 1 (Mon Nov 23 08:39:46 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.137
+random ±xi                                                   0.973
+universal v (siglip), transfer                               0.939
+universal v (clip), transfer                                 0.934
+universal v (ijepa), transfer                                0.904
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s1.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s1_tokens.json
+=== python uap_encoder.py --encoder mae --target tokens --seed 2 (Mon Nov 23 08:40:23 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.074
+random ±xi                                                   0.973
+universal v (siglip), transfer                               0.936
+universal v (clip), transfer                                 0.932
+universal v (ijepa), transfer                                0.902
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s2.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_s2_tokens.json
+=== python uap_encoder.py --encoder mae --target tokens (Mon Nov 23 08:41:20 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+>> mae, target tokens: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+
+perturbation (held-out, 500 images)                      token cos
+universal v (mae)                                            0.092
+random ±xi                                                   0.973
+universal v (siglip), transfer                               0.937
+universal v (clip), transfer                                 0.934
+universal v (ijepa), transfer                                0.905
+universal v (SmolVLM-256M, 512 -> 224), transfer             0.986
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_xi10_tokens.json
+=== python uap_encoder.py --encoder mae --target caption --lr 4 (Mon Nov 23 08:41:57 PM CET 2026) ===
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+>> mae, target caption: build (500, 3, 224, 224), held-out (500, 3, 224, 224)
+caption-loss v                           token cos 0.846
+token v (uap_xi10.pt)                    token cos 0.092
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_cap_xi10.pt and /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/mae/uap_cap_xi10_tokens.json

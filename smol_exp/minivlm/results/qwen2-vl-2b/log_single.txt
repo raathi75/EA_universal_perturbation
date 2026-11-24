@@ -1,0 +1,56 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 82.00it/s]
+>> sanity check: max |differentiable preprocessing - processor| = 0.0000 (expected < 0.05)
+>> encoder tokens per image: (1024, 1280)
+>> clean captions of the 40 build images (target of the end-to-end attack)
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  xi 2/255: images 0-3 done, caption likelihood 0.037
+  xi 2/255: images 4-7 done, caption likelihood 0.058
+  xi 2/255: images 8-11 done, caption likelihood 0.030
+  xi 2/255: images 12-15 done, caption likelihood 0.055
+  xi 2/255: images 16-19 done, caption likelihood 0.035
+  xi 2/255: images 20-23 done, caption likelihood 0.043
+  xi 2/255: images 24-27 done, caption likelihood 0.043
+  xi 2/255: images 28-31 done, caption likelihood 0.063
+  xi 2/255: images 32-35 done, caption likelihood 0.049
+  xi 2/255: images 36-39 done, caption likelihood 0.101
+>> qwen2-vl-2b, xi 2/255: 38% of the 40 captions changed (mean similarity 0.52)
+  xi 4/255: images 0-3 done, caption likelihood 0.016
+  xi 4/255: images 4-7 done, caption likelihood 0.039
+  xi 4/255: images 8-11 done, caption likelihood 0.014
+  xi 4/255: images 12-15 done, caption likelihood 0.017
+  xi 4/255: images 16-19 done, caption likelihood 0.012
+  xi 4/255: images 20-23 done, caption likelihood 0.012
+  xi 4/255: images 24-27 done, caption likelihood 0.026
+  xi 4/255: images 28-31 done, caption likelihood 0.029
+  xi 4/255: images 32-35 done, caption likelihood 0.017
+  xi 4/255: images 36-39 done, caption likelihood 0.052
+>> qwen2-vl-2b, xi 4/255: 62% of the 40 captions changed (mean similarity 0.42)
+  xi 10/255: images 0-3 done, caption likelihood 0.006
+  xi 10/255: images 4-7 done, caption likelihood 0.018
+  xi 10/255: images 8-11 done, caption likelihood 0.006
+  xi 10/255: images 12-15 done, caption likelihood 0.007
+  xi 10/255: images 16-19 done, caption likelihood 0.008
+  xi 10/255: images 20-23 done, caption likelihood 0.006
+  xi 10/255: images 24-27 done, caption likelihood 0.013
+  xi 10/255: images 28-31 done, caption likelihood 0.015
+  xi 10/255: images 32-35 done, caption likelihood 0.009
+  xi 10/255: images 36-39 done, caption likelihood 0.019
+>> qwen2-vl-2b, xi 10/255: 73% of the 40 captions changed (mean similarity 0.40)
+
+qwen2-vl-2b, per-image attack (40 images, 100 PGD steps), captions changed:
+  xi 2/255        38%   (caption likelihood 0.051)
+  xi 4/255        62%   (caption likelihood 0.023)
+  xi 10/255       73%   (caption likelihood 0.011)
+
+Examples (clean -> attacked at the largest budget):
+  A blue jay perches on a branch amidst lush green foliage.
+  -> A whimsical bird statue with a blue and white body, black and white face, and a green tail is perched on a tree trunk adorned with various stickers and insects.
+  Two fluffy, white dogs with long, curly fur stand side by side on a grassy field, with one dog wagging its tail.
+  -> Three Sealyham Terrier puppies wearing bow ties are walking in a neatly trimmed garden.
+  A red vintage agricultural machine with black components is displayed on a wooden floor, with another similar machine in the background.
+  -> A jackhammer loaded with construction materials is being used to move a brick wall.
+  A bowl filled with green apples is placed on a reflective surface, with a wooden column behind it.
+  -> In a futuristic, sci-fi setting, a person with red hair and a cyberpunk outfit stands in front of a large, glowing, futuristic machine emitting yellow energy. The machine is accompanied by large,
+>> Saved /users/eleves-b/2024/gurvan.nkouathio-kemnhou/universal/smol_exp/minivlm/results/qwen2-vl-2b/single_image.json
